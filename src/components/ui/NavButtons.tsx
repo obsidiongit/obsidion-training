@@ -1,20 +1,24 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { PLAYBOOK_MODULES } from "@/data/playbook-modules";
+import { usePlaybook } from "@/components/PlaybookContext";
 
 export function NavButtons({ currentModuleId }: { currentModuleId: number }) {
-  const currentIndex = PLAYBOOK_MODULES.findIndex((m) => m.id === currentModuleId);
-  const prevModule = currentIndex > 0 ? PLAYBOOK_MODULES[currentIndex - 1] : null;
+  const playbook = usePlaybook();
+  const { slug, modules } = playbook;
+  const base = `/playbooks/${slug}`;
+
+  const currentIndex = modules.findIndex((m) => m.id === currentModuleId);
+  const prevModule = currentIndex > 0 ? modules[currentIndex - 1] : null;
   const nextModule =
-    currentIndex < PLAYBOOK_MODULES.length - 1
-      ? PLAYBOOK_MODULES[currentIndex + 1]
-      : null;
+    currentIndex < modules.length - 1 ? modules[currentIndex + 1] : null;
 
   return (
     <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 mt-16 pt-8 border-t border-border">
       {prevModule ? (
         <Link
-          href={`/playbook/${prevModule.id}`}
+          href={`${base}/${prevModule.id}`}
           className="flex-1 flex items-center justify-start gap-3 p-4 rounded-xl border border-transparent hover:border-border hover:bg-muted/30 transition-all group"
         >
           <div className="bg-background rounded-full p-2 border shadow-sm group-hover:-translate-x-1 transition-transform">
@@ -24,9 +28,7 @@ export function NavButtons({ currentModuleId }: { currentModuleId: number }) {
             <div className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-0.5">
               Previous
             </div>
-            <div className="text-sm font-medium text-foreground">
-              {prevModule.title}
-            </div>
+            <div className="text-sm font-medium text-foreground">{prevModule.title}</div>
           </div>
         </Link>
       ) : (
@@ -35,16 +37,14 @@ export function NavButtons({ currentModuleId }: { currentModuleId: number }) {
 
       {nextModule ? (
         <Link
-          href={`/playbook/${nextModule.id}`}
+          href={`${base}/${nextModule.id}`}
           className="flex-1 flex items-center justify-end text-right gap-3 p-4 rounded-xl border border-transparent hover:border-border hover:bg-muted/30 transition-all group"
         >
           <div>
             <div className="text-xs font-semibold text-accent uppercase tracking-widest mb-0.5">
               Next Module
             </div>
-            <div className="text-sm font-medium text-foreground">
-              {nextModule.title}
-            </div>
+            <div className="text-sm font-medium text-foreground">{nextModule.title}</div>
           </div>
           <div className="bg-accent rounded-full p-2 border-accent shadow-sm group-hover:translate-x-1 transition-transform">
             <ArrowRight className="w-4 h-4 text-white" />

@@ -1,31 +1,5 @@
-export type ModuleSection = "Foundation" | "Products" | "Sales" | "Reference" | "Assessment";
-
-export interface PlaybookModule {
-  id: number;
-  title: string;
-  eyebrow: string;
-  section: ModuleSection;
-}
-
-export const PLAYBOOK_MODULES: PlaybookModule[] = [
-  { id: 0, title: "The Playbook", eyebrow: "Welcome", section: "Foundation" },
-  { id: 1, title: "Who We Are", eyebrow: "Our Identity", section: "Foundation" },
-  { id: 2, title: "The Market Opportunity", eyebrow: "Cannabis Industry", section: "Foundation" },
-  { id: 3, title: "Website Buildout", eyebrow: "Core Product", section: "Products" },
-  { id: 4, title: "Local SEO", eyebrow: "Traffic Generation", section: "Products" },
-  { id: 5, title: "Remarketing", eyebrow: "Conversion", section: "Products" },
-  { id: 6, title: "Mobile App", eyebrow: "Premium Add-on", section: "Products" },
-  { id: 7, title: "Pricing", eyebrow: "Plans & Tiers", section: "Sales" },
-  { id: 8, title: "Outreach Strategy", eyebrow: "Tactics", section: "Sales" },
-  { id: 9, title: "Objection Handling", eyebrow: "Rebuttals", section: "Sales" },
-  { id: 10, title: "Quick Reference", eyebrow: "Cheat Sheet", section: "Reference" },
-  { id: 11, title: "Module Quiz", eyebrow: "Knowledge Check", section: "Assessment" },
-];
-
-export const MODULE_SECTIONS: ModuleSection[] = [
-  "Foundation",
-  "Products",
-  "Sales",
-  "Reference",
-  "Assessment",
-];
+export type { ModuleSection, PlaybookModule } from "./playbooks/types";
+export {
+  CANNABIS_MODULES as PLAYBOOK_MODULES,
+  CANNABIS_MODULE_SECTIONS as MODULE_SECTIONS,
+} from "./playbooks/cannabis/modules";
