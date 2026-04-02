@@ -8,7 +8,7 @@ export default function Module04SEO() {
   return (
     <div className="animate-in fade-in slide-in-from-bottom-8 duration-500 max-w-4xl space-y-12">
       <div>
-        <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">Module 04 — Products</div>
+        <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">Module 05 — Products</div>
         <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">Local SEO</h1>
         <p className="text-xl text-muted-foreground leading-relaxed">
           Google allows dispensaries on its platform. This represents the largest legal advertising channel available, yet most operators fail to utilize it effectively.
@@ -70,7 +70,7 @@ export default function Module04SEO() {
         A dispensary processing $100K/month that increases call volume by 300% and online ordering by 3x generates hundreds of thousands of dollars in new annual revenue. The SEO retainer returns its cost within the first quarter.
       </HighlightBox>
 
-      <NavButtons currentModuleId={4} />
+      <NavButtons currentModuleId={5} />
     </div>
   );
 }

@@ -7,7 +7,7 @@ export default function Module03Website() {
   return (
     <div className="animate-in fade-in slide-in-from-bottom-8 duration-500 max-w-4xl space-y-12">
       <div>
-        <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">Module 03 — Products</div>
+        <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">Module 04 — Products</div>
         <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">Website Buildout</h1>
         <p className="text-xl text-muted-foreground leading-relaxed">
           The foundation of the infrastructure. A dispensary website operates as their only legal advertising surface. It must convert traffic, integrate with existing systems, and represent the brand accurately.
@@ -74,7 +74,7 @@ export default function Module03Website() {
         "Your website is your best salesperson. It works 24/7, handles your entire booking flow automatically, and never calls in sick. We deploy this system in 7 days."
       </HighlightBox>
 
-      <NavButtons currentModuleId={3} />
+      <NavButtons currentModuleId={4} />
     </div>
   );
 }

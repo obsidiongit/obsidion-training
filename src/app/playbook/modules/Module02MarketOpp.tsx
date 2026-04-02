@@ -7,7 +7,7 @@ export default function Module02MarketOpp() {
   return (
     <div className="animate-in fade-in slide-in-from-bottom-8 duration-500 max-w-4xl space-y-12">
       <div>
-        <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">Module 02 — Foundation</div>
+        <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">Module 03 — Foundation</div>
         <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">The Market Opportunity</h1>
         <p className="text-xl text-muted-foreground leading-relaxed">
           Cannabis is a multi-billion dollar industry with a severe lack of professional infrastructure. That gap is your sales target.
@@ -49,7 +49,7 @@ export default function Module02MarketOpp() {
         Dispensary owners are practical operators forced to work with whoever accepts their money. The corporate world avoids the space. You provide them with the competent business infrastructure they require but cannot currently find. 
       </HighlightBox>
 
-      <NavButtons currentModuleId={2} />
+      <NavButtons currentModuleId={3} />
     </div>
   );
 }

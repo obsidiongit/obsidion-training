@@ -6,7 +6,7 @@ export default function Module10QuickRefAutomotive() {
   return (
     <div className="animate-in fade-in slide-in-from-bottom-8 duration-500 max-w-5xl space-y-12">
       <div>
-        <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">Module 10 — Reference</div>
+        <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">Module 14 — Reference</div>
         <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">Quick Reference</h1>
         <p className="text-xl text-muted-foreground leading-relaxed">
           Access this data prior to any conversation.
@@ -84,7 +84,7 @@ export default function Module10QuickRefAutomotive() {
         absolute confidence in this reality.
       </HighlightBox>
 
-      <NavButtons currentModuleId={10} />
+      <NavButtons currentModuleId={14} />
     </div>
   );
 }

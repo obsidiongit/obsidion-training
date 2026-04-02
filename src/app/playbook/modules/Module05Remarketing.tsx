@@ -7,7 +7,7 @@ export default function Module05Remarketing() {
   return (
     <div className="animate-in fade-in slide-in-from-bottom-8 duration-500 max-w-4xl space-y-12">
       <div>
-        <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">Module 05 — Products</div>
+        <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">Module 06 — Products</div>
         <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">Remarketing</h1>
         <p className="text-xl text-muted-foreground leading-relaxed">
           Cannabis operations cannot run cold ad campaigns. Re-engaging the existing customer base is the highest-ROI strategy available. We automate this entire process.
@@ -77,7 +77,7 @@ export default function Module05Remarketing() {
         Once a dispensary owner watches an automated SMS script drive 40 customers into the store on a weekend, they retain our services indefinitely. Lead your sales conversations here after establishing trust through the website infrastructure.
       </HighlightBox>
 
-      <NavButtons currentModuleId={5} />
+      <NavButtons currentModuleId={6} />
     </div>
   );
 }

@@ -7,7 +7,7 @@ export default function Module08Outreach() {
   return (
     <div className="animate-in fade-in slide-in-from-bottom-8 duration-500 max-w-4xl space-y-12">
       <div>
-        <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">Module 08 — Sales</div>
+        <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">Module 11 — Sales</div>
         <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">Outreach Strategy</h1>
         <p className="text-xl text-muted-foreground leading-relaxed">
           You possess two primary acquisition channels: the warm network and Instagram cold outreach. Execute them differently.
@@ -52,7 +52,7 @@ export default function Module08Outreach() {
         <strong className="text-foreground">Execution Protocol:</strong> Be concise. Personalize the opening. Present a question, not a statement. The goal is a reply, not a read receipt.
       </div>
 
-      <NavButtons currentModuleId={8} />
+      <NavButtons currentModuleId={11} />
     </div>
   );
 }

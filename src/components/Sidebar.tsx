@@ -55,10 +55,10 @@ export default function Sidebar() {
 
   return (
     <>
-      <div className="md:hidden fixed top-0 left-0 right-0 h-16 bg-background border-b z-50 flex items-center gap-3 px-4">
+      <div className="md:hidden fixed top-0 left-0 right-0 h-20 bg-background border-b z-50 flex items-center gap-3 px-4">
         <div
           className="overflow-hidden -mt-1 -mb-1 -ml-1 flex items-center shrink-0"
-          style={{ height: "64px", width: "140px" }}
+          style={{ height: "80px", width: "175px" }}
         >
           <img
             src="/logos/logo.png"
@@ -91,7 +91,7 @@ export default function Sidebar() {
       >
         <div className="px-6 pt-4 pb-3 border-b hidden md:flex md:flex-col gap-1">
           <Link href="/" className="block">
-            <div className="overflow-hidden -mt-2 -mx-1" style={{ height: "130px" }}>
+            <div className="overflow-hidden -mt-2 -mx-1" style={{ height: "163px" }}>
               <img
                 src="/logos/logo.png"
                 alt="Obsidion"

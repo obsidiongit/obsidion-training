@@ -6,7 +6,7 @@ export default function Module07Pricing() {
   return (
     <div className="animate-in fade-in slide-in-from-bottom-8 duration-500 max-w-4xl space-y-12">
       <div>
-        <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">Module 07 — Sales</div>
+        <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">Module 08 — Sales</div>
         <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">Pricing Structure</h1>
         <p className="text-xl text-muted-foreground leading-relaxed">
           Know these metrics. Confidence in pricing dictates confidence in the product. We do not apologize for our rates.
@@ -118,7 +118,7 @@ export default function Module07Pricing() {
         Competing local SEO agencies charge $1,000–$2,500/month for SEO alone—excluding website management, remarketing tools, and automation. Our Growth package ($997) delivers the entire stack. Frame the discussion: "Hire an SEO agency for the same capital and receive a fraction of the utility, or deploy an entire digital operation through us." The fiscal value is undeniable.
       </HighlightBox>
 
-      <NavButtons currentModuleId={7} />
+      <NavButtons currentModuleId={8} />
     </div>
   );
 }

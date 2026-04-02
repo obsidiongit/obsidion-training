@@ -8,7 +8,7 @@ export default function Module08Outreach() {
     <div className="animate-in fade-in slide-in-from-bottom-8 duration-500 max-w-4xl space-y-12">
       <div>
         <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">
-          Module 08 — Sales
+          Module 11 — Sales
         </div>
         <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">Outreach Strategy</h1>
         <p className="text-xl text-muted-foreground leading-relaxed">
@@ -66,7 +66,7 @@ export default function Module08Outreach() {
         goal is a reply, not a read receipt.
       </HighlightBox>
 
-      <NavButtons currentModuleId={8} />
+      <NavButtons currentModuleId={11} />
     </div>
   );
 }

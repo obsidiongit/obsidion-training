@@ -8,7 +8,7 @@ export default function Module05Remarketing() {
     <div className="animate-in fade-in slide-in-from-bottom-8 duration-500 max-w-4xl space-y-12">
       <div>
         <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">
-          Module 05 — Products
+          Module 06 — Products
         </div>
         <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">Remarketing</h1>
         <p className="text-xl text-muted-foreground leading-relaxed">
@@ -91,7 +91,7 @@ export default function Module05Remarketing() {
         abstract &ldquo;engagement.&rdquo;
       </HighlightBox>
 
-      <NavButtons currentModuleId={5} />
+      <NavButtons currentModuleId={6} />
     </div>
   );
 }

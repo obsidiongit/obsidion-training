@@ -7,7 +7,7 @@ export default function Module06MobileApp() {
     <div className="animate-in fade-in slide-in-from-bottom-8 duration-500 max-w-4xl space-y-12">
       <div>
         <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">
-          Module 06 — Products
+          Module 07 — Products
         </div>
         <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">Mobile App</h1>
         <p className="text-xl text-muted-foreground leading-relaxed">
@@ -94,7 +94,7 @@ export default function Module06MobileApp() {
         </p>
       </div>
 
-      <NavButtons currentModuleId={6} />
+      <NavButtons currentModuleId={7} />
     </div>
   );
 }

@@ -28,6 +28,7 @@ export interface PlaybookClientConfig {
   description: string;
   modules: PlaybookModule[];
   moduleSections: ModuleSection[];
+  /** Module id of the assessment step (e.g. 16 when the quiz is the last module). */
   quizModuleId: number | null;
   quizQuestions: QuizQuestion[];
   quizPassCount: number;

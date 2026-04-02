@@ -13,7 +13,7 @@ export default function Module11Quiz() {
     <div className="animate-in fade-in slide-in-from-bottom-8 duration-500 max-w-4xl space-y-12 pb-20">
       <div>
         <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">
-          Module 11 — Assessment
+          Module 16 — Assessment
         </div>
         <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4 text-foreground">
           Knowledge Check
@@ -28,7 +28,7 @@ export default function Module11Quiz() {
         <Quiz />
       </div>
 
-      <NavButtons currentModuleId={11} />
+      <NavButtons currentModuleId={16} />
     </div>
   );
 }

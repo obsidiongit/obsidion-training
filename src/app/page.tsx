@@ -7,15 +7,13 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <header className="border-b bg-muted/20">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
-          <div className="overflow-hidden mb-6" style={{ height: "72px", width: "220px" }}>
-            <img
-              src="/logos/logo.png"
-              alt="Obsidion"
-              className="block w-full h-full object-contain object-left"
-            />
-          </div>
-          <h1 className="text-3xl sm:text-4xl font-black tracking-tight text-foreground mb-3">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-2 pb-2 sm:pt-2.5 sm:pb-2.5">
+          <img
+            src="/logos/logo.png"
+            alt="Obsidion"
+            className="block w-auto max-w-full h-auto max-h-[252px] object-contain object-left mb-1.5"
+          />
+          <h1 className="text-3xl sm:text-4xl font-black tracking-tight text-foreground mb-1">
             Training playbooks
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
@@ -24,7 +22,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
+      <main className="max-w-3xl mx-auto px-4 sm:px-6 pt-5 pb-10 sm:pt-6 sm:pb-12">
         <ul className="space-y-4">
           {playbooks.map((pb) => (
             <li key={pb.slug}>

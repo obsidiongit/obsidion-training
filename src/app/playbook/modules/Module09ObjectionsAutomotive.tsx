@@ -3,9 +3,9 @@ import { NavButtons } from "@/components/ui/NavButtons";
 
 export default function Module09ObjectionsAutomotive() {
   return (
-    <div className="animate-in fade-in slide-in-from-bottom-8 duration-500 max-w-3xl mx-auto space-y-12">
+    <div className="animate-in fade-in slide-in-from-bottom-8 duration-500 max-w-4xl mx-auto space-y-12">
       <div className="text-center mb-12">
-        <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">Module 09 — Sales</div>
+        <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">Module 13 — Sales</div>
         <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">Objection Handling</h1>
         <p className="text-xl text-muted-foreground">
           Memorize these responses prior to your first conversation.
@@ -98,7 +98,7 @@ export default function Module09ObjectionsAutomotive() {
         />
       </div>
 
-      <NavButtons currentModuleId={9} />
+      <NavButtons currentModuleId={13} />
     </div>
   );
 }
