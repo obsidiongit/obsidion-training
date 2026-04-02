@@ -14,6 +14,43 @@ import Module09Objections from "@/app/playbook/modules/Module09Objections";
 import Module10QuickRef from "@/app/playbook/modules/Module10QuickRef";
 import Module11Quiz from "@/app/playbook/modules/Module11Quiz";
 import ModuleContractorsStub from "@/app/playbook/modules/ModuleContractorsStub";
+import Module00WelcomeAutomotive from "@/app/playbook/modules/Module00WelcomeAutomotive";
+import Module01WhoWeAreAutomotive from "@/app/playbook/modules/Module01WhoWeAreAutomotive";
+import Module02MarketOppAutomotive from "@/app/playbook/modules/Module02MarketOppAutomotive";
+import Module03WebsiteAutomotive from "@/app/playbook/modules/Module03WebsiteAutomotive";
+import Module04SEOAutomotive from "@/app/playbook/modules/Module04SEOAutomotive";
+import Module05RemarketingAutomotive from "@/app/playbook/modules/Module05RemarketingAutomotive";
+import Module06MobileAppAutomotive from "@/app/playbook/modules/Module06MobileAppAutomotive";
+import Module07PricingAutomotive from "@/app/playbook/modules/Module07PricingAutomotive";
+import Module08OutreachAutomotive from "@/app/playbook/modules/Module08OutreachAutomotive";
+import Module09ObjectionsAutomotive from "@/app/playbook/modules/Module09ObjectionsAutomotive";
+import Module10QuickRefAutomotive from "@/app/playbook/modules/Module10QuickRefAutomotive";
+
+import SalonModule00Welcome from "@/app/playbook/modules/salon-medspa/Module00Welcome";
+import SalonModule01WhoWeAre from "@/app/playbook/modules/salon-medspa/Module01WhoWeAre";
+import SalonModule02MarketOpp from "@/app/playbook/modules/salon-medspa/Module02MarketOpp";
+import SalonModule03Website from "@/app/playbook/modules/salon-medspa/Module03Website";
+import SalonModule04SEO from "@/app/playbook/modules/salon-medspa/Module04SEO";
+import SalonModule05Remarketing from "@/app/playbook/modules/salon-medspa/Module05Remarketing";
+import SalonModule06MobileApp from "@/app/playbook/modules/salon-medspa/Module06MobileApp";
+import SalonModule07Pricing from "@/app/playbook/modules/salon-medspa/Module07Pricing";
+import SalonModule08Outreach from "@/app/playbook/modules/salon-medspa/Module08Outreach";
+import SalonModule09Objections from "@/app/playbook/modules/salon-medspa/Module09Objections";
+import SalonModule10QuickRef from "@/app/playbook/modules/salon-medspa/Module10QuickRef";
+import SalonModule11Quiz from "@/app/playbook/modules/salon-medspa/Module11Quiz";
+
+import FhModule00Welcome from "@/app/playbook/modules/food-hospitality/Module00Welcome";
+import FhModule01WhoWeAre from "@/app/playbook/modules/food-hospitality/Module01WhoWeAre";
+import FhModule02MarketOpp from "@/app/playbook/modules/food-hospitality/Module02MarketOpp";
+import FhModule03Website from "@/app/playbook/modules/food-hospitality/Module03Website";
+import FhModule04SEO from "@/app/playbook/modules/food-hospitality/Module04SEO";
+import FhModule05Remarketing from "@/app/playbook/modules/food-hospitality/Module05Remarketing";
+import FhModule06MobileApp from "@/app/playbook/modules/food-hospitality/Module06MobileApp";
+import FhModule07Pricing from "@/app/playbook/modules/food-hospitality/Module07Pricing";
+import FhModule08Outreach from "@/app/playbook/modules/food-hospitality/Module08Outreach";
+import FhModule09Objections from "@/app/playbook/modules/food-hospitality/Module09Objections";
+import FhModule10QuickRef from "@/app/playbook/modules/food-hospitality/Module10QuickRef";
+import FhModule11Quiz from "@/app/playbook/modules/food-hospitality/Module11Quiz";
 
 export function renderPlaybookModule(slug: string, moduleId: number): ReactElement {
   if (slug === "cannabis") {
@@ -40,6 +77,99 @@ export function renderPlaybookModule(slug: string, moduleId: number): ReactEleme
         return <Module09Objections />;
       case 10:
         return <Module10QuickRef />;
+      case 11:
+        return <Module11Quiz />;
+      default:
+        notFound();
+    }
+  }
+
+  if (slug === "salon-medspa") {
+    switch (moduleId) {
+      case 0:
+        return <SalonModule00Welcome />;
+      case 1:
+        return <SalonModule01WhoWeAre />;
+      case 2:
+        return <SalonModule02MarketOpp />;
+      case 3:
+        return <SalonModule03Website />;
+      case 4:
+        return <SalonModule04SEO />;
+      case 5:
+        return <SalonModule05Remarketing />;
+      case 6:
+        return <SalonModule06MobileApp />;
+      case 7:
+        return <SalonModule07Pricing />;
+      case 8:
+        return <SalonModule08Outreach />;
+      case 9:
+        return <SalonModule09Objections />;
+      case 10:
+        return <SalonModule10QuickRef />;
+      case 11:
+        return <SalonModule11Quiz />;
+      default:
+        notFound();
+    }
+  }
+
+  if (slug === "food-hospitality") {
+    switch (moduleId) {
+      case 0:
+        return <FhModule00Welcome />;
+      case 1:
+        return <FhModule01WhoWeAre />;
+      case 2:
+        return <FhModule02MarketOpp />;
+      case 3:
+        return <FhModule03Website />;
+      case 4:
+        return <FhModule04SEO />;
+      case 5:
+        return <FhModule05Remarketing />;
+      case 6:
+        return <FhModule06MobileApp />;
+      case 7:
+        return <FhModule07Pricing />;
+      case 8:
+        return <FhModule08Outreach />;
+      case 9:
+        return <FhModule09Objections />;
+      case 10:
+        return <FhModule10QuickRef />;
+      case 11:
+        return <FhModule11Quiz />;
+      default:
+        notFound();
+    }
+  }
+
+  if (slug === "automotive") {
+    switch (moduleId) {
+      case 0:
+        return <Module00WelcomeAutomotive />;
+      case 1:
+        return <Module01WhoWeAreAutomotive />;
+      case 2:
+        return <Module02MarketOppAutomotive />;
+      case 3:
+        return <Module03WebsiteAutomotive />;
+      case 4:
+        return <Module04SEOAutomotive />;
+      case 5:
+        return <Module05RemarketingAutomotive />;
+      case 6:
+        return <Module06MobileAppAutomotive />;
+      case 7:
+        return <Module07PricingAutomotive />;
+      case 8:
+        return <Module08OutreachAutomotive />;
+      case 9:
+        return <Module09ObjectionsAutomotive />;
+      case 10:
+        return <Module10QuickRefAutomotive />;
       case 11:
         return <Module11Quiz />;
       default:
