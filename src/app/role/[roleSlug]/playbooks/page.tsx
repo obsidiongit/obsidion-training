@@ -24,7 +24,7 @@ export default async function PlaybooksIndexPage({
           {playbooks.map((pb) => (
             <li key={pb.slug}>
               <Link
-                href={`/role/${roleSlug}/playbooks/${pb.slug}/0`}
+                href={`/playbooks/${pb.slug}/0`}
                 className="block rounded-2xl border border-border bg-card p-6 sm:p-8 shadow-sm hover:border-accent/40 hover:shadow-md transition-all group"
               >
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
