@@ -53,23 +53,23 @@ Check off items as they are completed. Add dates in parentheses when done.
 ### About the Company (shared)
 
 - [ ] Create `/role/[roleSlug]/about/page.tsx`
-- [ ] Write generalized company content (not cannabis-specific)
-- [ ] Finalize `content/shared/about-the-company.md` with real content
-- [ ] Add company history, mission, values sections
+- [x] Write generalized company content (not cannabis-specific) (2026-04-02)
+- [x] Finalize `content/shared/about-the-company.md` with real content (2026-04-02)
+- [x] Add company history, mission, values sections (2026-04-02)
 - [ ] Add org chart / team structure section
-- [ ] Add company culture section
+- [x] Add company culture section (2026-04-02)
 
 ### Product Knowledge (role-specific subsections)
 
 - [ ] Create `/role/[roleSlug]/products/page.tsx` (overview)
 - [ ] Create `/role/[roleSlug]/products/[productSlug]/page.tsx` (individual products)
-- [ ] Write product overview content (`content/roles/account-executive/product-knowledge/overview.md`)
-- [ ] Write websites product page (`websites.md`)
-- [ ] Write SEO product page (`seo.md`)
-- [ ] Write remarketing product page (`remarketing.md`)
-- [ ] Write mobile app product page (`mobile-app.md`)
-- [ ] Add "how they work together" integrated stack section
-- [ ] Add competitive comparison section
+- [x] Write product overview content (`content/roles/account-executive/product-knowledge/overview.md`) (2026-04-02)
+- [x] Write websites product page (`websites.md`) (2026-04-02)
+- [x] Write SEO product page (`seo.md`) (2026-04-02)
+- [x] Write remarketing product page (`remarketing.md`) (2026-04-02)
+- [x] Write mobile app product page (`mobile-app.md`) (2026-04-02)
+- [x] Add "how they work together" integrated stack section (2026-04-02)
+- [x] Add competitive comparison section (2026-04-02)
 
 ### Getting Paid & Bonuses (role-specific)
 
@@ -111,10 +111,10 @@ Check off items as they are completed. Add dates in parentheses when done.
 
 - [ ] Create `/role/[roleSlug]/on-the-call/page.tsx` (overview)
 - [ ] Create `/role/[roleSlug]/on-the-call/[topicSlug]/page.tsx` (sub-topics)
-- [ ] Finalize `on-the-call/overview.md`
-- [ ] Write scripts content (`scripts.md`) — cold open, warm open, voicemail, follow-up email
-- [ ] Write objection handling content (`objection-handling.md`) — add missing objections
-- [ ] Write call frameworks content (`call-frameworks.md`) — discovery, closing, follow-up cadence
+- [x] Finalize `on-the-call/overview.md` (2026-04-02)
+- [x] Write scripts content (`scripts.md`) — cold open, warm open, voicemail, follow-up email (2026-04-02)
+- [x] Write objection handling content (`objection-handling.md`) — add missing objections (2026-04-02)
+- [x] Write call frameworks content (`call-frameworks.md`) — discovery, closing, follow-up cadence (2026-04-02)
 
 ### Daily Structure (role-specific)
 
