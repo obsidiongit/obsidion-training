@@ -6,6 +6,20 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-03] — Tech We Use Section for Account Executives (Phase 3)
+
+### Added
+
+- **Tech We Use page** (`/role/[roleSlug]/tech`) — full AE tech stack reference with animated sections covering Claude AI, Notion CRM, Loom VSLs, Apollo.io lead generation, Miro presentations, sales call recording, and supporting tools (Canva, Slack/Discord, mobile dialer)
+- **`TechWeUseContent` client component** (`src/components/tech/`) — reuses shared product UI primitives (`ProductPageHero`, `SectionLabel`) with framer-motion scroll animations, tool overview grid, deep-dive sections for each major tool, use-case cards, best-practice checklists, and first-week onboarding setup timeline
+- **AE-specific tech content** (`content/roles/account-executive/tech-we-use.md`) — role-specific markdown replacing the generic shared placeholder, emphasizing Claude as an AI force multiplier, Loom for outbound VSLs, Apollo.io for self-service prospecting, and mandatory call recording for KPI accountability
+
+### Changed
+
+- **Tech We Use route** — replaced empty placeholder with full interactive `TechWeUseContent` component
+
+---
+
 ## [2026-04-03] — Getting Paid & Bonuses Section (Phase 3)
 
 ### Added

@@ -1,8 +1,8 @@
 # Tech We Use
 
-> This is a shared section — the same content appears for every role.
+> **Superseded** — This shared placeholder has been replaced by role-specific content. See `content/roles/account-executive/tech-we-use.md` for the AE version.
 
-## Status: Draft — seeded from existing module
+## Status: Replaced — role-specific versions now live
 
 ---
 
