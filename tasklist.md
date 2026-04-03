@@ -84,14 +84,14 @@ Check off items as they are completed. Add dates in parentheses when done.
 
 ### Performance Expectations (role-specific)
 
-- [ ] Create `/role/[roleSlug]/performance/page.tsx`
-- [ ] Finalize `content/roles/account-executive/performance.md`
-- [ ] Add specific KPI table (activity metrics, revenue targets, conversion rates)
-- [ ] Add review cadence details (weekly 1:1s, monthly reviews, quarterly business reviews)
-- [ ] Add ramp protection details (protected draw period, graduated quota expectations)
-- [ ] Add 30/60/90-day milestone benchmarks with specific deliverables per phase
-- [ ] Add post-ramp steady-state expectations (what "fully ramped" looks like in numbers)
-- [ ] Add promotion path — what top performers earn and where they go next
+- [x] Create `/role/[roleSlug]/performance/page.tsx`
+- [x] Finalize `content/roles/account-executive/performance.md`
+- [x] Add specific KPI table (activity metrics, revenue targets, conversion rates)
+- [x] Add review cadence details (weekly 1:1s, monthly reviews, quarterly business reviews)
+- [x] Add ramp protection details (protected draw period, graduated quota expectations)
+- [x] Add 30/60/90-day milestone benchmarks with specific deliverables per phase
+- [x] Add post-ramp steady-state expectations (what "fully ramped" looks like in numbers)
+- [x] Add promotion path — what top performers earn and where they go next
 
 ### Tech We Use (shared)
 

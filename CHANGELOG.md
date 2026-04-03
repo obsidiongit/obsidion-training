@@ -6,6 +6,19 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-03] — Performance Expectations Section (Phase 3)
+
+### Added
+
+- **Performance Expectations page** (`/role/[roleSlug]/performance`) — full AE performance reference built from commission-only compensation reality, including income scenario table (5 tiers from "Barely Surviving" to "Elite"), daily/weekly/monthly activity benchmarks with three-tier scoring (Minimum/Competitive/Elite), funnel conversion math showing how dial volume maps to closed deals, MRR tier progression table with timeline-to-tier by activity level, 30/60/90-day ramp milestones, weekly/monthly/quarterly review cadence, winning habits, and recovery guidance
+- **`PerformanceContent` client component** (`src/components/performance/`) — reuses shared product UI primitives (`ProductPageHero`, `SectionLabel`) with framer-motion scroll animations, data-driven tables, color-coded ramp phase cards, dial tier cards, review cadence grid, and a reusable `ThreeTierTable` helper for consistent benchmark display
+
+### Changed
+
+- **Performance route** — replaced "content coming soon" placeholder with full interactive `PerformanceContent` component and added SEO metadata export
+
+---
+
 ## [2026-04-03] — On the Call Section (Phase 3)
 
 ### Added
