@@ -6,6 +6,20 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-03] — Getting Paid & Bonuses Section (Phase 3)
+
+### Added
+
+- **Getting Paid & Bonuses page** (`/role/[roleSlug]/getting-paid`) — full compensation reference built from the AE Compensation & Bonus Program document, with animated sections covering front-end commissions, MRR bonus tier system, enterprise deal treatment, earning potential, rules & policies, and FAQ
+- **`GettingPaidContent` client component** (`src/components/getting-paid/`) — reuses shared product UI primitives (`ProductPageHero`, `SectionLabel`, `FAQAccordion`) with framer-motion scroll animations, interactive tier table, earning scenario cards, and enterprise deal scenario breakdown
+- **Updated content markdown** (`content/roles/account-executive/getting-paid.md`) — replaced placeholder/illustrative data with real compensation numbers from the AE Compensation & Bonus Program docx: 40% front-end commission rate, 6-tier MRR bonus system ($3K–$75K thresholds), payment terms, clawback policy, and earning potential scenarios
+
+### Changed
+
+- **Getting Paid route** — replaced "content coming soon" placeholder with full interactive `GettingPaidContent` component
+
+---
+
 ## [2026-04-03] — Product Knowledge Section Full Build-Out (Phase 3)
 
 ### Added

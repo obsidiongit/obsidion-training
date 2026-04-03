@@ -76,11 +76,11 @@ Check off items as they are completed. Add dates in parentheses when done.
 
 ### Getting Paid & Bonuses (role-specific)
 
-- [ ] Create `/role/[roleSlug]/getting-paid/page.tsx`
-- [ ] Finalize `content/roles/account-executive/getting-paid.md` with real numbers or confirmed placeholders
-- [ ] Add bonus program details
-- [ ] Add draw structure explanation
-- [ ] Add FAQ section
+- [x] Create `/role/[roleSlug]/getting-paid/page.tsx` (2026-04-03)
+- [x] Finalize `content/roles/account-executive/getting-paid.md` with real numbers from AE Compensation & Bonus Program docx (2026-04-03)
+- [x] Add bonus program details (MRR tier system with 6 tiers, $3K–$75K thresholds) (2026-04-03)
+- [x] Add draw structure explanation (2026-04-03)
+- [x] Add FAQ section (6 questions covering first check, clawback, tier drops, enterprise rates, co-sold deals, draw) (2026-04-03)
 
 ### Performance Expectations (role-specific)
 
