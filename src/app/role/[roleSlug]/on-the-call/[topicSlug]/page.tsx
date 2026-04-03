@@ -1,15 +1,52 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
+import ScriptsContent from "@/components/on-the-call/ScriptsContent";
+import ObjectionHandlingContent from "@/components/on-the-call/ObjectionHandlingContent";
+import CallFrameworksContent from "@/components/on-the-call/CallFrameworksContent";
 
-const TOPICS: Record<string, { title: string; description: string; contentFile: string }> = {
-  scripts: { title: "Call Scripts", description: "Opening talk tracks, discovery prompts, voicemail scripts, and follow-up templates.", contentFile: "on-the-call/scripts.md" },
-  objections: { title: "Objection Handling", description: "Live conversational rebuttals for common pushback on calls.", contentFile: "on-the-call/objection-handling.md" },
-  frameworks: { title: "Call Frameworks", description: "Discovery call structure, closing framework, and follow-up cadence.", contentFile: "on-the-call/call-frameworks.md" },
+const VALID_SLUGS = ["scripts", "objections", "frameworks"] as const;
+type TopicSlug = (typeof VALID_SLUGS)[number];
+
+const TOPIC_META: Record<TopicSlug, { title: string; description: string }> = {
+  scripts: {
+    title: "Call Scripts — Obsidion Training Hub",
+    description:
+      "Opening talk tracks, discovery prompts, voicemail scripts, gatekeeper navigation, and follow-up email templates.",
+  },
+  objections: {
+    title: "Objection Handling — Obsidion Training Hub",
+    description:
+      "Live rebuttals organized by call phase — early resistance, mid-call skepticism, and late-stage stalls.",
+  },
+  frameworks: {
+    title: "Call Frameworks — Obsidion Training Hub",
+    description:
+      "The 30-minute discovery structure, qualifying signals, closing language, and follow-up cadence.",
+  },
 };
 
 export function generateStaticParams() {
-  return Object.keys(TOPICS).map((topicSlug) => ({ topicSlug }));
+  return VALID_SLUGS.map((topicSlug) => ({ topicSlug }));
 }
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ topicSlug: string }>;
+}) {
+  const { topicSlug } = await params;
+  const meta = TOPIC_META[topicSlug as TopicSlug];
+  if (!meta) return {};
+  return { title: meta.title, description: meta.description };
+}
+
+const TOPIC_COMPONENTS: Record<
+  TopicSlug,
+  React.ComponentType<{ roleSlug: string }>
+> = {
+  scripts: ScriptsContent,
+  objections: ObjectionHandlingContent,
+  frameworks: CallFrameworksContent,
+};
 
 export default async function OnTheCallTopicPage({
   params,
@@ -17,22 +54,11 @@ export default async function OnTheCallTopicPage({
   params: Promise<{ roleSlug: string; topicSlug: string }>;
 }) {
   const { roleSlug, topicSlug } = await params;
-  const topic = TOPICS[topicSlug];
-  if (!topic) notFound();
 
-  return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
-        <Link href={`/role/${roleSlug}/on-the-call`} className="text-sm text-muted-foreground hover:text-accent transition-colors mb-6 inline-block">
-          ← On the Call
-        </Link>
-        <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">On the Call</div>
-        <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">{topic.title}</h1>
-        <p className="text-xl text-muted-foreground leading-relaxed mb-8">{topic.description}</p>
-        <div className="rounded-2xl border border-dashed border-border bg-muted/10 p-8 text-center">
-          <p className="text-muted-foreground">Content coming soon — see <code className="text-xs bg-muted px-1.5 py-0.5 rounded">content/roles/account-executive/{topic.contentFile}</code> for the outline.</p>
-        </div>
-      </div>
-    </div>
-  );
+  if (!VALID_SLUGS.includes(topicSlug as TopicSlug)) {
+    notFound();
+  }
+
+  const Component = TOPIC_COMPONENTS[topicSlug as TopicSlug];
+  return <Component roleSlug={roleSlug} />;
 }

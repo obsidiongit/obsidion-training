@@ -6,6 +6,22 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-03] — On the Call Section (Phase 3)
+
+### Added
+
+- **On the Call overview page** (`/role/[roleSlug]/on-the-call`) — full overview with animated topic cards, 5-phase call flow timeline, and non-negotiable rules section
+- **Call Scripts sub-page** (`/role/[roleSlug]/on-the-call/scripts`) — warm/cold opening talk tracks, tabbed discovery prompts (6 categories), transition-to-offer language, voicemail script, follow-up email template, gatekeeper navigation scenarios, and referral ask
+- **Objection Handling sub-page** (`/role/[roleSlug]/on-the-call/objections`) — mindset framework (label/validate/reframe), accordion-based rebuttals organized by call phase (early, mid, late), coaching notes per objection, and clean exit script
+- **Call Frameworks sub-page** (`/role/[roleSlug]/on-the-call/frameworks`) — 30-minute discovery call framework with 5-phase deep-dive timeline, qualifying signals (green/yellow/red), trial close language, questionnaire handoff steps, 5-touch follow-up cadence with Day 0 email template, and second-call decision-maker guidance
+- **4 new client components** in `src/components/on-the-call/` — `OnTheCallOverview`, `ScriptsContent`, `ObjectionHandlingContent`, `CallFrameworksContent`, all using shared product UI primitives with framer-motion animations
+
+### Changed
+
+- **On the Call route pages** — replaced placeholder shells with full interactive components using the same pattern as Products (component per topic, metadata, static params)
+
+---
+
 ## [2026-04-03] — Tech We Use Section for Account Executives (Phase 3)
 
 ### Added

@@ -95,10 +95,10 @@ Check off items as they are completed. Add dates in parentheses when done.
 
 ### Tech We Use (shared)
 
-- [ ] Create `/role/[roleSlug]/tech/page.tsx`
-- [ ] Finalize `content/shared/tech-we-use.md`
-- [ ] Add screenshots or links for each system
-- [ ] Add "who to contact" for access issues
+- [x] Create `/role/[roleSlug]/tech/page.tsx`
+- [x] Finalize `content/shared/tech-we-use.md`
+- [x] Add screenshots or links for each system
+- [x] Add "who to contact" for access issues
 
 ### Downloadable Assets (shared)
 
@@ -112,8 +112,8 @@ Check off items as they are completed. Add dates in parentheses when done.
 
 ### On the Call (role-specific subsections)
 
-- [ ] Create `/role/[roleSlug]/on-the-call/page.tsx` (overview)
-- [ ] Create `/role/[roleSlug]/on-the-call/[topicSlug]/page.tsx` (sub-topics)
+- [x] Create `/role/[roleSlug]/on-the-call/page.tsx` (overview) (2026-04-03)
+- [x] Create `/role/[roleSlug]/on-the-call/[topicSlug]/page.tsx` (sub-topics) (2026-04-03)
 - [x] Finalize `on-the-call/overview.md` (2026-04-02)
 - [x] Write scripts content (`scripts.md`) — cold open, warm open, voicemail, follow-up email (2026-04-02)
 - [x] Write objection handling content (`objection-handling.md`) — add missing objections (2026-04-02)
