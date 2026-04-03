@@ -1,0 +1,30 @@
+---
+description: Keep CHANGELOG.md updated whenever major changes are made to the project
+alwaysApply: true
+---
+
+# Changelog Maintenance
+
+When you make a **major change** to the Obsidion Training Hub, append an entry to `CHANGELOG.md` at the project root.
+
+## What counts as a major change
+
+- Adding, removing, or renaming a route/page
+- Creating or restructuring a content section
+- Adding or removing a feature (role selection, progress tracking, etc.)
+- Changing the data model or registry structure
+- Adding new dependencies
+
+Minor fixes (typos, style tweaks, lint fixes) do not need changelog entries.
+
+## Entry format
+
+```markdown
+## [YYYY-MM-DD] — Short Summary
+
+### Added / Changed / Removed / Fixed
+
+- Bullet describing what changed and why
+```
+
+Place new entries directly below the `---` separator after the file header, above older entries (newest first).

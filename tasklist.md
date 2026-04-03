@@ -1,77 +1,222 @@
-# Obsidion Playbook — Polish & Flesh-Out Tasklist
+# Obsidion Training Hub — Master Task List
 
-A prioritized list of improvements across content, code, UX, and structure. Items are grouped by area and ordered roughly by impact.
+A phased task list for expanding the training playbooks into a full training hub. Items are grouped by phase and ordered by priority within each phase.
 
----
-
-## Content: Fix Inconsistencies
-
-- [ ] **Pricing mismatch — Module 00 vs. Module 07.** The Welcome module lists `$597–$797/mo` as the monthly retainer range. The actual pricing in Module 07 is `$597`, `$997`, and `$1,497`. Update the Welcome stat card to show the correct range (`$597–$1,497/mo`) or replace with a more useful metric.
-- [ ] **Stale code comment in `page.tsx`.** The dynamic module router still contains `// ... other modules will be added here as they are built`. All 12 modules exist. Remove the comment.
+Check off items as they are completed. Add dates in parentheses when done.
 
 ---
 
-## Content: Flesh Out Thin Modules
+## Phase 1: Infrastructure & Planning
 
-### Module 00 — Welcome
-- [ ] Add a brief "How to use this playbook" orientation block. The current intro drops users straight into stats with no guidance on the intended read order or how to return to it as a reference between calls.
-- [ ] Consider adding a "What you'll be able to do by the end" checklist — gives the trainee a destination.
-
-### Module 08 — Outreach Strategy
-- [ ] **Add a follow-up cadence.** The module covers the opening DM but not what to do when there's no reply. Add a 3-touch follow-up sequence (Day 3, Day 7, Day 14) with example messages.
-- [ ] **Add a phone/call script section.** When a prospect replies and agrees to a call, what does the first 5 minutes sound like? Opening, agenda-framing, and discovery questions are missing entirely.
-- [ ] **Add a discovery call framework.** What are the 4–5 questions that surface the prospect's pain points? What qualifies or disqualifies a lead? This is the most actionable gap in the Sales section.
-- [ ] **Add a closing section.** When and how to ask for the commitment — trial close language, presenting the proposal, handling the "I need to think about it" moment before it escalates into a full objection.
-
-### Module 09 — Objection Handling
-- [ ] **Add missing objections.** The current 6 cover the most common cases but leave out:
-  - "Can you show me examples of your work / a portfolio?"
-  - "We need to think about it" / "Let me talk to my partner."
-  - "We're locked in a contract with someone else." (different from "working with someone already")
-  - "What if it doesn't work? What's your guarantee?"
-- [ ] Add a brief intro note on the mindset behind objection handling — objections are requests for more information, not rejections. One sentence sets the right frame.
-
-### Module 10 — Quick Reference
-- [ ] **Reframe the differentiators table headers.** "They state..." / "You answer..." is slightly awkward on first read. Consider "Prospect Says" / "Your Response" for clarity.
-- [ ] Add a "First Call Checklist" block — a bulleted list of things to confirm before hanging up (budget, timeline, decision-maker, next step). This is exactly the kind of pre-call reference a rep needs.
+- [x] Create CHANGELOG.md (living changelog)
+- [x] Create .cursor/rules/changelog.mdc (auto-update rule)
+- [x] Create SITEMAP.md (full site architecture document)
+- [x] Create content/ directory with placeholder markdown files
+- [x] Rewrite tasklist.md (this file) as comprehensive phased task list
+- [x] Scaffold route directories under `src/app/role/[roleSlug]/`
+- [ ] Verify dev server still works with new directories (no regressions)
 
 ---
 
-## Content: Substantiate Key Claims
+## Phase 2: Role Selection & Hub Shell
 
-- [ ] **Module 02 — `~0%` penetration stat.** This reads as invented. Replace with a more defensible framing: e.g., "Fewer than X% of licensed dispensaries use a cannabis-specialized agency" with a source, or reframe it as an observation rather than a stat: "No dominant agency player exists in this space."
-- [ ] **Module 04 — "300%+ increase in calls" and "3–4x ordering growth."** These are strong claims. Add a brief attribution: "Based on [X] client deployments" or "Average across [X] dispensary accounts." Without attribution they undermine credibility in exactly the module meant to build it.
+### Landing Page (Role Selection)
 
----
+- [ ] Design role selection UI (cards for each role, visual and inviting)
+- [ ] Convert `src/app/page.tsx` from playbook list to role selection page
+- [ ] Create role data registry (`src/data/roles/registry.ts`) with role metadata
+- [ ] Add Account Executive as first role with icon, description, section list
+- [ ] Add placeholder cards for future roles (Customer Success, Marketing, Operations)
+- [ ] Add "Explore other roles" cross-navigation affordance
 
-## UI Components: Use What's Already Built
+### Role Hub Dashboard
 
-- [ ] **`PriceCard` component is never used.** It lives in `src/components/ui/PriceCard.tsx` but no module imports it. Module 07 builds pricing cards inline with the generic `Card` component. Either refactor Module 07 to use `PriceCard`, or delete the unused component.
-- [ ] **`Tag` component is never used.** Module 06 renders the "Multi-location / MSOs / Ancillary brands / High-volume" audience tags as raw `<span>` elements instead of importing `Tag` from `@/components/ui/Tag`. Replace with the component for visual consistency.
-- [ ] **Module 08 "Execution Protocol" block.** Currently a raw `<div className="p-6 bg-muted/40 ...">`. This pattern is what `HighlightBox` exists for. Replace with `<HighlightBox variant="info" title="Execution Protocol">` to match the rest of the codebase.
+- [ ] Build `/role/[roleSlug]/page.tsx` — hub dashboard with section card grid
+- [ ] Build `/role/[roleSlug]/layout.tsx` — hub shell layout (sidebar + topbar)
+- [ ] Design section cards: icon, title, description, progress indicator
+- [ ] Build new hub sidebar component (section-based navigation, not module-based)
+- [ ] Build hub topbar showing current role and section
+- [ ] Add breadcrumb navigation (Home > Role > Section)
+- [ ] Make hub responsive (mobile-friendly card grid and sidebar drawer)
 
----
+### Redirects & Backward Compatibility
 
-## UX / Flow
-
-- [ ] **Quiz completion has no gate.** Module 11 tells users "You must score at least 9/12 to proceed" but there is no actual gate — nothing unlocks and there's no next step shown after passing. Either remove the "to proceed" language, or add a post-pass completion card with a clear CTA ("You've finished the Obsidion Cannabis Playbook").
-- [ ] **No final completion screen.** After Module 10 or after passing the quiz there's no graduation moment. A simple "Playbook Complete" state in the sidebar or a final screen goes a long way for new reps. The progress bar reaching 100% should trigger something visible.
-- [ ] **No "Reset Progress" option.** A rep re-doing onboarding or a manager testing the flow has no way to clear progress without opening DevTools. Add a small reset link at the bottom of the sidebar.
-- [ ] **Progress marks on visit, not on read.** `ProgressTracker` marks a module complete the moment you land on its page. Consider adding a "Mark as Complete" button to each module, or at minimum only triggering the auto-mark after a scroll threshold. As-is, a rep can click through all 12 modules in 30 seconds and show 100%.
-- [ ] **Mobile: current module not labeled.** The `Topbar` component is `hidden md:flex` — on mobile there's no visible indicator of which module you're on unless the sidebar is open. Consider adding the current module title to the mobile header bar.
-
----
-
-## Technical
-
-- [ ] **Progress persistence is browser-local only.** `localStorage` progress is lost if the rep clears their cache, switches browsers, or opens the playbook on their phone. For a training tool this is a significant gap. Consider at minimum a URL-based progress state, or note this limitation somewhere so managers know a 100% badge doesn't mean much across devices.
-- [ ] **Quiz localStorage write is inside a bare `try/catch` that silently swallows errors.** If the write fails (storage quota, private browsing), the quiz appears to pass but the completion is never recorded. Surface a warning or confirmation message after a passing score.
-- [ ] **`layout.tsx` still imports `ProgressTracker` as a named export** — it's actually a default export. This works currently but only because of how Next.js resolves it; verify the import style is intentional and consistent.
+- [ ] Add redirects: `/playbooks/[slug]/[moduleId]` → `/role/account-executive/playbooks/[slug]/[moduleId]`
+- [ ] Keep existing `/playbooks/` routes working during migration
+- [ ] Update legacy cannabis redirect in `next.config.ts`
 
 ---
 
-## Stretch / New Content
+## Phase 3: Build Top-Level Sections
 
-- [ ] **Add a "Post-Sale Onboarding" section to Module 08 or as a standalone Module 12.** Right now the playbook ends at the close. New reps don't know what happens after a dispensary says yes: kickoff call process, what assets to collect, who their internal contact is, delivery timeline communication. This is a common point of failure for new hires.
-- [ ] **Add 2–3 more quiz questions.** The quiz is 12 questions across 12 modules — one per module. Modules 08, 09, and pricing are the highest-stakes areas and each merit a second question given their complexity. The passing threshold of 9/12 stays the same; you'd just increase total to 14–15.
-- [ ] **Add estimated read time to each module.** Visible in the sidebar or at the top of each module. Helps a rep gauge whether they have time to finish a section before their next call.
+### About the Company (shared)
+
+- [ ] Create `/role/[roleSlug]/about/page.tsx`
+- [ ] Write generalized company content (not cannabis-specific)
+- [ ] Finalize `content/shared/about-the-company.md` with real content
+- [ ] Add company history, mission, values sections
+- [ ] Add org chart / team structure section
+- [ ] Add company culture section
+
+### Product Knowledge (role-specific subsections)
+
+- [ ] Create `/role/[roleSlug]/products/page.tsx` (overview)
+- [ ] Create `/role/[roleSlug]/products/[productSlug]/page.tsx` (individual products)
+- [ ] Write product overview content (`content/roles/account-executive/product-knowledge/overview.md`)
+- [ ] Write websites product page (`websites.md`)
+- [ ] Write SEO product page (`seo.md`)
+- [ ] Write remarketing product page (`remarketing.md`)
+- [ ] Write mobile app product page (`mobile-app.md`)
+- [ ] Add "how they work together" integrated stack section
+- [ ] Add competitive comparison section
+
+### Getting Paid & Bonuses (role-specific)
+
+- [ ] Create `/role/[roleSlug]/getting-paid/page.tsx`
+- [ ] Finalize `content/roles/account-executive/getting-paid.md` with real numbers or confirmed placeholders
+- [ ] Add bonus program details
+- [ ] Add draw structure explanation
+- [ ] Add FAQ section
+
+### Performance Expectations (role-specific)
+
+- [ ] Create `/role/[roleSlug]/performance/page.tsx`
+- [ ] Finalize `content/roles/account-executive/performance.md`
+- [ ] Add specific KPI table
+- [ ] Add review cadence details
+- [ ] Add ramp protection details
+
+### Tech We Use (shared)
+
+- [ ] Create `/role/[roleSlug]/tech/page.tsx`
+- [ ] Finalize `content/shared/tech-we-use.md`
+- [ ] Add screenshots or links for each system
+- [ ] Add "who to contact" for access issues
+
+### Downloadable Assets (shared)
+
+- [ ] Create `/role/[roleSlug]/assets/page.tsx`
+- [ ] Finalize `content/shared/assets.md`
+- [ ] Add social media profile images / banners to `public/assets/`
+- [ ] Add proposal template
+- [ ] Add one-pager PDF per vertical
+- [ ] Add headshot guidelines
+- [ ] Ensure all download links point to real files in `public/assets/`
+
+### On the Call (role-specific subsections)
+
+- [ ] Create `/role/[roleSlug]/on-the-call/page.tsx` (overview)
+- [ ] Create `/role/[roleSlug]/on-the-call/[topicSlug]/page.tsx` (sub-topics)
+- [ ] Finalize `on-the-call/overview.md`
+- [ ] Write scripts content (`scripts.md`) — cold open, warm open, voicemail, follow-up email
+- [ ] Write objection handling content (`objection-handling.md`) — add missing objections
+- [ ] Write call frameworks content (`call-frameworks.md`) — discovery, closing, follow-up cadence
+
+---
+
+## Phase 4: Refactor Playbooks
+
+### Extract Shared Modules
+
+- [ ] Remove Module01 WhoWeAre from playbook module lists (replaced by About the Company)
+- [ ] Remove Module02 TechWeUse from playbook module lists (replaced by Tech section)
+- [ ] Remove Module09 Compensation from playbook module lists (replaced by Getting Paid)
+- [ ] Remove Module10 Performance from playbook module lists (replaced by Performance section)
+- [ ] Remove Module12 OnTheCall from playbook module lists (replaced by On the Call section)
+- [ ] Remove Module15 Assets from playbook module lists (replaced by Assets section)
+
+### Update Playbook Structure
+
+- [ ] Re-number remaining modules in each vertical's `modules.ts`
+- [ ] Update `renderModule.tsx` switch cases for new module IDs
+- [ ] Update `moduleSections` arrays to remove Foundation/Reference sections that moved out
+- [ ] Move playbook routes from `/playbooks/[slug]/[moduleId]` to `/role/[roleSlug]/playbooks/[slug]/[moduleId]`
+- [ ] Update `PlaybookShell` sidebar to link back to role hub
+- [ ] Update `NavButtons` for new module numbering
+- [ ] Update quiz questions if any reference removed modules
+- [ ] Test all playbook navigation end-to-end
+
+### Clean Up
+
+- [ ] Remove unused shared module TSX files (or keep as imports for top-level sections)
+- [ ] Update `playbookDeepLinks.ts` for new module IDs
+- [ ] Remove legacy re-export files (`src/data/playbook-modules.ts`, `src/data/quiz-data.ts`) if no longer needed
+- [ ] Run full build and fix any broken imports
+
+---
+
+## Phase 5: Polish & Interactivity
+
+### Navigation & UX
+
+- [ ] Add animated section transitions (framer-motion page transitions)
+- [ ] Design interactive navigation menus (hover states, expand/collapse, visual hierarchy)
+- [ ] Add section completion indicators (checkmarks, progress rings)
+- [ ] Add "up next" suggestions after completing a section
+- [ ] Add search functionality across all sections
+- [ ] Make the experience feel satisfying to explore (micro-interactions, visual feedback)
+
+### Progress Tracking
+
+- [ ] Extend progress system beyond playbooks to all sections
+- [ ] Track which sections have been visited / completed
+- [ ] Show overall hub completion percentage on the dashboard
+- [ ] Add "Mark as Complete" buttons instead of auto-marking on visit
+- [ ] Consider scroll-threshold-based completion marking
+
+### Cross-Role Exploration
+
+- [ ] Allow employees to browse other roles' hubs
+- [ ] Add "Explore other roles" navigation from any role hub
+- [ ] Show which sections are shared vs. role-specific when browsing
+
+### Mobile Experience
+
+- [ ] Ensure all new pages are fully responsive
+- [ ] Add mobile header showing current section name
+- [ ] Test touch interactions on cards and navigation
+- [ ] Optimize asset downloads for mobile
+
+---
+
+## Existing Polish Tasks (from original tasklist)
+
+These items from the original task list are still valid and should be addressed as sections are built.
+
+### Content Fixes
+
+- [ ] **Pricing mismatch — Module 00 vs. Module 07.** Welcome module lists `$597–$797/mo`; actual pricing is `$597`, `$997`, `$1,497`. Fix range to `$597–$1,497/mo`.
+- [ ] **Module 02 — `~0%` penetration stat.** Replace with defensible framing or reframe as observation.
+- [ ] **Module 04 — "300%+ increase in calls" and "3–4x ordering growth."** Add attribution.
+
+### Content Expansion
+
+- [ ] **Module 08 — Add follow-up cadence** (3-touch sequence: Day 3, Day 7, Day 14)
+- [ ] **Module 08 — Add phone/call script section** (first 5 minutes of a discovery call)
+- [ ] **Module 08 — Add discovery call framework** (4-5 qualifying questions)
+- [ ] **Module 08 — Add closing section** (trial close language, proposal presentation)
+- [ ] **Module 09 — Add missing objections** (portfolio request, "need to think about it", locked in contract, guarantee)
+- [ ] **Module 09 — Add mindset intro** (objections are requests for information)
+- [ ] **Module 10 — Reframe differentiators table headers** to "Prospect Says" / "Your Response"
+- [ ] **Module 10 — Add "First Call Checklist"** (budget, timeline, decision-maker, next step)
+- [ ] Add 2-3 more quiz questions for high-stakes modules (08, 09, pricing)
+- [ ] Add estimated read time to each module
+
+### UI Component Cleanup
+
+- [ ] Use `PriceCard` component in Module 07 (or delete unused component)
+- [ ] Use `Tag` component in Module 06 (replace raw `<span>` elements)
+- [ ] Use `HighlightBox` in Module 08 "Execution Protocol" block
+
+### UX Fixes
+
+- [ ] Quiz completion gate — either enforce it or remove "to proceed" language
+- [ ] Add final completion screen / graduation moment
+- [ ] Fix progress-on-visit (consider "Mark as Complete" or scroll threshold)
+- [ ] Add current module label on mobile topbar
+
+### Technical
+
+- [ ] Address localStorage-only progress limitation (document or improve)
+- [ ] Fix silent quiz localStorage error swallowing
+- [ ] Verify `ProgressTracker` import style (named vs default export)
