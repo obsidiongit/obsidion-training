@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         destination: "/playbooks/cannabis/:moduleId",
         permanent: false,
       },
+      {
+        source: "/role/:roleSlug/about",
+        destination: "/about",
+        permanent: true,
+      },
     ];
   },
 };

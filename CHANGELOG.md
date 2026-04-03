@@ -6,6 +6,25 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-02] — Hub Redesign & About the Company Promotion
+
+### Added
+
+- **Top-level About page** (`/about`) — "About the Company" promoted out of the AE hub into a shared section accessible to all roles
+- **AboutCompanyPanel component** — glassmorphic card on the landing page (right column) with company overview text and founder audio player
+- **FounderMessage audio player** — interactive component with play/pause, seekable waveform-style progress bar, and graceful fallback when audio file is absent
+- **`public/audio/` directory** — placeholder for `founder-message.mp3` founder recording
+
+### Changed
+
+- **Landing page** — "Choose Your Role" section now shows the About panel alongside role cards, filling the empty right column
+- **AE Hub page** — completely redesigned from flat 2-column grid of identical cards into a dynamic dashboard with three tiers: featured large cards (Playbooks, On the Call), compact quick-access cards (Products, Getting Paid, Performance, Tech), and inline downloadable assets section at the bottom
+- **Downloadable Assets** — no longer a separate page; rendered inline at the bottom of the AE Hub with direct download links
+- **Old `/role/:slug/about` route** — now redirects to `/about` (permanent redirect via next.config.ts + page-level redirect)
+- **Role registry** — AE `sectionCount` updated from 8 to 7 (About removed from role sections)
+
+---
+
 ## [2026-04-02] — Phase 2: Interactive Landing Page & Role Selection
 
 ### Added

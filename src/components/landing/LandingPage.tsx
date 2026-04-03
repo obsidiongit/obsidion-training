@@ -5,6 +5,7 @@ import { Sparkles } from "lucide-react";
 import FloatingShapes from "./FloatingShapes";
 import HeroSection from "./HeroSection";
 import RoleCard from "./RoleCard";
+import AboutCompanyPanel from "@/components/AboutCompanyPanel";
 import type { RoleDefinition } from "@/data/roles/registry";
 
 interface LandingPageProps {
@@ -25,7 +26,7 @@ export default function LandingPage({ roles }: LandingPageProps) {
           <HeroSection />
         </section>
 
-        {/* active roles */}
+        {/* active roles + about panel */}
         <section className="max-w-5xl mx-auto px-4 sm:px-6 pb-8">
           <motion.div
             initial={{ opacity: 0 }}
@@ -35,7 +36,7 @@ export default function LandingPage({ roles }: LandingPageProps) {
           >
             <Sparkles size={16} className="text-accent" />
             <h2 className="text-sm font-semibold tracking-wide uppercase text-accent">
-              Choose Your Role
+              Get Started
             </h2>
           </motion.div>
 
@@ -43,6 +44,7 @@ export default function LandingPage({ roles }: LandingPageProps) {
             {activeRoles.map((role, i) => (
               <RoleCard key={role.slug} role={role} index={i} />
             ))}
+            <AboutCompanyPanel />
           </div>
         </section>
 

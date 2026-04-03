@@ -21,7 +21,7 @@ export const ROLES: RoleDefinition[] = [
     accentColor: "#2563EB",
     accentGlow: "rgba(37, 99, 235, 0.35)",
     status: "active",
-    sectionCount: 8,
+    sectionCount: 7,
   },
   {
     slug: "customer-success",
