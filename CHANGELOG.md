@@ -6,6 +6,16 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-03] — Daily Structure Checklist (Phase 3)
+
+### Added
+
+- **Daily Operating Rhythm page** (`/role/[roleSlug]/daily-structure`) — interactive 15-task daily checklist grouped into Beginning of Day (5 tasks), Middle of Day (5 tasks), and End of Day (5 tasks), covering the full AE operating rhythm from morning pipeline review through end-of-day CRM close-out
+- **`DailyChecklist` client component** (`src/components/daily-structure/`) — fully interactive checklist with per-task toggle, per-section completion badges, overall progress bar, date label, and a Reset button; state persisted in `localStorage` keyed by today's date so the list auto-resets each morning without manual intervention
+- **Daily Tools section on the role hub dashboard** — new "Daily Tools" section card added to `/role/[roleSlug]/page.tsx` between Quick Access and Downloadable Assets, using purple accent with `ClipboardList` icon and description of the reset behavior
+
+---
+
 ## [2026-04-03] — Performance Expectations Section (Phase 3)
 
 ### Added

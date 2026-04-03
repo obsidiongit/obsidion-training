@@ -123,27 +123,27 @@ Check off items as they are completed. Add dates in parentheses when done.
 
 Your day isn't improvised — it's engineered. This section gives AEs an hour-by-hour operating rhythm so there's zero ambiguity about what "a full day of work" looks like.
 
-- [ ] Create `/role/[roleSlug]/daily-structure/page.tsx`
+- [x] Create `/role/[roleSlug]/daily-structure/page.tsx` (2026-04-03)
 - [ ] Write `content/roles/account-executive/daily-structure.md`
-- [ ] **Beginning of Day** — morning launch sequence:
-  - [ ] Pipeline review & priority-rank open deals by close probability
-  - [ ] Check CRM for overnight inbound leads; claim and respond within SLA
-  - [ ] Review calendar — confirm all demos/calls, prep for each (notes, deck, pricing)
-  - [ ] Set 3 non-negotiable outcomes for the day (written, tracked)
-  - [ ] Outbound block: first 60–90 min dedicated to cold/warm outreach (calls, emails, LinkedIn)
-- [ ] **Middle of Day** — execution & pipeline push:
-  - [ ] Run scheduled demos and discovery calls
-  - [ ] Immediate post-call CRM updates (notes, next steps, deal stage changes)
-  - [ ] Follow-up on proposals sent — nudge, handle objections, push to close
-  - [ ] Midday pipeline audit: are you on pace for daily activity targets?
-  - [ ] Second outbound block if call volume is light
-- [ ] **End of Day** — close-out & next-day prep:
-  - [ ] Update every active deal in CRM — no stale records overnight
-  - [ ] Log all activity metrics (calls made, emails sent, demos run, proposals sent)
-  - [ ] Prep tomorrow's priority list and calendar
-  - [ ] Flag any at-risk deals or blockers for leadership
-  - [ ] Submit daily activity report (format TBD)
-- [ ] Add interactive daily checklist component (resettable each day)
+- [x] **Beginning of Day** — morning launch sequence: (2026-04-03)
+  - [x] Pipeline review & priority-rank open deals by close probability
+  - [x] Check CRM for overnight inbound leads; claim and respond within SLA
+  - [x] Review calendar — confirm all demos/calls, prep for each (notes, deck, pricing)
+  - [x] Set 3 non-negotiable outcomes for the day (written, tracked)
+  - [x] Outbound block: first 60–90 min dedicated to cold/warm outreach (calls, emails, LinkedIn)
+- [x] **Middle of Day** — execution & pipeline push: (2026-04-03)
+  - [x] Run scheduled demos and discovery calls
+  - [x] Immediate post-call CRM updates (notes, next steps, deal stage changes)
+  - [x] Follow-up on proposals sent — nudge, handle objections, push to close
+  - [x] Midday pipeline audit: are you on pace for daily activity targets?
+  - [x] Second outbound block if call volume is light
+- [x] **End of Day** — close-out & next-day prep: (2026-04-03)
+  - [x] Update every active deal in CRM — no stale records overnight
+  - [x] Log all activity metrics (calls made, emails sent, demos run, proposals sent)
+  - [x] Prep tomorrow's priority list and calendar
+  - [x] Flag any at-risk deals or blockers for leadership
+  - [x] Submit daily activity report (format TBD)
+- [x] Add interactive daily checklist component (resettable each day) (2026-04-03)
 - [ ] Add suggested time-block schedule (visual hour-by-hour template)
 
 ### Meeting Cadence & Preparation (role-specific)

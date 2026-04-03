@@ -18,6 +18,7 @@ import {
   Code,
   FileDown,
 } from "lucide-react";
+import DailyChecklistSection from "@/components/daily-structure/DailyChecklistSection";
 
 const FEATURED = [
   {
@@ -260,6 +261,17 @@ export default function RoleHubPage() {
                 })}
               </div>
             </div>
+          </motion.section>
+
+          {/* ── Daily Operating Rhythm (inline checklist) ── */}
+          <motion.section variants={fadeUp}>
+            <div className="flex items-center gap-2 mb-4">
+              <div className="h-1 w-6 rounded-full bg-purple-accent" />
+              <h2 className="text-xs font-semibold uppercase tracking-wider text-purple-accent">
+                Daily Operating Rhythm
+              </h2>
+            </div>
+            <DailyChecklistSection />
           </motion.section>
         </motion.div>
       </main>
