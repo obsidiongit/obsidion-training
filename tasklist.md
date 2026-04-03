@@ -31,19 +31,20 @@ Check off items as they are completed. Add dates in parentheses when done.
 
 ### Role Hub Dashboard
 
-- [ ] Build `/role/[roleSlug]/page.tsx` — hub dashboard with section card grid
-- [ ] Build `/role/[roleSlug]/layout.tsx` — hub shell layout (sidebar + topbar)
-- [ ] Design section cards: icon, title, description, progress indicator
-- [ ] Build new hub sidebar component (section-based navigation, not module-based)
-- [ ] Build hub topbar showing current role and section
-- [ ] Add breadcrumb navigation (Home > Role > Section)
-- [ ] Make hub responsive (mobile-friendly card grid and sidebar drawer)
+- [x] Build `/role/[roleSlug]/page.tsx` — hub dashboard with section card grid (2026-04-02)
+- [x] Build `/role/[roleSlug]/layout.tsx` — hub shell layout with role validation (2026-04-02)
+- [x] Design section cards: icon, title, description, badges (2026-04-02)
+- [x] Add breadcrumb navigation (← All roles back-link) (2026-04-02)
+- [x] Make hub responsive (mobile-friendly card grid) (2026-04-02)
+- [x] Add animated section transitions (framer-motion stagger + fadeUp) (2026-04-02)
+
+> **Note:** Original plan included a dedicated sidebar + topbar shell. Replaced with a cleaner full-page card layout for the hub dashboard. Sidebar navigation is used at the playbook level instead.
 
 ### Redirects & Backward Compatibility
 
-- [ ] Add redirects: `/playbooks/[slug]/[moduleId]` → `/role/account-executive/playbooks/[slug]/[moduleId]`
-- [ ] Keep existing `/playbooks/` routes working during migration
-- [ ] Update legacy cannabis redirect in `next.config.ts`
+- [x] Keep existing `/playbooks/` routes working during migration (routes preserved as-is) (2026-04-02)
+- [ ] Add redirects: `/playbooks/[slug]/[moduleId]` → `/role/account-executive/playbooks/[slug]/[moduleId]` *(deferred to Phase 4 when playbook routes move)*
+- [ ] Update legacy cannabis redirect in `next.config.ts` *(deferred to Phase 4)*
 
 ---
 
@@ -82,9 +83,12 @@ Check off items as they are completed. Add dates in parentheses when done.
 
 - [ ] Create `/role/[roleSlug]/performance/page.tsx`
 - [ ] Finalize `content/roles/account-executive/performance.md`
-- [ ] Add specific KPI table
-- [ ] Add review cadence details
-- [ ] Add ramp protection details
+- [ ] Add specific KPI table (activity metrics, revenue targets, conversion rates)
+- [ ] Add review cadence details (weekly 1:1s, monthly reviews, quarterly business reviews)
+- [ ] Add ramp protection details (protected draw period, graduated quota expectations)
+- [ ] Add 30/60/90-day milestone benchmarks with specific deliverables per phase
+- [ ] Add post-ramp steady-state expectations (what "fully ramped" looks like in numbers)
+- [ ] Add promotion path — what top performers earn and where they go next
 
 ### Tech We Use (shared)
 
@@ -111,6 +115,91 @@ Check off items as they are completed. Add dates in parentheses when done.
 - [ ] Write scripts content (`scripts.md`) — cold open, warm open, voicemail, follow-up email
 - [ ] Write objection handling content (`objection-handling.md`) — add missing objections
 - [ ] Write call frameworks content (`call-frameworks.md`) — discovery, closing, follow-up cadence
+
+### Daily Structure (role-specific)
+
+Your day isn't improvised — it's engineered. This section gives AEs an hour-by-hour operating rhythm so there's zero ambiguity about what "a full day of work" looks like.
+
+- [ ] Create `/role/[roleSlug]/daily-structure/page.tsx`
+- [ ] Write `content/roles/account-executive/daily-structure.md`
+- [ ] **Beginning of Day** — morning launch sequence:
+  - [ ] Pipeline review & priority-rank open deals by close probability
+  - [ ] Check CRM for overnight inbound leads; claim and respond within SLA
+  - [ ] Review calendar — confirm all demos/calls, prep for each (notes, deck, pricing)
+  - [ ] Set 3 non-negotiable outcomes for the day (written, tracked)
+  - [ ] Outbound block: first 60–90 min dedicated to cold/warm outreach (calls, emails, LinkedIn)
+- [ ] **Middle of Day** — execution & pipeline push:
+  - [ ] Run scheduled demos and discovery calls
+  - [ ] Immediate post-call CRM updates (notes, next steps, deal stage changes)
+  - [ ] Follow-up on proposals sent — nudge, handle objections, push to close
+  - [ ] Midday pipeline audit: are you on pace for daily activity targets?
+  - [ ] Second outbound block if call volume is light
+- [ ] **End of Day** — close-out & next-day prep:
+  - [ ] Update every active deal in CRM — no stale records overnight
+  - [ ] Log all activity metrics (calls made, emails sent, demos run, proposals sent)
+  - [ ] Prep tomorrow's priority list and calendar
+  - [ ] Flag any at-risk deals or blockers for leadership
+  - [ ] Submit daily activity report (format TBD)
+- [ ] Add interactive daily checklist component (resettable each day)
+- [ ] Add suggested time-block schedule (visual hour-by-hour template)
+
+### Meeting Cadence & Preparation (role-specific)
+
+- [ ] Create `/role/[roleSlug]/meetings/page.tsx`
+- [ ] Write `content/roles/account-executive/meetings.md`
+- [ ] **Twice-Weekly Morning Meetings** — schedule, format, and expectations:
+  - [ ] Define meeting days/times and mandatory attendance policy
+  - [ ] Define meeting format — structured agenda, time-boxed segments
+  - [ ] What to bring: updated pipeline report, top 3 deals with status, wins from prior days, specific blockers or asks
+  - [ ] How to be prepared: CRM fully updated before the meeting, know your numbers cold, have proposals/follow-ups queued
+  - [ ] Participation expectations: every AE speaks, no spectators — bring insights, not excuses
+  - [ ] How meetings are used by leadership to forecast revenue and assess performance
+- [ ] Add pre-meeting preparation checklist component
+- [ ] Add meeting agenda template (downloadable or in-app reference)
+
+### What Wins Here & What Gets You Fired (role-specific)
+
+No ambiguity. This section lays out exactly what separates top performers from people who don't last.
+
+- [ ] Create `/role/[roleSlug]/accountability/page.tsx`
+- [ ] Write `content/roles/account-executive/accountability.md`
+- [ ] **What Success Looks Like** — specific behaviors and outcomes:
+  - [ ] Consistently hitting or exceeding activity minimums (calls, demos, proposals)
+  - [ ] Closing at or above quota by end of ramp period
+  - [ ] CRM hygiene: pipeline is always current, accurate, and forecasted properly
+  - [ ] Self-sourcing pipeline — not waiting for leads to be handed to you
+  - [ ] Showing up prepared to meetings with data, not vibes
+  - [ ] Coachability: implementing feedback quickly, iterating on approach
+  - [ ] Earning trust with prospects through product knowledge and professionalism
+- [ ] **What Gets You Fired** — non-negotiables:
+  - [ ] Consistent failure to meet minimum daily/weekly activity metrics
+  - [ ] Stale or inaccurate CRM data — if it's not in the system, it didn't happen
+  - [ ] Missing meetings or showing up unprepared
+  - [ ] Failing to hit quota after ramp period with no demonstrable improvement trajectory
+  - [ ] Misrepresenting the product, pricing, or terms to prospects
+  - [ ] Lack of urgency — slow follow-ups, missed callbacks, letting deals die on the vine
+  - [ ] Inability or unwillingness to take coaching and adapt
+- [ ] Add visual "bright line" framework — green (thriving), yellow (at risk), red (termination track)
+- [ ] Add 30/60/90-day checkpoint expectations tied to accountability benchmarks
+
+### Onboarding Certification & Readiness Gate (role-specific)
+
+Nobody touches a live prospect until they've proven they can represent the product at the level this offer demands. This section is the final gate before an AE goes live.
+
+- [ ] Create `/role/[roleSlug]/certification/page.tsx`
+- [ ] Write `content/roles/account-executive/certification.md`
+- [ ] Define certification requirements — what must be completed before going live:
+  - [ ] All onboarding sections marked complete (product knowledge, daily structure, comp, tools, etc.)
+  - [ ] Pass product knowledge assessment (scored quiz, minimum threshold)
+  - [ ] Pass objection handling assessment (scenario-based, scored)
+  - [ ] Complete mock discovery call (recorded or live with manager, scored rubric)
+  - [ ] Complete mock closing call (recorded or live with manager, scored rubric)
+  - [ ] Demonstrate CRM proficiency — enter a sample deal through full pipeline
+  - [ ] Submit a practice proposal using the actual proposal template
+- [ ] Build certification progress tracker (visual checklist with pass/fail per gate)
+- [ ] Add rubric/scorecard for role-play assessments
+- [ ] Add "Certified & Ready" graduation state — visual badge or confirmation screen
+- [ ] Define what happens if certification isn't passed (re-attempt policy, timeline)
 
 ---
 

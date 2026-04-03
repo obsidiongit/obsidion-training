@@ -6,6 +6,18 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-03] — AE Onboarding Stack Expansion
+
+### Added
+
+- **Daily Structure section** (Phase 3) — hour-by-hour BOD/MOD/EOD operating rhythm with specific tasks for each block so AEs know exactly what a full day looks like
+- **Meeting Cadence & Preparation section** (Phase 3) — twice-weekly morning meeting format, mandatory prep requirements, what to bring, participation expectations
+- **What Wins Here & What Gets You Fired section** (Phase 3) — explicit success behaviors and non-negotiable termination criteria with no ambiguity
+- **Onboarding Certification & Readiness Gate section** (Phase 3) — final gate before an AE touches a live prospect: quizzes, mock calls, CRM proficiency, scored rubrics
+- **Enhanced Performance Expectations** — added 30/60/90-day milestones, post-ramp steady-state numbers, and promotion path to existing section
+
+---
+
 ## [2026-04-02] — Hub Redesign & About the Company Promotion
 
 ### Added
