@@ -6,6 +6,27 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-02] — Phase 2: Interactive Landing Page & Role Selection
+
+### Added
+
+- **Role data registry** (`src/data/roles/registry.ts`) — metadata for Account Executive (active) plus Customer Success, Marketing, and Operations (coming soon) with icons, accent colors, and status
+- **Interactive landing page** — replaces flat playbook list with animated role-selection experience featuring:
+  - Animated hero with character-by-character text reveal (framer-motion)
+  - Floating geometric shapes background (triangles, hexagons, diamonds, circles)
+  - 3D tilt-on-hover role cards with per-role accent glow effects
+  - Staggered entrance animations for all elements
+  - Active/coming-soon role states with visual differentiation
+- **New landing page components**: `FloatingShapes`, `HeroSection`, `RoleCard`, `LandingPage` under `src/components/landing/`
+- **Enhanced design tokens** in `globals.css` — added brand colors from Obsidion design system (`background-secondary`, `background-tertiary`, `foreground-muted`, `foreground-subtle`, `accent-light`, `border-light`, `border-strong`, `card`, `success`, `warning`, `destructive`, `purple-accent`), motion easings, and new animation keyframes (`float`, `drift`, `pulse-glow`, `spin-slow`, `shimmer`)
+
+### Changed
+
+- **Root page** (`/`) now shows role selection instead of playbook vertical list
+- **Root metadata** updated from "Obsidion Playbook" to "Obsidion Training Hub"
+
+---
+
 ## [2026-04-02] — Training Hub Expansion Kickoff
 
 ### Added

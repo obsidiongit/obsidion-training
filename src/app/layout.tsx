@@ -8,8 +8,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Obsidion Playbook",
-  description: "Employee training and playbook for Obsidion reps.",
+  title: "Obsidion Training Hub",
+  description:
+    "Employee training hub for Obsidion — role-based onboarding, playbooks, and resources.",
 };
 
 export default function RootLayout({

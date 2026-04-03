@@ -22,12 +22,12 @@ Check off items as they are completed. Add dates in parentheses when done.
 
 ### Landing Page (Role Selection)
 
-- [ ] Design role selection UI (cards for each role, visual and inviting)
-- [ ] Convert `src/app/page.tsx` from playbook list to role selection page
-- [ ] Create role data registry (`src/data/roles/registry.ts`) with role metadata
-- [ ] Add Account Executive as first role with icon, description, section list
-- [ ] Add placeholder cards for future roles (Customer Success, Marketing, Operations)
-- [ ] Add "Explore other roles" cross-navigation affordance
+- [x] Design role selection UI (cards for each role, visual and inviting) (2026-04-02)
+- [x] Convert `src/app/page.tsx` from playbook list to role selection page (2026-04-02)
+- [x] Create role data registry (`src/data/roles/registry.ts`) with role metadata (2026-04-02)
+- [x] Add Account Executive as first role with icon, description, section list (2026-04-02)
+- [x] Add placeholder cards for future roles (Customer Success, Marketing, Operations) (2026-04-02)
+- [x] Add "Explore other roles" cross-navigation affordance (2026-04-02)
 
 ### Role Hub Dashboard
 
