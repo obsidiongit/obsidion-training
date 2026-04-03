@@ -61,7 +61,7 @@ export default function RoleCard({ role, index }: RoleCardProps) {
       transition={{
         duration: 0.5,
         delay: 0.15 * index,
-        ease: [0.34, 1.56, 0.64, 1],
+        ease: [0.34, 1.56, 0.64, 1] as const,
       }}
       style={{
         transform: `perspective(800px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,

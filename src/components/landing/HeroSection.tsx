@@ -13,7 +13,7 @@ const charVariants = {
     transition: {
       delay: 0.3 + i * 0.03,
       duration: 0.4,
-      ease: [0.34, 1.56, 0.64, 1],
+      ease: [0.34, 1.56, 0.64, 1] as const,
     },
   }),
 };
@@ -52,7 +52,7 @@ export default function HeroSection() {
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, ease: [0.34, 1.56, 0.64, 1] }}
+        transition={{ duration: 0.6, ease: [0.34, 1.56, 0.64, 1] as const }}
         className="mb-6"
       >
         <img
@@ -84,7 +84,7 @@ export default function HeroSection() {
       <motion.div
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
-        transition={{ delay: 1.3, duration: 0.6, ease: [0.34, 1.56, 0.64, 1] }}
+        transition={{ delay: 1.3, duration: 0.6, ease: [0.34, 1.56, 0.64, 1] as const }}
         className="mt-8 mx-auto h-px w-24 bg-gradient-to-r from-transparent via-accent to-transparent"
       />
     </div>
