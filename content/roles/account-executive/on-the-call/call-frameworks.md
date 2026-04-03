@@ -74,7 +74,7 @@ Then walk through the relevant product areas — only the ones that map to their
 
 ### Phase 5 — Next Step (25–30 min)
 
-The goal is one thing: get them to fill out the Account Creation / Onboarding questionnaire on the [Quick Sites page](https://obsidion.com/quick-sites) of the website. That's the handoff that moves them into the pipeline.
+The goal is one thing: get them to fill out the Account Creation / Onboarding questionnaire on the [Quick Sites page](https://obsidion.ai/quick-sites) of the website. That's the handoff that moves them into the pipeline.
 
 **Trial close:**
 
