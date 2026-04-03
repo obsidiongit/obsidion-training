@@ -22,7 +22,7 @@ export default function Module07Pricing() {
           Paid at kickoff. Covers design, development, integrations, and launch.
         </p>
         <CardGrid cols={2}>
-          <Card>
+          <Card id="pricing-setup-single">
             <div className="text-xs font-bold text-accent uppercase tracking-wider mb-2">Setup fee</div>
             <h3 className="text-2xl font-black mb-1">Website buildout</h3>
             <div className="text-3xl font-black text-foreground mb-4">$5K–$8K</div>
@@ -38,7 +38,7 @@ export default function Module07Pricing() {
               <li>→ ~7-day deployment average</li>
             </ul>
           </Card>
-          <Card>
+          <Card id="pricing-setup-multi">
             <div className="text-xs font-bold text-accent uppercase tracking-wider mb-2">Setup fee</div>
             <h3 className="text-2xl font-black mb-1">Multi-location / group</h3>
             <div className="text-3xl font-black text-foreground mb-4">$8K–$12K</div>
@@ -59,7 +59,7 @@ export default function Module07Pricing() {
           Ongoing growth and operations from launch. Match tier to volume and ambition.
         </p>
         <CardGrid cols={3}>
-          <Card>
+          <Card id="pricing-retainer-essentials">
             <div className="text-xs font-bold text-accent uppercase tracking-wider mb-2">Essentials</div>
             <h3 className="text-xl font-bold mb-1">Maintenance</h3>
             <div className="text-2xl font-black text-foreground mb-4">
@@ -74,7 +74,7 @@ export default function Module07Pricing() {
               <li>→ Monthly analytics snapshot</li>
             </ul>
           </Card>
-          <Card variant="green">
+          <Card variant="green" id="pricing-retainer-growth">
             <div className="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-2">
               Growth — most popular
             </div>
@@ -93,7 +93,7 @@ export default function Module07Pricing() {
               <li>→ Reputation management</li>
             </ul>
           </Card>
-          <Card>
+          <Card id="pricing-retainer-premium">
             <div className="text-xs font-bold text-accent uppercase tracking-wider mb-2">Premium</div>
             <h3 className="text-xl font-bold mb-1">Full-service</h3>
             <div className="text-2xl font-black text-foreground mb-4">
@@ -112,7 +112,10 @@ export default function Module07Pricing() {
         </CardGrid>
       </div>
 
-      <div className="mt-8 border p-6 rounded-xl bg-card">
+      <div
+        id="pricing-mobile-app"
+        className="mt-8 border p-6 rounded-xl bg-card scroll-mt-24"
+      >
         <div className="text-xs font-bold text-accent uppercase tracking-wider mb-2">
           One-time premium add-on
         </div>

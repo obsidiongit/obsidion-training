@@ -1,6 +1,11 @@
 import { CheatTable } from "@/components/ui/CheatTable";
 import { NavButtons } from "@/components/ui/NavButtons";
 import { HighlightBox } from "@/components/ui/HighlightBox";
+import { PlaybookModuleLink } from "@/components/ui/PlaybookModuleLink";
+import { PLAYBOOK_MODULE_IDS, PRICING_SECTION_IDS } from "@/lib/playbookDeepLinks";
+
+const { pricing, objections } = PLAYBOOK_MODULE_IDS;
+const A = PRICING_SECTION_IDS;
 
 export default function Module10QuickRef() {
   return (
@@ -9,7 +14,8 @@ export default function Module10QuickRef() {
         <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">Module 14 — Reference</div>
         <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">Quick Reference</h1>
         <p className="text-xl text-muted-foreground leading-relaxed">
-          Access this data prior to any conversation.
+          Access this data prior to any conversation. Tap a product for the full pricing tier, or an
+          objection prompt for the full rebuttal module.
         </p>
       </div>
 
@@ -19,35 +25,77 @@ export default function Module10QuickRef() {
           headers={["Product", "Price", "Best For"]}
           rows={[
             [
-              <span className="font-semibold text-foreground">Website (Single)</span>,
+              <PlaybookModuleLink
+                key="w1"
+                moduleId={pricing}
+                hash={A.setupSingle}
+                className="font-semibold text-foreground"
+              >
+                Website (Single)
+              </PlaybookModuleLink>,
               "$5,000 – $8,000",
-              "Single-store dispensaries, ancillary brands"
+              "Single-store dispensaries, ancillary brands",
             ],
             [
-              <span className="font-semibold text-foreground">Website (MSO)</span>,
+              <PlaybookModuleLink
+                key="w2"
+                moduleId={pricing}
+                hash={A.setupMulti}
+                className="font-semibold text-foreground"
+              >
+                Website (MSO)
+              </PlaybookModuleLink>,
               "$8,000 – $12,000",
-              "Chains, multi-state operators"
+              "Chains, multi-state operators",
             ],
             [
-              <span className="font-semibold text-foreground">Essentials Retainer</span>,
+              <PlaybookModuleLink
+                key="e"
+                moduleId={pricing}
+                hash={A.retainerEssentials}
+                className="font-semibold text-foreground"
+              >
+                Essentials Retainer
+              </PlaybookModuleLink>,
               "$597 / mo",
-              "Smaller shops — hosting, GBP, reviews"
+              "Smaller shops — hosting, GBP, reviews",
             ],
             [
-              <span className="font-semibold text-foreground">Growth Retainer</span>,
+              <PlaybookModuleLink
+                key="g"
+                moduleId={pricing}
+                hash={A.retainerGrowth}
+                className="font-semibold text-foreground"
+              >
+                Growth Retainer
+              </PlaybookModuleLink>,
               "$997 / mo",
-              "Active dispensaries — SEO + remarketing"
+              "Active dispensaries — SEO + remarketing",
             ],
             [
-              <span className="font-semibold text-foreground">Premium Retainer</span>,
+              <PlaybookModuleLink
+                key="p"
+                moduleId={pricing}
+                hash={A.retainerPremium}
+                className="font-semibold text-foreground"
+              >
+                Premium Retainer
+              </PlaybookModuleLink>,
               "$1,497 / mo",
-              "MSOs & multi-location — full-service"
+              "MSOs & multi-location — full-service",
             ],
             [
-              <span className="font-semibold opacity-70">Mobile App</span>,
+              <PlaybookModuleLink
+                key="app"
+                moduleId={pricing}
+                hash={A.mobileApp}
+                className="font-semibold text-foreground opacity-70"
+              >
+                Mobile App
+              </PlaybookModuleLink>,
               "$15,000 – $25,000",
-              "MSOs, high-volume multi-location groups"
-            ]
+              "MSOs, high-volume multi-location groups",
+            ],
           ]}
         />
       </div>
@@ -58,25 +106,35 @@ export default function Module10QuickRef() {
           headers={["They state...", "You answer..."]}
           rows={[
             [
-              "How fast?",
-              "7 days average. Not 7 weeks."
+              <PlaybookModuleLink key="o1" moduleId={objections} className="text-foreground">
+                How fast?
+              </PlaybookModuleLink>,
+              "7 days average. Not 7 weeks.",
             ],
             [
-              "Do you know cannabis?",
-              "We operated in it. We possess operational background, not just research."
+              <PlaybookModuleLink key="o2" moduleId={objections} className="text-foreground">
+                Do you know cannabis?
+              </PlaybookModuleLink>,
+              "We operated in it. We possess operational background, not just research.",
             ],
             [
-              "Can we run ads?",
-              "We execute what is strictly compliant. SEO + remarketing is the required system."
+              <PlaybookModuleLink key="o3" moduleId={objections} className="text-foreground">
+                Can we run ads?
+              </PlaybookModuleLink>,
+              "We execute what is strictly compliant. SEO + remarketing is the required system.",
             ],
             [
-              "One vendor for everything?",
-              "Yes. One login. One team. No finger-pointing."
+              <PlaybookModuleLink key="o4" moduleId={objections} className="text-foreground">
+                One vendor for everything?
+              </PlaybookModuleLink>,
+              "Yes. One login. One team. No finger-pointing.",
             ],
             [
-              "Is the app compliant?",
-              "Yes. Built fully compliant for the App Store. We deploy these regularly."
-            ]
+              <PlaybookModuleLink key="o5" moduleId={objections} className="text-foreground">
+                Is the app compliant?
+              </PlaybookModuleLink>,
+              "Yes. Built fully compliant for the App Store. We deploy these regularly.",
+            ],
           ]}
         />
       </div>

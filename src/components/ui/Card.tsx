@@ -4,15 +4,19 @@ export function Card({
   children,
   className,
   variant = "default",
+  id,
 }: {
   children: React.ReactNode;
   className?: string;
   variant?: "default" | "green" | "amber";
+  /** For in-page anchors (e.g. deep links from Quick Reference). */
+  id?: string;
 }) {
   return (
     <div
+      id={id}
       className={cn(
-        "rounded-xl border bg-card text-card-foreground shadow-sm p-6 overflow-hidden",
+        "rounded-xl border bg-card text-card-foreground shadow-sm p-6 overflow-hidden scroll-mt-24",
         variant === "green" && "border-emerald-accent border-l-4",
         variant === "amber" && "border-amber-accent border-l-4",
         className
