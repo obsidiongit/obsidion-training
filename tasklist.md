@@ -52,17 +52,20 @@ Check off items as they are completed. Add dates in parentheses when done.
 
 ### About the Company (shared)
 
-- [ ] Create `/role/[roleSlug]/about/page.tsx`
+> **Route note:** About lives at `/about` (top-level), not inside `/role/[roleSlug]/about`. The role-slug route redirects to `/about`.
+
+- [x] Build `/about/page.tsx` with full content, framer-motion animations, and competitive positioning (2026-04-03)
 - [x] Write generalized company content (not cannabis-specific) (2026-04-02)
 - [x] Finalize `content/shared/about-the-company.md` with real content (2026-04-02)
 - [x] Add company history, mission, values sections (2026-04-02)
-- [ ] Add org chart / team structure section
+- [x] Add org chart / team structure section (placeholder) (2026-04-03)
 - [x] Add company culture section (2026-04-02)
+- [x] Add competitive positioning section (vs. Agencies, vs. DIY, vs. Vertical Platforms) with call framing quotes (2026-04-03)
 
 ### Product Knowledge (role-specific subsections)
 
-- [ ] Create `/role/[roleSlug]/products/page.tsx` (overview)
-- [ ] Create `/role/[roleSlug]/products/[productSlug]/page.tsx` (individual products)
+- [x] Create `/role/[roleSlug]/products/page.tsx` (overview) (2026-04-03)
+- [x] Create `/role/[roleSlug]/products/[productSlug]/page.tsx` (individual products) (2026-04-03)
 - [x] Write product overview content (`content/roles/account-executive/product-knowledge/overview.md`) (2026-04-02)
 - [x] Write websites product page (`websites.md`) (2026-04-02)
 - [x] Write SEO product page (`seo.md`) (2026-04-02)

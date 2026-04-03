@@ -6,6 +6,38 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-03] — Product Knowledge Section Full Build-Out (Phase 3)
+
+### Added
+
+- **Product Knowledge overview page** (`/role/[roleSlug]/products`) — animated hero, interactive product card grid with per-product accent colors, animated pipeline visual showing how Website → SEO → Remarketing → App work as an integrated system, tabbed "Before Obsidion" starting-point personas with pitch framing quotes, and selling principles cards
+- **Custom Websites product page** (`/role/[roleSlug]/products/websites`) — discovery question callout, 5 feature cards (custom design, mobile-first, conversion-focused, compliance, analytics), 3 "before state" severity cards, animated 7-day delivery timeline stepper with numbered steps and growing connector lines, integrations section (Dashboard + POS), and expandable FAQ accordion
+- **SEO Services product page** (`/role/[roleSlug]/products/seo`) — 6 feature cards with emerald accent, animated month-by-month timeline with progress bars (Month 1 → 6+), side-by-side DIY vs. Done-For-You comparison visual, stats highlight bar, and FAQ accordion
+- **Remarketing product page** (`/role/[roleSlug]/products/remarketing`) — 4 feature cards, tabbed interactive workflow sequence viewer (New Lead, Missed Call, Post-Purchase, Re-Engagement) with step-by-step animated flows showing timing/channel/message, 3-step ad retargeting visual, and FAQ accordion
+- **Mobile App product page** (`/role/[roleSlug]/products/mobile-app`) — push notification stat comparison (20% email vs 60–90% push), 6 feature cards, traffic-light ideal client profile (green/yellow/red) with contextual criteria, 3 pitch framing quotes, and FAQ accordion
+- **Shared product UI primitives** (`src/components/products/shared.tsx`) — reusable `ProductPageHero`, `ProductPageFooter`, `SectionLabel`, `DiagnosticQuestion`, `PitchQuote`, `FAQAccordion`, `StatHighlight` components with framer-motion animation variants
+- **6 new component files** under `src/components/products/` — `shared.tsx`, `ProductsOverview.tsx`, `WebsitesProduct.tsx`, `SEOProduct.tsx`, `RemarketingProduct.tsx`, `MobileAppProduct.tsx`
+
+### Changed
+
+- **Products overview route** — replaced placeholder card grid with full interactive `ProductsOverview` client component
+- **Product detail route** — replaced "content coming soon" placeholder with per-product component rendering via slug-based component map, added `generateMetadata` for per-product SEO titles
+
+---
+
+## [2026-04-03] — About Page Full Build-Out (Phase 3)
+
+### Changed
+
+- **Redesigned `/about` page** — replaced minimal placeholder with a fully fleshed-out, scroll-animated page covering mission, differentiators, competitive positioning, culture & values, and org chart placeholder
+- **New `AboutPageContent` client component** (`src/components/about/`) — framer-motion `whileInView` staggered animations, color-coded section labels (accent, emerald, purple), and card-based layout matching the role hub design system
+- **Competitive positioning section** — three detailed comparison cards (vs. Generic Agencies, vs. DIY Tools, vs. Vertical Platforms) with key differentiator bullets and highlighted call framing quotes for AE use on sales calls
+- **Culture & values section** — five value cards (Speed, Direct Communication, Execution, Ownership, Respect for Intelligence) wired from the existing `about-the-company.md` content
+- **Org chart placeholder** — styled dashed-border section with messaging that the team structure is being finalized
+- Split `about/page.tsx` into server wrapper (metadata) + client component (UI) to preserve SEO metadata while enabling framer-motion
+
+---
+
 ## [2026-04-03] — AE Onboarding Stack Expansion
 
 ### Added

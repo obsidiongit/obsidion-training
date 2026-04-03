@@ -1,16 +1,59 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
+import WebsitesProduct from "@/components/products/WebsitesProduct";
+import SEOProduct from "@/components/products/SEOProduct";
+import RemarketingProduct from "@/components/products/RemarketingProduct";
+import MobileAppProduct from "@/components/products/MobileAppProduct";
 
-const PRODUCTS: Record<string, { title: string; description: string }> = {
-  websites: { title: "Custom Websites", description: "Purpose-built sites optimized for speed, conversion, and industry integrations." },
-  seo: { title: "SEO Services", description: "Local SEO, Google Business Profile, on-page and technical optimization." },
-  remarketing: { title: "Remarketing", description: "Automated follow-up campaigns — email, SMS, and ad retargeting." },
-  "mobile-app": { title: "Mobile App", description: "Branded mobile apps with loyalty, ordering, booking, and push notifications." },
+const VALID_SLUGS = ["websites", "seo", "remarketing", "mobile-app"] as const;
+type ProductSlug = (typeof VALID_SLUGS)[number];
+
+const PRODUCT_META: Record<ProductSlug, { title: string; description: string }> = {
+  websites: {
+    title: "Custom Websites — Obsidion Training Hub",
+    description:
+      "Custom-built sites optimized for speed, conversion, and the client's specific industry.",
+  },
+  seo: {
+    title: "SEO Services — Obsidion Training Hub",
+    description:
+      "Local SEO and Google Business Profile optimization that makes the website findable.",
+  },
+  remarketing: {
+    title: "Remarketing — Obsidion Training Hub",
+    description:
+      "Automated follow-up via email, SMS, and ad retargeting for leads that don't convert immediately.",
+  },
+  "mobile-app": {
+    title: "Mobile App — Obsidion Training Hub",
+    description:
+      "Branded iOS and Android app with loyalty, push notifications, ordering, and booking.",
+  },
 };
 
 export function generateStaticParams() {
-  return Object.keys(PRODUCTS).map((productSlug) => ({ productSlug }));
+  return VALID_SLUGS.map((productSlug) => ({ productSlug }));
 }
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ productSlug: string }>;
+}) {
+  const { productSlug } = await params;
+  const meta = PRODUCT_META[productSlug as ProductSlug];
+  if (!meta) return {};
+  return { title: meta.title, description: meta.description };
+}
+
+const PRODUCT_COMPONENTS: Record<
+  ProductSlug,
+  React.ComponentType<{ roleSlug: string }>
+> = {
+  websites: WebsitesProduct,
+  seo: SEOProduct,
+  remarketing: RemarketingProduct,
+  "mobile-app": MobileAppProduct,
+};
 
 export default async function ProductDetailPage({
   params,
@@ -18,22 +61,11 @@ export default async function ProductDetailPage({
   params: Promise<{ roleSlug: string; productSlug: string }>;
 }) {
   const { roleSlug, productSlug } = await params;
-  const product = PRODUCTS[productSlug];
-  if (!product) notFound();
 
-  return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
-        <Link href={`/role/${roleSlug}/products`} className="text-sm text-muted-foreground hover:text-accent transition-colors mb-6 inline-block">
-          ← All products
-        </Link>
-        <div className="text-sm font-semibold tracking-wider text-accent uppercase mb-3">Product Knowledge</div>
-        <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">{product.title}</h1>
-        <p className="text-xl text-muted-foreground leading-relaxed mb-8">{product.description}</p>
-        <div className="rounded-2xl border border-dashed border-border bg-muted/10 p-8 text-center">
-          <p className="text-muted-foreground">Content coming soon — see <code className="text-xs bg-muted px-1.5 py-0.5 rounded">content/roles/account-executive/product-knowledge/{productSlug}.md</code> for the outline.</p>
-        </div>
-      </div>
-    </div>
-  );
+  if (!VALID_SLUGS.includes(productSlug as ProductSlug)) {
+    notFound();
+  }
+
+  const Component = PRODUCT_COMPONENTS[productSlug as ProductSlug];
+  return <Component roleSlug={roleSlug} />;
 }
