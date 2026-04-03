@@ -314,7 +314,7 @@ export default function CallFrameworksContent({
                       {step.description}
                     </p>
 
-                    {step.quote && (
+                    {"quote" in step && step.quote && (
                       <PitchQuote variant="accent" label="Talk Track">
                         {step.quote}
                       </PitchQuote>
