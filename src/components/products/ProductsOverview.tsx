@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import MarkCompleteButton from "@/components/ui/MarkCompleteButton";
 import {
   Globe,
   Search,
@@ -447,6 +448,17 @@ export default function ProductsOverview({
             })}
           </div>
         </motion.section>
+
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <MarkCompleteButton
+            roleSlug={roleSlug}
+            sectionSlug="products"
+            upNext={[
+              { slug: "on-the-call", title: "On the Call" },
+              { slug: "getting-paid", title: "Getting Paid & Bonuses" },
+            ]}
+          />
+        </div>
       </main>
 
       <ProductPageFooter />

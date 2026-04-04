@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import MarkCompleteButton from "@/components/ui/MarkCompleteButton";
 import {
   Sparkles,
   Brain,
@@ -971,6 +972,17 @@ export default function TechWeUseContent({
             ))}
           </div>
         </motion.section>
+
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <MarkCompleteButton
+            roleSlug={roleSlug}
+            sectionSlug="tech"
+            upNext={[
+              { slug: "daily-structure", title: "Daily Structure" },
+              { slug: "meetings", title: "Meeting Cadence" },
+            ]}
+          />
+        </div>
       </main>
 
       <footer className="border-t border-border-light">

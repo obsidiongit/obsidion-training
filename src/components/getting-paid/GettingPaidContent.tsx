@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import MarkCompleteButton from "@/components/ui/MarkCompleteButton";
 import {
   DollarSign,
   TrendingUp,
@@ -554,6 +555,17 @@ export default function GettingPaidContent({ roleSlug }: { roleSlug: string }) {
 
           <FAQAccordion items={FAQ_ITEMS} />
         </motion.section>
+
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <MarkCompleteButton
+            roleSlug={roleSlug}
+            sectionSlug="getting-paid"
+            upNext={[
+              { slug: "performance", title: "Performance Expectations" },
+              { slug: "accountability", title: "Accountability" },
+            ]}
+          />
+        </div>
       </main>
 
       <footer className="border-t border-border-light">

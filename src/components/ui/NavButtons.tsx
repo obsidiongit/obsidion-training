@@ -1,13 +1,20 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { usePlaybook } from "@/components/PlaybookContext";
 
 export function NavButtons({ currentModuleId }: { currentModuleId: number }) {
   const playbook = usePlaybook();
+  const pathname = usePathname();
   const { slug, modules } = playbook;
-  const base = `/playbooks/${slug}`;
+
+  // Determine base URL: new role-scoped route takes precedence over legacy route
+  const rolePathMatch = pathname.match(/\/role\/([^/]+)\/playbooks\//);
+  const base = rolePathMatch
+    ? `/role/${rolePathMatch[1]}/playbooks/${slug}`
+    : `/playbooks/${slug}`;
 
   const currentIndex = modules.findIndex((m) => m.id === currentModuleId);
   const prevModule = currentIndex > 0 ? modules[currentIndex - 1] : null;

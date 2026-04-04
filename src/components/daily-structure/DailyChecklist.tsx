@@ -11,6 +11,7 @@ import {
   Circle,
   Sparkles,
   CalendarDays,
+  Clock,
 } from "lucide-react";
 import {
   stagger,
@@ -116,6 +117,64 @@ const SECTIONS = [
 
 const ALL_TASK_IDS = SECTIONS.flatMap((s) => s.tasks.map((t) => t.id));
 const TOTAL_TASKS = ALL_TASK_IDS.length;
+
+const TIME_BLOCKS = [
+  {
+    id: "launch",
+    time: "60–90 min",
+    label: "Morning Launch",
+    description:
+      "Pipeline review, inbound check, calendar prep, set your daily 3 outcomes.",
+    icon: Sunrise,
+    accentColor: "text-accent",
+    bgClass: "bg-accent/[0.04]",
+    borderClass: "border-accent/20",
+  },
+  {
+    id: "outbound-1",
+    time: "2–3 hrs",
+    label: "Outbound Attack",
+    description:
+      "Protected dial time. Cold and warm outreach — calls, emails, LinkedIn. Target 75–150 dials.",
+    icon: Sun,
+    accentColor: "text-amber-accent",
+    bgClass: "bg-amber-accent/[0.04]",
+    borderClass: "border-amber-accent/20",
+  },
+  {
+    id: "execution",
+    time: "Core hours",
+    label: "Midday Execution",
+    description:
+      "Run demos, discovery calls, post-call CRM updates, follow up on proposals, pipeline check-in.",
+    icon: Sun,
+    accentColor: "text-amber-accent",
+    bgClass: "bg-amber-accent/[0.04]",
+    borderClass: "border-amber-accent/20",
+  },
+  {
+    id: "outbound-2",
+    time: "As needed",
+    label: "Second Outbound Block",
+    description:
+      "If your demo calendar has gaps, fill them with dials. Build next week's pipeline.",
+    icon: Sun,
+    accentColor: "text-amber-accent",
+    bgClass: "bg-amber-accent/[0.04]",
+    borderClass: "border-amber-accent/20",
+  },
+  {
+    id: "closeout",
+    time: "30–45 min",
+    label: "End of Day Close-Out",
+    description:
+      "Update CRM, log metrics, prep tomorrow's list, flag blockers, submit daily report.",
+    icon: Sunset,
+    accentColor: "text-emerald-accent",
+    bgClass: "bg-emerald-accent/[0.04]",
+    borderClass: "border-emerald-accent/20",
+  },
+] as const;
 
 /* ─── helpers ─── */
 
@@ -413,6 +472,82 @@ export default function DailyChecklist({ roleSlug }: { roleSlug: string }) {
               </motion.div>
             );
           })}
+        </motion.div>
+
+        {/* ── Time-Block Schedule ── */}
+        <motion.div
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+          className="space-y-4"
+        >
+          <SectionLabel barClass="bg-accent" textClass="text-accent">
+            Recommended Time Blocks
+          </SectionLabel>
+
+          <motion.p
+            variants={fadeUp}
+            className="text-sm text-muted-foreground leading-relaxed"
+          >
+            Shift the hours to fit your schedule — what matters is the sequence.
+            Launch, attack, execute, close out. Every day.
+          </motion.p>
+
+          <div className="space-y-2">
+            {TIME_BLOCKS.map((block) => {
+              const Icon = block.icon;
+              return (
+                <motion.div
+                  key={block.id}
+                  variants={fadeUp}
+                  className={`group flex items-stretch rounded-xl border ${block.borderClass} overflow-hidden transition-shadow hover:shadow-sm`}
+                >
+                  <div
+                    className={`flex flex-col items-center justify-center ${block.bgClass} px-3 sm:px-4 py-3 min-w-[5.5rem] sm:min-w-[6.5rem] border-r ${block.borderClass}`}
+                  >
+                    <Icon
+                      size={16}
+                      strokeWidth={1.8}
+                      className={block.accentColor}
+                    />
+                    <span
+                      className={`text-[11px] font-bold mt-1 ${block.accentColor}`}
+                    >
+                      {block.time}
+                    </span>
+                  </div>
+                  <div className="flex-1 px-4 py-3 bg-card">
+                    <p className="text-sm font-semibold text-foreground">
+                      {block.label}
+                    </p>
+                    <p className="text-xs text-muted-foreground leading-relaxed mt-0.5">
+                      {block.description}
+                    </p>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
+
+          <motion.div
+            variants={fadeUp}
+            className="flex items-start gap-2.5 rounded-xl border border-amber-accent/20 bg-amber-accent/[0.04] px-4 py-3 mt-2"
+          >
+            <Clock
+              size={14}
+              className="text-amber-accent shrink-0 mt-0.5"
+              strokeWidth={2}
+            />
+            <p className="text-xs text-muted-foreground leading-relaxed">
+              <span className="font-semibold text-foreground">
+                Your hours are flexible.
+              </span>{" "}
+              Start at 7 AM or 10 AM — that&apos;s your call. But every block
+              above needs to happen, every day, in some form. The output is
+              non-negotiable.
+            </p>
+          </motion.div>
         </motion.div>
 
         {/* ── Footer note ── */}

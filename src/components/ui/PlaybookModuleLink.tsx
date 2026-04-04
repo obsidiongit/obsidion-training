@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import type { ReactNode } from "react";
 import { usePlaybook } from "@/components/PlaybookContext";
 import { cn } from "@/lib/utils";
@@ -18,7 +19,14 @@ export function PlaybookModuleLink({
   children: ReactNode;
 }) {
   const { slug } = usePlaybook();
-  const href = `/playbooks/${slug}/${moduleId}${hash ? `#${hash}` : ""}`;
+  const pathname = usePathname();
+
+  const rolePathMatch = pathname.match(/\/role\/([^/]+)\/playbooks\//);
+  const base = rolePathMatch
+    ? `/role/${rolePathMatch[1]}/playbooks/${slug}`
+    : `/playbooks/${slug}`;
+
+  const href = `${base}/${moduleId}${hash ? `#${hash}` : ""}`;
 
   return (
     <Link

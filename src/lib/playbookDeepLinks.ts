@@ -1,13 +1,12 @@
-/** Numeric module ids are shared across cannabis, automotive, salon-medspa, and food-hospitality. */
+/** Numeric module ids after Phase 4 renumbering (shared Foundation/Reference modules removed). */
 export const PLAYBOOK_MODULE_IDS = {
-  website: 4,
-  mobileApp: 7,
-  pricing: 8,
-  onTheCall: 12,
-  objections: 13,
+  website: 2,
+  mobileApp: 5,
+  pricing: 6,
+  objections: 8,
 } as const;
 
-/** Fragment ids on Module 07 Pricing pages (all verticals). */
+/** Fragment ids on Module 06 Pricing pages (all verticals). */
 export const PRICING_SECTION_IDS = {
   setupSingle: "pricing-setup-single",
   setupMulti: "pricing-setup-multi",

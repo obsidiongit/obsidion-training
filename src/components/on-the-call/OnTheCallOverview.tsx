@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import MarkCompleteButton from "@/components/ui/MarkCompleteButton";
 import {
   Phone,
   FileText,
@@ -327,6 +328,17 @@ export default function OnTheCallOverview({
             })}
           </div>
         </motion.section>
+
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <MarkCompleteButton
+            roleSlug={roleSlug}
+            sectionSlug="on-the-call"
+            upNext={[
+              { slug: "playbooks", title: "Training Playbooks" },
+              { slug: "certification", title: "Certification Gate" },
+            ]}
+          />
+        </div>
       </main>
 
       <ProductPageFooter />

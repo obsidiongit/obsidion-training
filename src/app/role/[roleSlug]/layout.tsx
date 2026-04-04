@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-
-const VALID_ROLES = ["account-executive"] as const;
+import PageTransition from "@/components/ui/PageTransition";
+import SectionMobileHeader from "@/components/ui/SectionMobileHeader";
+import { ROLES } from "@/data/roles/registry";
 
 export const metadata: Metadata = {
   title: "Obsidion Training Hub",
@@ -16,9 +17,15 @@ export default async function RoleLayout({
   params: Promise<{ roleSlug: string }>;
 }) {
   const { roleSlug } = await params;
-  if (!VALID_ROLES.includes(roleSlug as (typeof VALID_ROLES)[number])) {
+  const isKnownRole = ROLES.some((r) => r.slug === roleSlug);
+  if (!isKnownRole) {
     notFound();
   }
 
-  return <>{children}</>;
+  return (
+    <>
+      <SectionMobileHeader />
+      <PageTransition>{children}</PageTransition>
+    </>
+  );
 }

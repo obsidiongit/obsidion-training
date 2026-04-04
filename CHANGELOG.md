@@ -6,6 +6,94 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-04] — Phase 5: Polish Complete
+
+### Added
+
+- **Collapsible sidebar sections** (`src/components/Sidebar.tsx`) — playbook sidebar section groups are now clickable toggles with animated expand/collapse (framer-motion `AnimatePresence` height animation). Each header shows a completion counter (e.g. `2/4`) and a chevron that rotates on collapse. Active sections stay highlighted even when collapsed
+- **Micro-interactions on hub cards** — Featured and Quick Access section cards on the role hub now use `motion.div` with `whileHover` (spring lift) and `whileTap` (scale-down) for tactile feedback
+- **"Shared" section badges** — hub section cards that contain content shared across roles (e.g. Tech We Use) now display a small "Shared" pill badge, making it clear which sections are role-specific vs. universal
+- **Browse coming-soon role hubs** — navigating to `/role/customer-success`, `/role/marketing`, or `/role/operations` no longer returns a 404. Instead it renders a polished "coming soon" hub page with role description, a placeholder callout, and links to active role hubs. Layout now validates against the full roles registry instead of a hardcoded list
+- **Other-role links always navigate** — "Explore Other Roles" cards on the hub are now always `<Link>` elements (active and coming-soon alike). Inactive roles are visually dimmed but still navigable to their coming-soon hub
+
+### Changed
+
+- **Role layout validation** — `VALID_ROLES` hardcoded array replaced with a dynamic check against `ROLES` from the registry, so new roles are automatically supported when added
+
+---
+
+## [2026-04-04] — Phase 5: Polish & Interactivity
+
+### Added
+
+- **Hub progress system** (`src/lib/hubProgress.ts`) — localStorage-backed tracking of which sections a user has completed per role. Supports mark-complete, mark-incomplete, and completion-percent utilities. Dispatches a `hub-progress-updated` custom event so any open hub page reacts in real time
+- **"Mark as Complete" button** (`src/components/ui/MarkCompleteButton.tsx`) — appears at the bottom of every section page. Toggles between "Mark as Complete" and "Section Complete" states with spring animation. On first completion, reveals an animated "What's Next?" panel with contextual suggestions for the next 1–2 sections plus a return-to-hub link
+- **Hub dashboard progress tracking** — the role hub header now shows a circular progress ring and `X/10 done` counter that updates live. Section cards display a green "Done" badge and green icon when marked complete; incomplete sections use the standard accent style
+- **Section completion indicators** — Featured cards and Quick Access cards on the hub dashboard both reflect per-section completion state with distinct color coding
+- **Search** — the hub dashboard header now includes a live search input that filters the Featured and Quick Access sections by title, description, and badge text. Shows an empty state with a "Clear search" action when no sections match
+- **Page transitions** — `src/components/ui/PageTransition.tsx` wraps all role-scoped pages in a framer-motion fade+slide-up animation (via the role layout)
+- **Mobile section header** (`src/components/ui/SectionMobileHeader.tsx`) — a sticky top bar visible only on small screens (<640 px) that shows the current section name and a back arrow to the role hub. Added to the role layout so it applies to all section pages automatically
+- **Cross-role exploration section** — the bottom of the hub dashboard now lists all other roles. Active roles link to their hub; coming-soon roles show a dimmed state. Pulls from the roles registry so it stays in sync automatically
+
+### Changed
+
+- **Role hub layout** (`src/app/role/[roleSlug]/layout.tsx`) — now wraps children in `PageTransition` and renders `SectionMobileHeader` above content
+- **All section content components** (Meetings, Accountability, Tech, Performance, Getting Paid, Certification, On the Call, Products) — each now imports and renders `MarkCompleteButton` at the bottom of `<main>` before the footer, with role-aware slugs and curated "up next" suggestions
+
+---
+
+## [2026-04-03] — Phase 4: Playbook Refactor
+
+### Changed
+
+- **Removed 6 shared modules from all vertical playbooks** — Who We Are (→ About), Tech We Use (→ Tech), Getting Paid & Bonuses (→ Getting Paid), Performance Expectations (→ Performance), On the Call (→ On the Call), and Downloadable Assets (→ Assets). Each of these now lives as a dedicated top-level role section rather than a playbook module
+- **Renumbered remaining modules 0–10** across all four verticals (Cannabis, Salon & Med Spa, Food & Hospitality, Automotive). Playbooks now contain 11 focused modules: Welcome, Market Opportunity, Website Buildout, Local SEO, Remarketing, Mobile App, Pricing, Outreach Strategy, Objection Handling, Quick Reference, and Module Quiz
+- **Moved playbook routes** from `/playbooks/[slug]/[moduleId]` to `/role/[roleSlug]/playbooks/[slug]/[moduleId]` — playbooks are now nested inside the role hub context
+- **Updated `PlaybookShell` sidebar** — dynamically detects route context; links back to the role hub (← Back to hub) when on the new role-scoped route, or the legacy homepage when on the old route
+- **Updated `NavButtons` and `PlaybookModuleLink`** — derive the correct base URL from the current pathname, supporting both route patterns
+- **Updated `Quiz` completion screen** — "All playbooks" button now navigates back to the role hub; "Back to start" links to the correct route pattern
+- **Added redirect** from `/playbooks/:slug/:moduleId` → `/role/account-executive/playbooks/:slug/:moduleId` for backward compatibility; legacy `/playbook/:moduleId` redirect updated to point to the new route
+- **Updated `quizModuleId`** from 16 to 10 in all playbook registry entries
+- **Updated `PLAYBOOK_MODULE_IDS`** in `playbookDeepLinks.ts` to reflect new IDs (website: 2, mobileApp: 5, pricing: 6, objections: 8); removed `onTheCall` key (module no longer lives in playbook)
+- **Updated playbooks index page** (`/role/[roleSlug]/playbooks`) — links now point to the new role-scoped route
+
+---
+
+## [2026-04-04] — Certification & Readiness Gate + Accountability Section (Phase 3)
+
+### Added
+
+- **Certification & Readiness Gate page** (`/role/[roleSlug]/certification`) — seven-gate onboarding certification section covering: (1) complete all hub sections, (2) per-vertical playbook quizzes with links, (3) objection handling assessment (coming soon), (4–5) mock discovery and closing calls scored against rubrics, (6) CRM proficiency demo, (7) practice proposal submission. Includes full rubric tables for Gates 4 and 5, re-attempt policy, day-14 target timeline, and a "Certified & Ready" graduation banner
+- **`CertificationContent` client component** (`src/components/certification/`) — gate index overview grid, detailed gate cards with header/body layout and status badges (link / schedule via Discord / coming soon), two scored rubric tables, amber re-attempt policy card, and an emerald graduation banner with glow effect and completion badges
+- **Content file** (`content/roles/account-executive/certification.md`) — full markdown covering the gate rationale, all seven gate requirements with pass marks, discovery and closing rubric tables, re-attempt policy, day-14 target, and what happens on passing
+- **Certification added to role hub featured row** — appears alongside Training Playbooks and On the Call in the Core Training section with "7 Gates / Role-Play Assessed / Manager Sign-Off" badges
+
+---
+
+## [2026-04-04] — Accountability Section (Phase 3)
+
+### Added
+
+- **Accountability page** (`/role/[roleSlug]/accountability`) — full "What Wins Here & What Gets You Exited" section covering success behaviors, exit-triggering patterns, a three-tier bright line framework (Green / Yellow / Red), and 30/60/90-day checkpoint expectations
+- **`AccountabilityContent` client component** (`src/components/accountability/`) — framer-motion scroll animations, grouped success and exit item cards with category headers and icon-per-row layout, stacked colored status cards for the bright line framework, and tiered checkpoint panels with note callouts styled by severity (muted / warning / critical)
+- **Content file** (`content/roles/account-executive/accountability.md`) — full markdown covering no-ambiguity framing, activity/process/mindset success behaviors, four exit categories (activity, integrity, engagement, development), the self-assessment bright line framework, and mixed-depth 30/60/90 checkpoints
+- **Accountability card on role hub** — added "Accountability" to the Quick Access grid on the AE hub dashboard; updated grid layout from 4-col to 3-col to handle six cards evenly
+
+---
+
+## [2026-04-03] — Meeting Cadence & Daily Structure Expansion (Phase 3)
+
+### Added
+
+- **Meeting Cadence & Preparation page** (`/role/[roleSlug]/meetings`) — full meeting cadence section covering twice-weekly 30-minute Discord meetings led by leadership, with structured agenda breakdown (Opening → Pipeline Round-Robin → Wins & Lessons → Coaching → Close), interactive pre-meeting preparation checklist with localStorage persistence, "What Not to Bring" anti-patterns, and attendance policy with escalation tiers
+- **`MeetingCadenceContent` client component** (`src/components/meetings/`) — uses shared product UI primitives with framer-motion scroll animations, stat highlights for meeting details (frequency, duration, platform, leader), time-boxed agenda visualization, interactive prep checklist with completion state, and attendance policy cards
+- **Meeting Cadence link on role hub** — added "Meeting Cadence" card to Quick Access section on the AE hub dashboard
+- **Daily Structure time-block schedule** — added recommended hour-by-hour time-block visualization to the daily structure page (Morning Launch, Outbound Attack, Midday Execution, Second Outbound Block, End of Day Close-Out) with flexible-hours callout
+- **Daily Structure content file** (`content/roles/account-executive/daily-structure.md`) — full markdown content covering daily time blocks, sequence discipline, and the commission-only reality of self-managed time
+- **Meeting Cadence content file** (`content/roles/account-executive/meetings.md`) — full markdown content covering meeting format, preparation expectations, attendance policy, and why team alignment matters in a remote commission-only environment
+
+---
+
 ## [2026-04-03] — Daily Structure Checklist (Phase 3)
 
 ### Added

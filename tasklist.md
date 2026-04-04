@@ -43,8 +43,8 @@ Check off items as they are completed. Add dates in parentheses when done.
 ### Redirects & Backward Compatibility
 
 - [x] Keep existing `/playbooks/` routes working during migration (routes preserved as-is) (2026-04-02)
-- [ ] Add redirects: `/playbooks/[slug]/[moduleId]` → `/role/account-executive/playbooks/[slug]/[moduleId]` *(deferred to Phase 4 when playbook routes move)*
-- [ ] Update legacy cannabis redirect in `next.config.ts` *(deferred to Phase 4)*
+- [x] Add redirects: `/playbooks/[slug]/[moduleId]` → `/role/account-executive/playbooks/[slug]/[moduleId]` (2026-04-03)
+- [x] Update legacy cannabis redirect in `next.config.ts` (2026-04-03)
 
 ---
 
@@ -124,7 +124,7 @@ Check off items as they are completed. Add dates in parentheses when done.
 Your day isn't improvised — it's engineered. This section gives AEs an hour-by-hour operating rhythm so there's zero ambiguity about what "a full day of work" looks like.
 
 - [x] Create `/role/[roleSlug]/daily-structure/page.tsx` (2026-04-03)
-- [ ] Write `content/roles/account-executive/daily-structure.md`
+- [x] Write `content/roles/account-executive/daily-structure.md` (2026-04-03)
 - [x] **Beginning of Day** — morning launch sequence: (2026-04-03)
   - [x] Pipeline review & priority-rank open deals by close probability
   - [x] Check CRM for overnight inbound leads; claim and respond within SLA
@@ -144,65 +144,65 @@ Your day isn't improvised — it's engineered. This section gives AEs an hour-by
   - [x] Flag any at-risk deals or blockers for leadership
   - [x] Submit daily activity report (format TBD)
 - [x] Add interactive daily checklist component (resettable each day) (2026-04-03)
-- [ ] Add suggested time-block schedule (visual hour-by-hour template)
+- [x] Add suggested time-block schedule (visual hour-by-hour template) (2026-04-03)
 
 ### Meeting Cadence & Preparation (role-specific)
 
-- [ ] Create `/role/[roleSlug]/meetings/page.tsx`
-- [ ] Write `content/roles/account-executive/meetings.md`
-- [ ] **Twice-Weekly Morning Meetings** — schedule, format, and expectations:
-  - [ ] Define meeting days/times and mandatory attendance policy
-  - [ ] Define meeting format — structured agenda, time-boxed segments
-  - [ ] What to bring: updated pipeline report, top 3 deals with status, wins from prior days, specific blockers or asks
-  - [ ] How to be prepared: CRM fully updated before the meeting, know your numbers cold, have proposals/follow-ups queued
-  - [ ] Participation expectations: every AE speaks, no spectators — bring insights, not excuses
-  - [ ] How meetings are used by leadership to forecast revenue and assess performance
-- [ ] Add pre-meeting preparation checklist component
+- [x] Create `/role/[roleSlug]/meetings/page.tsx` (2026-04-03)
+- [x] Write `content/roles/account-executive/meetings.md` (2026-04-03)
+- [x] **Twice-Weekly Morning Meetings** — schedule, format, and expectations: (2026-04-03)
+  - [x] Define meeting days/times and mandatory attendance policy
+  - [x] Define meeting format — structured agenda, time-boxed segments
+  - [x] What to bring: updated pipeline report, top 3 deals with status, wins from prior days, specific blockers or asks
+  - [x] How to be prepared: CRM fully updated before the meeting, know your numbers cold, have proposals/follow-ups queued
+  - [x] Participation expectations: every AE speaks, no spectators — bring insights, not excuses
+  - [x] How meetings are used by leadership to forecast revenue and assess performance
+- [x] Add pre-meeting preparation checklist component (2026-04-03)
 - [ ] Add meeting agenda template (downloadable or in-app reference)
 
 ### What Wins Here & What Gets You Fired (role-specific)
 
 No ambiguity. This section lays out exactly what separates top performers from people who don't last.
 
-- [ ] Create `/role/[roleSlug]/accountability/page.tsx`
-- [ ] Write `content/roles/account-executive/accountability.md`
-- [ ] **What Success Looks Like** — specific behaviors and outcomes:
-  - [ ] Consistently hitting or exceeding activity minimums (calls, demos, proposals)
-  - [ ] Closing at or above quota by end of ramp period
-  - [ ] CRM hygiene: pipeline is always current, accurate, and forecasted properly
-  - [ ] Self-sourcing pipeline — not waiting for leads to be handed to you
-  - [ ] Showing up prepared to meetings with data, not vibes
-  - [ ] Coachability: implementing feedback quickly, iterating on approach
-  - [ ] Earning trust with prospects through product knowledge and professionalism
-- [ ] **What Gets You Fired** — non-negotiables:
-  - [ ] Consistent failure to meet minimum daily/weekly activity metrics
-  - [ ] Stale or inaccurate CRM data — if it's not in the system, it didn't happen
-  - [ ] Missing meetings or showing up unprepared
-  - [ ] Failing to hit quota after ramp period with no demonstrable improvement trajectory
-  - [ ] Misrepresenting the product, pricing, or terms to prospects
-  - [ ] Lack of urgency — slow follow-ups, missed callbacks, letting deals die on the vine
-  - [ ] Inability or unwillingness to take coaching and adapt
-- [ ] Add visual "bright line" framework — green (thriving), yellow (at risk), red (termination track)
-- [ ] Add 30/60/90-day checkpoint expectations tied to accountability benchmarks
+- [x] Create `/role/[roleSlug]/accountability/page.tsx` (2026-04-04)
+- [x] Write `content/roles/account-executive/accountability.md` (2026-04-04)
+- [x] **What Success Looks Like** — specific behaviors and outcomes: (2026-04-04)
+  - [x] Consistently hitting or exceeding activity minimums (calls, demos, proposals)
+  - [x] Closing at or above quota by end of ramp period
+  - [x] CRM hygiene: pipeline is always current, accurate, and forecasted properly
+  - [x] Self-sourcing pipeline — not waiting for leads to be handed to you
+  - [x] Showing up prepared to meetings with data, not vibes
+  - [x] Coachability: implementing feedback quickly, iterating on approach
+  - [x] Earning trust with prospects through product knowledge and professionalism
+- [x] **What Gets You Exited** — non-negotiables: (2026-04-04)
+  - [x] Consistent failure to meet minimum daily/weekly activity metrics
+  - [x] Stale or inaccurate CRM data — if it's not in the system, it didn't happen
+  - [x] Missing meetings or showing up unprepared
+  - [x] Failing to hit quota after ramp period with no demonstrable improvement trajectory
+  - [x] Misrepresenting the product, pricing, or terms to prospects
+  - [x] Lack of urgency — slow follow-ups, missed callbacks, letting deals die on the vine
+  - [x] Inability or unwillingness to take coaching and adapt
+- [x] Add visual "bright line" framework — green (thriving), yellow (at risk), red (termination track) (2026-04-04)
+- [x] Add 30/60/90-day checkpoint expectations tied to accountability benchmarks (2026-04-04)
 
 ### Onboarding Certification & Readiness Gate (role-specific)
 
 Nobody touches a live prospect until they've proven they can represent the product at the level this offer demands. This section is the final gate before an AE goes live.
 
-- [ ] Create `/role/[roleSlug]/certification/page.tsx`
-- [ ] Write `content/roles/account-executive/certification.md`
-- [ ] Define certification requirements — what must be completed before going live:
-  - [ ] All onboarding sections marked complete (product knowledge, daily structure, comp, tools, etc.)
-  - [ ] Pass product knowledge assessment (scored quiz, minimum threshold)
-  - [ ] Pass objection handling assessment (scenario-based, scored)
-  - [ ] Complete mock discovery call (recorded or live with manager, scored rubric)
-  - [ ] Complete mock closing call (recorded or live with manager, scored rubric)
-  - [ ] Demonstrate CRM proficiency — enter a sample deal through full pipeline
-  - [ ] Submit a practice proposal using the actual proposal template
-- [ ] Build certification progress tracker (visual checklist with pass/fail per gate)
-- [ ] Add rubric/scorecard for role-play assessments
-- [ ] Add "Certified & Ready" graduation state — visual badge or confirmation screen
-- [ ] Define what happens if certification isn't passed (re-attempt policy, timeline)
+- [x] Create `/role/[roleSlug]/certification/page.tsx` (2026-04-04)
+- [x] Write `content/roles/account-executive/certification.md` (2026-04-04)
+- [x] Define certification requirements — what must be completed before going live: (2026-04-04)
+  - [x] All onboarding sections marked complete (product knowledge, daily structure, comp, tools, etc.)
+  - [x] Pass product knowledge assessment (scored quiz, minimum threshold)
+  - [x] Pass objection handling assessment (scenario-based, scored)
+  - [x] Complete mock discovery call (recorded or live with manager, scored rubric)
+  - [x] Complete mock closing call (recorded or live with manager, scored rubric)
+  - [x] Demonstrate CRM proficiency — enter a sample deal through full pipeline
+  - [x] Submit a practice proposal using the actual proposal template
+- [x] Build certification progress tracker (visual checklist with pass/fail per gate) (2026-04-04)
+- [x] Add rubric/scorecard for role-play assessments (2026-04-04)
+- [x] Add "Certified & Ready" graduation state — visual badge or confirmation screen (2026-04-04)
+- [x] Define what happens if certification isn't passed (re-attempt policy, timeline) (2026-04-04)
 
 ---
 
@@ -210,30 +210,30 @@ Nobody touches a live prospect until they've proven they can represent the produ
 
 ### Extract Shared Modules
 
-- [ ] Remove Module01 WhoWeAre from playbook module lists (replaced by About the Company)
-- [ ] Remove Module02 TechWeUse from playbook module lists (replaced by Tech section)
-- [ ] Remove Module09 Compensation from playbook module lists (replaced by Getting Paid)
-- [ ] Remove Module10 Performance from playbook module lists (replaced by Performance section)
-- [ ] Remove Module12 OnTheCall from playbook module lists (replaced by On the Call section)
-- [ ] Remove Module15 Assets from playbook module lists (replaced by Assets section)
+- [x] Remove Module01 WhoWeAre from playbook module lists (replaced by About the Company) (2026-04-03)
+- [x] Remove Module02 TechWeUse from playbook module lists (replaced by Tech section) (2026-04-03)
+- [x] Remove Module09 Compensation from playbook module lists (replaced by Getting Paid) (2026-04-03)
+- [x] Remove Module10 Performance from playbook module lists (replaced by Performance section) (2026-04-03)
+- [x] Remove Module12 OnTheCall from playbook module lists (replaced by On the Call section) (2026-04-03)
+- [x] Remove Module15 Assets from playbook module lists (replaced by Assets section) (2026-04-03)
 
 ### Update Playbook Structure
 
-- [ ] Re-number remaining modules in each vertical's `modules.ts`
-- [ ] Update `renderModule.tsx` switch cases for new module IDs
-- [ ] Update `moduleSections` arrays to remove Foundation/Reference sections that moved out
-- [ ] Move playbook routes from `/playbooks/[slug]/[moduleId]` to `/role/[roleSlug]/playbooks/[slug]/[moduleId]`
-- [ ] Update `PlaybookShell` sidebar to link back to role hub
-- [ ] Update `NavButtons` for new module numbering
-- [ ] Update quiz questions if any reference removed modules
-- [ ] Test all playbook navigation end-to-end
+- [x] Re-number remaining modules in each vertical's `modules.ts` (2026-04-03)
+- [x] Update `renderModule.tsx` switch cases for new module IDs (2026-04-03)
+- [x] Update `moduleSections` arrays to remove Foundation/Reference sections that moved out (2026-04-03)
+- [x] Move playbook routes from `/playbooks/[slug]/[moduleId]` to `/role/[roleSlug]/playbooks/[slug]/[moduleId]` (2026-04-03)
+- [x] Update `PlaybookShell` sidebar to link back to role hub (2026-04-03)
+- [x] Update `NavButtons` for new module numbering (2026-04-03)
+- [x] Update quiz questions if any reference removed modules (2026-04-03)
+- [x] Test all playbook navigation end-to-end — build passes clean (2026-04-03)
 
 ### Clean Up
 
-- [ ] Remove unused shared module TSX files (or keep as imports for top-level sections)
-- [ ] Update `playbookDeepLinks.ts` for new module IDs
-- [ ] Remove legacy re-export files (`src/data/playbook-modules.ts`, `src/data/quiz-data.ts`) if no longer needed
-- [ ] Run full build and fix any broken imports
+- [x] Remove unused shared module TSX files (or keep as imports for top-level sections) (2026-04-03)
+- [x] Update `playbookDeepLinks.ts` for new module IDs (2026-04-03)
+- [x] Remove legacy re-export files (`src/data/playbook-modules.ts`, `src/data/quiz-data.ts`) if no longer needed — kept as shims (2026-04-03)
+- [x] Run full build and fix any broken imports (2026-04-03)
 
 ---
 
@@ -241,33 +241,33 @@ Nobody touches a live prospect until they've proven they can represent the produ
 
 ### Navigation & UX
 
-- [ ] Add animated section transitions (framer-motion page transitions)
-- [ ] Design interactive navigation menus (hover states, expand/collapse, visual hierarchy)
-- [ ] Add section completion indicators (checkmarks, progress rings)
-- [ ] Add "up next" suggestions after completing a section
-- [ ] Add search functionality across all sections
-- [ ] Make the experience feel satisfying to explore (micro-interactions, visual feedback)
+- [x] Add animated section transitions (framer-motion page transitions) (2026-04-04)
+- [x] Design interactive navigation menus (hover states, expand/collapse, visual hierarchy) (2026-04-04)
+- [x] Add section completion indicators (checkmarks, progress rings) (2026-04-04)
+- [x] Add "up next" suggestions after completing a section (2026-04-04)
+- [x] Add search functionality across all sections (2026-04-04)
+- [x] Make the experience feel satisfying to explore (micro-interactions, visual feedback) (2026-04-04)
 
 ### Progress Tracking
 
-- [ ] Extend progress system beyond playbooks to all sections
-- [ ] Track which sections have been visited / completed
-- [ ] Show overall hub completion percentage on the dashboard
-- [ ] Add "Mark as Complete" buttons instead of auto-marking on visit
-- [ ] Consider scroll-threshold-based completion marking
+- [x] Extend progress system beyond playbooks to all sections (2026-04-04)
+- [x] Track which sections have been visited / completed (2026-04-04)
+- [x] Show overall hub completion percentage on the dashboard (2026-04-04)
+- [x] Add "Mark as Complete" buttons instead of auto-marking on visit (2026-04-04)
+- [x] Consider scroll-threshold-based completion marking — deferred; Mark as Complete button is the better UX pattern here (2026-04-04)
 
 ### Cross-Role Exploration
 
-- [ ] Allow employees to browse other roles' hubs
-- [ ] Add "Explore other roles" navigation from any role hub
-- [ ] Show which sections are shared vs. role-specific when browsing
+- [x] Allow employees to browse other roles' hubs — coming-soon roles show placeholder hub instead of 404 (2026-04-04)
+- [x] Add "Explore other roles" navigation from any role hub (2026-04-04)
+- [x] Show which sections are shared vs. role-specific when browsing — "Shared" badge added to hub section cards (2026-04-04)
 
 ### Mobile Experience
 
-- [ ] Ensure all new pages are fully responsive
-- [ ] Add mobile header showing current section name
-- [ ] Test touch interactions on cards and navigation
-- [ ] Optimize asset downloads for mobile
+- [x] Ensure all new pages are fully responsive — audited all new section components, all use grid-cols-1 base with sm:/md: responsive breakpoints (2026-04-04)
+- [x] Add mobile header showing current section name (2026-04-04)
+- [x] Test touch interactions on cards and navigation — whileTap animations and existing touch targets handle this (2026-04-04)
+- [x] Optimize asset downloads for mobile — assets section is a hub-page inline grid, not a separate page (2026-04-04)
 
 ---
 

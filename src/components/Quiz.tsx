@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { usePlaybook } from "@/components/PlaybookContext";
 import { Card } from "@/components/ui/Card";
 import { cn } from "@/lib/utils";
@@ -10,6 +11,12 @@ import { readProgress, writeProgress } from "@/lib/progressStorage";
 
 export function Quiz() {
   const playbook = usePlaybook();
+  const pathname = usePathname();
+  const rolePathMatch = pathname.match(/\/role\/([^/]+)\/playbooks\//);
+  const playbookBase = rolePathMatch
+    ? `/role/${rolePathMatch[1]}/playbooks/${playbook.slug}`
+    : `/playbooks/${playbook.slug}`;
+  const hubHref = rolePathMatch ? `/role/${rolePathMatch[1]}` : "/";
   const questions = playbook.quizQuestions;
   const passCount = playbook.quizPassCount;
   const quizModuleId = playbook.quizModuleId;
@@ -197,13 +204,13 @@ export function Quiz() {
           {passed ? (
             <div className="flex flex-col sm:flex-row gap-3 w-full max-w-md">
               <Link
-                href="/"
+                href={hubHref}
                 className="flex-1 text-center bg-accent hover:bg-accent/90 text-white px-6 py-3 rounded-full font-bold transition-colors"
               >
-                All playbooks
+                Back to hub
               </Link>
               <Link
-                href={`/playbooks/${playbook.slug}/0`}
+                href={`${playbookBase}/0`}
                 className="flex-1 text-center border border-border hover:bg-muted/40 px-6 py-3 rounded-full font-bold transition-colors"
               >
                 Back to start

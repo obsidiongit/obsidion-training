@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import MarkCompleteButton from "@/components/ui/MarkCompleteButton";
 import {
   Phone,
   TrendingUp,
@@ -823,6 +824,17 @@ export default function PerformanceContent({ roleSlug }: { roleSlug: string }) {
             </div>
           </motion.div>
         </motion.section>
+
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <MarkCompleteButton
+            roleSlug={roleSlug}
+            sectionSlug="performance"
+            upNext={[
+              { slug: "getting-paid", title: "Getting Paid & Bonuses" },
+              { slug: "accountability", title: "Accountability" },
+            ]}
+          />
+        </div>
       </main>
 
       <footer className="border-t border-border-light">
