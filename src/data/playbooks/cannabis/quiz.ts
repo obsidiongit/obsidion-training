@@ -136,4 +136,43 @@ export const CANNABIS_QUIZ_QUESTIONS: QuizQuestion[] = [
     feedback:
       "Instagram is where operators spend time. DMs must be personalized with a specific question, not a generic pitch.",
   },
+  {
+    id: 13,
+    question: "A prospect says 'I need to think about it.' What is the correct response?",
+    options: [
+      "Thank them and say you'll follow up next week.",
+      "Ask what specific concern is still unresolved and address it directly.",
+      "Offer a discount to accelerate the decision.",
+      "Send them the full pricing sheet and wait.",
+    ],
+    correctAnswer: 1,
+    feedback:
+      "'I need to think about it' almost always means one specific concern hasn't been resolved. Ask what that is. Do not let the conversation end without naming the blocker.",
+  },
+  {
+    id: 14,
+    question: "What is the correct 3-touch follow-up sequence after a first conversation?",
+    options: [
+      "Day 1 check-in, Day 3 proposal, Day 7 price drop",
+      "Day 3 value touch, Day 7 direct ask, Day 14 final push",
+      "Day 2 email, Day 5 call, Day 10 voicemail",
+      "One follow-up call after 2 weeks",
+    ],
+    correctAnswer: 1,
+    feedback:
+      "Day 3: send something useful. Day 7: direct ask for next steps. Day 14: final push before moving to monthly check-in. Most deals die because nobody followed up at all.",
+  },
+  {
+    id: 15,
+    question: "During a discovery call, which question best uncovers a prospect's ROI potential?",
+    options: [
+      "How many employees do you have?",
+      "What social media platforms are you using?",
+      "If you could double your online ordering volume in 90 days, what would that be worth to the business?",
+      "Have you heard of Obsidion before?",
+    ],
+    correctAnswer: 2,
+    feedback:
+      "Anchoring to revenue impact before you name a price is essential. This question makes the cost of inaction concrete and positions your fee as a fraction of the potential return.",
+  },
 ];

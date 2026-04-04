@@ -20,8 +20,8 @@ export default function Module04SEO() {
       </PullQuote>
 
       <StatRow>
-        <StatBox value="300%+" label="Increase in inbound calls" sublabel="Within 2 months of launch" />
-        <StatBox value="3–4x" label="Growth in online ordering" sublabel="Via SEO + site funnel" />
+        <StatBox value="300%+" label="Increase in inbound calls" sublabel="Active client results, within 60 days" />
+        <StatBox value="3–4x" label="Growth in online ordering" sublabel="Active client results, via SEO + site funnel" />
         <StatBox value="#1" label="Local pack ranking goal" sublabel="Top 3 captures 75% of clicks" variant="accent" />
       </StatRow>
 

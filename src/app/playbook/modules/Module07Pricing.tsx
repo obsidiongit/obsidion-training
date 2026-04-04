@@ -1,4 +1,5 @@
 import { Card, CardGrid } from "@/components/ui/Card";
+import { PriceCard } from "@/components/ui/PriceCard";
 import { HighlightBox } from "@/components/ui/HighlightBox";
 import { NavButtons } from "@/components/ui/NavButtons";
 
@@ -50,49 +51,47 @@ export default function Module07Pricing() {
       <div>
         <h2 className="text-2xl font-bold mb-6">Monthly Retainer Packages</h2>
         <p className="text-muted-foreground mb-6">Ongoing service activating upon launch. Select the tier matching client constraints; upgrades remain available.</p>
-        <CardGrid cols={3}>
-          <Card id="pricing-retainer-essentials">
-            <div className="text-xs font-bold text-accent uppercase tracking-wider mb-2">Essentials</div>
-            <h3 className="text-xl font-bold mb-1">Maintenance</h3>
-            <div className="text-2xl font-black text-foreground mb-4">$597<span className="text-base font-normal text-muted-foreground">/mo</span></div>
-            <p className="text-muted-foreground text-xs border-b pb-4 mb-4">Single-location baseline</p>
-            <ul className="space-y-2 text-xs text-muted-foreground mt-4">
-              <li>→ Website hosting & uptime</li>
-              <li>→ Security updates</li>
-              <li>→ Basic local SEO (GBP)</li>
-              <li>→ Automated review requests</li>
-              <li>→ Monthly analytics</li>
-            </ul>
-          </Card>
-          <Card variant="green" id="pricing-retainer-growth">
-            <div className="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-2">Growth — Most Popular</div>
-            <h3 className="text-xl font-bold mb-1">SEO + Remarketing</h3>
-            <div className="text-2xl font-black text-foreground mb-4">$997<span className="text-base font-normal text-muted-foreground">/mo</span></div>
-            <p className="text-muted-foreground text-xs border-b border-emerald-900/10 pb-4 mb-4">Active operational growth</p>
-            <ul className="space-y-2 text-xs text-muted-foreground mt-4">
-              <li>→ Everything in Essentials</li>
-              <li>→ Full local SEO execution</li>
-              <li>→ SMS & email remarketing</li>
-              <li>→ Loyalty program management</li>
-              <li>→ Win-back automations</li>
-              <li>→ Full reputation management</li>
-            </ul>
-          </Card>
-          <Card id="pricing-retainer-premium">
-            <div className="text-xs font-bold text-accent uppercase tracking-wider mb-2">Premium</div>
-            <h3 className="text-xl font-bold mb-1">Full-Service</h3>
-            <div className="text-2xl font-black text-foreground mb-4">$1,497<span className="text-base font-normal text-muted-foreground">/mo</span></div>
-            <p className="text-muted-foreground text-xs border-b pb-4 mb-4">MSOs & aggressive growth</p>
-            <ul className="space-y-2 text-xs text-muted-foreground mt-4">
-              <li>→ Everything in Growth</li>
-              <li>→ Multi-location SEO management</li>
-              <li>→ Advanced campaign analytics</li>
-              <li>→ Priority account management</li>
-              <li>→ Quarterly strategy sessions</li>
-              <li>→ Content creation support</li>
-            </ul>
-          </Card>
-        </CardGrid>
+        <div id="pricing-retainer-essentials" className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <PriceCard
+            title="Essentials"
+            price="$597"
+            description="Single-location baseline — hosting, GBP, and automated reviews."
+            features={[
+              "Website hosting & uptime",
+              "Security updates",
+              "Basic local SEO (GBP)",
+              "Automated review requests",
+              "Monthly analytics",
+            ]}
+          />
+          <PriceCard
+            title="Growth"
+            price="$997"
+            description="Active operational growth — SEO execution and full remarketing stack."
+            popular
+            features={[
+              "Everything in Essentials",
+              "Full local SEO execution",
+              "SMS & email remarketing",
+              "Loyalty program management",
+              "Win-back automations",
+              "Full reputation management",
+            ]}
+          />
+          <PriceCard
+            title="Premium"
+            price="$1,497"
+            description="MSOs & aggressive growth — multi-location full-service management."
+            features={[
+              "Everything in Growth",
+              "Multi-location SEO management",
+              "Advanced campaign analytics",
+              "Priority account management",
+              "Quarterly strategy sessions",
+              "Content creation support",
+            ]}
+          />
+        </div>
       </div>
 
       <div

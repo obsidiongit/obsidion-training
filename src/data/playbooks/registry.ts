@@ -20,7 +20,7 @@ export const PLAYBOOKS: PlaybookDefinition[] = [
     moduleSections: CANNABIS_MODULE_SECTIONS,
     quizModuleId: 10,
     quizQuestions: CANNABIS_QUIZ_QUESTIONS,
-    quizPassCount: 9,
+    quizPassCount: 11,
     completionTitle: "Cannabis Playbook",
   },
   {

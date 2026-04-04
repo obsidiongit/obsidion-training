@@ -16,7 +16,7 @@ export default function Module02MarketOpp() {
 
       <StatRow>
         <StatBox value="35+" label="States with legal cannabis markets" />
-        <StatBox value="~0%" label="Penetration of quality digital agencies" />
+        <StatBox value="Severely underpenetrated" label="Professional digital agency presence in the market" />
         <StatBox value="$100B+" label="Projected U.S. cannabis market by 2030" variant="accent" />
       </StatRow>
 

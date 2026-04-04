@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { Clock } from "lucide-react";
 import { getAllPlaybooks, getPlaybook } from "@/data/playbooks/registry";
 import { renderPlaybookModule } from "@/data/playbooks/renderModule";
 
@@ -23,9 +24,20 @@ export default async function PlaybookModulePage({
   }
 
   const id = parseInt(moduleId, 10);
-  if (Number.isNaN(id) || !playbook.modules.some((m) => m.id === id)) {
+  const module = playbook.modules.find((m) => m.id === id);
+  if (Number.isNaN(id) || !module) {
     notFound();
   }
 
-  return renderPlaybookModule(slug, id);
+  return (
+    <>
+      {module.readTime && (
+        <p className="max-w-4xl flex items-center gap-1.5 text-xs text-muted-foreground mb-6 px-1">
+          <Clock size={12} />
+          ~{module.readTime} read
+        </p>
+      )}
+      {renderPlaybookModule(slug, id)}
+    </>
+  );
 }

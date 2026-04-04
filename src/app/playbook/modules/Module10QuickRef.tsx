@@ -103,7 +103,7 @@ export default function Module10QuickRef() {
       <div>
         <h2 className="text-2xl font-bold mb-6">Key Differentiators</h2>
         <CheatTable
-          headers={["They state...", "You answer..."]}
+          headers={["Prospect Says", "Your Response"]}
           rows={[
             [
               <PlaybookModuleLink key="o1" moduleId={objections} className="text-foreground">
@@ -115,7 +115,7 @@ export default function Module10QuickRef() {
               <PlaybookModuleLink key="o2" moduleId={objections} className="text-foreground">
                 Do you know cannabis?
               </PlaybookModuleLink>,
-              "We operated in it. We possess operational background, not just research.",
+              "We operated in it. Operational background, not just research.",
             ],
             [
               <PlaybookModuleLink key="o3" moduleId={objections} className="text-foreground">
@@ -135,6 +135,21 @@ export default function Module10QuickRef() {
               </PlaybookModuleLink>,
               "Yes. Built fully compliant for the App Store. We deploy these regularly.",
             ],
+          ]}
+        />
+      </div>
+
+      <div>
+        <h2 className="text-2xl font-bold mb-6">First Call Checklist</h2>
+        <CheatTable
+          headers={["You Must Know", "Why It Matters"]}
+          rows={[
+            ["Their budget range or willingness to invest", "Avoid building a proposal they can't action"],
+            ["Decision-making timeline", "Prioritize deals that can close this month"],
+            ["Who else is in the decision", "Map to the right person before the next call"],
+            ["Current vendor / what they're paying", "Identify switching cost and position value clearly"],
+            ["Top pain point in their own words", "Use their language in the proposal — not yours"],
+            ["Agreed next step before hanging up", "No next step = dead deal"],
           ]}
         />
       </div>

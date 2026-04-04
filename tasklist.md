@@ -277,38 +277,38 @@ These items from the original task list are still valid and should be addressed 
 
 ### Content Fixes
 
-- [ ] **Pricing mismatch — Module 00 vs. Module 07.** Welcome module lists `$597–$797/mo`; actual pricing is `$597`, `$997`, `$1,497`. Fix range to `$597–$1,497/mo`.
-- [ ] **Module 02 — `~0%` penetration stat.** Replace with defensible framing or reframe as observation.
-- [ ] **Module 04 — "300%+ increase in calls" and "3–4x ordering growth."** Add attribution.
+- [x] **Pricing mismatch — Module 00 vs. Module 07.** Already correct ($597–$1,497) — no change needed (2026-04-04)
+- [x] **Module 02 — `~0%` penetration stat.** Replaced with "Severely underpenetrated" framing (2026-04-04)
+- [x] **Module 04 — "300%+ increase in calls" and "3–4x ordering growth."** Attribution added: "Active client results, within 60 days" (2026-04-04)
 
 ### Content Expansion
 
-- [ ] **Module 08 — Add follow-up cadence** (3-touch sequence: Day 3, Day 7, Day 14)
-- [ ] **Module 08 — Add phone/call script section** (first 5 minutes of a discovery call)
-- [ ] **Module 08 — Add discovery call framework** (4-5 qualifying questions)
-- [ ] **Module 08 — Add closing section** (trial close language, proposal presentation)
-- [ ] **Module 09 — Add missing objections** (portfolio request, "need to think about it", locked in contract, guarantee)
-- [ ] **Module 09 — Add mindset intro** (objections are requests for information)
-- [ ] **Module 10 — Reframe differentiators table headers** to "Prospect Says" / "Your Response"
-- [ ] **Module 10 — Add "First Call Checklist"** (budget, timeline, decision-maker, next step)
-- [ ] Add 2-3 more quiz questions for high-stakes modules (08, 09, pricing)
-- [ ] Add estimated read time to each module
+- [x] **Module 08 — Add follow-up cadence** (Day 3 value touch, Day 7 direct ask, Day 14 final push) (2026-04-04)
+- [x] **Module 08 — Add phone/call script section** (4-block script covering 0:00–5:00) (2026-04-04)
+- [x] **Module 08 — Add discovery call framework** (5 qualifying questions with rationale) (2026-04-04)
+- [x] **Module 08 — Add closing section** (temperature check, trial close, objection flush, proposal presentation) (2026-04-04)
+- [x] **Module 09 — Add missing objections** (portfolio request, "need to think about it", locked in contract, guarantee) (2026-04-04)
+- [x] **Module 09 — Add mindset intro** (objections are requests for information) (2026-04-04)
+- [x] **Module 10 — Reframe differentiators table headers** to "Prospect Says" / "Your Response" (2026-04-04)
+- [x] **Module 10 — Add "First Call Checklist"** (6 rows covering budget, timeline, decision-maker, vendor, pain point, next step) (2026-04-04)
+- [x] Add 3 more quiz questions for high-stakes modules (follow-up cadence, "need to think about it", discovery call ROI question) — pass count updated to 11/15 (2026-04-04)
+- [x] Add estimated read time to each module — `readTime` field added to PlaybookModule type, all four active verticals updated, displayed above each module with a clock icon (2026-04-04)
 
 ### UI Component Cleanup
 
-- [ ] Use `PriceCard` component in Module 07 (or delete unused component)
-- [ ] Use `Tag` component in Module 06 (replace raw `<span>` elements)
-- [ ] Use `HighlightBox` in Module 08 "Execution Protocol" block
+- [x] Use `PriceCard` component in Module 07 — monthly retainer grid now uses PriceCard with popular badge on Growth tier (2026-04-04)
+- [x] Use `Tag` component in Module 06 — Target Audience tags replaced with Tag component (2026-04-04)
+- [x] Use `HighlightBox` in Module 08 "Execution Protocol" block — converted from raw div to HighlightBox (2026-04-04)
 
 ### UX Fixes
 
-- [ ] Quiz completion gate — either enforce it or remove "to proceed" language
-- [ ] Add final completion screen / graduation moment
-- [ ] Fix progress-on-visit (consider "Mark as Complete" or scroll threshold)
-- [ ] Add current module label on mobile topbar
+- [x] Quiz completion gate — no "to proceed" language found in codebase; gate is informational only (2026-04-04)
+- [x] Add final completion screen / graduation moment — Quiz already shows a celebration state with hub and restart links on pass (2026-04-04)
+- [x] Fix progress-on-visit — resolved with MarkCompleteButton pattern (2026-04-04)
+- [x] Add current module label on mobile topbar — Sidebar mobile header already shows current module title (2026-04-04)
 
 ### Technical
 
-- [ ] Address localStorage-only progress limitation (document or improve)
-- [ ] Fix silent quiz localStorage error swallowing
-- [ ] Verify `ProgressTracker` import style (named vs default export)
+- [x] Address localStorage-only progress limitation — storageFailed UI state shown in Quiz when localStorage is blocked (2026-04-04)
+- [x] Fix silent quiz localStorage error swallowing — writeProgress returns boolean; Quiz surfaces a visible warning when save fails (2026-04-04)
+- [x] Verify `ProgressTracker` import style — confirmed named default export matches default import in PlaybookShell (2026-04-04)

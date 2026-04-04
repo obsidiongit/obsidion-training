@@ -21,7 +21,7 @@ export default function Module00Welcome() {
       <HighlightBox variant="info" title="How to use this playbook">
         <ol className="list-decimal list-inside space-y-2 text-[15px] leading-relaxed">
           <li>
-            Go in order the first time (modules 0→16) so context builds the way it was written.
+            Go in order the first time (modules 0→10) so context builds the way it was written.
           </li>
           <li>
             After that, jump to any section from the sidebar—before calls, use Quick Reference and

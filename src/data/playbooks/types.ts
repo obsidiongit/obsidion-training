@@ -10,6 +10,8 @@ export interface PlaybookModule {
   title: string;
   eyebrow: string;
   section: ModuleSection;
+  /** Estimated read/work time, e.g. "3 min" */
+  readTime?: string;
 }
 
 export interface QuizQuestion {

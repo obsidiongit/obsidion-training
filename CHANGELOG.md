@@ -6,6 +6,26 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-04] — Existing Polish: Content, UI, and UX Fixes
+
+### Added
+
+- **Estimated read time** — `readTime?: string` added to `PlaybookModule` type. All four active verticals (cannabis, food & hospitality, salon & med spa, automotive) updated. Displayed above each module with a clock icon in both the role-scoped and legacy playbook routes
+- **Module 08 — Outreach Strategy** massively expanded with: 4-block phone call script (0:00–5:00), 5-question discovery call framework with rationale, 3-touch follow-up cadence (Day 3/7/14), closing section (temperature check, trial close, objection flush, proposal presentation). Execution Protocol now uses HighlightBox
+- **Module 09 — Objection Handling** expanded with: mindset intro (objections are requests for information) and 4 new objections — portfolio/examples request, "need to think about it", locked in contract, and guarantee request
+- **Module 10 — Quick Reference** updated: differentiators table headers changed from "They state..." / "You answer..." to "Prospect Says" / "Your Response"; new First Call Checklist section added (6 items: budget, timeline, decision-maker, current vendor, pain point, agreed next step)
+- **Cannabis quiz** expanded from 12 to 15 questions with three new questions covering follow-up cadence, objection handling ("need to think about it"), and discovery call ROI framing. Pass count updated from 9 to 11 (maintains ~75% threshold)
+
+### Changed
+
+- **Module 02 — Market Opportunity**: `~0%` penetration stat replaced with "Severely underpenetrated" — more defensible framing
+- **Module 04 — Local SEO**: Attribution added to 300%+ calls and 3–4x ordering stats ("Active client results, within 60 days")
+- **Module 06 — Mobile App**: Raw `<span>` target audience tags replaced with `<Tag>` component
+- **Module 07 — Pricing**: Monthly retainer section replaced with `PriceCard` components (with Most Popular badge on Growth tier)
+- **Module 00 — Welcome**: Module count reference corrected from `0→16` to `0→10`
+
+---
+
 ## [2026-04-04] — Phase 5: Polish Complete
 
 ### Added

@@ -1,6 +1,7 @@
 import { Card, CardGrid } from "@/components/ui/Card";
 import { HighlightBox } from "@/components/ui/HighlightBox";
 import { NavButtons } from "@/components/ui/NavButtons";
+import { Tag } from "@/components/ui/Tag";
 
 export default function Module06MobileApp() {
   return (
@@ -61,10 +62,10 @@ export default function Module06MobileApp() {
       <div className="mt-8 border-t pt-8">
         <h2 className="text-xl font-bold mb-4">Target Audience</h2>
         <div className="flex flex-wrap gap-2 mb-4">
-          <span className="px-3 py-1 bg-muted rounded-md text-xs font-semibold uppercase tracking-wider text-muted-foreground">Multi-location</span>
-          <span className="px-3 py-1 bg-muted rounded-md text-xs font-semibold uppercase tracking-wider text-muted-foreground">MSOs</span>
-          <span className="px-3 py-1 bg-muted rounded-md text-xs font-semibold uppercase tracking-wider text-muted-foreground">Ancillary brands</span>
-          <span className="px-3 py-1 bg-muted rounded-md text-xs font-semibold uppercase tracking-wider text-muted-foreground">High-volume</span>
+          <Tag>Multi-location</Tag>
+          <Tag>MSOs</Tag>
+          <Tag>Ancillary brands</Tag>
+          <Tag>High-volume</Tag>
         </div>
         <p className="text-muted-foreground text-sm leading-relaxed">
           Single-location dispensaries rarely require immediate app deployment. Prioritize the website package. Introduce the app as a secondary phase after demonstrating results. Multi-state operators (MSOs) require this solution efficiently from the first discussion.
