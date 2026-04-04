@@ -102,13 +102,13 @@ Check off items as they are completed. Add dates in parentheses when done.
 
 ### Downloadable Assets (shared)
 
-- [ ] Create `/role/[roleSlug]/assets/page.tsx`
-- [ ] Finalize `content/shared/assets.md`
-- [ ] Add social media profile images / banners to `public/assets/`
-- [ ] Add proposal template
-- [ ] Add one-pager PDF per vertical
-- [ ] Add headshot guidelines
-- [ ] Ensure all download links point to real files in `public/assets/`
+- [x] Create `/role/[roleSlug]/assets/page.tsx` — full page with brand kit, coming-soon section, headshot guidelines, usage rules, and MarkCompleteButton (2026-04-04)
+- [x] Finalize `content/shared/assets.md` — complete inventory, file status, headshot guidelines, usage rules (2026-04-04)
+- [ ] Add social media profile images / banners to `public/assets/` — listed as "In Preparation" on the page; awaiting marketing delivery
+- [ ] Add proposal template — listed as "In Preparation"; awaiting marketing delivery
+- [ ] Add one-pager PDF per vertical — listed as "In Preparation" for all 4 active verticals; awaiting marketing delivery
+- [x] Add headshot guidelines — included inline on the assets page with self-shoot checklist (2026-04-04)
+- [x] Ensure all download links point to real files in `public/assets/` — available files link correctly; placeholder files labeled amber; coming-soon items have no broken links (2026-04-04)
 
 ### On the Call (role-specific subsections)
 

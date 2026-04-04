@@ -6,6 +6,24 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-04] — Downloadable Assets Section
+
+### Added
+
+- **Assets page** (`/role/[roleSlug]/assets`) — full section page with four parts: Brand Kit download cards (available/placeholder/coming-soon states), In Preparation grid for files being produced by marketing, Headshot Guidelines with self-shoot checklist, and a Usage Rules do/don't panel. Closes with MarkCompleteButton and up-next suggestions
+- **`AssetsContent` component** (`src/components/assets/AssetsContent.tsx`) — client component following the same visual pattern as other section pages (framer-motion stagger, SectionLabel, ProductPageHero)
+- **`assets` added to `TRACKABLE_SECTIONS`** on the hub dashboard — section now counts toward hub completion percentage
+- **`assets` added to `SectionMobileHeader` name map** — mobile breadcrumb shows "Downloadable Assets" when on the assets page
+- **`logotext.png` added to hub inline asset grid** — the logo-with-text file was previously missing from the quick-download strip
+- **"View all assets →" link** added below the hub inline grid, linking to the full assets page
+- **`content/shared/assets.md`** finalized with complete file inventory, placeholder status, headshot guidelines, usage rules, and file management notes
+
+### Changed
+
+- **Hub inline assets grid** updated to 6-column layout (was 5) to accommodate the new logotext entry
+
+---
+
 ## [2026-04-04] — Existing Polish: Content, UI, and UX Fixes
 
 ### Added

@@ -113,6 +113,7 @@ const QUICK_ACCESS = [
 
 const ASSET_ITEMS = [
   { href: "/assets/logo.png", label: "Logo PNG", icon: Image },
+  { href: "/assets/logotext.png", label: "Logo + Text", icon: Image },
   { href: "/assets/logo.svg", label: "Logo SVG", icon: FileText },
   { href: "/assets/email-banner.png", label: "Email Banner", icon: Image },
   { href: "/assets/email-footer.html", label: "Email Footer", icon: Code },
@@ -131,6 +132,7 @@ const TRACKABLE_SECTIONS = [
   "meetings",
   "accountability",
   "daily-structure",
+  "assets",
 ];
 
 const ROLE_ICONS: Record<string, React.ElementType> = {
@@ -591,7 +593,7 @@ export default function RoleHubPage() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+              <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-4">
                 {ASSET_ITEMS.map((asset) => {
                   const AssetIcon = asset.icon;
                   return (
@@ -611,6 +613,13 @@ export default function RoleHubPage() {
                   );
                 })}
               </div>
+              <Link
+                href={`/role/${roleSlug}/assets`}
+                className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-accent transition-colors font-medium"
+              >
+                <ChevronRight size={12} />
+                View all assets, headshot guidelines & upcoming templates
+              </Link>
             </div>
           </motion.section>
 

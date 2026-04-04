@@ -17,6 +17,7 @@ const SECTION_NAMES: Record<string, string> = {
   accountability: "Accountability",
   "daily-structure": "Daily Structure",
   about: "About Obsidion",
+  assets: "Downloadable Assets",
 };
 
 function parsePath(pathname: string): { roleSlug: string | null; sectionName: string | null } {
