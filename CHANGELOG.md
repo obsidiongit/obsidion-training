@@ -6,6 +6,17 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-03] — Featured Certification Card on Role Hub
+
+### Changed
+
+- Made the "Certification & Readiness Gate" card full-width in the Core Training section of the role hub dashboard
+- Renders in its own row below the 2-column grid (Training Playbooks + On the Call)
+- Full-width card uses a horizontal layout (icon → text → CTA) with a tinted accent background, larger icon, accent-tinted badges, and a "Final Gate" label to visually distinguish it as the culminating step
+- CTA text updated to "Begin certification" / "Review certification" instead of generic "Open section"
+
+---
+
 ## [2026-04-04] — Downloadable Assets Section
 
 ### Added

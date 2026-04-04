@@ -45,6 +45,7 @@ const FEATURED = [
     icon: BookOpen,
     badges: ["Cannabis", "Food & Hospitality", "Salon & Med-Spa", "Automotive", "Contractors"],
     shared: false,
+    fullWidth: false,
   },
   {
     slug: "on-the-call",
@@ -54,15 +55,17 @@ const FEATURED = [
     icon: Phone,
     badges: ["Scripts", "Objection Handling", "Call Framework"],
     shared: false,
+    fullWidth: false,
   },
   {
     slug: "certification",
     title: "Certification & Readiness Gate",
     description:
-      "Nobody touches a live prospect until they've passed all seven gates. Complete this before going live.",
+      "Nobody touches a live prospect until they've passed all seven gates. Complete every section, pass the assessments, and get manager sign-off before going live.",
     icon: BadgeCheck,
     badges: ["7 Gates", "Role-Play Assessed", "Manager Sign-Off"],
     shared: false,
+    fullWidth: true,
   },
 ] as const;
 
@@ -405,8 +408,9 @@ export default function RoleHubPage() {
               </h2>
             </motion.div>
 
+            {/* 2-column grid for standard cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-              {filteredFeatured.map((section) => {
+              {filteredFeatured.filter((s) => !s.fullWidth).map((section) => {
                 const Icon = section.icon;
                 const done = isComplete(section.slug);
                 return (
@@ -494,6 +498,105 @@ export default function RoleHubPage() {
                 );
               })}
             </div>
+
+            {/* Full-width featured card for Certification */}
+            {filteredFeatured.filter((s) => s.fullWidth).map((section) => {
+              const Icon = section.icon;
+              const done = isComplete(section.slug);
+              return (
+                <motion.div
+                  key={section.slug}
+                  variants={fadeUp}
+                  whileHover={{ y: -3, transition: { type: "spring", stiffness: 400, damping: 25 } }}
+                  whileTap={{ scale: 0.98, transition: { duration: 0.1 } }}
+                >
+                  <Link
+                    href={`/role/${roleSlug}/${section.slug}`}
+                    className={`
+                      group relative block w-full rounded-2xl border p-7 sm:p-9 shadow-sm
+                      transition-all duration-300 hover:shadow-lg
+                      ${done
+                        ? "bg-emerald-500/[0.04] border-emerald-500/30 hover:border-emerald-500/50"
+                        : "bg-accent/[0.04] border-accent/20 hover:border-accent/40"
+                      }
+                    `}
+                  >
+                    <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-accent/[0.05] to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+
+                    {/* Top-right badge */}
+                    <div className="absolute top-4 right-4 flex items-center gap-1.5">
+                      <div className={`rounded-full px-2.5 py-0.5 text-[10px] font-semibold
+                        ${done
+                          ? "bg-emerald-500/10 text-emerald-400"
+                          : "bg-accent/10 text-accent"
+                        }`}>
+                        Final Gate
+                      </div>
+                      {done && (
+                        <div className="flex items-center gap-1 rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-semibold text-emerald-400">
+                          <CheckCircle2 size={10} />
+                          Done
+                        </div>
+                      )}
+                    </div>
+
+                    <div className="relative flex flex-col sm:flex-row sm:items-center gap-6">
+                      {/* Icon */}
+                      <div className={`
+                        flex-shrink-0 flex h-14 w-14 items-center justify-center rounded-2xl transition-colors
+                        ${done
+                          ? "bg-emerald-500/10 text-emerald-400 group-hover:bg-emerald-500/20"
+                          : "bg-accent/10 text-accent group-hover:bg-accent group-hover:text-accent-foreground"
+                        }
+                      `}>
+                        <Icon size={28} strokeWidth={1.6} />
+                      </div>
+
+                      {/* Text content */}
+                      <div className="flex-1 min-w-0">
+                        <h3 className={`
+                          text-xl font-bold tracking-tight mb-1.5 transition-colors
+                          ${done ? "group-hover:text-emerald-400" : "group-hover:text-accent"}
+                        `}>
+                          {section.title}
+                        </h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed mb-3 max-w-2xl">
+                          {section.description}
+                        </p>
+                        <div className="flex flex-wrap gap-1.5">
+                          {section.badges.map((badge) => (
+                            <span
+                              key={badge}
+                              className={`rounded-full px-2.5 py-0.5 text-[11px] font-medium
+                                ${done
+                                  ? "bg-emerald-500/10 text-emerald-400"
+                                  : "bg-accent/10 text-accent"
+                                }`}
+                            >
+                              {badge}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* CTA */}
+                      <div className="flex-shrink-0">
+                        <span className={`
+                          inline-flex items-center gap-1.5 text-sm font-semibold transition-all group-hover:gap-2.5
+                          ${done ? "text-emerald-400" : "text-accent"}
+                        `}>
+                          {done ? "Review certification" : "Begin certification"}
+                          <ArrowRight
+                            size={15}
+                            className="transition-transform duration-300 group-hover:translate-x-1"
+                          />
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
+                </motion.div>
+              );
+            })}
           </section>
           )}
 
