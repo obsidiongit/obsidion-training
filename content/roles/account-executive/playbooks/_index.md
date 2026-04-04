@@ -36,9 +36,11 @@ Sales guide for restaurants, bars, catering, food trucks, and hospitality. Cover
 
 **Modules**: Welcome, Market Opportunity, Website, SEO, Remarketing, Mobile App, Pricing, Outreach, Objections, Quick Reference, Quiz
 
-### Contractors (In Progress)
+### Contractors
 
-Training for home services and contractor verticals. Content is being added.
+Sales guide for home services and contractor verticals. Covers the market opportunity, product selling angles, pricing, outreach strategy, objection handling, and a quick reference cheat sheet for roofing, plumbing, HVAC, landscaping, painting, general contracting, and related trades.
+
+**Modules**: Welcome, Market Opportunity, Website, SEO, Remarketing, Mobile App, Pricing, Outreach, Objections, Quick Reference, Quiz
 
 ---
 

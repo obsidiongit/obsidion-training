@@ -12,7 +12,6 @@ import Module08Outreach from "@/app/playbook/modules/Module08Outreach";
 import Module09Objections from "@/app/playbook/modules/Module09Objections";
 import Module10QuickRef from "@/app/playbook/modules/Module10QuickRef";
 import Module11Quiz from "@/app/playbook/modules/Module11Quiz";
-import ModuleContractorsStub from "@/app/playbook/modules/ModuleContractorsStub";
 import Module00WelcomeAutomotive from "@/app/playbook/modules/Module00WelcomeAutomotive";
 import Module02MarketOppAutomotive from "@/app/playbook/modules/Module02MarketOppAutomotive";
 import Module03WebsiteAutomotive from "@/app/playbook/modules/Module03WebsiteAutomotive";
@@ -47,6 +46,18 @@ import FhModule08Outreach from "@/app/playbook/modules/food-hospitality/Module08
 import FhModule09Objections from "@/app/playbook/modules/food-hospitality/Module09Objections";
 import FhModule10QuickRef from "@/app/playbook/modules/food-hospitality/Module10QuickRef";
 import FhModule11Quiz from "@/app/playbook/modules/food-hospitality/Module11Quiz";
+
+import CtrModule00Welcome from "@/app/playbook/modules/contractors/Module00Welcome";
+import CtrModule01MarketOpp from "@/app/playbook/modules/contractors/Module01MarketOpp";
+import CtrModule02Website from "@/app/playbook/modules/contractors/Module02Website";
+import CtrModule03SEO from "@/app/playbook/modules/contractors/Module03SEO";
+import CtrModule04Remarketing from "@/app/playbook/modules/contractors/Module04Remarketing";
+import CtrModule05MobileApp from "@/app/playbook/modules/contractors/Module05MobileApp";
+import CtrModule06Pricing from "@/app/playbook/modules/contractors/Module06Pricing";
+import CtrModule07Outreach from "@/app/playbook/modules/contractors/Module07Outreach";
+import CtrModule08Objections from "@/app/playbook/modules/contractors/Module08Objections";
+import CtrModule09QuickRef from "@/app/playbook/modules/contractors/Module09QuickRef";
+import CtrModule10Quiz from "@/app/playbook/modules/contractors/Module10Quiz";
 
 export function renderPlaybookModule(slug: string, moduleId: number): ReactElement {
   if (slug === "cannabis") {
@@ -165,8 +176,33 @@ export function renderPlaybookModule(slug: string, moduleId: number): ReactEleme
     }
   }
 
-  if (slug === "contractors" && moduleId === 0) {
-    return <ModuleContractorsStub />;
+  if (slug === "contractors") {
+    switch (moduleId) {
+      case 0:
+        return <CtrModule00Welcome />;
+      case 1:
+        return <CtrModule01MarketOpp />;
+      case 2:
+        return <CtrModule02Website />;
+      case 3:
+        return <CtrModule03SEO />;
+      case 4:
+        return <CtrModule04Remarketing />;
+      case 5:
+        return <CtrModule05MobileApp />;
+      case 6:
+        return <CtrModule06Pricing />;
+      case 7:
+        return <CtrModule07Outreach />;
+      case 8:
+        return <CtrModule08Objections />;
+      case 9:
+        return <CtrModule09QuickRef />;
+      case 10:
+        return <CtrModule10Quiz />;
+      default:
+        notFound();
+    }
   }
 
   notFound();

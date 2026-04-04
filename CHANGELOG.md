@@ -6,6 +6,31 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-04] — Contractors Playbook (Full Build)
+
+### Added
+
+- Built the complete Contractors vertical playbook with 11 modules (0–10) matching the structure and brand voice of the Automotive, Salon & Med Spa, and Food & Hospitality playbooks
+- `src/app/playbook/modules/contractors/` — 11 TSX module files:
+  - `Module00Welcome.tsx` — The Playbook (intro, how to use, key metrics)
+  - `Module01MarketOpp.tsx` — Market Opportunity ($600B+ industry, pain/contrast, trade types)
+  - `Module02Website.tsx` — Website Buildout (contractor-native design, before/after galleries, trust signals, service area architecture)
+  - `Module03SEO.tsx` — Local SEO (service area pages, emergency intent keywords, review generation, seasonal SEO)
+  - `Module04Remarketing.tsx` — Remarketing (referral request automation, estimate follow-up, seasonal outreach, review collection)
+  - `Module05MobileApp.tsx` — Mobile App (push, job status, geo-targeting, target audience guidance)
+  - `Module06Pricing.tsx` — Pricing ($5K–$8K / $8K–$12K setup; $597/$997/$1,497 retainer tiers; $15K–$25K app)
+  - `Module07Outreach.tsx` — Outreach Strategy (warm network, social cold outreach, prospect sourcing channels)
+  - `Module08Objections.tsx` — Objection Handling (7 contractor-specific rebuttals)
+  - `Module09QuickRef.tsx` — Quick Reference (pricing cheat table, differentiator Q&A)
+  - `Module10Quiz.tsx` — Knowledge Check (12-question assessment, pass threshold 9/12)
+- `src/data/playbooks/contractors/modules.ts` — Full module registry with sections and read times
+- `src/data/playbooks/contractors/quiz.ts` — 12 contractor-specific quiz questions with feedback
+- Updated `src/data/playbooks/registry.ts` — Contractors entry updated with `quizModuleId: 10`, quiz questions, and pass count
+- Updated `src/data/playbooks/renderModule.tsx` — Contractors slug fully wired with switch/case for all 11 modules
+- Updated `content/roles/account-executive/playbooks/_index.md` — Contractors marked active with module list
+
+---
+
 ## [2026-04-03] — Featured Certification Card on Role Hub
 
 ### Changed

@@ -1,6 +1,7 @@
 import { CANNABIS_MODULES, CANNABIS_MODULE_SECTIONS } from "./cannabis/modules";
 import { CANNABIS_QUIZ_QUESTIONS } from "./cannabis/quiz";
 import { CONTRACTORS_MODULES, CONTRACTORS_MODULE_SECTIONS } from "./contractors/modules";
+import { CONTRACTORS_QUIZ_QUESTIONS } from "./contractors/quiz";
 import { FOOD_HOSPITALITY_MODULES, FOOD_HOSPITALITY_MODULE_SECTIONS } from "./food-hospitality/modules";
 import { FOOD_HOSPITALITY_QUIZ_QUESTIONS } from "./food-hospitality/quiz";
 import { SALON_MEDSPA_MODULES, SALON_MEDSPA_MODULE_SECTIONS } from "./salon-medspa/modules";
@@ -67,12 +68,12 @@ export const PLAYBOOKS: PlaybookDefinition[] = [
     title: "Contractors",
     sidebarLabel: "Contractors Playbook",
     description:
-      "Training for home services and contractor verticals. Content is being added—check back soon.",
+      "Sales guide for home services and contractor verticals: roofing, plumbing, HVAC, landscaping, and more—product, pitch, pricing, outreach, and objections.",
     modules: CONTRACTORS_MODULES,
     moduleSections: CONTRACTORS_MODULE_SECTIONS,
-    quizModuleId: null,
-    quizQuestions: [],
-    quizPassCount: 0,
+    quizModuleId: 10,
+    quizQuestions: CONTRACTORS_QUIZ_QUESTIONS,
+    quizPassCount: 9,
     completionTitle: "Contractors Playbook",
   },
 ];
