@@ -1,9 +1,10 @@
 import MeetingCadenceContent from "@/components/meetings/MeetingCadenceContent";
+import SDRMeetingCadenceContent from "@/components/sdr/SDRMeetingCadenceContent";
 
 export const metadata = {
   title: "Meeting Cadence & Preparation — Obsidion Training Hub",
   description:
-    "Twice-weekly team meeting format, preparation checklist, agenda structure, and attendance expectations for Account Executives.",
+    "Meeting format, preparation checklist, agenda structure, and attendance expectations.",
 };
 
 export default async function MeetingsPage({
@@ -12,5 +13,10 @@ export default async function MeetingsPage({
   params: Promise<{ roleSlug: string }>;
 }) {
   const { roleSlug } = await params;
+
+  if (roleSlug === "sdr") {
+    return <SDRMeetingCadenceContent roleSlug={roleSlug} />;
+  }
+
   return <MeetingCadenceContent roleSlug={roleSlug} />;
 }

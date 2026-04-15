@@ -6,6 +6,22 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-15] — SDR role hub (sections, outreach, and new routes)
+
+### Added
+
+- `content/roles/sdr/` — SDR playbook markdown (your role, accountability, daily structure, meetings, performance, getting paid, certification, ambassador setup, lead lists, product knowledge lite, outreach modules)
+- Role routes under `src/app/role/[roleSlug]/` for `your-role`, `lead-lists`, and `ambassador-setup`
+- `src/components/sdr/*` — section UI for SDR training pages
+- `src/components/ui/FlowChart.tsx` — shared flow diagram component
+- `src/data/roles/hub-sections.ts` — hub section metadata for role dashboards
+
+### Changed
+
+- `src/data/roles/registry.ts`, role hub and child pages, `RoleCard.tsx`, and on-the-call wiring updated for the expanded SDR hub
+
+---
+
 ## [2026-04-04] — Contractors Playbook (Full Build)
 
 ### Added

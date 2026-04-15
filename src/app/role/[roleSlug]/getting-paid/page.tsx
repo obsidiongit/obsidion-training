@@ -1,9 +1,10 @@
 import GettingPaidContent from "@/components/getting-paid/GettingPaidContent";
+import SDRGettingPaidContent from "@/components/sdr/SDRGettingPaidContent";
 
 export const metadata = {
   title: "Getting Paid & Bonuses — Obsidion Training Hub",
   description:
-    "Compensation structure, front-end commissions, MRR bonus tiers, enterprise deal treatment, and earning potential for Account Executives.",
+    "Compensation structure, commissions, bonus tiers, and earning potential.",
 };
 
 export default async function GettingPaidPage({
@@ -12,5 +13,10 @@ export default async function GettingPaidPage({
   params: Promise<{ roleSlug: string }>;
 }) {
   const { roleSlug } = await params;
+
+  if (roleSlug === "sdr") {
+    return <SDRGettingPaidContent roleSlug={roleSlug} />;
+  }
+
   return <GettingPaidContent roleSlug={roleSlug} />;
 }

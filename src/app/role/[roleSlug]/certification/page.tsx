@@ -1,9 +1,10 @@
 import CertificationContent from "@/components/certification/CertificationContent";
+import SDRCertificationContent from "@/components/sdr/SDRCertificationContent";
 
 export const metadata = {
   title: "Certification & Readiness Gate — Obsidion Training Hub",
   description:
-    "Nobody touches a live prospect until they've passed all seven gates. Product knowledge, role-play assessments, CRM proficiency, and proposal submission.",
+    "Complete your certification gates before going live with prospects.",
 };
 
 export default async function CertificationPage({
@@ -12,5 +13,10 @@ export default async function CertificationPage({
   params: Promise<{ roleSlug: string }>;
 }) {
   const { roleSlug } = await params;
+
+  if (roleSlug === "sdr") {
+    return <SDRCertificationContent roleSlug={roleSlug} />;
+  }
+
   return <CertificationContent roleSlug={roleSlug} />;
 }

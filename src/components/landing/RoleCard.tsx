@@ -10,12 +10,16 @@ import {
   HeartHandshake,
   Megaphone,
   Settings,
+  PhoneOutgoing,
+  Headset,
   type LucideIcon,
 } from "lucide-react";
 import type { RoleDefinition } from "@/data/roles/registry";
 
 const ICON_MAP: Record<string, LucideIcon> = {
   Briefcase,
+  PhoneOutgoing,
+  Headset,
   HeartHandshake,
   Megaphone,
   Settings,

@@ -20,6 +20,9 @@
 # production
 /build
 
+# local agent settings (machine-specific paths)
+.claude/settings.local.json
+
 # misc
 .DS_Store
 *.pem

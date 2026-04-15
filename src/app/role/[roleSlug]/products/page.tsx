@@ -1,4 +1,5 @@
 import ProductsOverview from "@/components/products/ProductsOverview";
+import ProductKnowledgeLiteContent from "@/components/sdr/ProductKnowledgeLiteContent";
 
 export const metadata = {
   title: "Product Knowledge — Obsidion Training Hub",
@@ -12,5 +13,10 @@ export default async function ProductsPage({
   params: Promise<{ roleSlug: string }>;
 }) {
   const { roleSlug } = await params;
+
+  if (roleSlug === "sdr") {
+    return <ProductKnowledgeLiteContent roleSlug={roleSlug} />;
+  }
+
   return <ProductsOverview roleSlug={roleSlug} />;
 }

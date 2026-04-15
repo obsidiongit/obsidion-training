@@ -6,11 +6,6 @@ import { motion } from "framer-motion";
 import { useEffect, useState, useCallback } from "react";
 import {
   BookOpen,
-  Phone,
-  Package,
-  DollarSign,
-  BarChart3,
-  Wrench,
   Download,
   ArrowLeft,
   ArrowRight,
@@ -18,9 +13,6 @@ import {
   Image,
   Code,
   FileDown,
-  Users,
-  ShieldAlert,
-  BadgeCheck,
   CheckCircle2,
   ChevronRight,
   Briefcase,
@@ -29,90 +21,14 @@ import {
   Settings,
   Search,
   X,
+  PhoneOutgoing,
+  Headset,
 } from "lucide-react";
 import DailyChecklistSection from "@/components/daily-structure/DailyChecklistSection";
+import SDRDailyChecklistSection from "@/components/sdr/SDRDailyChecklistSection";
 import { getCompletedSections, HUB_PROGRESS_EVENT } from "@/lib/hubProgress";
 import { getAllRoles, getRole } from "@/data/roles/registry";
-
-/* ─── Section definitions ─── */
-
-const FEATURED = [
-  {
-    slug: "playbooks",
-    title: "Training Playbooks",
-    description:
-      "Vertical-specific sales training for each industry. Deep-dive modules covering positioning, objections, pricing, and closing strategies.",
-    icon: BookOpen,
-    badges: ["Cannabis", "Food & Hospitality", "Salon & Med-Spa", "Automotive", "Contractors"],
-    shared: false,
-    fullWidth: false,
-  },
-  {
-    slug: "on-the-call",
-    title: "On the Call",
-    description:
-      "Live call frameworks, scripts, and objection-handling flows to keep conversations on track and close with confidence.",
-    icon: Phone,
-    badges: ["Scripts", "Objection Handling", "Call Framework"],
-    shared: false,
-    fullWidth: false,
-  },
-  {
-    slug: "certification",
-    title: "Certification & Readiness Gate",
-    description:
-      "Nobody touches a live prospect until they've passed all seven gates. Complete every section, pass the assessments, and get manager sign-off before going live.",
-    icon: BadgeCheck,
-    badges: ["7 Gates", "Role-Play Assessed", "Manager Sign-Off"],
-    shared: false,
-    fullWidth: true,
-  },
-] as const;
-
-const QUICK_ACCESS = [
-  {
-    slug: "products",
-    title: "Product Knowledge",
-    description: "Every Obsidion product, inside and out.",
-    icon: Package,
-    shared: false,
-  },
-  {
-    slug: "getting-paid",
-    title: "Getting Paid & Bonuses",
-    description: "Comp structure, commissions, and bonus tiers.",
-    icon: DollarSign,
-    shared: false,
-  },
-  {
-    slug: "performance",
-    title: "Performance Expectations",
-    description: "KPIs, ramp schedule, and activity benchmarks.",
-    icon: BarChart3,
-    shared: false,
-  },
-  {
-    slug: "tech",
-    title: "Tech We Use",
-    description: "CRM, dialer, and internal systems.",
-    icon: Wrench,
-    shared: true,
-  },
-  {
-    slug: "meetings",
-    title: "Meeting Cadence",
-    description: "Twice-weekly format, prep, and expectations.",
-    icon: Users,
-    shared: false,
-  },
-  {
-    slug: "accountability",
-    title: "Accountability",
-    description: "What wins here and what ends the relationship.",
-    icon: ShieldAlert,
-    shared: false,
-  },
-] as const;
+import { getHubConfig } from "@/data/roles/hub-sections";
 
 const ASSET_ITEMS = [
   { href: "/assets/logo.png", label: "Logo PNG", icon: Image },
@@ -123,23 +39,9 @@ const ASSET_ITEMS = [
   { href: "/assets/brand-guidelines.pdf", label: "Brand Guidelines", icon: FileDown },
 ] as const;
 
-/** All trackable section slugs for the AE hub */
-const TRACKABLE_SECTIONS = [
-  "playbooks",
-  "on-the-call",
-  "certification",
-  "products",
-  "getting-paid",
-  "performance",
-  "tech",
-  "meetings",
-  "accountability",
-  "daily-structure",
-  "assets",
-];
-
 const ROLE_ICONS: Record<string, React.ElementType> = {
   "account-executive": Briefcase,
+  sdr: Headset,
   "customer-success": HeartHandshake,
   marketing: Megaphone,
   operations: Settings,
@@ -265,6 +167,7 @@ function ComingSoonHub({ roleSlug }: { roleSlug: string }) {
 export default function RoleHubPage() {
   const { roleSlug } = useParams<{ roleSlug: string }>();
   const role = getRole(roleSlug);
+  const hubConfig = getHubConfig(roleSlug);
   const [completedSections, setCompletedSections] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
   const allRoles = getAllRoles();
@@ -277,20 +180,20 @@ export default function RoleHubPage() {
   const q = searchQuery.toLowerCase().trim();
 
   const filteredFeatured = q
-    ? FEATURED.filter(
+    ? hubConfig.featured.filter(
         (s) =>
           s.title.toLowerCase().includes(q) ||
           s.description.toLowerCase().includes(q) ||
           s.badges.some((b) => b.toLowerCase().includes(q))
       )
-    : FEATURED;
+    : hubConfig.featured;
 
   const filteredQuickAccess = q
-    ? QUICK_ACCESS.filter(
+    ? hubConfig.quickAccess.filter(
         (s) =>
           s.title.toLowerCase().includes(q) || s.description.toLowerCase().includes(q)
       )
-    : QUICK_ACCESS;
+    : hubConfig.quickAccess;
 
   const refreshProgress = useCallback(() => {
     setCompletedSections(getCompletedSections(roleSlug));
@@ -302,7 +205,7 @@ export default function RoleHubPage() {
     return () => window.removeEventListener(HUB_PROGRESS_EVENT, refreshProgress);
   }, [refreshProgress]);
 
-  const totalSections = TRACKABLE_SECTIONS.length;
+  const totalSections = hubConfig.trackableSections.length;
   const completedCount = completedSections.length;
   const percent = Math.round((completedCount / totalSections) * 100);
 
@@ -326,11 +229,10 @@ export default function RoleHubPage() {
           <div className="flex items-start justify-between gap-4">
             <div className="flex-1 min-w-0">
               <h1 className="text-3xl sm:text-4xl font-black tracking-tight text-foreground mb-2">
-                Account Executive Hub
+                {role?.title ?? "Role"} Hub
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-                Everything you need to ramp as an AE at Obsidion. Work through each
-                section at your own pace.
+                {role?.description}
               </p>
 
               {/* Search */}
@@ -734,7 +636,11 @@ export default function RoleHubPage() {
                 Daily Operating Rhythm
               </h2>
             </div>
-            <DailyChecklistSection />
+            {roleSlug === "sdr" ? (
+              <SDRDailyChecklistSection />
+            ) : (
+              <DailyChecklistSection />
+            )}
           </motion.section>
 
           {/* ── Explore Other Roles ── */}

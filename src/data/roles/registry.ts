@@ -24,6 +24,18 @@ export const ROLES: RoleDefinition[] = [
     sectionCount: 7,
   },
   {
+    slug: "sdr",
+    title: "Sales Development Rep",
+    shortTitle: "SDR",
+    description:
+      "Appointment-setting fundamentals — lead lists, outreach scripts, objection handling, and daily activity targets to book 1-3 qualified meetings per day.",
+    iconName: "Headset",
+    accentColor: "#0891B2",
+    accentGlow: "rgba(8, 145, 178, 0.35)",
+    status: "active",
+    sectionCount: 13,
+  },
+  {
     slug: "customer-success",
     title: "Customer Success",
     shortTitle: "CS",
