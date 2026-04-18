@@ -92,16 +92,18 @@ Every email you send should have a professional signature. Obsidion provides a b
 
 ---
 
-## Other Platforms (Optional)
+## Instagram Setup
 
-If you're active on Instagram, Twitter/X, or any other social platform and you plan to use it for outreach, apply the same principles:
+If you're prospecting on Instagram (which you should be for lifestyle, food, and salon verticals), your profile needs to look like it belongs to someone in marketing, not a spam bot or a random teenager. Keep in mind that Instagram is more visual and lifestyle-oriented, so a mix of professional and appropriate personal content is fine.
 
-- Professional photo (consistent with LinkedIn and Facebook)
-- Obsidion branding where possible (banner, bio mention)
-- Bio that says what you help people with, not just your title
-- Public-facing content that a business owner wouldn't cringe at
+### Step-by-Step
 
-You're not required to be on these platforms. But if you are, make them work for you — not against you.
+1. **Profile photo** — Use the same professional photo as LinkedIn and Facebook for consistency.
+2. **Bio / Intro** — Keep it punchy. Say what you do, who you do it for, and tag the company.
+   - Example: `Helping local businesses grow online 📈 | Marketing @obsidion`
+3. **Link in Bio** — Include a link to the Obsidion website or your specific booking link if you have one.
+4. **Highlights** — If you use Story Highlights, consider creating one for "Work" or "Business" where you can save tips, behind-the-scenes content, or Obsidion updates.
+5. **Content approach** — You don't need a perfectly curated grid, but ensure your public posts are appropriate. If your account is purely personal and you prefer to keep it that way, consider creating a separate professional/creator account for outreach.
 
 ---
 
@@ -120,6 +122,9 @@ Before you start outreach, confirm all of these are done:
 | **Facebook** | Obsidion banner uploaded | |
 | **Facebook** | Bio / intro updated | |
 | **Facebook** | Privacy set for professional visibility | |
+| **Instagram** | Professional photo uploaded | |
+| **Instagram** | Bio updated and company tagged | |
+| **Instagram** | Link in bio points to Obsidion | |
 | **Email** | Branded signature installed | |
 | **Email** | Test email sent and verified | |
 

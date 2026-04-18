@@ -42,6 +42,13 @@ const FACEBOOK_STEPS = [
   { icon: UserCircle, title: "Privacy settings", detail: "Professional posts visible to public. Personal stuff can stay private." },
 ] as const;
 
+const INSTAGRAM_STEPS = [
+  { icon: Camera, title: "Profile photo", detail: "Same professional photo as LinkedIn and Facebook for consistency." },
+  { icon: Type, title: "Bio / Intro", detail: "\"Helping local businesses grow online 📈 | Marketing @obsidion\"" },
+  { icon: FileText, title: "Link in Bio", detail: "Include a link to the Obsidion website or your specific booking link." },
+  { icon: Image, title: "Content approach", detail: "You don't need a perfect grid, but ensure public posts are appropriate." },
+] as const;
+
 const EMAIL_INCLUDES = [
   "Your full name",
   "Your title: Sales Development Representative",
@@ -54,6 +61,7 @@ const EMAIL_INCLUDES = [
 const CHECKLIST = [
   { platform: "LinkedIn", tasks: ["Professional photo", "Obsidion banner", "Headline updated", "About section written", "Experience added"] },
   { platform: "Facebook", tasks: ["Professional photo", "Obsidion banner", "Bio / intro updated", "Privacy set for professional visibility"] },
+  { platform: "Instagram", tasks: ["Professional photo", "Bio updated and company tagged", "Link in bio points to Obsidion"] },
   { platform: "Email", tasks: ["Branded signature installed", "Test email sent and verified"] },
 ] as const;
 
@@ -163,6 +171,43 @@ export default function AmbassadorSetupContent({ roleSlug }: { roleSlug: string 
                   className="flex gap-4 rounded-xl border border-border bg-card p-5 shadow-sm"
                 >
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-emerald-accent/10 text-emerald-accent">
+                    <span className="text-sm font-black">{i + 1}</span>
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-bold mb-1">{step.title}</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{step.detail}</p>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
+        </motion.section>
+
+        {/* ── Instagram Setup ── */}
+        <motion.section
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
+          <SectionLabel barClass="bg-purple-accent" textClass="text-purple-accent">
+            Instagram Setup
+          </SectionLabel>
+
+          <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed max-w-3xl mb-8">
+            If you&apos;re prospecting on Instagram (which you should be for lifestyle, food, and salon verticals), your profile needs to look professional. Keep in mind that a mix of professional and appropriate personal content is fine.
+          </motion.p>
+
+          <div className="space-y-4">
+            {INSTAGRAM_STEPS.map((step, i) => {
+              const Icon = step.icon;
+              return (
+                <motion.div
+                  key={step.title}
+                  variants={fadeUp}
+                  className="flex gap-4 rounded-xl border border-border bg-card p-5 shadow-sm"
+                >
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-purple-accent/10 text-purple-accent">
                     <span className="text-sm font-black">{i + 1}</span>
                   </div>
                   <div>
