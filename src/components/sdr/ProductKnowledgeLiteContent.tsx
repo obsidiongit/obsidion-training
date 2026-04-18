@@ -23,7 +23,7 @@ const PRODUCTS = [
   {
     icon: Globe,
     title: "Custom Websites",
-    oneLiner: "We build custom websites for businesses — not templates. Your site goes live in about a week.",
+    oneLiner: "We build custom websites for businesses — not templates. Your site goes live within a week.",
     whenToMention: "The prospect's website is outdated, ugly, slow, or doesn't exist.",
     painSignals: [
       "\"Our website is old / embarrassing / we need to redo it\"",

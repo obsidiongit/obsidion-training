@@ -19,7 +19,7 @@ This section gives you the elevator pitch for each product and the one-liner you
 **What it is:** Obsidion builds custom websites for businesses. Not templates. Not DIY builders. A real site built by a real team, designed to look professional and convert visitors into customers.
 
 **The one-liner:**
-> *"We build custom websites for businesses — not templates. Your site goes live in about a week."*
+> *"We build custom websites for businesses — not templates. Your site goes live within a week."*
 
 **When to mention it:** The prospect's website is outdated, ugly, slow, or doesn't exist. You looked it up before the call and it's clearly a problem.
 
