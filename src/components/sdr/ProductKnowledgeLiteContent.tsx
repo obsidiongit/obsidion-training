@@ -21,73 +21,73 @@ import {
 
 const PRODUCTS = [
   {
+    icon: Lightbulb,
+    title: "Meta Ad Management (Primary — ~80%)",
+    oneLiner: "We build the creatives and run your Meta (Facebook and Instagram) campaigns inside your own ad account — so spend and performance stay visible.",
+    whenToMention: "Default pitch angle: they're boosting, running ads, paying an agency, or want to scale demand beyond referrals.",
+    painSignals: [
+      "\"We boost posts but it doesn't do anything\"",
+      "\"Our agency won't give us access to our own ad account\"",
+      "\"We're spending on Meta and don't know if it's working\"",
+    ],
+    color: "accent",
+  },
+  {
     icon: Globe,
     title: "Custom Websites",
     oneLiner: "We build custom websites for businesses — not templates. Your site goes live within a week.",
-    whenToMention: "The prospect's website is outdated, ugly, slow, or doesn't exist.",
+    whenToMention: "Lead with this when the site is the loudest pain or they only need a rebuild — not every deal is Meta-first. Also supports Meta: bad landing pages waste ad spend.",
     painSignals: [
       "\"Our website is old / embarrassing / we need to redo it\"",
       "\"We built it ourselves on Wix / Squarespace and it's not working\"",
       "\"We don't even have a website\"",
     ],
-    color: "accent",
+    color: "emerald-accent",
   },
   {
     icon: Search,
     title: "SEO (Search Engine Optimization)",
     oneLiner: "We make sure your business shows up when people Google what you do in your area.",
-    whenToMention: "The prospect isn't showing up on Google, or they don't know where they rank.",
+    whenToMention: "Organic and Maps visibility — often layered with paid, not instead of it.",
     painSignals: [
       "\"I don't think we show up on Google\"",
       "\"Our competitors are everywhere online and we're invisible\"",
       "\"We get all our business from referrals\" (zero online visibility)",
     ],
-    color: "emerald-accent",
+    color: "purple-accent",
   },
   {
     icon: RefreshCw,
     title: "Remarketing (Automated Follow-Up)",
     oneLiner: "We automate the follow-up so leads don't go cold after the first contact.",
-    whenToMention: "The prospect mentions losing leads, forgetting to follow up, or no system for staying in touch.",
+    whenToMention: "After ads drive clicks, follow-up catches what doesn't convert on the first visit.",
     painSignals: [
       "\"People call but don't end up coming in\"",
       "\"We're bad at following up\"",
       "\"Leads just kind of disappear\"",
     ],
-    color: "purple-accent",
+    color: "amber-accent",
   },
   {
     icon: Smartphone,
     title: "Mobile App",
     oneLiner: "We build a branded app for your business — loyalty, push notifications, ordering — all under your name.",
-    whenToMention: "The prospect has repeat customers and relies on third-party platforms that take a cut.",
+    whenToMention: "Repeat customers, third-party fees, or loyalty — not the default SDR opener.",
     painSignals: [
       "\"We use DoorDash / UberEats and the fees are killing us\"",
       "\"We want a loyalty program but haven't set one up\"",
       "\"We want our customers to order directly from us\"",
     ],
-    color: "amber-accent",
-  },
-  {
-    icon: Lightbulb,
-    title: "Meta Ad Management (Paid Ads)",
-    oneLiner: "We build the creatives and run your Meta ad campaigns directly inside your own ad account — so you always retain ownership.",
-    whenToMention: "The prospect is boosting posts, currently paying an agency, or wants to drive immediate traffic.",
-    painSignals: [
-      "\"We boost posts but it doesn't do anything\"",
-      "\"Our current agency won't give us access to our own ad account\"",
-      "\"We tried Facebook ads once and lost money\"",
-    ],
-    color: "accent",
+    color: "purple-accent",
   },
 ] as const;
 
 const CHEAT_SHEET = [
-  { product: "Website", oneLiner: "We build custom websites — not templates. Live in a week.", trigger: "\"Our site is old / bad / missing\"" },
-  { product: "SEO", oneLiner: "We get you showing up on Google in your area.", trigger: "\"We don't show up online / competitors do\"" },
-  { product: "Remarketing", oneLiner: "We automate follow-up so leads don't go cold.", trigger: "\"Leads disappear / we forget to follow up\"" },
-  { product: "Mobile App", oneLiner: "A branded app — loyalty, orders, notifications.", trigger: "\"Fees from third-party apps / want loyalty\"" },
-  { product: "Paid Ads", oneLiner: "Meta ads with done-for-you creative and full account visibility.", trigger: "\"Agencies lock us out / boosting posts doesn't work\"" },
+  { product: "Meta ads", oneLiner: "Creatives + campaigns in your ad account — full visibility.", trigger: "\"Boosting / agency / don't know if ads work\"" },
+  { product: "Website", oneLiner: "Custom sites — not templates. Live in about a week.", trigger: "\"Site is old / bad / wasting ad clicks\"" },
+  { product: "SEO", oneLiner: "Show up on Google in your area.", trigger: "\"Invisible vs competitors / Maps\"" },
+  { product: "Remarketing", oneLiner: "Automate follow-up so leads don't go cold.", trigger: "\"Leads disappear / no system\"" },
+  { product: "Mobile App", oneLiner: "Branded app — loyalty, orders, notifications.", trigger: "\"Third-party fees / loyalty\"" },
 ] as const;
 
 const colorMap: Record<string, { bg: string; text: string; border: string; badgeBg: string }> = {
@@ -107,7 +107,7 @@ export default function ProductKnowledgeLiteContent({ roleSlug }: { roleSlug: st
         backLabel="Back to hub"
         eyebrow="Product Knowledge"
         title="Product Knowledge (Lite)"
-        description="Elevator pitches for every product — enough to book the meeting. The AE handles the deep dive."
+        description="Roughly 80% of conversations lean on Meta; the other ~20% is website, SEO, remarketing, and app — still real deals. If they only need a site, that's valid. Enough to book the meeting — the AE handles the deep dive."
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">
@@ -139,8 +139,13 @@ export default function ProductKnowledgeLiteContent({ roleSlug }: { roleSlug: st
           viewport={{ once: true, margin: "-60px" }}
         >
           <SectionLabel barClass="bg-emerald-accent" textClass="text-emerald-accent">
-            The Five Products
+            What We Offer (≈80/20)
           </SectionLabel>
+
+          <motion.p variants={fadeUp} className="text-muted-foreground text-sm leading-relaxed max-w-3xl mb-6">
+            Default to Meta when paid social or scaling is in play. The rows below are the full stack — not five
+            equal openers. If their pain is website-only or visibility without ads yet, lead there; do not force Meta.
+          </motion.p>
 
           <div className="space-y-6">
             {PRODUCTS.map((product) => {
@@ -200,9 +205,10 @@ export default function ProductKnowledgeLiteContent({ roleSlug }: { roleSlug: st
 
           <motion.div variants={fadeUp} className="rounded-2xl border border-purple-accent/20 bg-purple-accent/[0.04] px-6 py-5">
             <p className="text-sm text-foreground leading-relaxed italic">
-              &ldquo;The website is the foundation — it&apos;s where everything lives. SEO makes
-              sure people can find it on Google. Remarketing follows up with the ones who don&apos;t
-              buy right away. And the app keeps your best customers coming back. They all connect.&rdquo;
+              &ldquo;Most of what we do for growth leans on Meta — Facebook and Instagram — with
+              creatives and campaigns in your own ad account. The website and follow-up make sure you
+              don&apos;t waste that spend. Some owners need a site or SEO first — that&apos;s fine too. SEO
+              and the app layer on when they fit. One team owns the stack.&rdquo;
             </p>
           </motion.div>
         </motion.section>

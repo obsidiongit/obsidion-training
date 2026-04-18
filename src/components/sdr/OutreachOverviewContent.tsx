@@ -28,7 +28,7 @@ const TOPICS = [
     title: "Phone Scripts",
     stat: "Primary Channel",
     description:
-      "Cold call openers, qualifying questions, voicemail scripts, gatekeeper navigation, and the booking ask.",
+      "Openers anchored on Meta and growth — not generic Google quizzes. Qualify, book, confirm.",
     iconBg: "bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white",
     borderHover: "hover:border-accent/30",
   },
@@ -38,7 +38,7 @@ const TOPICS = [
     title: "Email Templates",
     stat: "Copy & Paste",
     description:
-      "First touch, follow-up sequences, breakup emails, post-call confirmations, and a paid ads-specific opener.",
+      "Meta-led first touches, observation and scaling variants, follow-ups, breakup — short and specific.",
     iconBg: "bg-emerald-accent/10 text-emerald-accent group-hover:bg-emerald-accent group-hover:text-white",
     borderHover: "hover:border-emerald-accent/30",
   },
@@ -48,7 +48,7 @@ const TOPICS = [
     title: "Social Outreach",
     stat: "Trust Builder",
     description:
-      "LinkedIn, Facebook, and Instagram DM scripts, engagement tips, and profile-based prospecting.",
+      "DMs that lead with paid social or real hooks — plus LinkedIn/Facebook/IG engagement habits.",
     iconBg: "bg-purple-accent/10 text-purple-accent group-hover:bg-purple-accent group-hover:text-white",
     borderHover: "hover:border-purple-accent/30",
   },
@@ -89,7 +89,7 @@ export default function OutreachOverviewContent({ roleSlug }: { roleSlug: string
         backLabel="Back to hub"
         eyebrow="Outreach"
         title="Outreach Playbook"
-        description="Phone scripts, email templates, social DMs, and objection handling — your complete toolkit for booking appointments across all three channels."
+        description="Outbound with a ≈80/20 bias toward Meta when it fits; website, SEO, and follow-up still matter — some leads are site-only. Phone, email, social — human tone. Objection handling ties it together."
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">

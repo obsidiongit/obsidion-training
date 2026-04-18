@@ -6,6 +6,40 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-18] — SDR: 80/20 Meta vs full stack; Your Role + hub alignment
+
+### Changed
+
+- **`YourRoleContent.tsx`, `your-role.md`:** Growth/scaling framing for owners; explicit ≈80/20 rule (Meta vs rest); website-only and non-Meta pains called out; BANT Need signals updated
+- **Hub (`hub-sections.ts`):** Featured "Your Role" and Product Knowledge card copy reflect 80/20 and valid website-only path
+- **Product Knowledge Lite (TSX + `product-knowledge-lite.md`):** Section title, hero, stack narrative, website "when to mention," and "how they work together" aligned to 80/20
+- **Outreach surfaces:** Heroes and helper copy on Phone, Email, Outreach overview, Social, Objections; certification Gate 4 sign-off bullet; Product Knowledge "Read this first" on phone
+
+---
+
+## [2026-04-18] — SDR outreach: Meta-first copy (email, phone, social, objections, product lite)
+
+### Changed
+
+- **Email (`EmailTemplatesContent.tsx`, `email-templates.md`):** Meta-led default first touch; after-call, observation cold, scaling-without-ad-signal variants; follow-ups and breakup aligned to Meta + growth; removed generic Google-quiz patterns
+- **Phone (`PhoneScriptsContent.tsx`, `phone-scripts.md`):** Openers A–D (Meta default, scaling, observation, referral); Q&A and pain table prioritize Meta/spend; prep includes checking Meta surfaces; voicemail, callback, gatekeeper, exit copy updated
+- **Social (`SocialOutreachContent.tsx`, `social-outreach.md`):** LinkedIn/Facebook/Instagram templates and connection notes — Meta-first, no vague “online presence” soft opens
+- **Objections (`SDRObjectionHandlingContent.tsx`, `objection-handling.md`):** “Not interested,” “send info,” and “vendor” responses anchored on Meta / ad-account visibility
+- **Product Knowledge Lite (`ProductKnowledgeLiteContent.tsx`, `product-knowledge-lite.md`):** Meta listed first with primary framing; website/SEO/remarketing/app as supporting; cheat sheet and “how they work together” rewritten
+- **Outreach hub (`OutreachOverviewContent.tsx`):** Hero and topic card copy reflect Meta-first toolkit
+
+---
+
+## [2026-04-18] — SDR Phone Scripts: Q&A, call plan, tighter scripts
+
+### Changed
+
+- Rebuilt `PhoneScriptsContent.tsx` so new SDRs see **Read this first** (link to Product Knowledge Lite), **Before you dial — Q&A** (what Obsidion sells, pains we solve, SDR scope, what to avoid), a **pain → bridge** table, a numbered **call plan** (prep through confirm), then refined openers (A/B/C), qualifying, booking, voicemail, callback, gatekeeper, exit, and at-a-glance flow
+- Replaced loose "demo" framing with **short meeting / specialist / deep dive** language aligned to setter role
+- Updated `content/roles/sdr/outreach/phone-scripts.md` to mirror the same structure for markdown readers
+
+---
+
 ## [2026-04-15] — SDR role hub (sections, outreach, and new routes)
 
 ### Added

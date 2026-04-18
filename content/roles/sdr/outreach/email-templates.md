@@ -4,65 +4,99 @@
 
 ## How to Use These Templates
 
-Copy, paste, personalize. Every template has brackets `[like this]` where you fill in the prospect's specific information. Do not send a template without personalizing it — a generic email is a deleted email.
+Copy, paste, personalize every bracket. **≈80% of strong first touches lean on Meta** (Facebook and Instagram) — creatives and campaigns in the client's ad account so spend is visible. The other **~20%** is website, SEO, remarketing; **website-only** is a valid path when that's clearly the need. Don't lead with a laundry list.
 
-These are short on purpose. Business owners get dozens of emails a day. If yours is longer than 5 sentences, they're not reading it. Say one thing. Ask one question. Make it easy to reply.
+**Avoid:** Quiz-style hooks ("do you know where you rank on Google?"). **Prefer:** Something you actually saw — ad activity, a post, site issue — or a growth angle ("scaling what's working").
+
+Keep emails short. If it's longer than five sentences, they're not reading it. One ask per email.
 
 ---
 
-## First Touch — After a Missed Call
+## First Touch — Meta-Led (Default)
 
-Use this when you called, they didn't pick up, and you left a voicemail (or didn't).
+Use when you see Facebook/Instagram activity, boosts, or when their category is a natural fit for paid social. This is the primary first-touch pattern.
 
 > **Subject:** Quick question — [their business name]
 >
 > Hey [Name],
 >
-> Tried calling earlier — no worries if you missed it. I had a quick question: when someone Googles [their business type] in [their city], do you know where you show up?
+> I've been looking at how [their business name] shows up on Facebook/Instagram — looks like you're putting content out there. Are you running paid ads yourself, or is someone else managing campaigns for you?
 >
-> I work with Obsidion — we help local businesses get found online, fix their websites, and automate follow-up. Not sure if it's a fit, but figured it was worth a quick ask.
+> I work with Obsidion — we run Meta ads end-to-end (creatives + management) inside **your** ad account, so you always see where the money goes. Figured it might be relevant if you're trying to scale what's already working.
 >
-> Worth a 2-minute call this week?
+> Worth a two-minute call this week?
+>
+> [Your name]
+> [Your phone number]
+
+**Don't drop:** "Inside your ad account" — that's the differentiator from agencies that lock clients out of their own data.
+
+---
+
+## First Touch — After a Missed Call
+
+> **Subject:** Tried you earlier — [their business name]
+>
+> Hey [Name],
+>
+> Called earlier — no stress if you missed it. I wanted to ask whether you're running Facebook/Instagram ads in-house or with someone, and if you're happy with how performance and spend are visible on your side.
+>
+> We help businesses run Meta with full creative and management in their own ad account. Happy to compare notes for two minutes if you're open to it.
 >
 > [Your name]
 > [Your phone number]
 
 ---
 
-## First Touch — Cold Email (No Prior Call)
+## First Touch — Cold (Specific Observation)
 
-Use this when you're reaching out for the first time via email, without having called first.
+Use when you have something concrete — not a fake Google quiz.
 
-> **Subject:** [Their business name] + Google
+> **Subject:** Noticed something — [their business name]
 >
 > Hey [Name],
 >
-> I was looking at [their business name] online and noticed [one specific observation — e.g., "your site hasn't been updated in a while" or "you're not showing up on the first page for [their category] in [their city]"].
+> I was looking at [their business name] before writing — [one specific observation: e.g. booking flow on mobile, thin reviews, site speed, a post that drove engagement].
 >
-> We work with [their industry] businesses on exactly this — websites, local search, and lead follow-up. Not a long pitch — just curious if it's something you've been thinking about.
+> We help [their industry] businesses turn that kind of footprint into growth — Meta is usually the engine, and we layer site/SEO/follow-up where it matters. Not a novel — just curious if scaling is on your mind this quarter.
 >
-> Open to a quick call this week?
+> Open to a quick call?
 >
 > [Your name]
 > [Your phone number]
 
-**Important:** The observation in brackets needs to be real. Look at their website or Google their business before sending. "I noticed your website could use some work" is lazy. "I noticed your site is still on a Wix template and your Google listing doesn't have any reviews" is specific.
+**Important:** The observation must be real. Look before you send.
+
+---
+
+## First Touch — Scaling (No Clear Ad Signal)
+
+Use when you don't see paid activity but the brand looks strong — open on growth, not "rankings."
+
+> **Subject:** [Their business name] + growth
+>
+> Hey [Name],
+>
+> [Their business name] clearly has traction — I'm curious whether you're trying to scale what's already working, or if growth has mostly been word-of-mouth so far.
+>
+> We work with a lot of [their industry] owners on Meta ads (plus the site and follow-up pieces so spend isn't wasted). If putting real budget behind demand is on your radar, I can get you a short call with someone who does this every day.
+>
+> [Your name]
+> [Your phone number]
 
 ---
 
 ## Follow-Up #1 — Day 3
 
-Use this 2–3 days after your first email if they didn't respond.
-
 > **Subject:** Re: [original subject line]
 >
 > Hey [Name],
 >
-> Following up on my note from [day]. Not trying to be pushy — just want to make sure it didn't get buried.
+> Following up on my note — not trying to flood your inbox. Short version: we help [their industry] businesses run Meta ads with creatives and full visibility in their own account, and we fix the site/follow-up pieces so money isn't leaking.
 >
-> Quick version: we help [their industry] businesses show up on Google and turn website visitors into actual customers. If your online setup is already dialed in, no worries — but if it's something you've been meaning to fix, I can get you 20 minutes with someone who can show you what it looks like.
+> If that's not a priority, all good. If it is, I can line up 20 minutes with a specialist — no pitch deck, just a real look at your situation.
 >
-> Worth a look?
+> Worth it?
 >
 > [Your name]
 
@@ -70,79 +104,39 @@ Use this 2–3 days after your first email if they didn't respond.
 
 ## Follow-Up #2 — Day 5
 
-Shorter. New angle.
-
 > **Subject:** Re: [original subject line]
 >
 > Hey [Name],
 >
-> One more thought — I looked at how [competitor name or "other [industry] businesses"] in [their city] are showing up on Google, and there's a gap you could fill pretty easily.
->
-> Happy to share what I found if you've got 2 minutes. No obligation.
+> One more angle — I looked at [competitor or "who's running ads"] in [city] in your space. There's a gap in how aggressively [their category] is showing up with paid social. Happy to share what I saw in two minutes if you're curious.
 >
 > [Your name]
 > [Your phone number]
-
-**Tip:** If you can actually identify a competitor who ranks well locally, mention them. Business owners pay attention when you name a competitor.
-
----
-
-## First Touch — Prospect Running Ads (Meta / Facebook)
-
-Use this when you know or suspect the prospect is already running Facebook or Instagram ads — either from their page (they're boosting posts), from a prior call, or from their lead record.
-
-> **Subject:** Quick question about your Facebook ads
->
-> Hey [Name],
->
-> Noticed [their business name] is active on Facebook — do you have someone managing your paid ads, or is that mostly organic at this point?
->
-> I ask because we help [their industry] businesses run Facebook and Instagram ads end-to-end — strategy, creatives, and campaign management — all inside your ad account, so you always have full visibility on where the money's going.
->
-> Not a pitch — just curious if it's something you've been thinking about. Worth a quick call?
->
-> [Your name]
-> [Your phone number]
-
-**When to use it:** You've seen they're boosting posts or running ads on their page, a prior call revealed they're spending on ads, or their business type (salon, restaurant, contractor) is a natural fit for paid social.
-
-**The key line:** "all inside your ad account" — this is the differentiator from agencies who lock clients out of their own data. Don't drop it.
 
 ---
 
 ## Breakup Email — Day 7
 
-This is your last email in the sequence. It signals that you're going to stop reaching out — which often triggers a response.
-
 > **Subject:** Should I close the file?
 >
 > Hey [Name],
 >
-> I've reached out a few times and I know you're busy — so I don't want to keep pinging you if the timing isn't right.
+> I've reached out a few times — I know you're busy. If scaling with Meta (or fixing the site/follow-up behind your traffic) isn't on your radar right now, I'll stop here.
 >
-> If getting more customers through Google and a better website is on your radar, I'm here. If not, no hard feelings — I'll stop reaching out.
->
-> Either way, I'm easy to find: [your phone number] or just reply to this.
->
-> [Your name]
-
-**Why this works:** "Should I close the file?" creates a small sense of urgency without being aggressive. Many prospects who ignored the first three emails will reply to this one.
+> If it is, I'm one reply away. [Your phone number] — or just reply to this.
 
 ---
 
 ## Post-Call Email — After a Good Conversation
 
-Use this right after a call where the prospect was interested and you booked (or are trying to book) the appointment.
-
 > **Subject:** Great talking with you, [Name]
 >
 > Hey [Name],
 >
-> Good chatting just now. Like we discussed, I'm setting you up with [AE name or "one of our specialists"] to walk through how we can help with [specific thing they mentioned — their website, Google visibility, follow-up, etc.].
+> Good chatting. I'm setting you up with [AE name] to walk through [what they mentioned — e.g. Meta, site, follow-up].
 >
-> I've sent a calendar invite for [day] at [time]. If that time shifts, just reply here and we'll adjust.
+> Calendar invite for [day] at [time]. If that shifts, reply here.
 >
-> Talk soon,
 > [Your name]
 > [Your phone number]
 
@@ -150,32 +144,25 @@ Use this right after a call where the prospect was interested and you booked (or
 
 ## Appointment Reminder — Day Before
 
-Send this the day before the scheduled appointment to reduce no-shows.
-
 > **Subject:** Quick reminder — tomorrow at [time]
 >
 > Hey [Name],
 >
-> Just a heads up — you've got a call with [AE name or "our team"] tomorrow at [time]. It's a [duration — e.g., 20-minute] conversation about [what they're interested in].
+> Reminder — you've got a call with [AE name] tomorrow at [time]. They'll walk through what makes sense for your business (usually starting with what's happening on Meta and your site).
 >
-> No prep needed on your end — just show up and they'll walk you through everything.
->
-> Looking forward to it,
 > [Your name]
 
 ---
 
 ## Re-Engagement — 30–60 Days Later
 
-Use this for prospects who went cold but weren't a hard "no."
-
 > **Subject:** Circling back — [their business name]
 >
 > Hey [Name],
 >
-> We talked a while back about [what you discussed]. Wanted to check in — has anything changed on the [website / online marketing / lead follow-up] front?
+> We talked a while back about [what you discussed]. Wanted to check in — any change on the Meta side, or on the site/leads side?
 >
-> If the timing is better now, I can get you 20 minutes with someone who can show you exactly what we'd do for your business. No obligation.
+> If timing's better, I can get you 20 minutes with someone who can map what would actually move the needle.
 >
 > [Your name]
 > [Your phone number]
@@ -184,12 +171,12 @@ Use this for prospects who went cold but weren't a hard "no."
 
 ## Template Rules
 
-1. **Always personalize.** Every bracket gets filled in with real information. No exceptions.
-2. **Keep it short.** 5 sentences max. Business owners skim.
-3. **One ask per email.** Don't ask for a call AND send a link AND ask a question. Pick one.
-4. **Use the same subject line** for follow-ups in the same sequence (reply threading helps open rates).
-5. **Send from your branded email** with your Obsidion signature. Every email should look professional.
-6. **Log every email in the CRM** — who you sent it to, when, and which template you used.
+1. **Personalize every bracket.** No exceptions.
+2. **Meta first** when there's a signal; otherwise scaling or a real observation.
+3. **Keep it short** — five sentences max.
+4. **One ask per email.**
+5. **Same subject line** for follow-ups in the same thread when it makes sense.
+6. **Log everything** in the CRM.
 
 ---
 

@@ -1,122 +1,133 @@
 # Your Role as an SDR
 
+Speak with **business owners** about how Obsidion helps them **grow and scale** — more customers, more revenue, not just "a nicer website." **Meta (Facebook and Instagram) ads** are the usual focus; the rest of the stack still matters. This page is the foundation for everything else.
+
 ---
 
-## What You Do
+## The Simple Version
 
-You are a Sales Development Rep. Your job is to find business owners, start a conversation, and book a qualified appointment for an Account Executive (AE). That's it. You are not closing deals. You are not running demos. You are not negotiating pricing. You open the door. The AE walks through it.
+**You find them. You qualify them. You book the meeting. The AE closes the deal.**
 
-Think of it like this:
+Your job is to talk with owners about what Obsidion offers to help them grow. You are not closing deals or quoting full projects; you open the door and hand off with context. The AE walks through it.
 
-> **You find them. You qualify them. You book the meeting. The AE closes the deal.**
+---
 
-If the AE closes the deal, you get paid. If the appointment is qualified and the prospect shows up, you get paid. Your success is measured by how many real, qualified appointments you put on the calendar.
+## The ≈80/20 rule (how we talk about product)
+
+- **Roughly 80%** of strong conversations lean on **Meta ads** — creatives, campaigns, and visibility inside their ad account. That is where a lot of revenue comes from for us and for them.
+- **Roughly 20%** — still important — is everything else: custom website, local SEO, remarketing, app. If someone **only needs a website** or a visibility fix with no ads yet, that is still a real deal. Match the conversation to their pain; do not force Meta into every opener.
 
 ---
 
 ## Where You Fit
 
-Here's the flow from start to finish:
+```
+┌─────────────┐     ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
+│   YOU       │     │     AE      │     │  Delivery   │     │   Client    │
+│   (SDR)     │ ──► │  (Closer)   │ ──► │   (Team)    │ ──► │  (Happy)    │
+│             │     │             │     │             │     │             │
+│ Find & Book │     │ Sell & Close│     │ Build & Run │     │ Pays Us     │
+└─────────────┘     └─────────────┘     └─────────────┘     └─────────────┘
+```
 
-### The Sales Pipeline
-
-| Step | Who Does It | What Happens |
-|------|-------------|--------------|
-| **1. Find the lead** | You (SDR) | Work your lead list, social accounts, or personal outreach to find business owners |
-| **2. Start a conversation** | You (SDR) | Call, email, or DM to get them talking |
-| **3. Qualify the prospect** | You (SDR) | Confirm they meet the criteria (more on this below) |
-| **4. Book the appointment** | You (SDR) | Put the meeting on the AE's calendar with your notes |
-| **5. Run the demo / close** | Account Executive | AE takes the meeting and works the deal to close |
-| **6. Customer onboarded** | Delivery team | The customer goes live |
-
-Your work happens in steps 1 through 4. Everything after that is someone else's job. Your only goal is to fill the AE's calendar with qualified meetings.
+You are the first human touch. Everything downstream depends on you doing this job well.
 
 ---
 
-## The Handoff
+## What You Actually Do
 
-When you book an appointment, here's what happens:
+### Find Leads
 
-1. **You schedule the meeting** on the AE's calendar
-2. **You attach your notes** — who the prospect is, what their business does, what pain you uncovered, and why they're a fit
-3. **You step away** — the AE takes it from here
+You work from lead lists, inbound inquiries, referrals, and your own prospecting. Your job is to identify businesses that could benefit from Obsidion — usually growth-minded owners who want more from their marketing.
 
-Your notes matter. The AE walks into that meeting cold if you don't prep them. Good notes look like:
+### Start Conversations
 
-- Business name, owner name, location
-- What they do and how big they are
-- What problem they mentioned (website is outdated, can't be found on Google, no follow-up system, etc.)
-- Which Obsidion products map to their pain
-- Any timeline or urgency they mentioned
+Phone, email, social — whatever works. The goal is not to pitch a full project on the spot. The goal is to get them talking about their business, their goals, and whether a conversation with an AE makes sense.
 
-Bad notes look like: "Seemed interested." That's not a handoff — that's a guess.
+### Qualify (BANT)
 
-### Want to Grow Into an AE Role?
+You are not doing deep discovery. You are confirming there is a real opportunity before burning an AE's time.
 
-If you want to eventually move into an Account Executive seat, you can sit in on AE calls. This is optional but highly encouraged. You'll learn how deals close, what good discovery sounds like from the other side, and what makes a truly qualified appointment. Talk to your manager about joining live calls.
+| Letter | What It Means | What You're Listening For |
+|--------|---------------|---------------------------|
+| **B**udget | Can they afford marketing help? | "We've been putting money into ads" / "We have a marketing budget" |
+| **A**uthority | Can they say yes? | Owner, GM, marketing decision-maker — not just a receptionist |
+| **N**eed | Do they have a problem we solve? | Meta spend is opaque or underperforming; website is bad; invisible on Google; leads slip through; OR they only need a site rebuild — all valid |
+| **T**imeline | Is this real or someday-maybe? | "We're looking to fix this in the next few months" vs "maybe someday" |
 
----
+You do not need all four boxes checked perfectly. You need enough signal to say: "This person should talk to an AE."
 
-## What Makes an Appointment "Qualified"
+### Book the Appointment
 
-Not every conversation is a qualified appointment. You get credit when the prospect meets BANT criteria:
+Once qualified, you get a specific time on the calendar — not "I'll call you back" or "check out our website." A real meeting with a real AE at a real time.
 
-### BANT Qualification
+### Hand Off Cleanly
 
-| Criteria | What It Means | What to Listen For |
-|----------|---------------|-------------------|
-| **B — Budget** | They can afford the service | They're already spending on marketing, they have revenue, they're not a brand-new startup with no cash flow |
-| **A — Authority** | You're talking to the decision maker | They're the owner, partner, or the person who signs off on marketing spend |
-| **N — Need** | They have a real problem Obsidion solves | Their website is bad, they don't show up on Google, leads fall through the cracks, no follow-up system |
-| **T — Timeline** | They're ready to act, not "someday" | They mentioned a goal, a deadline, a season, or frustration that's costing them now |
-
-You don't need all four to be rock-solid on every call. But you need at least two or three strong signals. If someone has zero budget, isn't the decision maker, and has no urgency — that's not a qualified appointment. That's a conversation that wastes the AE's time.
-
-**The appointment counts when:** The prospect shows up to the meeting AND met the BANT criteria you identified.
-
-**The appointment doesn't count when:** The prospect no-shows, or they were clearly unqualified (not a decision maker, no real business, no need).
+The AE should know who they are talking to, what the business does, and what pain points came up in your conversation. Sloppy handoffs waste everyone's time.
 
 ---
 
-## Your Three Channels
+## What You Don't Do
 
-You have three ways to reach prospects. You'll use all three, every day.
-
-| Channel | What It Looks Like |
-|---------|-------------------|
-| **Phone** | Cold calls, warm follow-ups, voicemails. This is your primary weapon. |
-| **Email** | Outreach sequences, follow-ups after calls, value-add touches. |
-| **Social** | LinkedIn and Facebook DMs, profile engagement, ambassador-style outreach. |
-
-Each channel has its own playbook in the Outreach section. The short version: phone opens the most doors, email keeps the conversation going, and social builds trust before and after the call.
+- **Close deals** — That's the AE's job
+- **Quote pricing** — You don't know the full scope; don't guess
+- **Run technical demos** — You don't need to explain how the app works in detail
+- **Promise specific results** — No guaranteed rankings, leads, or ROI numbers
+- **Badmouth competitors** — Stay professional
+- **Argue with prospects** — If they're not a fit, move on
 
 ---
 
-## What Success Looks Like
+## Compensation Model
 
-| Metric | What It Means |
-|--------|---------------|
-| **1–3 qualified appointments per day** | This is your target. High performers hit 4–6. |
-| **Prospects show up** | If your appointments no-show at a high rate, your qualifying needs work. |
-| **AEs are closing your appointments** | If AEs can't close what you book, either qualification is off or your notes need more depth. |
-| **Activity is consistent** | You're making calls, sending emails, and working social every single day. Not just on good days. |
+You earn **$100 per qualified appointment** that shows up and meets the qualification criteria.
+
+A "qualified appointment" means:
+
+- The prospect is a **decision-maker** (or direct path to one)
+- The business is **legitimate** (real company, not a scam or shell)
+- There is a **genuine need** that Obsidion could address
+- The meeting **actually happens** — no-shows don't count
+
+The AE will disposition each meeting. If it was truly qualified and the prospect showed up, you get paid. If it was a bad fit that should have been filtered out, that's a coaching conversation — not a payday.
+
+**Volume matters.** At 1-3 qualified appointments per day, the math works out to meaningful monthly income. At zero, it doesn't. The job rewards consistency.
 
 ---
 
-## What This Role Is Not
+## Performance Expectations
 
-- **Not a closing role.** You don't negotiate pricing, run demos, or ask for the sale. You book the meeting.
-- **Not a passive role.** Nobody is handing you inbound leads and asking you to process them. You go find the conversations.
-- **Not a "figure it out" role.** There's a playbook. There are scripts. There's a daily structure. Follow the system before you try to reinvent it.
+| Metric | Target | Why It Matters |
+|--------|--------|----------------|
+| Dials | 60-100+ per day | Volume creates opportunity |
+| Conversations | 10-20 meaningful connects | You can't book what you don't talk to |
+| Appointments | 1-3 qualified bookings | This is the number that pays you |
+| Show rate | 70%+ of bookings | No-shows waste AE time |
+
+These are not arbitrary numbers. They're what separates an SDR who earns from one who struggles.
+
+---
+
+## The Mindset
+
+**You are not bothering people.** Business owners who are growing need help. If Obsidion can genuinely help them, you are doing them a favor by getting in touch.
+
+**Rejection is not personal.** Most people won't be interested. That's fine. You only need a few yeses per day.
+
+**Consistency beats intensity.** 80 dials every day beats 200 dials once a week.
+
+**Your time is valuable too.** Don't chase dead leads forever. Qualify fast, move on fast.
 
 ---
 
 ## The Bottom Line
 
-Your job is simple: find business owners who need what Obsidion offers, confirm they're a real fit, and put them on an AE's calendar. Do that 1–3 times a day, every day, and the money follows. The Outreach section will show you exactly how.
+Find owners who want to grow, map what Obsidion can do (usually Meta-first — but not always), confirm fit, and put them on an AE's calendar with notes they can use. Do that 1–3 times a day, every day, and the money follows. The Outreach section shows how to sound organic — not a one-trick pitch.
 
 ---
 
-## Content Sources
+## What's Next
 
-- Written for the Obsidion Training Hub SDR role overview section
+The following sections cover the mechanics — lead lists, outreach scripts, objection handling, and how you get paid. Read them in order. Skipping ahead without understanding your role is how SDRs sound robotic on the phone.
+
+When you're ready, head to **Lead Lists & Accounts** to learn how to work your territory.

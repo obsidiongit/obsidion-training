@@ -147,7 +147,7 @@ const SDR_CONFIG: HubConfig = {
       slug: "your-role",
       title: "Your Role as an SDR",
       description:
-        "What you do, how you fit in, and the SDR → AE handoff flow. Start here — this is the foundation for everything else.",
+        "Talk with owners about growth and scale; Meta is usually the lead (~80%), site/SEO/remarketing/app still matter (~20%). Handoff, BANT, success metrics — start here.",
       icon: MapPin,
       badges: ["Role Overview", "Handoff Flow", "BANT Qualifying", "Success Metrics"],
       shared: false,
@@ -192,7 +192,7 @@ const SDR_CONFIG: HubConfig = {
     {
       slug: "products",
       title: "Product Knowledge (Lite)",
-      description: "Elevator pitches for every product — enough to book the meeting.",
+      description: "≈80% Meta / 20% rest of stack — website-only or non-Meta pains are still valid. Enough to book the meeting.",
       icon: Lightbulb,
       shared: false,
     },

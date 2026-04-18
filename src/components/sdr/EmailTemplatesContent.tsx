@@ -2,11 +2,8 @@
 
 import { motion } from "framer-motion";
 import {
-  Mail,
-  Clock,
   AlertTriangle,
   CheckCircle2,
-  RefreshCw,
 } from "lucide-react";
 import {
   stagger,
@@ -16,8 +13,6 @@ import {
   ProductPageHero,
 } from "../products/shared";
 
-/* ─── component ─── */
-
 export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }) {
   return (
     <div className="min-h-screen bg-background">
@@ -26,10 +21,89 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
         backLabel="Back to Outreach"
         eyebrow="Email"
         title="Email Templates"
-        description="Copy, paste, personalize. Every template has brackets where you fill in the prospect's info. 5 sentences max — business owners skim."
+        description="≈80% Meta when it fits — creatives and campaigns in their ad account. The other ~20% is website, SEO, remarketing (website-only is fine). Keep emails short, specific, and human — no quiz-style hooks about where they rank on Google."
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">
+        {/* ── How to use ── */}
+        <motion.section
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
+          <SectionLabel barClass="bg-accent" textClass="text-accent">
+            How to Use These Templates
+          </SectionLabel>
+
+          <motion.div variants={fadeUp} className="rounded-2xl border border-accent/20 bg-accent/[0.04] px-6 py-5 space-y-3">
+            <p className="text-sm text-foreground leading-relaxed">
+              <span className="font-semibold">Lead with Meta when it fits (~80% pattern).</span> If you see boosts,
+              sponsored posts, or ad activity — open on paid social and the account-access angle. If
+              you don&apos;t see ads, open on{" "}
+              <span className="font-semibold">scaling what&apos;s already working</span>, a{" "}
+              <span className="font-semibold">specific observation</span> (their site, a post, reviews),
+              or a <span className="font-semibold">website-only</span> angle if that&apos;s clearly the need — never a fake &ldquo;quick question about Google.&rdquo;
+            </p>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Copy, personalize every bracket, keep it under five sentences. One ask per email.
+            </p>
+          </motion.div>
+        </motion.section>
+
+        {/* ── First Touch — Meta-led (default) ── */}
+        <motion.section
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
+          <SectionLabel barClass="bg-purple-accent" textClass="text-purple-accent">
+            First Touch — Meta-Led (Default)
+          </SectionLabel>
+
+          <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed max-w-3xl mb-4">
+            Use when you see activity on Facebook or Instagram, or when their business type is a
+            natural fit for paid social. This is your primary first-touch pattern.
+          </motion.p>
+
+          <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
+            <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">
+              Subject: Quick question — [their business name]
+            </div>
+            <div className="rounded-xl bg-muted/20 border border-border/60 px-5 py-4 text-sm text-foreground leading-relaxed space-y-3">
+              <p>Hey [Name],</p>
+              <p>
+                I&apos;ve been looking at how [their business name] shows up on Facebook/Instagram —
+                looks like you&apos;re putting content out there. Are you running paid ads yourself, or
+                is someone else managing campaigns for you?
+              </p>
+              <p>
+                I work with Obsidion — we run Meta ads end-to-end (creatives + management) inside{" "}
+                <span className="font-semibold">your</span>
+                {" "}
+                ad account, so you always see where the
+                money goes. Figured it might be relevant if you&apos;re trying to scale what&apos;s already
+                working.
+              </p>
+              <p>Worth a two-minute call this week?</p>
+              <p className="text-muted-foreground">
+                [Your name]
+                <br />
+                [Your phone number]
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div variants={fadeUp} className="mt-4 rounded-xl border border-accent/20 bg-accent/[0.04] px-5 py-4 flex items-start gap-3">
+            <CheckCircle2 size={16} className="text-accent mt-0.5 shrink-0" />
+            <p className="text-sm leading-relaxed text-foreground">
+              <span className="font-semibold">Don&apos;t drop:</span> &ldquo;Inside your ad account&rdquo; — that&apos;s
+              the differentiator vs. agencies that lock clients out.
+            </p>
+          </motion.div>
+        </motion.section>
+
         {/* ── First Touch — After Missed Call ── */}
         <motion.section
           variants={stagger}
@@ -42,18 +116,30 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
           </SectionLabel>
 
           <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-            <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Subject: Quick question — [their business name]</div>
+            <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">
+              Subject: Tried you earlier — [their business name]
+            </div>
             <div className="rounded-xl bg-muted/20 border border-border/60 px-5 py-4 text-sm text-foreground leading-relaxed space-y-3">
               <p>Hey [Name],</p>
-              <p>Tried calling earlier — no worries if you missed it. I had a quick question: when someone Googles [their business type] in [their city], do you know where you show up?</p>
-              <p>I work with Obsidion — we help local businesses get found online, fix their websites, and automate follow-up. Not sure if it&apos;s a fit, but figured it was worth a quick ask.</p>
-              <p>Worth a 2-minute call this week?</p>
-              <p className="text-muted-foreground">[Your name]<br />[Your phone number]</p>
+              <p>
+                Called earlier — no stress if you missed it. I wanted to ask whether you&apos;re running
+                Facebook/Instagram ads in-house or with someone, and if you&apos;re happy with how
+                performance and spend are visible on your side.
+              </p>
+              <p>
+                We help businesses run Meta with full creative and management in their own ad
+                account. Happy to compare notes for two minutes if you&apos;re open to it.
+              </p>
+              <p className="text-muted-foreground">
+                [Your name]
+                <br />
+                [Your phone number]
+              </p>
             </div>
           </motion.div>
         </motion.section>
 
-        {/* ── First Touch — Cold ── */}
+        {/* ── First Touch — Observation cold ── */}
         <motion.section
           variants={stagger}
           initial="hidden"
@@ -61,56 +147,79 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
           viewport={{ once: true, margin: "-60px" }}
         >
           <SectionLabel barClass="bg-emerald-accent" textClass="text-emerald-accent">
-            First Touch — Cold Email
+            First Touch — Cold (Specific Observation)
           </SectionLabel>
 
           <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-            <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Subject: [Their business name] + Google</div>
+            <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">
+              Subject: Noticed something — [their business name]
+            </div>
             <div className="rounded-xl bg-muted/20 border border-border/60 px-5 py-4 text-sm text-foreground leading-relaxed space-y-3">
               <p>Hey [Name],</p>
-              <p>I was looking at [their business name] online and noticed [one specific observation — e.g., &ldquo;your site hasn&apos;t been updated in a while&rdquo;].</p>
-              <p>We work with [their industry] businesses on exactly this — websites, local search, and lead follow-up. Not a long pitch — just curious if it&apos;s something you&apos;ve been thinking about.</p>
-              <p>Open to a quick call this week?</p>
-              <p className="text-muted-foreground">[Your name]<br />[Your phone number]</p>
+              <p>
+                I was looking at [their business name] before writing — [one specific observation:
+                e.g. booking flow on mobile, thin reviews, site speed, a post that drove real
+                engagement].
+              </p>
+              <p>
+                We help [their industry] businesses turn that kind of footprint into growth — Meta is
+                usually the engine, and we layer site/SEO/follow-up where it matters. Not a novel —
+                just curious if scaling is on your mind this quarter.
+              </p>
+              <p>Open to a quick call?</p>
+              <p className="text-muted-foreground">
+                [Your name]
+                <br />
+                [Your phone number]
+              </p>
             </div>
           </motion.div>
 
           <motion.div variants={fadeUp} className="mt-4 rounded-xl border border-amber-accent/20 bg-amber-accent/[0.04] px-5 py-4 flex items-start gap-3">
             <AlertTriangle size={16} className="text-amber-accent mt-0.5 shrink-0" />
             <p className="text-sm leading-relaxed text-foreground">
-              The observation needs to be <span className="font-semibold">real</span>. Look at their
-              website or Google their business before sending. Generic = deleted.
+              The observation must be <span className="font-semibold">real</span>. Vague = deleted.
             </p>
           </motion.div>
         </motion.section>
 
-        {/* ── First Touch — Prospect Running Ads ── */}
+        {/* ── First Touch — Scaling (no clear ad signal) ── */}
         <motion.section
           variants={stagger}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
         >
-          <SectionLabel barClass="bg-purple-accent" textClass="text-purple-accent">
-            First Touch — Prospect Running Ads
+          <SectionLabel barClass="bg-emerald-accent" textClass="text-emerald-accent">
+            First Touch — Scaling (No Clear Ad Signal)
           </SectionLabel>
 
+          <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed max-w-3xl mb-4">
+            Use when you don&apos;t see paid activity but the brand is strong — open on growth, not on
+            &ldquo;Google rankings.&rdquo;
+          </motion.p>
+
           <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-            <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Subject: Quick question about your Facebook ads</div>
+            <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">
+              Subject: [Their business name] + growth
+            </div>
             <div className="rounded-xl bg-muted/20 border border-border/60 px-5 py-4 text-sm text-foreground leading-relaxed space-y-3">
               <p>Hey [Name],</p>
-              <p>Noticed [their business name] is active on Facebook — do you have someone managing your paid ads, or is that mostly organic at this point?</p>
-              <p>I ask because we help [their industry] businesses run Facebook and Instagram ads end-to-end — strategy, creatives, and campaign management — all inside your ad account, so you always have full visibility on where the money&apos;s going.</p>
-              <p>Not a pitch — just curious if it&apos;s something you&apos;ve been thinking about. Worth a quick call?</p>
-              <p className="text-muted-foreground">[Your name]<br />[Your phone number]</p>
+              <p>
+                [Their business name] clearly has traction — I&apos;m curious whether you&apos;re trying to
+                scale what&apos;s already working, or if growth has mostly been word-of-mouth so far.
+              </p>
+              <p>
+                We work with a lot of [their industry] owners on Meta ads (plus the site and
+                follow-up pieces so spend isn&apos;t wasted). If putting real budget behind demand is on
+                your radar, I can get you a short call with someone who does this every day.
+              </p>
+              <p className="text-muted-foreground">
+                [Your name]
+                <br />
+                [Your phone number]
+              </p>
             </div>
-          </motion.div>
-
-          <motion.div variants={fadeUp} className="mt-4 rounded-xl border border-accent/20 bg-accent/[0.04] px-5 py-4 flex items-start gap-3">
-            <CheckCircle2 size={16} className="text-accent mt-0.5 shrink-0" />
-            <p className="text-sm leading-relaxed text-foreground">
-              <span className="font-semibold">When to use:</span> You&apos;ve seen they&apos;re boosting posts, a prior call revealed they spend on ads, or their business type is a natural fit for paid social. Don&apos;t drop the &ldquo;inside your ad account&rdquo; line — that is the differentiator.
-            </p>
           </motion.div>
         </motion.section>
 
@@ -128,47 +237,73 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
           <div className="space-y-5">
             <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
               <div className="flex items-center gap-2 mb-3">
-                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-purple-accent/10 text-purple-accent text-xs font-black">1</div>
+                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-purple-accent/10 text-purple-accent text-xs font-black">
+                  1
+                </div>
                 <h4 className="text-sm font-bold">Follow-Up #1 — Day 3</h4>
               </div>
               <div className="rounded-xl bg-muted/20 border border-border/60 px-5 py-4 text-sm text-foreground leading-relaxed space-y-3">
                 <p>Hey [Name],</p>
-                <p>Following up on my note from [day]. Not trying to be pushy — just want to make sure it didn&apos;t get buried.</p>
-                <p>Quick version: we help [their industry] businesses show up on Google and turn website visitors into actual customers. If your online setup is already dialed in, no worries — but if it&apos;s something you&apos;ve been meaning to fix, I can get you 20 minutes with someone who can show you what it looks like.</p>
-                <p>Worth a look?</p>
+                <p>
+                  Following up on my note — not trying to flood your inbox. Short version: we help
+                  [their industry] businesses run Meta ads with creatives and full visibility in
+                  their own account, and we fix the site/follow-up pieces so money isn&apos;t leaking.
+                </p>
+                <p>
+                  If that&apos;s not a priority, all good. If it is, I can line up 20 minutes with a
+                  specialist — no pitch deck, just a real look at your situation.
+                </p>
+                <p>Worth it?</p>
               </div>
             </motion.div>
 
             <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
               <div className="flex items-center gap-2 mb-3">
-                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-purple-accent/10 text-purple-accent text-xs font-black">2</div>
+                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-purple-accent/10 text-purple-accent text-xs font-black">
+                  2
+                </div>
                 <h4 className="text-sm font-bold">Follow-Up #2 — Day 5 (New Angle)</h4>
               </div>
               <div className="rounded-xl bg-muted/20 border border-border/60 px-5 py-4 text-sm text-foreground leading-relaxed space-y-3">
                 <p>Hey [Name],</p>
-                <p>One more thought — I looked at how [competitor or &ldquo;other businesses&rdquo;] in [their city] are showing up on Google, and there&apos;s a gap you could fill pretty easily.</p>
-                <p>Happy to share what I found if you&apos;ve got 2 minutes. No obligation.</p>
+                <p>
+                  One more angle — I looked at [competitor or &ldquo;who&apos;s running ads&rdquo;] in [city] in your
+                  space. There&apos;s a gap in how aggressively [their category] is showing up with paid
+                  social. Happy to share what I saw in two minutes if you&apos;re curious.
+                </p>
+                <p className="text-muted-foreground">
+                  [Your name]
+                  <br />
+                  [Your phone number]
+                </p>
               </div>
               <p className="text-xs text-muted-foreground mt-3">
-                <span className="font-semibold">Tip:</span> Name a competitor who ranks well locally. Business owners pay attention.
+                <span className="font-semibold">Tip:</span> Name a competitor or a concrete pattern
+                you actually checked.
               </p>
             </motion.div>
 
             <motion.div variants={fadeUp} className="rounded-2xl border border-red-400/20 bg-card p-6 shadow-sm">
               <div className="flex items-center gap-2 mb-3">
-                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-red-400/10 text-red-400 text-xs font-black">3</div>
+                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-red-400/10 text-red-400 text-xs font-black">
+                  3
+                </div>
                 <h4 className="text-sm font-bold">Breakup Email — Day 7</h4>
               </div>
-              <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Subject: Should I close the file?</div>
+              <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">
+                Subject: Should I close the file?
+              </div>
               <div className="rounded-xl bg-muted/20 border border-border/60 px-5 py-4 text-sm text-foreground leading-relaxed space-y-3">
                 <p>Hey [Name],</p>
-                <p>I&apos;ve reached out a few times and I know you&apos;re busy — so I don&apos;t want to keep pinging you if the timing isn&apos;t right.</p>
-                <p>If getting more customers through Google and a better website is on your radar, I&apos;m here. If not, no hard feelings — I&apos;ll stop reaching out.</p>
-                <p>Either way, I&apos;m easy to find: [your phone number] or just reply to this.</p>
+                <p>
+                  I&apos;ve reached out a few times — I know you&apos;re busy. If scaling with Meta (or fixing
+                  the site/follow-up behind your traffic) isn&apos;t on your radar right now, I&apos;ll stop
+                  here.
+                </p>
+                <p>
+                  If it is, I&apos;m one reply away. [Your phone number] — or just reply to this.
+                </p>
               </div>
-              <p className="text-xs text-muted-foreground mt-3">
-                <span className="font-semibold">Why it works:</span> &ldquo;Should I close the file?&rdquo; creates urgency without being aggressive. Many prospects reply to this one.
-              </p>
             </motion.div>
           </div>
         </motion.section>
@@ -189,8 +324,13 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
               <h4 className="text-sm font-bold mb-3">After a Good Conversation</h4>
               <div className="rounded-xl bg-muted/20 border border-border/60 px-4 py-3 text-sm text-foreground leading-relaxed space-y-2">
                 <p>Hey [Name],</p>
-                <p>Good chatting just now. I&apos;m setting you up with [AE name] to walk through how we can help with [specific thing they mentioned].</p>
-                <p>Calendar invite sent for [day] at [time]. If that shifts, just reply here.</p>
+                <p>
+                  Good chatting. I&apos;m setting you up with [AE name] to walk through [what they
+                  mentioned — e.g. Meta, site, follow-up].
+                </p>
+                <p>
+                  Calendar invite for [day] at [time]. If that shifts, reply here.
+                </p>
               </div>
             </motion.div>
 
@@ -198,8 +338,11 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
               <h4 className="text-sm font-bold mb-3">Appointment Reminder — Day Before</h4>
               <div className="rounded-xl bg-muted/20 border border-border/60 px-4 py-3 text-sm text-foreground leading-relaxed space-y-2">
                 <p>Hey [Name],</p>
-                <p>Quick heads up — you&apos;ve got a call with [AE name] tomorrow at [time]. No prep needed — just show up and they&apos;ll walk you through everything.</p>
-                <p>Looking forward to it.</p>
+                <p>
+                  Reminder — you&apos;ve got a call with [AE name] tomorrow at [time]. They&apos;ll walk
+                  through what makes sense for your business (usually starting with what&apos;s happening
+                  on Meta and your site).
+                </p>
               </div>
             </motion.div>
           </div>
@@ -218,12 +361,12 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
 
           <div className="space-y-3">
             {[
-              "Always personalize. Every bracket gets filled in with real information.",
-              "Keep it short. 5 sentences max. Business owners skim.",
-              "One ask per email. Don't ask for a call AND send a link AND ask a question.",
-              "Use the same subject line for follow-ups (reply threading helps open rates).",
-              "Send from your branded email with your Obsidion signature.",
-              "Log every email in the CRM — who, when, and which template.",
+              "Personalize every bracket. Generic = deleted.",
+              "Meta first when there's a signal; otherwise scaling or a real observation.",
+              "Keep it short — five sentences max.",
+              "One ask per email.",
+              "Same subject line for follow-ups in a thread when possible.",
+              "Log every send in the CRM.",
             ].map((rule, i) => (
               <motion.div
                 key={i}

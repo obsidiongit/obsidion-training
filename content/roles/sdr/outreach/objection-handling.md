@@ -20,7 +20,7 @@ You are not trying to overcome every objection and close the deal on the spot. Y
 
 This is the most common objection. It usually means "I don't know what you're offering and I'm busy."
 
-> **You:** "Totally fair — and I'm not trying to sell you anything right now. Quick question before I let you go: are you happy with how your business shows up when someone Googles [their category] in [their city]?"
+> **You:** "Totally fair — I'm not trying to pitch you right now. Before I go: are you running Facebook or Instagram ads today, and if so, are you actually happy with what you're seeing in your ad account for spend and results?"
 
 **If they engage:** You're back in the conversation. Ask one more qualifying question and move toward booking.
 
@@ -36,7 +36,7 @@ Log it. Set a 60-day follow-up. Move on.
 
 This usually means "I want to get off the phone without saying no." Don't just send a brochure and hope — that's a dead end.
 
-> **You:** "Happy to — what specifically would be most useful? Are you more curious about the website side, getting found on Google, or the follow-up automation? I'll send you the right thing so it's not just a generic brochure."
+> **You:** "Happy to — what would actually help? Most owners ask about Meta first — who's running your Facebook and Instagram ads and whether you have full access to your own account. I can send something tight on that, or on the site piece if that's the bigger question."
 
 **Why this works:** You're qualifying what they actually care about, which gives you a reason to follow up with a targeted message — and then book the call.
 
@@ -48,7 +48,7 @@ This usually means "I want to get off the phone without saying no." Don't just s
 
 They're not saying they're happy. They're saying they have something. Find out if it's working.
 
-> **You:** "Got it — glad you're investing in that. Quick question: when you Google [their business type] in [their city], are you showing up where you'd want to be? Because we work with a lot of businesses that have a site but aren't getting the results they expected from it."
+> **You:** "Got it — glad you're investing. Are they running your Meta ads out of your ad account so you can see spend, or is that opaque? A lot of businesses we talk to have a vendor or a site but still can't tell if paid social is actually paying off."
 
 **If they say it's working great:** Respect it.
 

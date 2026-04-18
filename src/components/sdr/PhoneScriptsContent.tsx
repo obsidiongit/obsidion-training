@@ -1,15 +1,15 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import FlowChart from "@/components/ui/FlowChart";
 import {
   Phone,
+  BookOpen,
+  ListOrdered,
   MessageCircle,
-  Clock,
-  ShieldCheck,
-  Voicemail,
-  UserCheck,
-  XCircle,
+  HelpCircle,
+  AlertCircle,
 } from "lucide-react";
 import {
   stagger,
@@ -23,27 +23,91 @@ import {
 
 const CALL_FLOW = [
   { label: "Open", sublabel: "10 sec" },
-  { label: "Hook", sublabel: "30 sec" },
-  { label: "Qualify", sublabel: "2-3 min" },
+  { label: "Hook", sublabel: "30–60 sec" },
+  { label: "Qualify", sublabel: "2–3 min" },
   { label: "Book", sublabel: "30 sec" },
   { label: "Confirm", sublabel: "30 sec" },
+];
+
+const PAIN_TO_HOOK: { pain: string; listenFor: string; bridge: string }[] = [
+  {
+    pain: "Meta spend blind / ads not performing",
+    listenFor: "We're boosting / paying someone but don't know if it's working — can't see the account",
+    bridge: "We run Meta in your ad account with creatives and management — full visibility on spend. That's usually the first thing the specialist unpacks.",
+  },
+  {
+    pain: "Want to scale / add fuel",
+    listenFor: "We're busy but want to grow / need more leads than referrals give us",
+    bridge: "Most owners lead with Meta to scale demand — we pair that with site and follow-up so the money doesn't leak.",
+  },
+  {
+    pain: "Hard to find on Google / Maps",
+    listenFor: "I don't know if we show up… competitors are everywhere online",
+    bridge: "Local visibility is part of the stack — the specialist ties it to what you're doing on paid and on the site.",
+  },
+  {
+    pain: "Website is old, slow, or missing",
+    listenFor: "We need a new site / embarrassed by our site / built it on Wix and it doesn't work",
+    bridge: "Bad pages waste ad traffic — we fix the site as part of the growth picture, not as a generic redesign pitch.",
+  },
+  {
+    pain: "Leads go cold / no follow-up",
+    listenFor: "People inquire and disappear / we're bad at following up",
+    bridge: "We automate follow-up so nothing slips — it stacks behind the campaigns that drive the leads.",
+  },
+];
+
+const CALL_PLAN_STEPS: { n: number; title: string; body: string }[] = [
+  {
+    n: 1,
+    title: "Prep (before you dial)",
+    body: "Google their business + check Facebook/Instagram for posts, boosts, or sponsored labels. Skim their site and GBP (Google Business Profile) if you can. Write down one credible hook — ad activity, a concrete site issue, or a growth angle. Skip generic 'rank on Google' questions.",
+  },
+  {
+    n: 2,
+    title: "Open",
+    body: "Your name, Obsidion, and a reason for the call in under ten seconds. Sound human. Do not pitch the stack.",
+  },
+  {
+    n: 3,
+    title: "Hook",
+    body: "One question that creates a gap — usually Meta/spend, scaling, or a specific thing you saw. Let them talk. Avoid quiz-mode ('do you know where you rank?').",
+  },
+  {
+    n: 4,
+    title: "Qualify (light BANT)",
+    body: "Need, who decides, signals of budget (spend, headcount, growth goals), and timing. Map what they say to a pain row in the table above — you are confirming fit, not selling features.",
+  },
+  {
+    n: 5,
+    title: "Bridge to the meeting",
+    body: "Position the next step: a short call with a specialist who can review their situation properly. You set the meeting; you do not run the deep dive.",
+  },
+  {
+    n: 6,
+    title: "Lock time + confirm",
+    body: "Offer a specific slot. Confirm email for the calendar invite. Repeat the time once.",
+  },
 ];
 
 /* ─── component ─── */
 
 export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) {
+  const productsHref = `/role/${roleSlug}/products`;
+  const outreachHref = `/role/${roleSlug}/on-the-call`;
+
   return (
     <div className="min-h-screen bg-background">
       <ProductPageHero
-        backHref={`/role/${roleSlug}/on-the-call`}
+        backHref={outreachHref}
         backLabel="Back to Outreach"
         eyebrow="Phone"
         title="Phone Scripts"
-        description="Cold call openers, qualifying questions, the booking ask, voicemail scripts, and gatekeeper navigation. Your primary channel for booking appointments."
+        description="≈80% Meta when it fits; ~20% site, SEO, remarketing, app — website-only is still a real path. Read the Q&A and call plan first — then use the scripts as anchors. Sound human; lead with evidence or growth — not generic Google trivia."
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">
-        {/* ── How to Use ── */}
+        {/* ── Read this first ── */}
         <motion.section
           variants={stagger}
           initial="hidden"
@@ -51,14 +115,185 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
           viewport={{ once: true, margin: "-60px" }}
         >
           <SectionLabel barClass="bg-accent" textClass="text-accent">
-            How to Use These Scripts
+            Read This First
           </SectionLabel>
 
-          <motion.div variants={fadeUp} className="rounded-2xl border border-accent/20 bg-accent/[0.04] px-6 py-5 mb-6">
+          <motion.div
+            variants={fadeUp}
+            className="rounded-2xl border border-accent/25 bg-accent/[0.06] px-5 py-4 sm:px-6 sm:py-5 flex flex-col sm:flex-row sm:items-center gap-4"
+          >
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent/15">
+              <BookOpen className="h-5 w-5 text-accent" aria-hidden />
+            </div>
+            <div className="space-y-2 flex-1">
+              <p className="text-sm text-foreground leading-relaxed">
+                <span className="font-semibold">Product Knowledge (Lite)</span> frames Meta as the usual
+                lead (~80%) with the rest of the stack behind it — including website-only when that&apos;s
+                the pain. Skim it before your first dialing block so you are not inventing Obsidion on the fly.
+              </p>
+              <Link
+                href={productsHref}
+                className="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:underline"
+              >
+                Open Product Knowledge (Lite)
+              </Link>
+            </div>
+          </motion.div>
+        </motion.section>
+
+        {/* ── Q&A: Before you dial ── */}
+        <motion.section
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
+          <SectionLabel barClass="bg-emerald-accent" textClass="text-emerald-accent">
+            Before You Dial — Q&amp;A
+          </SectionLabel>
+
+          <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed max-w-3xl mb-6">
+            Answers below are what you need to hold in your head on a live call. If someone asks
+            &ldquo;what do you guys actually do?&rdquo; you answer in plain English — then you return to
+            questions and booking.
+          </motion.p>
+
+          <div className="space-y-4">
+            {[
+              {
+                q: "What does Obsidion sell?",
+                a: "Usually Meta first (~80% of how we talk): Facebook and Instagram ad management — creatives and campaigns in the client's own ad account so spend is visible. The other ~20% is custom website, local SEO, remarketing, optional app — compound or stand-alone (e.g. they only need a site). One team, fast execution. You book a specialist; you do not quote the full stack.",
+              },
+              {
+                q: "What problems are we usually solving?",
+                a: "Often: Meta spend without clarity, locked ad accounts, or boosting with nothing to show. Or they want to scale beyond word-of-mouth. Sometimes the loudest pain is just a bad or missing website — still our deal. Your job is to hear what's loudest — not to lecture on five products.",
+              },
+              {
+                q: "What is my job on the phone?",
+                a: "Start a real conversation, qualify (need, authority, budget signals, timeline), and book a short meeting for an Account Executive / specialist. You do not close deals, run demos, or quote pricing tiers. If they go deep on details, you acknowledge it and move them to the meeting.",
+              },
+              {
+                q: "What should I avoid?",
+                a: "Reading scripts robotically, guessing pricing or technical details, debating competitors at length, or staying on the phone past ~5 minutes without booking or scheduling a firm callback. If you do not know something: say the specialist covers it in the meeting — then book the meeting.",
+              },
+            ].map((item) => (
+              <motion.div
+                key={item.q}
+                variants={fadeUp}
+                className="rounded-2xl border border-border bg-card p-5 sm:p-6 shadow-sm"
+              >
+                <div className="flex items-start gap-3">
+                  <HelpCircle className="h-5 w-5 text-emerald-accent shrink-0 mt-0.5" aria-hidden />
+                  <div>
+                    <h3 className="text-sm font-bold text-foreground mb-2">{item.q}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{item.a}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.section>
+
+        {/* ── Pain → bridge (product context) ── */}
+        <motion.section
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
+          <SectionLabel barClass="bg-purple-accent" textClass="text-purple-accent">
+            Pain You Hear → How to Bridge (Without Lecturing)
+          </SectionLabel>
+
+          <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed max-w-3xl mb-4">
+            Meta and scaling show up first in most strong conversations. Use this table to bridge
+            without dumping features — the meeting does the real unpack.
+          </motion.p>
+
+          <motion.div variants={fadeUp} className="overflow-x-auto rounded-xl border border-border">
+            <table className="w-full text-left text-sm">
+              <thead>
+                <tr className="border-b border-border bg-muted/40">
+                  <th className="px-4 py-3 font-semibold text-foreground">Pain</th>
+                  <th className="px-4 py-3 font-semibold text-foreground hidden md:table-cell">
+                    They might say…
+                  </th>
+                  <th className="px-4 py-3 font-semibold text-foreground">Your bridge (one sentence)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {PAIN_TO_HOOK.map((row) => (
+                  <tr key={row.pain} className="border-b border-border last:border-0">
+                    <td className="px-4 py-3 text-foreground font-medium align-top">{row.pain}</td>
+                    <td className="px-4 py-3 text-muted-foreground align-top hidden md:table-cell">
+                      {row.listenFor}
+                    </td>
+                    <td className="px-4 py-3 text-muted-foreground align-top">{row.bridge}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </motion.div>
+        </motion.section>
+
+        {/* ── The call plan ── */}
+        <motion.section
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
+          <SectionLabel barClass="bg-accent" textClass="text-accent">
+            The Call Plan
+          </SectionLabel>
+
+          <motion.div variants={fadeUp} className="flex items-start gap-3 mb-6 rounded-xl border border-amber-accent/25 bg-amber-accent/[0.06] px-4 py-3">
+            <ListOrdered className="h-5 w-5 text-amber-accent shrink-0 mt-0.5" aria-hidden />
             <p className="text-sm text-foreground leading-relaxed">
-              These are starting points. Don&apos;t read them word for word — you&apos;ll sound like
-              a robot. Understand the logic behind each line, then say it like a normal person.
-              Your goal: <span className="font-semibold">get the prospect talking, qualify them, and book the appointment.</span>
+              Follow this sequence every time until it is muscle memory. Scripts below plug into
+              steps 2–5 — they do not replace the plan.
+            </p>
+          </motion.div>
+
+          <ol className="space-y-4">
+            {CALL_PLAN_STEPS.map((step) => (
+              <motion.li
+                key={step.n}
+                variants={fadeUp}
+                className="flex gap-4 rounded-2xl border border-border bg-card p-5 shadow-sm"
+              >
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-black text-white">
+                  {step.n}
+                </span>
+                <div>
+                  <h3 className="text-sm font-bold text-foreground mb-1.5">{step.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{step.body}</p>
+                </div>
+              </motion.li>
+            ))}
+          </ol>
+        </motion.section>
+
+        {/* ── How to use scripts ── */}
+        <motion.section
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
+          <SectionLabel barClass="bg-emerald-accent" textClass="text-emerald-accent">
+            How to Use the Scripts Below
+          </SectionLabel>
+
+          <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card px-6 py-5 shadow-sm">
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Scripts are <span className="font-semibold text-foreground">structure + wording you can steal</span>
+              — not lines to recite. Pause after questions. If they go off-script, follow the pain
+              they gave you, then return to qualify and book. Your outcome on every call:{" "}
+              <span className="font-semibold text-foreground">
+                conversation → fit → booked meeting or firm callback
+              </span>
+              . You are not closing a deal; you are securing time with someone who can.
             </p>
           </motion.div>
         </motion.section>
@@ -75,49 +310,71 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
           </SectionLabel>
 
           <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed max-w-3xl mb-6">
-            You have about 10 seconds before the prospect decides if they&apos;re hanging up.
+            You have about ten seconds before they decide whether to stay on the line. Lead with
+            clarity — who you are, why you are calling — then one question.
           </motion.p>
 
           <div className="space-y-5">
             <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-              <h4 className="text-sm font-bold mb-2">Version 1 — Lead With a Question</h4>
-              <PitchQuote label="Say This">
-                Hey [Name], this is [Your name] with Obsidion. Quick question — when someone
-                Googles [their business type] in [their city], do you know where your business shows up?
+              <h4 className="text-sm font-bold mb-2">Version A — Meta first (default)</h4>
+              <PitchQuote label="Say this">
+                Hey [Name], it&apos;s [Your name] with Obsidion. I was looking at [their business] on
+                Facebook/Instagram before I dialed — are you running paid ads in-house, or is someone
+                managing that for you? I ask because we focus heavily on Meta: creatives and campaigns
+                inside your ad account so you actually see the spend.
               </PitchQuote>
               <p className="text-xs text-muted-foreground mt-3">
-                <span className="font-semibold">Why it works:</span> It&apos;s a question they probably can&apos;t answer confidently. That gap is your opening.
+                <span className="font-semibold text-foreground">Use when:</span> You see content,
+                boosts, or sponsored posts — or their category is a natural fit for paid social.
               </p>
             </motion.div>
 
             <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-              <h4 className="text-sm font-bold mb-2">Version 2 — Lead With a Problem</h4>
-              <PitchQuote label="Say This" variant="emerald">
-                Hey [Name], this is [Your name] with Obsidion. I was looking at your business
-                online and had a question about your website — do you have two minutes?
+              <h4 className="text-sm font-bold mb-2">Version B — Scaling (no clear ad signal)</h4>
+              <PitchQuote label="Say this" variant="emerald">
+                Hey [Name], it&apos;s [Your name] with Obsidion. [Their business] looks like it has real
+                traction — I&apos;m curious if you&apos;re trying to scale what&apos;s working or if growth has
+                mostly been referral-driven. We spend a lot of our time helping owners put real budget
+                behind demand on Meta when they&apos;re ready.
+              </PitchQuote>
+            </motion.div>
+
+            <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
+              <h4 className="text-sm font-bold mb-2">Version C — Specific observation (you did prep)</h4>
+              <PitchQuote label="Say this" variant="purple">
+                Hey [Name], it&apos;s [Your name] with Obsidion. Before this call I noticed [specific
+                thing — mobile site, reviews, a post, booking flow]. Wanted to run that by you in
+                two minutes — it ties into how we think about growth, usually starting with what
+                you&apos;re doing on Meta and what happens after someone clicks.
               </PitchQuote>
               <p className="text-xs text-muted-foreground mt-3">
-                <span className="font-semibold">Before using:</span> Actually look at their website. Know what&apos;s wrong with it.
+                <span className="font-semibold text-foreground">Rule:</span> Only if you actually
+                looked. Fake specificity kills trust.
               </p>
             </motion.div>
 
             <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-              <h4 className="text-sm font-bold mb-2">Version 3 — Referral Opener</h4>
-              <PitchQuote label="Say This" variant="purple">
-                Hey [Name], this is [Your name] with Obsidion. [Referral name] mentioned you
-                might be a good person to talk to — they said you&apos;ve been thinking about
-                [website / marketing / getting more customers online]. Do you have a couple minutes?
+              <h4 className="text-sm font-bold mb-2">Version D — Referral or warm intro</h4>
+              <PitchQuote label="Say this">
+                Hey [Name], it&apos;s [Your name] with Obsidion. [Referral] suggested I reach out —
+                they thought you might be open to a conversation about scaling [leads / the business].
+                Got a minute?
               </PitchQuote>
               <p className="text-xs text-muted-foreground mt-3">
-                <span className="font-semibold">Strongest opener you&apos;ll ever have.</span> Use this any time you have a referral.
+                <span className="font-semibold text-foreground">Strongest opener</span> when the intro
+                is real.
               </p>
             </motion.div>
 
             <motion.div variants={fadeUp} className="rounded-xl border border-amber-accent/20 bg-amber-accent/[0.04] px-5 py-4">
-              <h4 className="text-sm font-bold mb-2">If they say &ldquo;I&apos;m busy&rdquo;:</h4>
+              <h4 className="text-sm font-bold mb-2 flex items-center gap-2">
+                <MessageCircle className="h-4 w-4" aria-hidden />
+                If they say &ldquo;I&apos;m busy&rdquo;
+              </h4>
               <p className="text-sm text-foreground italic leading-relaxed">
-                &ldquo;Totally fair — I&apos;ll be quick. Is there a better time today or tomorrow I can
-                call back? I just have one question about your online setup and it&apos;ll take two minutes.&rdquo;
+                &ldquo;Totally fair — two minutes. Is there a better slot today or tomorrow? I&apos;m asking
+                about how you&apos;re running Facebook/Instagram ads and whether that&apos;s something you
+                want help scaling.&rdquo;
               </p>
             </motion.div>
           </div>
@@ -131,19 +388,23 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
           viewport={{ once: true, margin: "-60px" }}
         >
           <SectionLabel barClass="bg-emerald-accent" textClass="text-emerald-accent">
-            Qualifying Questions (BANT)
+            Qualifying Questions (BANT, Conversational)
           </SectionLabel>
+
+          <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed max-w-3xl mb-6">
+            You are uncovering need, authority, budget signals, and timing — not reciting an
+            interrogation. Ask one question at a time; listen; branch.
+          </motion.p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-              <h4 className="text-sm font-bold text-emerald-accent mb-3">Need Questions</h4>
+              <h4 className="text-sm font-bold text-emerald-accent mb-3">Need &amp; channel</h4>
               <ul className="space-y-2">
                 {[
-                  "\"How are you getting most of your customers right now?\"",
-                  "\"Do you have a website? When's the last time it was updated?\"",
-                  "\"If someone searches for [what they do] in [their city], where do you show up?\"",
-                  "\"What happens when a lead calls after hours?\"",
-                  "\"Are you currently running any paid ads on Facebook or Google?\"",
+                  "Are you running Facebook or Instagram ads right now — in-house, agency, or not yet?",
+                  "If you are spending, are you happy with how visible performance and spend are in your ad account?",
+                  "How are most new customers finding you — and where do you want the next chunk of growth to come from?",
+                  "When's the last time you looked at your site on your phone after clicking an ad or a post?",
                 ].map((q) => (
                   <li key={q} className="flex items-start gap-2 text-sm text-muted-foreground leading-relaxed">
                     <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-emerald-accent shrink-0" />
@@ -154,11 +415,11 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
             </motion.div>
 
             <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-              <h4 className="text-sm font-bold text-accent mb-3">Authority Questions</h4>
+              <h4 className="text-sm font-bold text-accent mb-3">Authority</h4>
               <ul className="space-y-2">
                 {[
-                  "\"Are you the one who handles the marketing side of things?\"",
-                  "\"If this turned out to be a fit, who would need to be part of that conversation?\"",
+                  "Are you the one who usually makes calls on marketing and the website, or is someone else in that loop?",
+                  "If this looked worthwhile, who else would need to be on a short follow-up call?",
                 ].map((q) => (
                   <li key={q} className="flex items-start gap-2 text-sm text-muted-foreground leading-relaxed">
                     <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />
@@ -166,11 +427,11 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
                   </li>
                 ))}
               </ul>
-              <h4 className="text-sm font-bold text-purple-accent mt-5 mb-3">Timeline Questions</h4>
+              <h4 className="text-sm font-bold text-purple-accent mt-5 mb-3">Budget signals (listen, don&apos;t ask &ldquo;what&apos;s your budget&rdquo;)</h4>
               <ul className="space-y-2">
                 {[
-                  "\"Is this something you've been thinking about for a while?\"",
-                  "\"Is there a timeline — a busy season, a launch, anything?\"",
+                  "Mention of ad spend, agencies, or hiring",
+                  "Multiple locations, staff, or clear growth goals",
                 ].map((q) => (
                   <li key={q} className="flex items-start gap-2 text-sm text-muted-foreground leading-relaxed">
                     <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-purple-accent shrink-0" />
@@ -178,8 +439,31 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
                   </li>
                 ))}
               </ul>
+              <p className="text-xs text-muted-foreground mt-4 leading-relaxed">
+                Follow-up:{" "}
+                <span className="italic">
+                  &ldquo;Are you running any paid social or search right now, or is it mostly organic?&rdquo;
+                </span>{" "}
+                — if yes, ask whether they are happy with performance. That opens Meta/ads or SEO
+                without you pitching.
+              </p>
             </motion.div>
           </div>
+
+          <motion.div variants={fadeUp} className="mt-5 rounded-xl border border-border bg-muted/30 px-5 py-4">
+            <h4 className="text-sm font-bold mb-2">Timeline</h4>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li className="flex items-start gap-2">
+                <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-foreground/40 shrink-0" />
+                &ldquo;Is this something you&apos;ve been thinking about for a while, or did something change
+                recently?&rdquo;
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-foreground/40 shrink-0" />
+                &ldquo;Any season or date driving this — busy season, reopening, new location?&rdquo;
+              </li>
+            </ul>
+          </motion.div>
         </motion.section>
 
         {/* ── Booking the Appointment ── */}
@@ -190,30 +474,31 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
           viewport={{ once: true, margin: "-60px" }}
         >
           <SectionLabel barClass="bg-purple-accent" textClass="text-purple-accent">
-            Booking the Appointment
+            Booking the Meeting
           </SectionLabel>
 
           <div className="space-y-4">
             <motion.div variants={fadeUp}>
-              <PitchQuote label="The Ask" variant="purple">
-                Based on what you&apos;re telling me, I think it&apos;d be worth 20 minutes with
-                one of our specialists. I&apos;m not the one who runs the demo — I just find the
-                people it makes sense for. Can I grab a time on the calendar this week?
+              <PitchQuote label="The ask" variant="purple">
+                Based on what you&apos;re saying, I think it&apos;s worth a short call with one of our
+                specialists — they can actually look at your setup and tell you what would move the
+                needle. I&apos;m not the person who does that deep dive; I set those conversations up.
+                Can I put you down for [day] at [time] this week?
               </PitchQuote>
             </motion.div>
 
             <motion.div variants={fadeUp} className="rounded-xl border border-border bg-card px-5 py-4 shadow-sm">
-              <h4 className="text-sm font-bold mb-2">If they hesitate:</h4>
+              <h4 className="text-sm font-bold mb-2">If they hesitate</h4>
               <p className="text-sm text-muted-foreground italic leading-relaxed">
-                &ldquo;No commitment — it&apos;s a 20-minute conversation. If it&apos;s not a fit,
-                they&apos;ll tell you straight. I just don&apos;t want you to miss it if it is.&rdquo;
+                &ldquo;No commitment — it&apos;s [15–20] minutes. If it&apos;s not a fit, they&apos;ll say so. I just
+                don&apos;t want you to miss it if it is.&rdquo;
               </p>
             </motion.div>
 
             <motion.div variants={fadeUp} className="rounded-xl border border-accent/20 bg-accent/[0.04] px-5 py-4">
               <p className="text-sm font-semibold text-foreground">
-                Always suggest a specific time. &ldquo;Sometime this week&rdquo; gets forgotten.
-                &ldquo;Tuesday at 2pm&rdquo; gets booked.
+                Always propose a specific time. &ldquo;Sometime this week&rdquo; gets forgotten. &ldquo;Tuesday at
+                2:00&rdquo; gets booked.
               </p>
             </motion.div>
           </div>
@@ -227,24 +512,44 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
           viewport={{ once: true, margin: "-60px" }}
         >
           <SectionLabel barClass="bg-amber-accent" textClass="text-amber-accent">
-            Voicemail Script
+            Voicemail
           </SectionLabel>
 
           <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed max-w-3xl mb-4">
-            Keep it under 25 seconds. Don&apos;t pitch. Give one reason to call back.
+            Under ~25 seconds. No product dump. One reason to call back + your number twice.
           </motion.p>
 
           <motion.div variants={fadeUp}>
             <PitchQuote label="Voicemail">
-              Hey [Name], this is [Your name] with Obsidion — [your phone number]. I had a quick
-              question about your business&apos;s online presence. Not a sales pitch — just one
-              question. Give me a call back: [your phone number]. That&apos;s [Your name], [your phone number].
+              Hey [Name], it&apos;s [Your name] with Obsidion — [phone number]. Wanted to ask how you&apos;re
+              handling Facebook and Instagram ads — we help businesses run Meta with full visibility in
+              their own account. Call me back: [phone number]. Again, [Your name], [phone number].
             </PitchQuote>
           </motion.div>
+        </motion.section>
 
-          <motion.p variants={fadeUp} className="text-xs text-muted-foreground mt-3">
-            Say your number at a normal pace. Repeat it once. That&apos;s it.
-          </motion.p>
+        {/* ── Callback ── */}
+        <motion.section
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
+          <SectionLabel barClass="bg-accent" textClass="text-accent">
+            When They Call You Back
+          </SectionLabel>
+
+          <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
+            <PitchQuote label="Say this">
+              Hey [Name], thanks for getting back. Same topic — are you running Meta ads yourself or
+              with someone, and are you happy with what you&apos;re seeing in your ad account for spend
+              and results? If that&apos;s fuzzy, that&apos;s usually why people talk to us.
+            </PitchQuote>
+            <p className="text-xs text-muted-foreground mt-3">
+              Then run your qualify → bridge → book sequence. Do not restart a monologue they did not
+              ask for.
+            </p>
+          </motion.div>
         </motion.section>
 
         {/* ── Gatekeeper Navigation ── */}
@@ -260,26 +565,52 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-              <h4 className="text-sm font-bold mb-3">When You Know the Owner&apos;s Name</h4>
+              <h4 className="text-sm font-bold mb-3">When you know the owner&apos;s name</h4>
               <p className="text-sm text-muted-foreground italic leading-relaxed mb-3">
-                &ldquo;Hey, is [Owner name] around? It&apos;s [Your name] from Obsidion.&rdquo;
+                &ldquo;Hey, is [Owner] available? It&apos;s [Your name] from Obsidion.&rdquo;
               </p>
               <p className="text-xs text-muted-foreground">
-                If they ask what it&apos;s about: &ldquo;I work with [their industry] businesses on their
-                online setup — I just had a quick question.&rdquo;
+                If asked what it&apos;s about: &ldquo;It&apos;s about their Facebook and Instagram ads — I need
+                two minutes with [Owner]. Not a pitch to you.&rdquo;
               </p>
             </motion.div>
 
             <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-              <h4 className="text-sm font-bold mb-3">When You Don&apos;t Know Who to Ask For</h4>
+              <h4 className="text-sm font-bold mb-3">When you don&apos;t know who to ask for</h4>
               <p className="text-sm text-muted-foreground italic leading-relaxed mb-3">
-                &ldquo;Quick question — who handles the marketing or website decisions there?&rdquo;
+                &ldquo;Who handles paid social or marketing spend? I want the right person.&rdquo;
               </p>
               <p className="text-xs text-muted-foreground">
-                Get a name, get a transfer, or get a callback time. Don&apos;t pitch the gatekeeper.
+                Get a name, transfer, or callback window. Do not pitch the gatekeeper.
               </p>
             </motion.div>
           </div>
+        </motion.section>
+
+        {/* ── When the call goes nowhere ── */}
+        <motion.section
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
+          <SectionLabel barClass="bg-emerald-accent" textClass="text-emerald-accent">
+            When the Call Goes Nowhere
+          </SectionLabel>
+
+          <motion.div variants={fadeUp} className="flex gap-3 rounded-xl border border-border bg-card p-5 shadow-sm">
+            <AlertCircle className="h-5 w-5 text-muted-foreground shrink-0 mt-0.5" aria-hidden />
+            <div className="space-y-2 text-sm text-muted-foreground leading-relaxed">
+              <p>
+                If there is no pain, no interest, and no next step: exit clean.{" "}
+                <span className="italic text-foreground">
+                  &ldquo;Appreciate the time. If anything shifts on Meta or growth, feel free to reach out.
+                  I&apos;ll leave it there for now.&rdquo;
+                </span>
+              </p>
+              <p>Log it. Set a follow-up for 60–90 days if your process allows. Move on.</p>
+            </div>
+          </motion.div>
         </motion.section>
 
         {/* ── Call Flow Quick Reference ── */}
@@ -290,7 +621,7 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
           viewport={{ once: true, margin: "-60px" }}
         >
           <SectionLabel barClass="bg-emerald-accent" textClass="text-emerald-accent">
-            Call Flow — Quick Reference
+            At a Glance — Call Flow
           </SectionLabel>
 
           <motion.div variants={fadeUp}>
@@ -301,11 +632,12 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
             />
           </motion.div>
 
-          <motion.div variants={fadeUp} className="mt-4 rounded-xl border border-emerald-accent/20 bg-emerald-accent/[0.04] px-5 py-4">
+          <motion.div variants={fadeUp} className="mt-4 flex items-start gap-3 rounded-xl border border-emerald-accent/20 bg-emerald-accent/[0.04] px-5 py-4">
+            <Phone className="h-5 w-5 text-emerald-accent shrink-0 mt-0.5" aria-hidden />
             <p className="text-sm text-foreground leading-relaxed">
-              Total call time: <span className="font-bold">~5 minutes.</span> If it&apos;s going
-              longer, you&apos;re either having a great conversation (qualify harder and book) or
-              you&apos;re chatting instead of closing (wrap it up and book).
+              Target total: <span className="font-bold">~5 minutes</span> to booked meeting or firm
+              callback. If you are past five minutes without a next step, you are either onto
+              something real (book now) or drifting (reset and ask for the meeting).
             </p>
           </motion.div>
         </motion.section>

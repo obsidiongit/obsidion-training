@@ -70,7 +70,7 @@ const GATES = [
     title: "Manager Sign-Off",
     description: "Your manager confirms you're ready based on training completion, profile setup, mock call, and general readiness.",
     items: [
-      "Can explain what Obsidion does in plain language without a script",
+      "Can explain what Obsidion does in plain language without a script (≈80% Meta / ~20% rest of stack; website-only is valid)",
       "Understands BANT and can apply it in conversation",
       "Knows how to log activity in the CRM",
     ],

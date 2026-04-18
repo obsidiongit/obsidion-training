@@ -4,152 +4,116 @@
 
 ## You Don't Need to Be the Expert
 
-You are not the one closing the deal. You don't need to know every feature, every integration, or every pricing tier. What you need is enough knowledge to have a 2-minute conversation that sounds credible — and to recognize when a prospect's pain maps to one of Obsidion's products.
+You are not the one closing the deal. You need enough knowledge to sound credible for two minutes — and to recognize when a prospect's pain maps to what we do.
 
-Your job is to book the meeting. The AE handles the deep dive. But if you can't explain what Obsidion does in plain English, the prospect will never agree to that meeting.
+**Roughly 80%** of how we talk about growth leans on **Meta (Facebook and Instagram ads)** when it fits. The other **~20%** is website, SEO, remarketing, and app — still important, and **website-only** (no ads yet) is a valid deal. They are not five equal opening lines on every call.
 
-This section gives you the elevator pitch for each product and the one-liner you can drop on a call.
+Your job is to book the meeting. The AE handles the deep dive.
 
 ---
 
-## The Five Products
+## What We Offer (≈80/20)
 
-### 1. Custom Websites
+### 1. Meta Ad Management (Primary — ~80%)
 
-**What it is:** Obsidion builds custom websites for businesses. Not templates. Not DIY builders. A real site built by a real team, designed to look professional and convert visitors into customers.
+**What it is:** Obsidion builds creatives and runs Facebook and Instagram campaigns **inside the client's own Meta ad account** — so spend and performance stay visible. Not a black-box agency account.
 
 **The one-liner:**
-> *"We build custom websites for businesses — not templates. Your site goes live within a week."*
+> *"We run your Meta ads — creatives and campaigns — in your ad account so you always see where the money goes."*
 
-**When to mention it:** The prospect's website is outdated, ugly, slow, or doesn't exist. You looked it up before the call and it's clearly a problem.
+**When to mention it:** Default angle when they're boosting, running ads, using an agency, or want to scale beyond word-of-mouth.
 
 **Pain signals to listen for:**
-- "Our website is old / embarrassing / we need to redo it"
-- "We built it ourselves on Wix / Squarespace and it's not working"
-- "We don't even have a website"
+- "We boost posts but it doesn't do anything"
+- "Our agency won't give us access to our own ad account"
+- "We're spending on ads and don't know if it's working"
+- "We want to grow faster than referrals alone"
 
 ---
 
-### 2. SEO (Search Engine Optimization)
+### 2. Custom Websites
 
-**What it is:** Obsidion optimizes businesses to show up on Google — specifically in local search results and Google Maps. When someone searches "plumber near me" or "best salon in [city]," SEO is what determines whether your client shows up or their competitor does.
+**What it is:** Custom sites — not templates. Fast launch (often about a week).
+
+**The one-liner:**
+> *"We build custom websites — not templates. Your site goes live within a week."*
+
+**When to mention it:** When the site is the loudest pain or they only need a rebuild — not every deal is Meta-first. Also supports Meta: bad landing pages waste ad spend.
+
+**Pain signals:** "Our site is old / embarrassing," DIY builder not working, no site.
+
+---
+
+### 3. SEO (Search Engine Optimization)
+
+**What it is:** Local and organic visibility — Google and Maps.
 
 **The one-liner:**
 > *"We make sure your business shows up when people Google what you do in your area."*
 
-**When to mention it:** The prospect isn't showing up on Google, or they don't know where they rank. (Check before the call — Google their business category + their city.)
-
-**Pain signals to listen for:**
-- "I don't think we show up on Google"
-- "Our competitors are everywhere online and we're invisible"
-- "We get all our business from referrals" (translation: they have zero online visibility)
+**When to mention it:** Layered with paid — organic visibility vs. competitors, not instead of Meta for every pitch.
 
 ---
 
-### 3. Remarketing (Automated Follow-Up)
+### 4. Remarketing (Automated Follow-Up)
 
-**What it is:** Most people who visit a website or call a business don't buy on the first touch. Remarketing automates the follow-up — email sequences, text messages, and retargeting ads that keep the business in front of those leads until they're ready.
+**What it is:** Automated follow-up so leads don't go cold.
 
 **The one-liner:**
 > *"We automate the follow-up so leads don't go cold after the first contact."*
 
-**When to mention it:** The prospect mentions losing leads, forgetting to follow up, or not having a system for staying in touch with interested people.
-
-**Pain signals to listen for:**
-- "People call but don't end up coming in"
-- "We're bad at following up"
-- "Leads just kind of disappear"
-- "We don't have anything automated"
+**When to mention it:** After ads drive traffic, follow-up catches what doesn't convert immediately.
 
 ---
 
-### 4. Mobile App
+### 5. Mobile App
 
-**What it is:** A branded iOS and Android app for businesses with repeat customers. Loyalty programs, push notifications, online ordering or booking — the client's brand on their customer's phone.
-
-**The one-liner:**
-> *"We build a branded app for your business — loyalty, push notifications, ordering — all under your name, not a third party."*
-
-**When to mention it:** The prospect has repeat customers and relies on third-party platforms (DoorDash, Yelp, etc.) that take a cut. Or they want a loyalty program but don't have one.
-
-**Pain signals to listen for:**
-- "We use DoorDash / UberEats / a booking platform and the fees are killing us"
-- "We want a loyalty program but haven't set one up"
-- "We want our customers to order directly from us"
-
----
-
-### 5. Paid Ads (Meta Ad Management)
-
-**What it is:** Obsidion runs paid advertising campaigns on Facebook and Instagram (Meta). That includes building the ads, designing the creatives — graphics, video content, photography components — and managing the campaigns on an ongoing basis. The client gives us delegate access to their Meta ad account, so we're running inside their account, not a third-party account they can't see. They keep ownership; we do the work.
+**What it is:** Branded iOS/Android app — loyalty, push, ordering under their name.
 
 **The one-liner:**
-> *"We run Facebook and Instagram ads for you — we build the creatives, manage the campaigns, and you keep full access to your own ad account."*
+> *"We build a branded app — loyalty, push, ordering — all under your name."*
 
-**When to mention it:** The prospect is already running ads and they're not working, they're paying an agency who gives them no visibility, or they want to grow faster than SEO alone can deliver.
-
-**Pain signals to listen for:**
-- "We've tried Facebook ads but they didn't do anything"
-- "Our agency runs our ads but we don't really know what's happening"
-- "We're spending money on ads and have nothing to show for it"
-- "We want to run ads but don't know where to start"
-- "We're just relying on organic / word of mouth and want to grow faster"
-
-**One thing to know:** Because we run inside the client's own ad account (not ours), they always have full visibility. That's a meaningful difference from most agencies who keep you locked out of your own data.
+**When to mention it:** Repeat customers, third-party fees, loyalty — not the default cold-opener.
 
 ---
 
 ## 🏢 Franchise Prospects — Flag Immediately
 
-If you're talking to someone who is part of a **franchise or multi-location brand**, flag this to your manager before or immediately after the call. Don't just book the appointment like a normal lead.
+If you're talking to someone who is part of a **franchise or multi-location brand**, flag this to your manager before or immediately after the call.
 
-Why it matters: landing one location in a franchise network means, if we perform, we can roll into every other location in that system. These prospects have outsized upside and leadership wants to know about them so the AE can approach the conversation strategically.
+Why it matters: landing one location can roll into the network if we perform.
 
-How to identify them:
-- They mention a brand name with multiple locations
-- They say things like "our other locations" or "corporate handles some of it"
-- The business name includes words like "Group," "Partners," or is clearly a named chain
-
-Your move: book the meeting like normal, but add a **"FRANCHISE — FLAG"** note at the top of your handoff notes.
+Your move: book the meeting, add **"FRANCHISE — FLAG"** at the top of handoff notes.
 
 ---
 
 ## How They Work Together
 
-You don't need to pitch the full stack. But if it comes up naturally, here's the simple version:
-
-> *"The website is the foundation — it's where everything lives. SEO makes sure people can find it organically on Google. Paid ads on Facebook and Instagram drive traffic fast. Remarketing follows up with the leads who don't buy right away. And the app keeps your best customers coming back. They all connect."*
-
-That's it. You don't need to go deeper than that. If the prospect wants more detail, that's exactly what the AE appointment is for.
+> *"Most of what we do for growth leans on Meta — Facebook and Instagram — with creatives and campaigns in your own ad account. The website and follow-up make sure you don't waste that spend. Some owners need a site or SEO first — that's fine too. SEO and the app layer on when they fit. One team owns the stack."*
 
 ---
 
 ## The Cheat Sheet
 
-Keep this open during calls:
-
 | Product | One-Liner | Use When They Say... |
 |---------|-----------|---------------------|
-| **Website** | "We build custom websites — not templates. Live in a week." | "Our site is old / bad / missing" |
-| **SEO** | "We get you showing up on Google in your area." | "We don't show up online / competitors do" |
-| **Remarketing** | "We automate follow-up so leads don't go cold." | "Leads disappear / we forget to follow up" |
-| **Mobile App** | "A branded app for your business — loyalty, orders, notifications." | "Fees from third-party apps / want a loyalty program" |
-| **Paid Ads** | "We run your Facebook and Instagram ads — creatives, campaigns, full visibility." | "Ads aren't working / agency gives no visibility / want to grow faster" |
+| **Meta ads** | Creatives + campaigns in your account — full visibility. | Boosting / agency / don't know if ads work |
+| **Website** | Custom sites — not templates. Live in about a week. | Site old / bad / site-only lead / wasting ad clicks |
+| **SEO** | Show up on Google in your area. | Invisible vs competitors / Maps |
+| **Remarketing** | Automate follow-up so leads don't go cold. | Leads disappear / no system |
+| **Mobile App** | Branded app — loyalty, orders, notifications. | Third-party fees / loyalty |
 
 ---
 
 ## What You Don't Need to Know (Yet)
 
-- Specific pricing tiers (the AE handles this)
-- Technical implementation details (that's the delivery team)
-- Competitor product comparisons in depth (you're booking a meeting, not debating features)
-- Integration specifics (CRM, API, data migration — all AE territory)
+- Exact pricing tiers (AE handles)
+- Deep technical setup (delivery team)
+- Long competitor debates (book the meeting)
 
-If a prospect asks you something you don't know, the right answer is:
+If you don't know:
 
-> *"Great question — that's exactly the kind of thing our specialist covers in the meeting. Let me get you on the calendar so they can walk you through it properly."*
-
-Never guess. Never make something up. Book the meeting.
+> *"Great question — that's exactly what our specialist covers in the meeting."*
 
 ---
 

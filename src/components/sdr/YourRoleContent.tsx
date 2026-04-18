@@ -50,7 +50,7 @@ const BANT = [
     letter: "N",
     label: "Need",
     meaning: "They have a real problem Obsidion solves",
-    signals: "Website is bad, don't show up on Google, leads fall through the cracks, no follow-up system",
+    signals: "Meta spend is opaque or underperforming; website is bad; invisible on Google; leads slip through; OR they only need a site rebuild — all valid",
   },
   {
     letter: "T",
@@ -104,7 +104,7 @@ export default function YourRoleContent({ roleSlug }: { roleSlug: string }) {
         backLabel="Back to hub"
         eyebrow="Role Overview"
         title="Your Role as an SDR"
-        description="What you do, where you fit, and how the SDR → AE handoff works. This is the foundation for everything else."
+        description="Speak with business owners about how Obsidion helps them grow and scale — more revenue, not just 'a nicer website.' Meta ads are the usual focus; the rest of the stack still matters. Foundation for everything else."
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">
@@ -125,11 +125,30 @@ export default function YourRoleContent({ roleSlug }: { roleSlug: string }) {
             </p>
           </motion.div>
 
-          <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed max-w-3xl mb-8">
-            Your job is to find business owners, start a conversation, and book a qualified
-            appointment for an Account Executive. You are not closing deals, running demos, or
-            negotiating pricing. You open the door. The AE walks through it.
+          <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed max-w-3xl mb-6">
+            Your job is to talk with business owners about what Obsidion offers to help them{" "}
+            <span className="font-semibold text-foreground">grow and scale</span> — more customers,
+            more revenue, a bigger operation. They did not go into business to stay flat. You are
+            not closing deals or quoting full projects; you open the door and hand off with context.
+            The AE walks through it.
           </motion.p>
+
+          <motion.div variants={fadeUp} className="rounded-2xl border border-emerald-accent/25 bg-emerald-accent/[0.06] px-5 py-4 mb-8">
+            <h3 className="text-sm font-bold text-foreground mb-2">The ≈80/20 rule (how we talk about product)</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              <span className="font-semibold text-foreground">Roughly 80%</span> of strong conversations
+              lean on <span className="font-semibold text-foreground">Meta (Facebook and Instagram) ads</span>{" "}
+              — creatives, campaigns, and visibility inside their ad account. That is where a lot of
+              revenue comes from for us and for them.
+            </p>
+            <p className="text-sm text-muted-foreground leading-relaxed mt-3">
+              <span className="font-semibold text-foreground">Roughly 20%</span> — still important — is
+              everything else: custom website, local SEO, remarketing, app. If someone{" "}
+              <span className="font-semibold text-foreground">only needs a website</span> or a
+              visibility fix with no ads yet, that is still a real deal. Match the conversation to
+              their pain; do not force Meta into every opener.
+            </p>
+          </motion.div>
 
           <motion.div variants={fadeUp}>
             <h3 className="text-sm font-bold uppercase tracking-wider text-muted-foreground mb-4">The Sales Pipeline</h3>
@@ -359,9 +378,10 @@ export default function YourRoleContent({ roleSlug }: { roleSlug: string }) {
           <motion.div variants={fadeUp} className="rounded-2xl border border-accent/20 bg-accent/[0.04] px-6 py-6">
             <h3 className="text-lg font-bold mb-2">The Bottom Line</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Your job is simple: find business owners who need what Obsidion offers, confirm they&apos;re a
-              real fit, and put them on an AE&apos;s calendar. Do that 1-3 times a day, every day, and the
-              money follows. The Outreach section will show you exactly how.
+              Find owners who want to grow, map what Obsidion can do (usually Meta-first — but not
+              always), confirm fit, and put them on an AE&apos;s calendar with notes they can use. Do
+              that 1–3 times a day, every day, and the money follows. The Outreach section shows how
+              to sound organic — not a one-trick pitch.
             </p>
           </motion.div>
         </motion.section>

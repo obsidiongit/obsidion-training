@@ -47,7 +47,7 @@ export default function SocialOutreachContent({ roleSlug }: { roleSlug: string }
         backLabel="Back to Outreach"
         eyebrow="Social"
         title="Social Outreach"
-        description="LinkedIn and Facebook DM scripts, connection request templates, and engagement tips. Social builds trust before phone and email."
+        description="≈80% lead with paid social or growth when it fits; otherwise a real hook (site, reviews, scaling) — website-only is valid. No generic 'how's your online presence?' spam. Engage first, then DM."
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">
@@ -105,11 +105,11 @@ export default function SocialOutreachContent({ roleSlug }: { roleSlug: string }
                 </PitchQuote>
                 <PitchQuote label="After Their Content" variant="emerald">
                   Hey [Name], saw your post about [topic] — solid insight. I work with [their industry]
-                  businesses on their online growth. Happy to connect.
+                  businesses on Meta and growth. Happy to connect.
                 </PitchQuote>
                 <PitchQuote label="Mutual Connection" variant="purple">
                   Hey [Name], noticed we&apos;re both connected to [mutual connection]. I work with
-                  local businesses on websites and online visibility — figured it was worth connecting.
+                  local businesses on Meta ads and growth — figured it was worth connecting.
                 </PitchQuote>
               </div>
               <p className="text-xs text-muted-foreground mt-3">Keep under 300 characters. Don&apos;t pitch in the request.</p>
@@ -119,15 +119,17 @@ export default function SocialOutreachContent({ roleSlug }: { roleSlug: string }
               <h4 className="text-sm font-bold mb-4">Step 3 — The DM (after they accept)</h4>
               <p className="text-xs text-muted-foreground mb-4">Wait a few hours after they accept. Don&apos;t pitch immediately.</p>
               <div className="space-y-3">
-                <PitchQuote label="Soft Open">
-                  Hey [Name], thanks for connecting. Quick question — how are you currently handling
-                  your online presence? Website, Google, that kind of thing. I work with businesses
-                  like yours at Obsidion and I&apos;m always curious what&apos;s working.
+                <PitchQuote label="Soft Open (Meta-first)">
+                  Hey [Name], thanks for connecting. I peeked at what [company] is doing on
+                  Facebook/Instagram — curious if you&apos;re running paid ads in-house or with someone,
+                  and if you&apos;re happy with what you see in your ad account. We focus a lot on Meta at
+                  Obsidion. Open to a quick call if that&apos;s on your mind?
                 </PitchQuote>
                 <PitchQuote label="Direct (with reason)" variant="emerald">
-                  Hey [Name], I took a look at your business online after we connected. Noticed
-                  [specific observation]. Not sure if that&apos;s on your radar, but we help [their
-                  industry] businesses fix exactly that. Worth a quick call?
+                  Hey [Name], I looked at your business after we connected. Noticed [specific
+                  observation — e.g. sponsored posts, site from ads, engagement]. We help [their
+                  industry] businesses scale with Meta plus the site/follow-up behind it. Worth two
+                  minutes?
                 </PitchQuote>
               </div>
             </motion.div>
@@ -172,14 +174,14 @@ export default function SocialOutreachContent({ roleSlug }: { roleSlug: string }
               <h4 className="text-sm font-bold mb-4">Facebook DM Templates</h4>
               <div className="space-y-3">
                 <PitchQuote label="After Engaging Their Page" variant="emerald">
-                  Hey [Name], I&apos;ve been following your page — [their business] looks great.
-                  Quick question: are you happy with how you&apos;re showing up online, or is that
-                  something you&apos;ve been meaning to work on?
+                  Hey [Name], I&apos;ve been following [their business] — solid content. Are you running
+                  any paid ads behind it, or mostly organic? I work with Obsidion on Meta (creatives +
+                  management in your account) and wanted to see if scaling this is on your radar.
                 </PitchQuote>
                 <PitchQuote label="From a Business Group" variant="emerald">
-                  Hey [Name], saw your post in [group name] about [topic]. I work with local
-                  businesses on their websites and getting found on Google — sounds like something
-                  that might be relevant for you. Open to a quick chat?
+                  Hey [Name], saw your post in [group] about [topic]. I help local businesses put
+                  real budget behind what&apos;s already working — usually Meta first. Open to a quick chat
+                  if growth is a priority?
                 </PitchQuote>
               </div>
             </motion.div>
@@ -226,7 +228,9 @@ export default function SocialOutreachContent({ roleSlug }: { roleSlug: string }
                   Hey [Name], love what you&apos;re doing with [their content]. Quick question — are you running any paid ads to promote this, or mostly organic? I work with [their industry] businesses at Obsidion on their Facebook and Instagram ads and wanted to see if it&apos;s on your radar.
                 </PitchQuote>
                 <PitchQuote label="Direct" variant="purple">
-                  Hey [Name], came across [their business] on here — your content looks great. I work with businesses like yours on their online growth (websites, ads, Google). Not a pitch — just curious if any of that is something you&apos;ve been thinking about.
+                  Hey [Name], came across [their business] here — content&apos;s strong. Curious if you&apos;re
+                  trying to scale reach with paid social or if it&apos;s been mostly organic. We run Meta
+                  for businesses like yours with everything in your ad account. Happy to compare notes.
                 </PitchQuote>
               </div>
             </motion.div>

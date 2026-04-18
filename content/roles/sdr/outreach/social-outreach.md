@@ -6,6 +6,8 @@
 
 Phone opens doors. Email follows up. Social builds trust before either one happens.
 
+**Voice:** **≈80%** lead with paid social or growth when it fits; otherwise a real hook (site, reviews, scaling). Human — no generic "how's your online presence?" DMs.
+
 When you view someone's profile, comment on their post, or send a connection request, your name starts to register. Then when you call, you're not a total stranger — you're "that person from LinkedIn" or "the one who commented on my post." That small edge makes a real difference in connect rates.
 
 Social outreach is not a replacement for phone and email. It's the layer that makes phone and email work better.
@@ -35,11 +37,11 @@ Always add a note. A blank connection request looks lazy.
 
 **Template — After Viewing Their Content:**
 
-> "Hey [Name], saw your post about [topic] — solid insight. I work with [their industry] businesses on their online growth. Happy to connect."
+> "Hey [Name], saw your post about [topic] — solid insight. I work with [their industry] businesses on Meta and growth. Happy to connect."
 
 **Template — Mutual Connection:**
 
-> "Hey [Name], noticed we're both connected to [mutual connection]. I work with local businesses on websites and online visibility — figured it was worth connecting."
+> "Hey [Name], noticed we're both connected to [mutual connection]. I work with local businesses on Meta ads and growth — figured it was worth connecting."
 
 Keep it under 300 characters (LinkedIn's limit for connection request notes). Don't pitch in the connection request. Just connect.
 
@@ -47,13 +49,13 @@ Keep it under 300 characters (LinkedIn's limit for connection request notes). Do
 
 Wait at least a few hours after they accept before DMing. Don't pitch immediately — it feels transactional.
 
-**Template — Soft Open:**
+**Template — Soft Open (Meta-first):**
 
-> "Hey [Name], thanks for connecting. Quick question — how are you currently handling your online presence? Website, Google, that kind of thing. I work with businesses like yours at Obsidion and I'm always curious what's working for people in [their industry]."
+> "Hey [Name], thanks for connecting. I peeked at what [company] is doing on Facebook/Instagram — curious if you're running paid ads in-house or with someone, and if you're happy with what you see in your ad account. We focus a lot on Meta at Obsidion. Open to a quick call if that's on your mind?"
 
 **Template — Direct (If You Have a Reason):**
 
-> "Hey [Name], I took a look at your business online after we connected. Noticed [specific observation — website is on an old template, not showing up for local search terms, etc.]. Not sure if that's on your radar, but we help [their industry] businesses fix exactly that. Worth a quick call?"
+> "Hey [Name], I looked at your business after we connected. Noticed [specific observation — e.g. sponsored posts, site from ads, engagement]. We help [their industry] businesses scale with Meta plus the site/follow-up behind it. Worth two minutes?"
 
 **If they respond with interest:**
 
@@ -88,15 +90,15 @@ This puts your name on their radar so the DM doesn't come out of nowhere.
 
 **Template — After Engaging With Their Page:**
 
-> "Hey [Name], I've been following your page — [their business name] looks great. Quick question: are you happy with how you're showing up online, or is that something you've been meaning to work on? I work with [their industry] businesses at Obsidion and I'm always curious."
+> "Hey [Name], I've been following [their business] — solid content. Are you running any paid ads behind it, or mostly organic? I work with Obsidion on Meta (creatives + management in your account) and wanted to see if scaling this is on your radar."
 
 **Template — From a Business Group:**
 
-> "Hey [Name], saw your post in [group name] about [topic]. I work with local businesses on their websites and getting found on Google — sounds like something that might be relevant for you. Open to a quick chat?"
+> "Hey [Name], saw your post in [group] about [topic]. I help local businesses put real budget behind what's already working — usually Meta first. Open to a quick chat if growth is a priority?"
 
 **Template — Direct:**
 
-> "Hey [Name], I came across [their business name] and had a quick question about your website. Is that something you're actively working on right now? We help businesses in [their industry] get their online presence dialed in. Happy to share what that looks like if you're curious."
+> "Hey [Name], came across [their business] — content's strong. Curious if you're trying to scale reach with paid social or if it's been mostly organic. We run Meta for businesses like yours with everything in your ad account. Happy to compare notes."
 
 ---
 
@@ -121,7 +123,7 @@ The approach here mirrors Facebook: engage first, then reach out.
 
 **Template — Direct:**
 
-> "Hey [Name], came across [their business name] on here — your content looks great. I work with businesses like yours on their online growth (websites, ads, getting found on Google). Not a pitch — just curious if any of that is something you've been thinking about. Happy to chat if so."
+> "Hey [Name], came across [their business] here — content's strong. Curious if you're trying to scale reach with paid social or if it's been mostly organic. We run Meta for businesses like yours with everything in your ad account. Happy to compare notes."
 
 **Keep it short.** Instagram DMs are even more casual than Facebook. Two or three sentences, a genuine compliment, and one question. Done.
 

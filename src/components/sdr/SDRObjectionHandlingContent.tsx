@@ -19,20 +19,20 @@ const OBJECTIONS = [
   {
     objection: "\"Not interested.\"",
     mindset: "Usually means \"I don't know what you're offering and I'm busy.\"",
-    response: "Totally fair — and I'm not trying to sell you anything right now. Quick question before I let you go: are you happy with how your business shows up when someone Googles [their category] in [their city]?",
+    response: "Totally fair — I'm not trying to pitch you right now. Before I go: are you running Facebook or Instagram ads today, and if so, are you actually happy with what you're seeing in your ad account for spend and results?",
     ifEngages: "You're back in. Ask one more qualifying question and move toward booking.",
     ifRepeats: "\"No problem at all. If anything changes on the marketing front, we're easy to find. Have a good one.\" — Log it, set a 60-day follow-up, move on.",
   },
   {
     objection: "\"Send me some info.\"",
     mindset: "Usually means \"I want to get off the phone without saying no.\"",
-    response: "Happy to — what specifically would be most useful? Are you more curious about the website side, getting found on Google, or the follow-up automation? I'll send you the right thing so it's not just a generic brochure.",
+    response: "Happy to — what would actually help? Most owners ask about Meta first — who's running your Facebook and Instagram ads and whether you have full access to your own account. I can send something tight on that, or on the site piece if that's the bigger question.",
     followUp: "\"I'll shoot that over today. And honestly, a 20-minute call with one of our specialists would give you way more than a PDF. Can I grab a quick time on the calendar for later this week?\"",
   },
   {
     objection: "\"We already have a website / agency / vendor.\"",
     mindset: "They're not saying they're happy. They're saying they have something. Find out if it's working.",
-    response: "Got it — glad you're investing in that. Quick question: when you Google [their business type] in [their city], are you showing up where you'd want to be? Because we work with a lot of businesses that have a site but aren't getting the results they expected.",
+    response: "Got it — glad you're investing. Are they running your Meta ads out of your ad account so you can see spend, or is that opaque? A lot of businesses we talk to have a vendor or a site but still can't tell if paid social is actually paying off.",
     ifNotWorking: "\"Yeah, we hear that a lot. The best next step would be a quick call with someone who can look at your setup and tell you where the gaps are — no cost, no obligation. Would 20 minutes work?\"",
   },
   {
@@ -74,9 +74,9 @@ const OBJECTIONS = [
 ] as const;
 
 const QUICK_REF = [
-  { objection: "\"Not interested\"", move: "Ask one question about their Google visibility" },
-  { objection: "\"Send me info\"", move: "Ask what they want to see, then book the call" },
-  { objection: "\"We have a vendor\"", move: "Ask if they're seeing results, offer free second opinion" },
+  { objection: "\"Not interested\"", move: "Ask one question about Meta spend / ad account visibility" },
+  { objection: "\"Send me info\"", move: "Anchor on their pain (Meta or site), then book the call" },
+  { objection: "\"We have a vendor\"", move: "Ask if Meta is in their account and if results are clear" },
   { objection: "\"No budget\"", move: "The call is free — worth 20 min to find out the cost" },
   { objection: "\"Need to think\"", move: "Reduce friction — it's just 20 min, no commitment" },
   { objection: "\"How much?\"", move: "Depends on needs — the call gives the exact answer" },
@@ -95,7 +95,7 @@ export default function SDRObjectionHandlingContent({ roleSlug }: { roleSlug: st
         backLabel="Back to Outreach"
         eyebrow="Objections"
         title="Objection Handling"
-        description="Word-for-word responses for every pushback you'll hear. The pattern: acknowledge it, ask a question, redirect to booking."
+        description="Usually Meta and growth angles first (~80%); match the stack to their pain — website-only is fine. Pattern: acknowledge, ask, redirect to a short specialist call."
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">
