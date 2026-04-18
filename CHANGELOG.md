@@ -40,6 +40,14 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-17] — Role hub layout: assets last, no cross-role strip
+
+### Changed
+
+- Role hub (`src/app/role/[roleSlug]/page.tsx`): moved **Downloadable Assets** below **Daily Operating Rhythm** and removed the **Explore Other Roles** section from the hub page (home still lists all roles).
+
+---
+
 ## [2026-04-15] — SDR role hub (sections, outreach, and new routes)
 
 ### Added

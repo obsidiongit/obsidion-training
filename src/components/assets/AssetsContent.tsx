@@ -59,14 +59,6 @@ const BRAND_FILES: AssetFile[] = [
     status: "placeholder",
   },
   {
-    label: "Email Banner",
-    description: "Wide banner for newsletters and outbound campaigns. Use as-is — no cropping or color edits.",
-    href: "/assets/email-banner.png",
-    icon: Image,
-    size: "~326 KB",
-    status: "available",
-  },
-  {
     label: "Email Footer / Signature",
     description: "HTML snippet to paste into your mail client or send to IT for a standardized signature block.",
     href: "/assets/email-footer.html",

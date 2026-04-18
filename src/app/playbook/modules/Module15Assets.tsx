@@ -37,16 +37,6 @@ export default function Module15Assets() {
           </a>
         </Card>
         <Card>
-          <h3 className="text-lg font-bold mb-2">Email banner</h3>
-          <p className="text-muted-foreground text-sm mb-4">
-            Wide banner for newsletters and outbound campaigns—use as-is, no cropping to off-brand
-            sizes.
-          </p>
-          <a href="/assets/email-banner.png" download className={btnClass}>
-            Download banner
-          </a>
-        </Card>
-        <Card>
           <h3 className="text-lg font-bold mb-2">Email footer / signature</h3>
           <p className="text-muted-foreground text-sm mb-4">
             HTML snippet you can paste into your mail client or hand to IT for a standardized

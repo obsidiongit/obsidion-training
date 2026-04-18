@@ -9,20 +9,13 @@ import {
   Download,
   ArrowLeft,
   ArrowRight,
-  FileText,
   Image,
   Code,
   FileDown,
   CheckCircle2,
   ChevronRight,
-  Briefcase,
-  HeartHandshake,
-  Megaphone,
-  Settings,
   Search,
   X,
-  PhoneOutgoing,
-  Headset,
 } from "lucide-react";
 import DailyChecklistSection from "@/components/daily-structure/DailyChecklistSection";
 import SDRDailyChecklistSection from "@/components/sdr/SDRDailyChecklistSection";
@@ -31,21 +24,11 @@ import { getAllRoles, getRole } from "@/data/roles/registry";
 import { getHubConfig } from "@/data/roles/hub-sections";
 
 const ASSET_ITEMS = [
-  { href: "/assets/logo.png", label: "Logo PNG", icon: Image },
-  { href: "/assets/logotext.png", label: "Logo + Text", icon: Image },
-  { href: "/assets/logo.svg", label: "Logo SVG", icon: FileText },
-  { href: "/assets/email-banner.png", label: "Email Banner", icon: Image },
+  { href: "/assets/logo.png", label: "Logo", icon: Image },
+  { href: "/assets/logotext.png", label: "Logo (Text Only)", icon: Image },
   { href: "/assets/email-footer.html", label: "Email Footer", icon: Code },
   { href: "/assets/brand-guidelines.pdf", label: "Brand Guidelines", icon: FileDown },
 ] as const;
-
-const ROLE_ICONS: Record<string, React.ElementType> = {
-  "account-executive": Briefcase,
-  sdr: Headset,
-  "customer-success": HeartHandshake,
-  marketing: Megaphone,
-  operations: Settings,
-};
 
 /* ─── Animation variants ─── */
 
@@ -170,8 +153,6 @@ export default function RoleHubPage() {
   const hubConfig = getHubConfig(roleSlug);
   const [completedSections, setCompletedSections] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
-  const allRoles = getAllRoles();
-  const otherRoles = allRoles.filter((r) => r.slug !== roleSlug);
 
   if (role?.status === "coming-soon") {
     return <ComingSoonHub roleSlug={roleSlug} />;
@@ -409,6 +390,7 @@ export default function RoleHubPage() {
                 <motion.div
                   key={section.slug}
                   variants={fadeUp}
+                  className="mt-8 sm:mt-10"
                   whileHover={{ y: -3, transition: { type: "spring", stiffness: 400, damping: 25 } }}
                   whileTap={{ scale: 0.98, transition: { duration: 0.1 } }}
                 >
@@ -576,58 +558,6 @@ export default function RoleHubPage() {
           </section>
           )}
 
-          {/* ── Downloadable Assets (inline) ── */}
-          <motion.section variants={fadeUp}>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="h-1 w-6 rounded-full bg-amber-accent" />
-              <h2 className="text-xs font-semibold uppercase tracking-wider text-amber-accent">
-                Downloadable Assets
-              </h2>
-            </div>
-
-            <div className="rounded-2xl border border-border bg-card p-5 sm:p-6 shadow-sm">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-accent/10 text-amber-accent">
-                  <Download size={20} strokeWidth={1.8} />
-                </div>
-                <div>
-                  <h3 className="text-sm font-bold">Brand Assets & Templates</h3>
-                  <p className="text-xs text-muted-foreground">
-                    Approved files for proposals, decks, and email
-                  </p>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-4">
-                {ASSET_ITEMS.map((asset) => {
-                  const AssetIcon = asset.icon;
-                  return (
-                    <a
-                      key={asset.href}
-                      href={asset.href}
-                      download
-                      className="group flex flex-col items-center gap-2 rounded-xl border border-border/60 bg-background p-3 text-center transition-all hover:border-accent/30 hover:shadow-sm hover:-translate-y-0.5"
-                    >
-                      <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-muted text-muted-foreground group-hover:bg-accent/10 group-hover:text-accent transition-colors">
-                        <AssetIcon size={16} strokeWidth={1.8} />
-                      </div>
-                      <span className="text-[11px] font-medium text-muted-foreground group-hover:text-foreground transition-colors leading-tight">
-                        {asset.label}
-                      </span>
-                    </a>
-                  );
-                })}
-              </div>
-              <Link
-                href={`/role/${roleSlug}/assets`}
-                className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-accent transition-colors font-medium"
-              >
-                <ChevronRight size={12} />
-                View all assets, headshot guidelines & upcoming templates
-              </Link>
-            </div>
-          </motion.section>
-
           {/* ── Daily Operating Rhythm (inline checklist) ── */}
           <motion.section variants={fadeUp}>
             <div className="flex items-center gap-2 mb-4">
@@ -643,60 +573,59 @@ export default function RoleHubPage() {
             )}
           </motion.section>
 
-          {/* ── Explore Other Roles ── */}
-          {otherRoles.length > 0 && (
-            <motion.section variants={fadeUp}>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="h-1 w-6 rounded-full bg-muted-foreground/40" />
-                <h2 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                  Explore Other Roles
-                </h2>
-              </div>
+          {/* ── Downloadable Assets (inline) ── */}
+          <motion.section variants={fadeUp}>
+            <div className="flex items-center gap-2 mb-4">
+              <div className="h-1 w-6 rounded-full bg-amber-accent" />
+              <h2 className="text-xs font-semibold uppercase tracking-wider text-amber-accent">
+                Downloadable Assets
+              </h2>
+            </div>
 
-              <div className="rounded-2xl border border-border bg-muted/10 p-5 sm:p-6">
-                <p className="text-sm text-muted-foreground mb-4">
-                  Understand how other teams at Obsidion operate — great for cross-functional context.
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                  {otherRoles.map((otherRole) => {
-                    const RoleIcon = ROLE_ICONS[otherRole.slug] ?? Briefcase;
-                    const isActive = otherRole.status === "active";
-                    return (
-                      <div key={otherRole.slug} className="relative">
-                        <Link
-                          href={`/role/${otherRole.slug}`}
-                          className={`group flex items-center gap-3 rounded-xl border bg-card p-4 transition-all hover:shadow-sm ${
-                            isActive
-                              ? "border-border hover:border-accent/30"
-                              : "border-border/50 hover:border-border opacity-70 hover:opacity-90"
-                          }`}
-                        >
-                          <div className={`flex h-8 w-8 items-center justify-center rounded-lg transition-colors shrink-0 ${
-                            isActive
-                              ? "bg-muted text-muted-foreground group-hover:bg-accent/10 group-hover:text-accent"
-                              : "bg-muted text-muted-foreground"
-                          }`}>
-                            <RoleIcon size={16} strokeWidth={1.8} />
-                          </div>
-                          <div className="min-w-0">
-                            <div className="text-sm font-semibold truncate">{otherRole.title}</div>
-                            <div className="text-xs text-muted-foreground truncate">
-                              {isActive ? otherRole.shortTitle : "Coming soon"}
-                            </div>
-                          </div>
-                          <ChevronRight size={14} className={`ml-auto shrink-0 transition-colors ${
-                            isActive
-                              ? "text-muted-foreground/0 group-hover:text-accent"
-                              : "text-muted-foreground/30"
-                          }`} />
-                        </Link>
-                      </div>
-                    );
-                  })}
+            <div className="rounded-2xl border border-border bg-card p-5 sm:p-6 shadow-sm">
+              <div className="mb-4 flex flex-col items-center gap-3 text-center sm:flex-row sm:items-center sm:justify-center">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-amber-accent/10 text-amber-accent">
+                  <Download size={20} strokeWidth={1.8} />
+                </div>
+                <div className="min-w-0 max-w-md text-center sm:text-left">
+                  <h3 className="text-sm font-bold">Brand Assets & Templates</h3>
+                  <p className="text-xs text-muted-foreground">
+                    Approved files for proposals, decks, and email
+                  </p>
                 </div>
               </div>
-            </motion.section>
-          )}
+
+              <div className="mb-4 flex flex-wrap justify-center gap-3">
+                {ASSET_ITEMS.map((asset) => {
+                  const AssetIcon = asset.icon;
+                  return (
+                    <a
+                      key={asset.href}
+                      href={asset.href}
+                      download
+                      className="group flex w-36 shrink-0 flex-col items-center justify-center gap-2 rounded-xl border border-border/60 bg-background p-3 text-center transition-all hover:border-accent/30 hover:shadow-sm hover:-translate-y-0.5"
+                    >
+                      <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-muted text-muted-foreground group-hover:bg-accent/10 group-hover:text-accent transition-colors">
+                        <AssetIcon size={16} strokeWidth={1.8} />
+                      </div>
+                      <span className="w-full text-center text-[11px] font-medium text-muted-foreground group-hover:text-foreground transition-colors leading-tight">
+                        {asset.label}
+                      </span>
+                    </a>
+                  );
+                })}
+              </div>
+              <div className="flex justify-center">
+                <Link
+                  href={`/role/${roleSlug}/assets`}
+                  className="inline-flex items-center gap-1.5 text-center text-xs text-muted-foreground hover:text-accent transition-colors font-medium"
+                >
+                  <ChevronRight size={12} className="shrink-0" />
+                  View all assets, headshot guidelines & upcoming templates
+                </Link>
+              </div>
+            </div>
+          </motion.section>
         </motion.div>
       </main>
     </div>
