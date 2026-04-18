@@ -20,7 +20,7 @@ import {
 /* ─── data ─── */
 
 const PAGE_TLDR = {
-  tldr: "Obsidion sells growth help: mostly paid social (Meta — Facebook/Instagram) plus site, SEO, follow-up, and sometimes an app. You book meetings; AEs scope and price.",
+  tldr: "Obsidion sells growth help: mostly paid ads (Facebook and Instagram) plus site, SEO, follow-up, and sometimes an app. You book meetings; AEs scope and price.",
   meansForYou: [
     "On live calls, lead with \"ads\" or \"paid advertising\" until they are already talking channels — then name Meta precisely (this page is where you learn that map).",
     "Match the stack to their pain; do not assume they know what \"Meta\" means.",
@@ -37,7 +37,7 @@ const PRODUCTS = [
     painSignals: [
       "\"We boost posts but it doesn't do anything\"",
       "\"Our agency won't give us access to our own ad account\"",
-      "\"We're spending on Meta and don't know if it's working\"",
+      "\"We're running Facebook/Instagram ads and don't know if they're working\"",
     ],
     tldr: "Creatives + campaign management in their own Meta (Facebook/Instagram) ad account — full visibility on spend.",
     meansForYou: [
@@ -204,7 +204,7 @@ export default function ProductKnowledgeLiteContent({ roleSlug }: { roleSlug: st
           </SectionLabel>
 
           <motion.p variants={fadeUp} className="text-muted-foreground text-sm leading-relaxed max-w-3xl mb-6">
-            Default to Meta when paid social or scaling is in play. The rows below are the full stack — not five
+            Default to Meta when paid ads or scaling is in play. The rows below are the full stack — not five
             equal openers. If their pain is website-only or visibility without ads yet, lead there; do not force Meta.
           </motion.p>
 
@@ -374,4 +374,7 @@ export default function ProductKnowledgeLiteContent({ roleSlug }: { roleSlug: st
       </footer>
     </div>
   );
+}
+
+;
 }

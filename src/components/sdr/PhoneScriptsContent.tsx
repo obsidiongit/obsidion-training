@@ -38,7 +38,7 @@ const READ_FIRST_TLDR = {
 } as const;
 
 const QA_SECTION_TLDR = {
-  tldr: "Obsidion is mostly paid social (Meta — Facebook/Instagram) plus site, SEO, follow-up, app; you qualify and book — AEs scope deals.",
+  tldr: "Obsidion is mostly paid ads (Facebook and Instagram) plus site, SEO, follow-up, app; you qualify and book — AEs scope deals.",
   meansForYou: [
     "Explain what we sell in English first; say \"Meta\" or \"Facebook/Instagram\" when you are tying to their setup.",
     "If they go deep on details you do not know, bridge to the specialist — never invent answers.",
@@ -124,7 +124,7 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
         backLabel="Back to Outreach"
         eyebrow="Phone"
         title="Phone Scripts"
-        description="≈80% paid social (Meta) when it fits; ~20% site, SEO, remarketing, app — website-only is still a real path. Read the Q&A and call plan first — then use the scripts as anchors. Sound human; lead with ads before jargon; anchor on evidence or growth — not generic Google trivia."
+        description="≈80% paid ads (Facebook and Instagram) when it fits; ~20% site, SEO, remarketing, app — website-only is still a real path. Read the Q&A and call plan first — then use the scripts as anchors. Sound human; lead with ads before jargon; anchor on evidence or growth — not generic Google trivia."
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">
@@ -220,7 +220,7 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
             {[
               {
                 q: "What does Obsidion sell?",
-                a: "Usually paid social first (~80% of how we talk) — we run Facebook and Instagram (Meta) campaigns in the client's own ad account so spend is visible. The other ~20% is custom website, local SEO, remarketing, optional app — compound or stand-alone (e.g. they only need a site). One team, fast execution. You book a specialist; you do not quote the full stack.",
+                a: "Usually paid ads first (~80% of how we talk) — we run Facebook and Instagram campaigns in the client's own ad account so spend is visible. The other ~20% is custom website, local SEO, remarketing, optional app — compound or stand-alone (e.g. they only need a site). One team, fast execution. You book a specialist; you do not quote the full stack.",
               },
               {
                 q: "What problems are we usually solving?",
@@ -384,7 +384,7 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
               </PitchQuote>
               <p className="text-xs text-muted-foreground mt-3">
                 <span className="font-semibold text-foreground">Use when:</span> You see content,
-                boosts, or sponsored posts — or their category is a natural fit for paid social.
+                boosts, or sponsored posts — or their category is a natural fit for paid ads.
               </p>
             </motion.div>
 
@@ -501,7 +501,7 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
               <p className="text-xs text-muted-foreground mt-4 leading-relaxed">
                 Follow-up:{" "}
                 <span className="italic">
-                  &ldquo;Are you running any paid social or search right now, or is it mostly organic?&rdquo;
+                  &ldquo;Are you running any paid ads or search right now, or is it mostly organic?&rdquo;
                 </span>{" "}
                 — if yes, ask whether they are happy with performance. That opens Meta/ads or SEO
                 without you pitching.
@@ -629,7 +629,7 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
                 &ldquo;Hey, is [Owner] available? It&apos;s [Your name] from Obsidion.&rdquo;
               </p>
               <p className="text-xs text-muted-foreground">
-                If asked what it&apos;s about: &ldquo;It&apos;s about their advertising and paid social — I need
+                If asked what it&apos;s about: &ldquo;It&apos;s about their paid advertising — I need
                 two minutes with [Owner]. Not a pitch to you.&rdquo;
               </p>
             </motion.div>
@@ -637,7 +637,7 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
             <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
               <h4 className="text-sm font-bold mb-3">When you don&apos;t know who to ask for</h4>
               <p className="text-sm text-muted-foreground italic leading-relaxed mb-3">
-                &ldquo;Who handles paid social or marketing spend? I want the right person.&rdquo;
+                &ldquo;Who handles paid advertising or marketing spend? I want the right person.&rdquo;
               </p>
               <p className="text-xs text-muted-foreground">
                 Get a name, transfer, or callback window. Do not pitch the gatekeeper.

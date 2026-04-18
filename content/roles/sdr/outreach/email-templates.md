@@ -4,7 +4,7 @@
 
 ## How to Use These Templates
 
-Copy, paste, personalize every bracket. **≈80% of strong first touches lean on paid social** (Meta — Facebook and Instagram) — creatives and campaigns in the client's ad account so spend is visible. The other **~20%** is website, SEO, remarketing; **website-only** is a valid path when that's clearly the need. Don't lead with a laundry list. Lead with **ads** or **advertising** in the first line when you can; name **Meta** when you explain how we execute.
+Copy, paste, personalize every bracket. **≈80% of strong first touches lean on paid ads** (Facebook and Instagram) — creatives and campaigns in the client's ad account so spend is visible. The other **~20%** is website, SEO, remarketing; **website-only** is a valid path when that's clearly the need. Don't lead with a laundry list. Lead with **ads** or **advertising** in the first line when you can; name **Meta** when you explain how we execute.
 
 **TL;DR:** Write like a human: lead with paid ads or advertising when it fits; name Meta (Facebook/Instagram) when you are explaining how we execute — not in the first line every time.
 
@@ -20,7 +20,7 @@ Keep emails short. If it's longer than five sentences, they're not reading it. O
 
 ## First Touch — Ads-Led (Default)
 
-Use when you see Facebook/Instagram activity, boosts, or when their category is a natural fit for paid social. This is the primary first-touch pattern.
+Use when you see Facebook/Instagram activity, boosts, or when their category is a natural fit for paid ads. This is the primary first-touch pattern.
 
 > **Subject:** Quick question — [their business name]
 >
@@ -114,7 +114,7 @@ Use when you don't see paid activity but the brand looks strong — open on grow
 >
 > Hey [Name],
 >
-> One more angle — I looked at [competitor or "who's running ads"] in [city] in your space. There's a gap in how aggressively [their category] is showing up with paid social. Happy to share what I saw in two minutes if you're curious.
+> One more angle — I looked at [competitor or "who's running ads"] in [city] in your space. There's a gap in how aggressively [their category] is showing up with paid ads. Happy to share what I saw in two minutes if you're curious.
 >
 > [Your name]
 > [Your phone number]

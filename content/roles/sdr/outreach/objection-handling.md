@@ -160,7 +160,7 @@ This is actually useful. Find out who is.
 
 | Objection | Your First Move |
 |-----------|----------------|
-| "Not interested" | Ask one question about their Google visibility |
+| "Not interested" | Ask one question about their paid ads setup |
 | "Send me info" | Ask what specifically they want to see, then book the call |
 | "We have a vendor" | Ask if they're seeing results, offer a free second opinion |
 | "No budget" | The call is free — worth 20 minutes to find out the cost |

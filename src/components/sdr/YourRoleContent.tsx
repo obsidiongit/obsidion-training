@@ -95,7 +95,7 @@ const ROLE_IS_NOT = [
 ] as const;
 
 const ROLE_VOICE_TLDR = {
-  tldr: "With owners, lead with growth and plain words — ads, advertising, paid social. Name Meta (Facebook/Instagram) when you are explaining what we do, not as every opener.",
+  tldr: "With owners, lead with growth and plain words — ads, advertising. Name Meta (Facebook/Instagram) when you are explaining what we do, not as every opener.",
   meansForYou: [
     "Product Knowledge (Lite) stays specific about Meta; cold conversations stay understandable.",
     "If they only need a website or SEO, that path is still valid — do not force ads into every first sentence.",

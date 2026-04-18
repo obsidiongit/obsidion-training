@@ -29,7 +29,7 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
         backLabel="Back to Outreach"
         eyebrow="Email"
         title="Email Templates"
-        description="≈80% paid social (Meta) when it fits — creatives and campaigns in their ad account. The other ~20% is website, SEO, remarketing (website-only is fine). Lead with ads before jargon; keep emails short and human — no quiz-style hooks about where they rank on Google."
+        description="≈80% paid ads (Facebook and Instagram) when it fits — creatives and campaigns in their ad account. The other ~20% is website, SEO, remarketing (website-only is fine). Lead with ads before jargon; keep emails short and human — no quiz-style hooks about where they rank on Google."
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">
@@ -88,7 +88,7 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
 
           <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed max-w-3xl mb-4">
             Use when you see activity on Facebook or Instagram, or when their business type is a
-            natural fit for paid social. This is your primary first-touch pattern.
+            natural fit for paid ads. This is your primary first-touch pattern.
           </motion.p>
 
           <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
@@ -295,7 +295,7 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
                 <p>
                   One more angle — I looked at [competitor or &ldquo;who&apos;s running ads&rdquo;] in [city] in your
                   space. There&apos;s a gap in how aggressively [their category] is showing up with paid
-                  social. Happy to share what I saw in two minutes if you&apos;re curious.
+                  ads. Happy to share what I saw in two minutes if you&apos;re curious.
                 </p>
                 <p className="text-muted-foreground">
                   [Your name]
@@ -416,5 +416,8 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
         </div>
       </footer>
     </div>
+  );
+}
+
   );
 }

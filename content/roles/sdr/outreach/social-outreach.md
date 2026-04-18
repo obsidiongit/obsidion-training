@@ -6,7 +6,7 @@
 
 Phone opens doors. Email follows up. Social builds trust before either one happens.
 
-**Voice:** **≈80%** lead with paid social, **ads**, or growth when it fits; name **Meta** when you are specific. Otherwise a real hook (site, reviews, scaling). Human — no generic "how's your online presence?" DMs.
+**Voice:** **≈80%** lead with paid ads or growth when it fits; name **Meta** when you are specific. Otherwise a real hook (site, reviews, scaling). Human — no generic "how's your online presence?" DMs.
 
 **TL;DR:** DMs should sound human: lead with paid ads or advertising; say Meta (Facebook/Instagram) when you explain how Obsidion executes.
 
@@ -130,7 +130,7 @@ Do this 24–48 hours before the DM. When your message arrives, they've already 
 
 **Template — After Engaging With Their Reels/Content:**
 
-> "Hey [Name], been following [their business] — you're putting out good content. Quick question: are you running any paid ads behind the videos, or is it all organic right now? I work with Obsidion on advertising — we handle Meta campaigns (Facebook and Instagram ads) for businesses like yours — and wanted to see if scaling this is something on your radar."
+> "Hey [Name], been following [their business] — you're putting out good content. Quick question: are you running any paid ads behind the videos, or is it all organic right now? I work with Obsidion on advertising — we run Facebook and Instagram ads for businesses like yours — and wanted to see if scaling this is something on your radar."
 
 **Template — Strong Organic Content, No Ads:**
 
@@ -142,7 +142,7 @@ Do this 24–48 hours before the DM. When your message arrives, they've already 
 
 **Template — Direct:**
 
-> "Hey [Name], came across [their business] — content's strong. Curious if you're trying to scale reach with paid social or if it's been mostly organic. We run paid ads for businesses like yours through their Meta account — Facebook and Instagram. Happy to compare notes."
+> "Hey [Name], came across [their business] — content's strong. Curious if you're trying to scale reach with paid ads or if it's been mostly organic. We run paid ads for businesses like yours through their Meta account — Facebook and Instagram. Happy to compare notes."
 
 **Keep DMs under 150 words.** Facebook DMs are read on a phone. Long messages get skimmed or ignored. Lead with a real observation, ask one question, end there.
 
@@ -208,11 +208,11 @@ Replying to a Story is the most natural DM entry on Instagram. It doesn't feel l
 
 **Template — Direct:**
 
-> "Hey [Name], came across [their business] here — content is strong. Curious if you're trying to scale reach with paid social or if it's been mostly organic. We run paid ads for businesses like yours through their Meta account — Facebook and Instagram. Happy to compare notes."
+> "Hey [Name], came across [their business] here — content is strong. Curious if you're trying to scale reach with paid ads or if it's been mostly organic. We run paid ads for businesses like yours through their Meta account — Facebook and Instagram. Happy to compare notes."
 
 **Template — Story Reply Entry:**
 
-> [React genuinely to the Story first — "That looks incredible" or "The results on that are crazy"] → then follow up if they respond: "Glad it landed! Quick question — are you running any paid ads behind this content or mostly organic? That's actually what I do — help businesses like yours run Meta ads to get more eyes on what's already working."
+> [React genuinely to the Story first — "That looks incredible" or "The results on that are crazy"] → then follow up if they respond: "Glad it landed! Quick question — are you running any paid ads behind this content or mostly organic? That's actually what I do — help businesses like yours run Facebook and Instagram ads to get more eyes on what's already working."
 
 **Keep Instagram DMs tight.** Under 100 words is ideal. Two or three sentences, a genuine observation, one question. If they reply, you're in a conversation — keep it natural and move toward the call.
 

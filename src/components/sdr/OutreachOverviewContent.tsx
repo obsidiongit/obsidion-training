@@ -48,7 +48,7 @@ const TOPICS = [
     title: "Social Outreach",
     stat: "Trust Builder",
     description:
-      "DMs that lead with paid social or real hooks — plus LinkedIn/Facebook/IG engagement habits.",
+      "DMs that lead with paid ads or real hooks — plus LinkedIn/Facebook/IG engagement habits.",
     iconBg: "bg-purple-accent/10 text-purple-accent group-hover:bg-purple-accent group-hover:text-white",
     borderHover: "hover:border-purple-accent/30",
   },

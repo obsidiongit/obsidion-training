@@ -4,7 +4,7 @@
 
 ## TL;DR
 
-**TL;DR:** Obsidion sells growth help: mostly paid social (Meta — Facebook/Instagram) plus site, SEO, follow-up, and sometimes an app. You book meetings; AEs scope and price.
+**TL;DR:** Obsidion sells growth help: mostly paid ads (Facebook and Instagram) plus site, SEO, follow-up, and sometimes an app. You book meetings; AEs scope and price.
 
 **What this means for you:**
 - On live calls, lead with "ads" or "paid advertising" until they are already talking channels — then name Meta precisely (this page is where you learn that map).
@@ -37,7 +37,7 @@ Your job is to book the meeting. The AE handles the deep dive.
 **Pain signals to listen for:**
 - "We boost posts but it doesn't do anything"
 - "Our agency won't give us access to our own ad account"
-- "We're spending on ads and don't know if it's working"
+- "We're spending on Facebook/Instagram ads and don't know if it's working"
 - "We want to grow faster than referrals alone"
 
 **TL;DR:** Creatives + campaign management in their own Meta (Facebook/Instagram) ad account — full visibility on spend.

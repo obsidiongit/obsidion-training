@@ -4,7 +4,7 @@
 
 ## Read this first
 
-If you are new to Obsidion or to sales, **skim [Product Knowledge (Lite)](../product-knowledge-lite.md) first** — it uses **Meta (Facebook/Instagram)** by name; on cold calls you will often say **paid ads** or **advertising** first. Usually **≈80%** paid social, **~20%** rest of stack; website-only is still valid. This page is the call plan and scripts.
+If you are new to Obsidion or to sales, **skim [Product Knowledge (Lite)](../product-knowledge-lite.md) first** — it uses **Meta (Facebook/Instagram)** by name; on cold calls you will often say **paid ads** or **advertising** first. Usually **≈80%** paid ads, **~20%** rest of stack; website-only is still valid. This page is the call plan and scripts.
 
 **TL;DR:** Skim Product Knowledge Lite for exact product names; on the phone, open with "ads" or "paid advertising" before you assume they know Meta.
 
@@ -16,14 +16,14 @@ If you are new to Obsidion or to sales, **skim [Product Knowledge (Lite)](../pro
 
 ## Before you dial — Q&A
 
-**TL;DR:** Obsidion is mostly paid social (Meta — Facebook/Instagram) plus site, SEO, follow-up, app; you qualify and book — AEs scope deals.
+**TL;DR:** Obsidion is mostly paid ads (Facebook and Instagram) plus site, SEO, follow-up, app; you qualify and book — AEs scope deals.
 
 **What this means for you:**
 - Explain what we sell in English first; say "Meta" or "Facebook/Instagram" when you are tying to their setup.
 - If they go deep on details you do not know, bridge to the specialist — never invent answers.
 
 **What does Obsidion sell?**  
-Usually **~80%** how we pitch: paid social — **Facebook and Instagram (Meta)** campaigns in the client's own ad account. The other **~20%**: website, SEO, remarketing, optional app — sometimes **site-only**, no ads yet. One team. You book a specialist; you do not quote the full stack on a cold call.
+Usually **~80%** how we pitch: paid ads — **Facebook and Instagram** campaigns in the client's own ad account. The other **~20%**: website, SEO, remarketing, optional app — sometimes **site-only**, no ads yet. One team. You book a specialist; you do not quote the full stack on a cold call.
 
 **What problems are we usually solving?**  
 Often: ad spend without clarity, or locked out of their own ad account; scaling beyond referrals. Sometimes the loudest pain is a bad or missing website — still our deal. Your job is to hear what's loudest — not to lecture five products.
@@ -104,7 +104,7 @@ Scripts are **structure + wording you can steal** — not a teleprompter. Pause 
 
 > *"Hey [Name], it's [Your name] with Obsidion. I was looking at [business] on Facebook/Instagram before I dialed — are you running paid ads in-house, or is someone managing that for you? We help businesses run advertising with creatives and campaigns in your own ad account so you see the spend — that's on Meta, Facebook and Instagram."*
 
-**Use when:** You see content, boosts, or sponsored posts — or the category is a natural fit for paid social.
+**Use when:** You see content, boosts, or sponsored posts — or the category is a natural fit for paid ads.
 
 ### Version B — Scaling (no clear ad signal)
 
@@ -147,7 +147,7 @@ Ask one at a time. You are uncovering BANT without sounding like a checklist.
 - Mention of ad spend, agencies, or hiring
 - Multiple locations, staff, or growth goals
 
-**Useful follow-up:** *"Are you running paid social or search right now?"* If yes → are they happy with it? That opens Meta/SEO without you lecturing.
+**Useful follow-up:** *"Are you running paid ads or search right now?"* If yes → are they happy with it? That opens the ads/SEO conversation without you lecturing.
 
 ### Timeline
 
@@ -189,9 +189,9 @@ Then qualify → bridge → book. Do not restart a monologue.
 ## Gatekeeper navigation
 
 **When you know the owner's name:** *"Hey, is [Owner] available? It's [Your name] from Obsidion."*  
-If asked: *"It's about their advertising and paid social — I need two minutes with [Owner]."*
+If asked: *"It's about their paid advertising — I need two minutes with [Owner]."*
 
-**When you don't know who to ask:** *"Who handles paid social or marketing spend? I want the right person."*
+**When you don't know who to ask:** *"Who handles paid advertising or marketing spend? I want the right person."*
 
 Don't pitch the gatekeeper. Get a name, transfer, or callback time.
 
