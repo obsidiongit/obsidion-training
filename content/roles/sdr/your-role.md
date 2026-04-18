@@ -1,6 +1,6 @@
 # Your Role as an SDR
 
-Speak with **business owners** about how Obsidion helps them **grow and scale** — more customers, more revenue, not just "a nicer website." **Meta (Facebook and Instagram) ads** are the usual focus; the rest of the stack still matters. This page is the foundation for everything else.
+Speak with **business owners** about how Obsidion helps them **grow and scale** — more customers, more revenue, not just "a nicer website." **Paid advertising** (usually on **Meta** — Facebook and Instagram) is the usual focus; the rest of the stack still matters. This page is the foundation for everything else.
 
 ---
 
@@ -16,6 +16,14 @@ Your job is to talk with owners about what Obsidion offers to help them grow. Yo
 
 - **Roughly 80%** of strong conversations lean on **Meta ads** — creatives, campaigns, and visibility inside their ad account. That is where a lot of revenue comes from for us and for them.
 - **Roughly 20%** — still important — is everything else: custom website, local SEO, remarketing, app. If someone **only needs a website** or a visibility fix with no ads yet, that is still a real deal. Match the conversation to their pain; do not force Meta into every opener.
+
+### TL;DR — how you sound to owners
+
+**TL;DR:** With owners, lead with growth and plain words — ads, advertising, paid social. Name Meta (Facebook/Instagram) when you are explaining what we do, not as every opener.
+
+**What this means for you:**
+- Product Knowledge (Lite) stays specific about Meta; cold conversations stay understandable.
+- If they only need a website or SEO, that path is still valid — do not force ads into every first sentence.
 
 ---
 

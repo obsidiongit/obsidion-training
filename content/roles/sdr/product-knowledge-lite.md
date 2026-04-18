@@ -2,6 +2,17 @@
 
 ---
 
+## TL;DR
+
+**TL;DR:** Obsidion sells growth help: mostly paid social (Meta — Facebook/Instagram) plus site, SEO, follow-up, and sometimes an app. You book meetings; AEs scope and price.
+
+**What this means for you:**
+- On live calls, lead with "ads" or "paid advertising" until they are already talking channels — then name Meta precisely (this page is where you learn that map).
+- Match the stack to their pain; do not assume they know what "Meta" means.
+- If you do not know a detail, hand off to the specialist — never guess pricing or tech.
+
+---
+
 ## You Don't Need to Be the Expert
 
 You are not the one closing the deal. You need enough knowledge to sound credible for two minutes — and to recognize when a prospect's pain maps to what we do.
@@ -29,6 +40,12 @@ Your job is to book the meeting. The AE handles the deep dive.
 - "We're spending on ads and don't know if it's working"
 - "We want to grow faster than referrals alone"
 
+**TL;DR:** Creatives + campaign management in their own Meta (Facebook/Instagram) ad account — full visibility on spend.
+
+**What this means for you:**
+- This is the product name when explaining what we do internally or after they have mentioned ads.
+- Outreach cold open: say "paid ads" or "advertising" first; clarify Meta/Facebook/Instagram once they are engaged.
+
 ---
 
 ### 2. Custom Websites
@@ -42,6 +59,12 @@ Your job is to book the meeting. The AE handles the deep dive.
 
 **Pain signals:** "Our site is old / embarrassing," DIY builder not working, no site.
 
+**TL;DR:** Custom sites fast — not templates; often paired with ads so clicks do not land on a broken page.
+
+**What this means for you:**
+- Valid to book on site-only pain — no need to force ads into the opener.
+- If they are also running ads, tie site quality to wasted spend.
+
 ---
 
 ### 3. SEO (Search Engine Optimization)
@@ -52,6 +75,12 @@ Your job is to book the meeting. The AE handles the deep dive.
 > *"We make sure your business shows up when people Google what you do in your area."*
 
 **When to mention it:** Layered with paid — organic visibility vs. competitors, not instead of Meta for every pitch.
+
+**TL;DR:** Local/organic visibility — Google and Maps — complements paid, does not replace it for every business.
+
+**What this means for you:**
+- Say "showing up on Google" or "search" with owners; reserve "SEO" if they use the word.
+- Do not open cold calls with ranking quizzes — use this doc to speak credibly once they are talking.
 
 ---
 
@@ -64,6 +93,12 @@ Your job is to book the meeting. The AE handles the deep dive.
 
 **When to mention it:** After ads drive traffic, follow-up catches what doesn't convert immediately.
 
+**TL;DR:** Automated follow-up so inquiries do not die after the first touch — stacks behind traffic from ads and other channels.
+
+**What this means for you:**
+- Plain language: "follow-up" or "staying in touch" before jargon.
+- Strong when they admit leads slip through the cracks.
+
 ---
 
 ### 5. Mobile App
@@ -74,6 +109,12 @@ Your job is to book the meeting. The AE handles the deep dive.
 > *"We build a branded app — loyalty, push, ordering — all under your name."*
 
 **When to mention it:** Repeat customers, third-party fees, loyalty — not the default cold-opener.
+
+**TL;DR:** Branded app for loyalty, ordering, notifications — for repeat customers and cutting third-party fees.
+
+**What this means for you:**
+- Not a cold-call opener; use when they bring up delivery apps, loyalty, or repeat orders.
+- Book and note "app angle" for the AE — do not demo features.
 
 ---
 

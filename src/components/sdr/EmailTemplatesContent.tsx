@@ -13,6 +13,14 @@ import {
   ProductPageHero,
 } from "../products/shared";
 
+const HOW_TO_USE_TLDR = {
+  tldr: "Write like a human: lead with paid ads or advertising when it fits; name Meta (Facebook/Instagram) when you are explaining how we execute — not in the first line every time.",
+  meansForYou: [
+    "If they may not run ads yet, do not assume they know the word Meta.",
+    "Product Knowledge (Lite) is where the exact Meta wording lives; emails can stay plain.",
+  ],
+} as const;
+
 export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }) {
   return (
     <div className="min-h-screen bg-background">
@@ -21,7 +29,7 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
         backLabel="Back to Outreach"
         eyebrow="Email"
         title="Email Templates"
-        description="≈80% Meta when it fits — creatives and campaigns in their ad account. The other ~20% is website, SEO, remarketing (website-only is fine). Keep emails short, specific, and human — no quiz-style hooks about where they rank on Google."
+        description="≈80% paid social (Meta) when it fits — creatives and campaigns in their ad account. The other ~20% is website, SEO, remarketing (website-only is fine). Lead with ads before jargon; keep emails short and human — no quiz-style hooks about where they rank on Google."
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">
@@ -36,15 +44,31 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
             How to Use These Templates
           </SectionLabel>
 
-          <motion.div variants={fadeUp} className="rounded-2xl border border-accent/20 bg-accent/[0.04] px-6 py-5 space-y-3">
+          <motion.div variants={fadeUp} className="rounded-2xl border border-accent/20 bg-accent/[0.04] px-6 py-5 space-y-4">
             <p className="text-sm text-foreground leading-relaxed">
-              <span className="font-semibold">Lead with Meta when it fits (~80% pattern).</span> If you see boosts,
-              sponsored posts, or ad activity — open on paid social and the account-access angle. If
-              you don&apos;t see ads, open on{" "}
+              <span className="font-semibold">Lead with paid ads or advertising when it fits (~80% pattern).</span> If
+              you see boosts, sponsored posts, or ad activity — open there and the account-access angle.
+              If you don&apos;t see ads, open on{" "}
               <span className="font-semibold">scaling what&apos;s already working</span>, a{" "}
               <span className="font-semibold">specific observation</span> (their site, a post, reviews),
-              or a <span className="font-semibold">website-only</span> angle if that&apos;s clearly the need — never a fake &ldquo;quick question about Google.&rdquo;
+              or a <span className="font-semibold">website-only</span> angle if that&apos;s clearly the need — never a fake &ldquo;quick question about Google.&rdquo; Use{" "}
+              <span className="font-semibold">Meta (Facebook/Instagram)</span> when you are explaining how we run campaigns, not as the first word to every stranger.
             </p>
+            <div className="rounded-xl border border-accent/30 bg-background/60 px-4 py-3">
+              <p className="text-xs font-bold uppercase tracking-wider text-accent mb-1">TL;DR</p>
+              <p className="text-sm text-foreground leading-relaxed mb-3">{HOW_TO_USE_TLDR.tldr}</p>
+              <p className="text-xs font-bold uppercase tracking-wider text-foreground mb-1.5">
+                What this means for you
+              </p>
+              <ul className="space-y-1.5">
+                {HOW_TO_USE_TLDR.meansForYou.map((line) => (
+                  <li key={line} className="flex items-start gap-2 text-xs text-muted-foreground leading-relaxed">
+                    <span className="mt-1 h-1 w-1 rounded-full bg-accent shrink-0" />
+                    {line}
+                  </li>
+                ))}
+              </ul>
+            </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Copy, personalize every bracket, keep it under five sentences. One ask per email.
             </p>
@@ -59,7 +83,7 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
           viewport={{ once: true, margin: "-60px" }}
         >
           <SectionLabel barClass="bg-purple-accent" textClass="text-purple-accent">
-            First Touch — Meta-Led (Default)
+            First Touch — Ads-Led (Default)
           </SectionLabel>
 
           <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed max-w-3xl mb-4">
@@ -79,12 +103,12 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
                 is someone else managing campaigns for you?
               </p>
               <p>
-                I work with Obsidion — we run Meta ads end-to-end (creatives + management) inside{" "}
+                I work with Obsidion — we run paid advertising end-to-end (creatives + management) in{" "}
                 <span className="font-semibold">your</span>
                 {" "}
                 ad account, so you always see where the
-                money goes. Figured it might be relevant if you&apos;re trying to scale what&apos;s already
-                working.
+                money goes. On Meta, that&apos;s Facebook and Instagram. Figured it might be relevant if
+                you&apos;re trying to scale what&apos;s already working.
               </p>
               <p>Worth a two-minute call this week?</p>
               <p className="text-muted-foreground">
@@ -123,12 +147,12 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
               <p>Hey [Name],</p>
               <p>
                 Called earlier — no stress if you missed it. I wanted to ask whether you&apos;re running
-                Facebook/Instagram ads in-house or with someone, and if you&apos;re happy with how
-                performance and spend are visible on your side.
+                paid ads in-house or with someone, and if you&apos;re happy with how performance and
+                spend are visible on your side.
               </p>
               <p>
-                We help businesses run Meta with full creative and management in their own ad
-                account. Happy to compare notes for two minutes if you&apos;re open to it.
+                We help businesses run advertising — creatives and management — in their own ad
+                account (including on Meta, Facebook and Instagram). Happy to compare notes for two minutes if you&apos;re open to it.
               </p>
               <p className="text-muted-foreground">
                 [Your name]
@@ -162,9 +186,10 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
                 engagement].
               </p>
               <p>
-                We help [their industry] businesses turn that kind of footprint into growth — Meta is
-                usually the engine, and we layer site/SEO/follow-up where it matters. Not a novel —
-                just curious if scaling is on your mind this quarter.
+                We help [their industry] businesses turn that kind of footprint into growth — paid
+                advertising is usually the engine (for us that&apos;s Meta, Facebook and Instagram), and
+                we layer site/SEO/follow-up where it matters. Not a novel — just curious if scaling is on
+                your mind this quarter.
               </p>
               <p>Open to a quick call?</p>
               <p className="text-muted-foreground">
@@ -210,9 +235,10 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
                 scale what&apos;s already working, or if growth has mostly been word-of-mouth so far.
               </p>
               <p>
-                We work with a lot of [their industry] owners on Meta ads (plus the site and
-                follow-up pieces so spend isn&apos;t wasted). If putting real budget behind demand is on
-                your radar, I can get you a short call with someone who does this every day.
+                We work with a lot of [their industry] owners on paid ads — Facebook and Instagram
+                (Meta) — plus the site and follow-up pieces so spend isn&apos;t wasted. If putting real
+                budget behind demand is on your radar, I can get you a short call with someone who does
+                this every day.
               </p>
               <p className="text-muted-foreground">
                 [Your name]
@@ -246,8 +272,8 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
                 <p>Hey [Name],</p>
                 <p>
                   Following up on my note — not trying to flood your inbox. Short version: we help
-                  [their industry] businesses run Meta ads with creatives and full visibility in
-                  their own account, and we fix the site/follow-up pieces so money isn&apos;t leaking.
+                  [their industry] businesses run paid ads with creatives and full visibility in
+                  their own account (Meta — Facebook and Instagram), and we fix the site/follow-up pieces so money isn&apos;t leaking.
                 </p>
                 <p>
                   If that&apos;s not a priority, all good. If it is, I can line up 20 minutes with a
@@ -296,9 +322,9 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
               <div className="rounded-xl bg-muted/20 border border-border/60 px-5 py-4 text-sm text-foreground leading-relaxed space-y-3">
                 <p>Hey [Name],</p>
                 <p>
-                  I&apos;ve reached out a few times — I know you&apos;re busy. If scaling with Meta (or fixing
-                  the site/follow-up behind your traffic) isn&apos;t on your radar right now, I&apos;ll stop
-                  here.
+                  I&apos;ve reached out a few times — I know you&apos;re busy. If scaling with paid
+                  advertising (or fixing the site/follow-up behind your traffic) isn&apos;t on your radar
+                  right now, I&apos;ll stop here.
                 </p>
                 <p>
                   If it is, I&apos;m one reply away. [Your phone number] — or just reply to this.
@@ -340,8 +366,8 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
                 <p>Hey [Name],</p>
                 <p>
                   Reminder — you&apos;ve got a call with [AE name] tomorrow at [time]. They&apos;ll walk
-                  through what makes sense for your business (usually starting with what&apos;s happening
-                  on Meta and your site).
+                  through what makes sense for your business (usually what&apos;s happening with your ads
+                  and your site — we focus a lot on Meta, Facebook and Instagram).
                 </p>
               </div>
             </motion.div>
@@ -362,7 +388,7 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
           <div className="space-y-3">
             {[
               "Personalize every bracket. Generic = deleted.",
-              "Meta first when there's a signal; otherwise scaling or a real observation.",
+              "Paid ads first when there's a signal; otherwise scaling or a real observation.",
               "Keep it short — five sentences max.",
               "One ask per email.",
               "Same subject line for follow-ups in a thread when possible.",

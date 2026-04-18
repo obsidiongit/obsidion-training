@@ -28,7 +28,7 @@ const TOPICS = [
     title: "Phone Scripts",
     stat: "Primary Channel",
     description:
-      "Openers anchored on Meta and growth — not generic Google quizzes. Qualify, book, confirm.",
+      "Openers anchored on paid ads and growth — not generic Google quizzes. Qualify, book, confirm.",
     iconBg: "bg-accent/10 text-accent group-hover:bg-accent group-hover:text-white",
     borderHover: "hover:border-accent/30",
   },
@@ -38,7 +38,7 @@ const TOPICS = [
     title: "Email Templates",
     stat: "Copy & Paste",
     description:
-      "Meta-led first touches, observation and scaling variants, follow-ups, breakup — short and specific.",
+      "Ads-first first touches, observation and scaling variants, follow-ups, breakup — short and specific.",
     iconBg: "bg-emerald-accent/10 text-emerald-accent group-hover:bg-emerald-accent group-hover:text-white",
     borderHover: "hover:border-emerald-accent/30",
   },
@@ -89,7 +89,7 @@ export default function OutreachOverviewContent({ roleSlug }: { roleSlug: string
         backLabel="Back to hub"
         eyebrow="Outreach"
         title="Outreach Playbook"
-        description="Outbound with a ≈80/20 bias toward Meta when it fits; website, SEO, and follow-up still matter — some leads are site-only. Phone, email, social — human tone. Objection handling ties it together."
+        description="Outbound with a ≈80/20 bias toward paid advertising (Meta when you get specific); website, SEO, and follow-up still matter — some leads are site-only. Phone, email, social — human tone. Objection handling ties it together."
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">

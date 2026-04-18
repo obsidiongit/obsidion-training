@@ -19,6 +19,15 @@ import {
 
 /* ─── data ─── */
 
+const PAGE_TLDR = {
+  tldr: "Obsidion sells growth help: mostly paid social (Meta — Facebook/Instagram) plus site, SEO, follow-up, and sometimes an app. You book meetings; AEs scope and price.",
+  meansForYou: [
+    "On live calls, lead with \"ads\" or \"paid advertising\" until they are already talking channels — then name Meta precisely (this page is where you learn that map).",
+    "Match the stack to their pain; do not assume they know what \"Meta\" means.",
+    "If you do not know a detail, hand off to the specialist — never guess pricing or tech.",
+  ],
+} as const;
+
 const PRODUCTS = [
   {
     icon: Lightbulb,
@@ -29,6 +38,11 @@ const PRODUCTS = [
       "\"We boost posts but it doesn't do anything\"",
       "\"Our agency won't give us access to our own ad account\"",
       "\"We're spending on Meta and don't know if it's working\"",
+    ],
+    tldr: "Creatives + campaign management in their own Meta (Facebook/Instagram) ad account — full visibility on spend.",
+    meansForYou: [
+      "This is the product name you use when explaining what we do internally or after they’ve mentioned ads.",
+      "Outreach cold open: say “paid ads” or “advertising” first; clarify Meta/Facebook/Instagram once they’re engaged.",
     ],
     color: "accent",
   },
@@ -42,6 +56,11 @@ const PRODUCTS = [
       "\"We built it ourselves on Wix / Squarespace and it's not working\"",
       "\"We don't even have a website\"",
     ],
+    tldr: "Custom sites fast — not templates; often paired with ads so clicks don’t land on a broken page.",
+    meansForYou: [
+      "Valid to book on site-only pain — no need to force ads into the opener.",
+      "If they’re also running ads, tie site quality to wasted spend.",
+    ],
     color: "emerald-accent",
   },
   {
@@ -53,6 +72,11 @@ const PRODUCTS = [
       "\"I don't think we show up on Google\"",
       "\"Our competitors are everywhere online and we're invisible\"",
       "\"We get all our business from referrals\" (zero online visibility)",
+    ],
+    tldr: "Local/organic visibility — Google and Maps — complements paid, doesn’t replace it for every business.",
+    meansForYou: [
+      "Say “showing up on Google” or “search” with owners; reserve “SEO” if they use the word.",
+      "Don’t open cold calls with ranking quizzes — use Product Knowledge to speak credibly once they’re talking.",
     ],
     color: "purple-accent",
   },
@@ -66,6 +90,11 @@ const PRODUCTS = [
       "\"We're bad at following up\"",
       "\"Leads just kind of disappear\"",
     ],
+    tldr: "Automated follow-up so inquiries don’t die after the first touch — stacks behind traffic from ads and other channels.",
+    meansForYou: [
+      "Plain language: “follow-up” or “staying in touch” before jargon.",
+      "Strong when they admit leads slip through the cracks.",
+    ],
     color: "amber-accent",
   },
   {
@@ -77,6 +106,11 @@ const PRODUCTS = [
       "\"We use DoorDash / UberEats and the fees are killing us\"",
       "\"We want a loyalty program but haven't set one up\"",
       "\"We want our customers to order directly from us\"",
+    ],
+    tldr: "Branded app for loyalty, ordering, notifications — for repeat customers and cutting third-party fees.",
+    meansForYou: [
+      "Not a cold-call opener; use when they bring up delivery apps, loyalty, or repeat orders.",
+      "Book and note “app angle” for the AE — don’t demo features.",
     ],
     color: "purple-accent",
   },
@@ -111,6 +145,33 @@ export default function ProductKnowledgeLiteContent({ roleSlug }: { roleSlug: st
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">
+        {/* ── TL;DR (page) ── */}
+        <motion.section
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
+          <motion.div
+            variants={fadeUp}
+            className="rounded-2xl border border-purple-accent/25 bg-purple-accent/[0.06] px-6 py-5"
+          >
+            <p className="text-xs font-bold uppercase tracking-wider text-purple-accent mb-2">TL;DR</p>
+            <p className="text-sm text-foreground leading-relaxed font-medium mb-4">{PAGE_TLDR.tldr}</p>
+            <p className="text-xs font-bold uppercase tracking-wider text-foreground mb-2">
+              What this means for you
+            </p>
+            <ul className="space-y-2">
+              {PAGE_TLDR.meansForYou.map((line) => (
+                <li key={line} className="flex items-start gap-2 text-sm text-muted-foreground leading-relaxed">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-purple-accent shrink-0" />
+                  {line}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        </motion.section>
+
         {/* ── You Don't Need to Be the Expert ── */}
         <motion.section
           variants={stagger}
@@ -182,6 +243,22 @@ export default function ProductKnowledgeLiteContent({ roleSlug }: { roleSlug: st
                         <li key={signal} className="flex items-start gap-2 text-sm text-muted-foreground leading-relaxed">
                           <span className={`mt-1.5 h-1.5 w-1.5 rounded-full ${c.bg} shrink-0`} />
                           {signal}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className={`mt-5 rounded-xl border ${c.border} ${c.badgeBg} px-4 py-3`}>
+                    <p className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-1">TL;DR</p>
+                    <p className="text-sm text-foreground leading-relaxed">{product.tldr}</p>
+                    <p className="text-xs font-bold uppercase tracking-wider text-foreground mt-3 mb-1.5">
+                      What this means for you
+                    </p>
+                    <ul className="space-y-1.5">
+                      {product.meansForYou.map((line) => (
+                        <li key={line} className="flex items-start gap-2 text-sm text-muted-foreground leading-relaxed">
+                          <span className={`mt-1.5 h-1 w-1 rounded-full ${c.bg} shrink-0`} />
+                          {line}
                         </li>
                       ))}
                     </ul>

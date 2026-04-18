@@ -37,6 +37,14 @@ const DONT_LIST = [
   "Don't mass-message. Personalized outreach beats copy-paste blasts every time.",
 ] as const;
 
+const SOCIAL_TLDR = {
+  tldr: "DMs should sound human: lead with paid ads or advertising; say Meta (Facebook/Instagram) when you explain how Obsidion executes.",
+  meansForYou: [
+    "Many owners do not know the word Meta — do not open with it in a connection note.",
+    "Product Knowledge (Lite) has the exact Meta wording; social is for short, credible hooks.",
+  ],
+} as const;
+
 /* ─── component ─── */
 
 export default function SocialOutreachContent({ roleSlug }: { roleSlug: string }) {
@@ -47,7 +55,7 @@ export default function SocialOutreachContent({ roleSlug }: { roleSlug: string }
         backLabel="Back to Outreach"
         eyebrow="Social"
         title="Social Outreach"
-        description="≈80% lead with paid social or growth when it fits; otherwise a real hook (site, reviews, scaling) — website-only is valid. No generic 'how's your online presence?' spam. Engage first, then DM."
+        description="≈80% lead with paid social or ads when it fits; name Meta when you are specific. Otherwise use a real hook (site, reviews, scaling) — website-only is valid. Engage first, then DM."
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">
@@ -68,6 +76,25 @@ export default function SocialOutreachContent({ roleSlug }: { roleSlug: string }
               you call after a profile view and a connection request, you&apos;re not a total stranger — you&apos;re
               &ldquo;that person from LinkedIn.&rdquo; That small edge makes a real difference.
             </p>
+          </motion.div>
+
+          <motion.div
+            variants={fadeUp}
+            className="mt-5 rounded-2xl border border-purple-accent/25 bg-purple-accent/[0.06] px-5 py-4"
+          >
+            <p className="text-xs font-bold uppercase tracking-wider text-purple-accent mb-1">TL;DR</p>
+            <p className="text-sm text-foreground leading-relaxed mb-3">{SOCIAL_TLDR.tldr}</p>
+            <p className="text-xs font-bold uppercase tracking-wider text-foreground mb-1.5">
+              What this means for you
+            </p>
+            <ul className="space-y-1.5">
+              {SOCIAL_TLDR.meansForYou.map((line) => (
+                <li key={line} className="flex items-start gap-2 text-sm text-muted-foreground leading-relaxed">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-purple-accent shrink-0" />
+                  {line}
+                </li>
+              ))}
+            </ul>
           </motion.div>
         </motion.section>
 
@@ -105,11 +132,11 @@ export default function SocialOutreachContent({ roleSlug }: { roleSlug: string }
                 </PitchQuote>
                 <PitchQuote label="After Their Content" variant="emerald">
                   Hey [Name], saw your post about [topic] — solid insight. I work with [their industry]
-                  businesses on Meta and growth. Happy to connect.
+                  businesses on paid advertising and growth. Happy to connect.
                 </PitchQuote>
                 <PitchQuote label="Mutual Connection" variant="purple">
                   Hey [Name], noticed we&apos;re both connected to [mutual connection]. I work with
-                  local businesses on Meta ads and growth — figured it was worth connecting.
+                  local businesses on ads and growth — figured it was worth connecting.
                 </PitchQuote>
               </div>
               <p className="text-xs text-muted-foreground mt-3">Keep under 300 characters. Don&apos;t pitch in the request.</p>
@@ -119,17 +146,18 @@ export default function SocialOutreachContent({ roleSlug }: { roleSlug: string }
               <h4 className="text-sm font-bold mb-4">Step 3 — The DM (after they accept)</h4>
               <p className="text-xs text-muted-foreground mb-4">Wait a few hours after they accept. Don&apos;t pitch immediately.</p>
               <div className="space-y-3">
-                <PitchQuote label="Soft Open (Meta-first)">
+                <PitchQuote label="Soft Open (Ads-first)">
                   Hey [Name], thanks for connecting. I peeked at what [company] is doing on
                   Facebook/Instagram — curious if you&apos;re running paid ads in-house or with someone,
-                  and if you&apos;re happy with what you see in your ad account. We focus a lot on Meta at
-                  Obsidion. Open to a quick call if that&apos;s on your mind?
+                  and if you&apos;re happy with what you see in your ad account. We focus a lot on
+                  advertising — Meta, Facebook and Instagram — at Obsidion. Open to a quick call if
+                  that&apos;s on your mind?
                 </PitchQuote>
                 <PitchQuote label="Direct (with reason)" variant="emerald">
                   Hey [Name], I looked at your business after we connected. Noticed [specific
                   observation — e.g. sponsored posts, site from ads, engagement]. We help [their
-                  industry] businesses scale with Meta plus the site/follow-up behind it. Worth two
-                  minutes?
+                  industry] businesses scale with paid ads plus the site/follow-up behind it (we run
+                  that on Meta). Worth two minutes?
                 </PitchQuote>
               </div>
             </motion.div>
@@ -175,13 +203,14 @@ export default function SocialOutreachContent({ roleSlug }: { roleSlug: string }
               <div className="space-y-3">
                 <PitchQuote label="After Engaging Their Page" variant="emerald">
                   Hey [Name], I&apos;ve been following [their business] — solid content. Are you running
-                  any paid ads behind it, or mostly organic? I work with Obsidion on Meta (creatives +
-                  management in your account) and wanted to see if scaling this is on your radar.
+                  any paid ads behind it, or mostly organic? I work with Obsidion on advertising
+                  (creatives + management in your account — on Meta, Facebook and Instagram) and wanted
+                  to see if scaling this is on your radar.
                 </PitchQuote>
                 <PitchQuote label="From a Business Group" variant="emerald">
                   Hey [Name], saw your post in [group] about [topic]. I help local businesses put
-                  real budget behind what&apos;s already working — usually Meta first. Open to a quick chat
-                  if growth is a priority?
+                  real budget behind what&apos;s already working — usually paid ads first. Open to a quick
+                  chat if growth is a priority?
                 </PitchQuote>
               </div>
             </motion.div>
@@ -229,8 +258,9 @@ export default function SocialOutreachContent({ roleSlug }: { roleSlug: string }
                 </PitchQuote>
                 <PitchQuote label="Direct" variant="purple">
                   Hey [Name], came across [their business] here — content&apos;s strong. Curious if you&apos;re
-                  trying to scale reach with paid social or if it&apos;s been mostly organic. We run Meta
-                  for businesses like yours with everything in your ad account. Happy to compare notes.
+                  trying to scale reach with paid social or if it&apos;s been mostly organic. We run paid
+                  ads for businesses like yours with everything in your ad account — on Meta, Facebook
+                  and Instagram. Happy to compare notes.
                 </PitchQuote>
               </div>
             </motion.div>

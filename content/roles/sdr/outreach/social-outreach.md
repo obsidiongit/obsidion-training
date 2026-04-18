@@ -6,7 +6,13 @@
 
 Phone opens doors. Email follows up. Social builds trust before either one happens.
 
-**Voice:** **≈80%** lead with paid social or growth when it fits; otherwise a real hook (site, reviews, scaling). Human — no generic "how's your online presence?" DMs.
+**Voice:** **≈80%** lead with paid social, **ads**, or growth when it fits; name **Meta** when you are specific. Otherwise a real hook (site, reviews, scaling). Human — no generic "how's your online presence?" DMs.
+
+**TL;DR:** DMs should sound human: lead with paid ads or advertising; say Meta (Facebook/Instagram) when you explain how Obsidion executes.
+
+**What this means for you:**
+- Many owners do not know the word Meta — do not open with it in a connection note.
+- Product Knowledge (Lite) has the exact Meta wording; social is for short, credible hooks.
 
 When you view someone's profile, comment on their post, or send a connection request, your name starts to register. Then when you call, you're not a total stranger — you're "that person from LinkedIn" or "the one who commented on my post." That small edge makes a real difference in connect rates.
 
@@ -37,11 +43,11 @@ Always add a note. A blank connection request looks lazy.
 
 **Template — After Viewing Their Content:**
 
-> "Hey [Name], saw your post about [topic] — solid insight. I work with [their industry] businesses on Meta and growth. Happy to connect."
+> "Hey [Name], saw your post about [topic] — solid insight. I work with [their industry] businesses on paid advertising and growth. Happy to connect."
 
 **Template — Mutual Connection:**
 
-> "Hey [Name], noticed we're both connected to [mutual connection]. I work with local businesses on Meta ads and growth — figured it was worth connecting."
+> "Hey [Name], noticed we're both connected to [mutual connection]. I work with local businesses on ads and growth — figured it was worth connecting."
 
 Keep it under 300 characters (LinkedIn's limit for connection request notes). Don't pitch in the connection request. Just connect.
 
@@ -49,13 +55,13 @@ Keep it under 300 characters (LinkedIn's limit for connection request notes). Do
 
 Wait at least a few hours after they accept before DMing. Don't pitch immediately — it feels transactional.
 
-**Template — Soft Open (Meta-first):**
+**Template — Soft Open (Ads-first):**
 
-> "Hey [Name], thanks for connecting. I peeked at what [company] is doing on Facebook/Instagram — curious if you're running paid ads in-house or with someone, and if you're happy with what you see in your ad account. We focus a lot on Meta at Obsidion. Open to a quick call if that's on your mind?"
+> "Hey [Name], thanks for connecting. I peeked at what [company] is doing on Facebook/Instagram — curious if you're running paid ads in-house or with someone, and if you're happy with what you see in your ad account. We focus a lot on advertising — Meta, Facebook and Instagram — at Obsidion. Open to a quick call if that's on your mind?"
 
 **Template — Direct (If You Have a Reason):**
 
-> "Hey [Name], I looked at your business after we connected. Noticed [specific observation — e.g. sponsored posts, site from ads, engagement]. We help [their industry] businesses scale with Meta plus the site/follow-up behind it. Worth two minutes?"
+> "Hey [Name], I looked at your business after we connected. Noticed [specific observation — e.g. sponsored posts, site from ads, engagement]. We help [their industry] businesses scale with paid ads plus the site/follow-up behind it (we run that on Meta). Worth two minutes?"
 
 **If they respond with interest:**
 
@@ -90,15 +96,15 @@ This puts your name on their radar so the DM doesn't come out of nowhere.
 
 **Template — After Engaging With Their Page:**
 
-> "Hey [Name], I've been following [their business] — solid content. Are you running any paid ads behind it, or mostly organic? I work with Obsidion on Meta (creatives + management in your account) and wanted to see if scaling this is on your radar."
+> "Hey [Name], I've been following [their business] — solid content. Are you running any paid ads behind it, or mostly organic? I work with Obsidion on advertising (creatives + management in your account — on Meta, Facebook and Instagram) and wanted to see if scaling this is on your radar."
 
 **Template — From a Business Group:**
 
-> "Hey [Name], saw your post in [group] about [topic]. I help local businesses put real budget behind what's already working — usually Meta first. Open to a quick chat if growth is a priority?"
+> "Hey [Name], saw your post in [group] about [topic]. I help local businesses put real budget behind what's already working — usually paid ads first. Open to a quick chat if growth is a priority?"
 
 **Template — Direct:**
 
-> "Hey [Name], came across [their business] — content's strong. Curious if you're trying to scale reach with paid social or if it's been mostly organic. We run Meta for businesses like yours with everything in your ad account. Happy to compare notes."
+> "Hey [Name], came across [their business] — content's strong. Curious if you're trying to scale reach with paid social or if it's been mostly organic. We run paid ads for businesses like yours with everything in your ad account — on Meta, Facebook and Instagram. Happy to compare notes."
 
 ---
 
@@ -123,7 +129,7 @@ The approach here mirrors Facebook: engage first, then reach out.
 
 **Template — Direct:**
 
-> "Hey [Name], came across [their business] here — content's strong. Curious if you're trying to scale reach with paid social or if it's been mostly organic. We run Meta for businesses like yours with everything in your ad account. Happy to compare notes."
+> "Hey [Name], came across [their business] here — content's strong. Curious if you're trying to scale reach with paid social or if it's been mostly organic. We run paid ads for businesses like yours with everything in your ad account — on Meta, Facebook and Instagram. Happy to compare notes."
 
 **Keep it short.** Instagram DMs are even more casual than Facebook. Two or three sentences, a genuine compliment, and one question. Done.
 

@@ -94,6 +94,14 @@ const ROLE_IS_NOT = [
   "Not a \"figure it out\" role. There's a playbook, scripts, and a daily structure. Follow the system first.",
 ] as const;
 
+const ROLE_VOICE_TLDR = {
+  tldr: "With owners, lead with growth and plain words — ads, advertising, paid social. Name Meta (Facebook/Instagram) when you are explaining what we do, not as every opener.",
+  meansForYou: [
+    "Product Knowledge (Lite) stays specific about Meta; cold conversations stay understandable.",
+    "If they only need a website or SEO, that path is still valid — do not force ads into every first sentence.",
+  ],
+} as const;
+
 /* ─── component ─── */
 
 export default function YourRoleContent({ roleSlug }: { roleSlug: string }) {
@@ -104,7 +112,7 @@ export default function YourRoleContent({ roleSlug }: { roleSlug: string }) {
         backLabel="Back to hub"
         eyebrow="Role Overview"
         title="Your Role as an SDR"
-        description="Speak with business owners about how Obsidion helps them grow and scale — more revenue, not just 'a nicer website.' Meta ads are the usual focus; the rest of the stack still matters. Foundation for everything else."
+        description="Speak with business owners about how Obsidion helps them grow and scale — more revenue, not just 'a nicer website.' Paid advertising (usually on Meta) is the usual focus; the rest of the stack still matters. Foundation for everything else."
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">
@@ -148,6 +156,25 @@ export default function YourRoleContent({ roleSlug }: { roleSlug: string }) {
               visibility fix with no ads yet, that is still a real deal. Match the conversation to
               their pain; do not force Meta into every opener.
             </p>
+          </motion.div>
+
+          <motion.div
+            variants={fadeUp}
+            className="rounded-2xl border border-purple-accent/25 bg-purple-accent/[0.06] px-5 py-4 mb-8"
+          >
+            <p className="text-xs font-bold uppercase tracking-wider text-purple-accent mb-1">TL;DR</p>
+            <p className="text-sm text-foreground leading-relaxed font-medium mb-3">{ROLE_VOICE_TLDR.tldr}</p>
+            <p className="text-xs font-bold uppercase tracking-wider text-foreground mb-1.5">
+              What this means for you
+            </p>
+            <ul className="space-y-2">
+              {ROLE_VOICE_TLDR.meansForYou.map((line) => (
+                <li key={line} className="flex items-start gap-2 text-sm text-muted-foreground leading-relaxed">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-purple-accent shrink-0" />
+                  {line}
+                </li>
+              ))}
+            </ul>
           </motion.div>
 
           <motion.div variants={fadeUp}>

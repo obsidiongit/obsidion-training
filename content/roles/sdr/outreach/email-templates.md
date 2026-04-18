@@ -4,7 +4,13 @@
 
 ## How to Use These Templates
 
-Copy, paste, personalize every bracket. **≈80% of strong first touches lean on Meta** (Facebook and Instagram) — creatives and campaigns in the client's ad account so spend is visible. The other **~20%** is website, SEO, remarketing; **website-only** is a valid path when that's clearly the need. Don't lead with a laundry list.
+Copy, paste, personalize every bracket. **≈80% of strong first touches lean on paid social** (Meta — Facebook and Instagram) — creatives and campaigns in the client's ad account so spend is visible. The other **~20%** is website, SEO, remarketing; **website-only** is a valid path when that's clearly the need. Don't lead with a laundry list. Lead with **ads** or **advertising** in the first line when you can; name **Meta** when you explain how we execute.
+
+**TL;DR:** Write like a human: lead with paid ads or advertising when it fits; name Meta (Facebook/Instagram) when you are explaining how we execute — not in the first line every time.
+
+**What this means for you:**
+- If they may not run ads yet, do not assume they know the word Meta.
+- Product Knowledge (Lite) is where the exact Meta wording lives; emails can stay plain.
 
 **Avoid:** Quiz-style hooks ("do you know where you rank on Google?"). **Prefer:** Something you actually saw — ad activity, a post, site issue — or a growth angle ("scaling what's working").
 
@@ -12,7 +18,7 @@ Keep emails short. If it's longer than five sentences, they're not reading it. O
 
 ---
 
-## First Touch — Meta-Led (Default)
+## First Touch — Ads-Led (Default)
 
 Use when you see Facebook/Instagram activity, boosts, or when their category is a natural fit for paid social. This is the primary first-touch pattern.
 
@@ -22,7 +28,7 @@ Use when you see Facebook/Instagram activity, boosts, or when their category is 
 >
 > I've been looking at how [their business name] shows up on Facebook/Instagram — looks like you're putting content out there. Are you running paid ads yourself, or is someone else managing campaigns for you?
 >
-> I work with Obsidion — we run Meta ads end-to-end (creatives + management) inside **your** ad account, so you always see where the money goes. Figured it might be relevant if you're trying to scale what's already working.
+> I work with Obsidion — we run paid advertising end-to-end (creatives + management) in **your** ad account, so you always see where the money goes. On Meta, that's Facebook and Instagram. Figured it might be relevant if you're trying to scale what's already working.
 >
 > Worth a two-minute call this week?
 >
@@ -39,9 +45,9 @@ Use when you see Facebook/Instagram activity, boosts, or when their category is 
 >
 > Hey [Name],
 >
-> Called earlier — no stress if you missed it. I wanted to ask whether you're running Facebook/Instagram ads in-house or with someone, and if you're happy with how performance and spend are visible on your side.
+> Called earlier — no stress if you missed it. I wanted to ask whether you're running paid ads in-house or with someone, and if you're happy with how performance and spend are visible on your side.
 >
-> We help businesses run Meta with full creative and management in their own ad account. Happy to compare notes for two minutes if you're open to it.
+> We help businesses run advertising — creatives and management — in their own ad account (including on Meta, Facebook and Instagram). Happy to compare notes for two minutes if you're open to it.
 >
 > [Your name]
 > [Your phone number]
@@ -58,7 +64,7 @@ Use when you have something concrete — not a fake Google quiz.
 >
 > I was looking at [their business name] before writing — [one specific observation: e.g. booking flow on mobile, thin reviews, site speed, a post that drove engagement].
 >
-> We help [their industry] businesses turn that kind of footprint into growth — Meta is usually the engine, and we layer site/SEO/follow-up where it matters. Not a novel — just curious if scaling is on your mind this quarter.
+> We help [their industry] businesses turn that kind of footprint into growth — paid advertising is usually the engine (for us that's Meta, Facebook and Instagram), and we layer site/SEO/follow-up where it matters. Not a novel — just curious if scaling is on your mind this quarter.
 >
 > Open to a quick call?
 >
@@ -79,7 +85,7 @@ Use when you don't see paid activity but the brand looks strong — open on grow
 >
 > [Their business name] clearly has traction — I'm curious whether you're trying to scale what's already working, or if growth has mostly been word-of-mouth so far.
 >
-> We work with a lot of [their industry] owners on Meta ads (plus the site and follow-up pieces so spend isn't wasted). If putting real budget behind demand is on your radar, I can get you a short call with someone who does this every day.
+> We work with a lot of [their industry] owners on paid ads — Facebook and Instagram (Meta) — plus the site and follow-up pieces so spend isn't wasted. If putting real budget behind demand is on your radar, I can get you a short call with someone who does this every day.
 >
 > [Your name]
 > [Your phone number]
@@ -92,7 +98,7 @@ Use when you don't see paid activity but the brand looks strong — open on grow
 >
 > Hey [Name],
 >
-> Following up on my note — not trying to flood your inbox. Short version: we help [their industry] businesses run Meta ads with creatives and full visibility in their own account, and we fix the site/follow-up pieces so money isn't leaking.
+> Following up on my note — not trying to flood your inbox. Short version: we help [their industry] businesses run paid ads with creatives and full visibility in their own account (Meta — Facebook and Instagram), and we fix the site/follow-up pieces so money isn't leaking.
 >
 > If that's not a priority, all good. If it is, I can line up 20 minutes with a specialist — no pitch deck, just a real look at your situation.
 >
@@ -121,7 +127,7 @@ Use when you don't see paid activity but the brand looks strong — open on grow
 >
 > Hey [Name],
 >
-> I've reached out a few times — I know you're busy. If scaling with Meta (or fixing the site/follow-up behind your traffic) isn't on your radar right now, I'll stop here.
+> I've reached out a few times — I know you're busy. If scaling with paid advertising (or fixing the site/follow-up behind your traffic) isn't on your radar right now, I'll stop here.
 >
 > If it is, I'm one reply away. [Your phone number] — or just reply to this.
 
@@ -148,7 +154,7 @@ Use when you don't see paid activity but the brand looks strong — open on grow
 >
 > Hey [Name],
 >
-> Reminder — you've got a call with [AE name] tomorrow at [time]. They'll walk through what makes sense for your business (usually starting with what's happening on Meta and your site).
+> Reminder — you've got a call with [AE name] tomorrow at [time]. They'll walk through what makes sense for your business (usually what's happening with your ads and your site — we focus a lot on Meta, Facebook and Instagram).
 >
 > [Your name]
 
@@ -160,7 +166,7 @@ Use when you don't see paid activity but the brand looks strong — open on grow
 >
 > Hey [Name],
 >
-> We talked a while back about [what you discussed]. Wanted to check in — any change on the Meta side, or on the site/leads side?
+> We talked a while back about [what you discussed]. Wanted to check in — any change on the advertising side, or on the site/leads side?
 >
 > If timing's better, I can get you 20 minutes with someone who can map what would actually move the needle.
 >
@@ -172,7 +178,7 @@ Use when you don't see paid activity but the brand looks strong — open on grow
 ## Template Rules
 
 1. **Personalize every bracket.** No exceptions.
-2. **Meta first** when there's a signal; otherwise scaling or a real observation.
+2. **Paid ads first** when there's a signal; otherwise scaling or a real observation.
 3. **Keep it short** — five sentences max.
 4. **One ask per email.**
 5. **Same subject line** for follow-ups in the same thread when it makes sense.

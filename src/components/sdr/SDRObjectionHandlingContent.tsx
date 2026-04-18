@@ -19,20 +19,20 @@ const OBJECTIONS = [
   {
     objection: "\"Not interested.\"",
     mindset: "Usually means \"I don't know what you're offering and I'm busy.\"",
-    response: "Totally fair — I'm not trying to pitch you right now. Before I go: are you running Facebook or Instagram ads today, and if so, are you actually happy with what you're seeing in your ad account for spend and results?",
+    response: "Totally fair — I'm not trying to pitch you right now. Before I go: are you running any paid ads today, and if so, are you happy with what you're seeing for spend and results? (Often that's Facebook or Instagram for the businesses we work with.)",
     ifEngages: "You're back in. Ask one more qualifying question and move toward booking.",
     ifRepeats: "\"No problem at all. If anything changes on the marketing front, we're easy to find. Have a good one.\" — Log it, set a 60-day follow-up, move on.",
   },
   {
     objection: "\"Send me some info.\"",
     mindset: "Usually means \"I want to get off the phone without saying no.\"",
-    response: "Happy to — what would actually help? Most owners ask about Meta first — who's running your Facebook and Instagram ads and whether you have full access to your own account. I can send something tight on that, or on the site piece if that's the bigger question.",
+    response: "Happy to — what would actually help? Most owners ask about ads first — who's running your paid advertising and whether you have full access to your own ad account (we focus on Meta — Facebook and Instagram). I can send something tight on that, or on the site piece if that's the bigger question.",
     followUp: "\"I'll shoot that over today. And honestly, a 20-minute call with one of our specialists would give you way more than a PDF. Can I grab a quick time on the calendar for later this week?\"",
   },
   {
     objection: "\"We already have a website / agency / vendor.\"",
     mindset: "They're not saying they're happy. They're saying they have something. Find out if it's working.",
-    response: "Got it — glad you're investing. Are they running your Meta ads out of your ad account so you can see spend, or is that opaque? A lot of businesses we talk to have a vendor or a site but still can't tell if paid social is actually paying off.",
+    response: "Got it — glad you're investing. Are they running your paid ads out of your ad account so you can see spend, or is that opaque? A lot of businesses we talk to have a vendor or a site but still can't tell if advertising is actually paying off — we usually dig in on Meta, Facebook and Instagram.",
     ifNotWorking: "\"Yeah, we hear that a lot. The best next step would be a quick call with someone who can look at your setup and tell you where the gaps are — no cost, no obligation. Would 20 minutes work?\"",
   },
   {
@@ -73,10 +73,18 @@ const OBJECTIONS = [
   },
 ] as const;
 
+const OBJECTIONS_TLDR = {
+  tldr: "Keep them talking: lead with paid ads or advertising in your first question when you can — add Meta (Facebook/Instagram) once they are engaged or when you explain how we work.",
+  meansForYou: [
+    "You are booking a meeting, not winning a debate — one solid question often revives the thread.",
+    "Product Knowledge (Lite) has the exact Meta language; scripts below are for live tone.",
+  ],
+} as const;
+
 const QUICK_REF = [
-  { objection: "\"Not interested\"", move: "Ask one question about Meta spend / ad account visibility" },
+  { objection: "\"Not interested\"", move: "Ask one question about paid ads / spend visibility — then Meta if they engage" },
   { objection: "\"Send me info\"", move: "Anchor on their pain (Meta or site), then book the call" },
-  { objection: "\"We have a vendor\"", move: "Ask if Meta is in their account and if results are clear" },
+  { objection: "\"We have a vendor\"", move: "Ask if ads run in their account and if results are clear — then Meta detail" },
   { objection: "\"No budget\"", move: "The call is free — worth 20 min to find out the cost" },
   { objection: "\"Need to think\"", move: "Reduce friction — it's just 20 min, no commitment" },
   { objection: "\"How much?\"", move: "Depends on needs — the call gives the exact answer" },
@@ -95,10 +103,36 @@ export default function SDRObjectionHandlingContent({ roleSlug }: { roleSlug: st
         backLabel="Back to Outreach"
         eyebrow="Objections"
         title="Objection Handling"
-        description="Usually Meta and growth angles first (~80%); match the stack to their pain — website-only is fine. Pattern: acknowledge, ask, redirect to a short specialist call."
+        description="Usually paid advertising and growth angles first (~80%); name Meta when you are specific — match the stack to their pain (website-only is fine). Pattern: acknowledge, ask, redirect to a short specialist call."
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">
+        <motion.section
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
+          <motion.div
+            variants={fadeUp}
+            className="rounded-2xl border border-amber-accent/25 bg-amber-accent/[0.06] px-5 py-4"
+          >
+            <p className="text-xs font-bold uppercase tracking-wider text-amber-accent mb-1">TL;DR</p>
+            <p className="text-sm text-foreground leading-relaxed mb-3">{OBJECTIONS_TLDR.tldr}</p>
+            <p className="text-xs font-bold uppercase tracking-wider text-foreground mb-1.5">
+              What this means for you
+            </p>
+            <ul className="space-y-1.5">
+              {OBJECTIONS_TLDR.meansForYou.map((line) => (
+                <li key={line} className="flex items-start gap-2 text-sm text-muted-foreground leading-relaxed">
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-amber-accent shrink-0" />
+                  {line}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        </motion.section>
+
         {/* ── The Mindset ── */}
         <motion.section
           variants={stagger}

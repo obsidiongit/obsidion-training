@@ -29,31 +29,52 @@ const CALL_FLOW = [
   { label: "Confirm", sublabel: "30 sec" },
 ];
 
-const PAIN_TO_HOOK: { pain: string; listenFor: string; bridge: string }[] = [
+const READ_FIRST_TLDR = {
+  tldr: "Skim Product Knowledge Lite for exact product names; on the phone, open with \"ads\" or \"paid advertising\" before you assume they know Meta.",
+  meansForYou: [
+    "Many prospects do not run ads yet or do not know what \"Meta\" is — lead plain, then get specific.",
+    "This page teaches the map; live calls should sound conversational, not like a glossary.",
+  ],
+} as const;
+
+const QA_SECTION_TLDR = {
+  tldr: "Obsidion is mostly paid social (Meta — Facebook/Instagram) plus site, SEO, follow-up, app; you qualify and book — AEs scope deals.",
+  meansForYou: [
+    "Explain what we sell in English first; say \"Meta\" or \"Facebook/Instagram\" when you are tying to their setup.",
+    "If they go deep on details you do not know, bridge to the specialist — never invent answers.",
+  ],
+} as const;
+
+const PAIN_TO_HOOK: { label: string; listenFor: string; bridge: string }[] = [
   {
-    pain: "Meta spend blind / ads not performing",
+    label: "Spend feels like a black box",
     listenFor: "We're boosting / paying someone but don't know if it's working — can't see the account",
-    bridge: "We run Meta in your ad account with creatives and management — full visibility on spend. That's usually the first thing the specialist unpacks.",
+    bridge:
+      "Totally get that — we run the ads in your own account so you can actually see where the money goes. Facebook and Instagram side. Our specialist can walk through it on a short call.",
   },
   {
-    pain: "Want to scale / add fuel",
+    label: "Wants more than referrals",
     listenFor: "We're busy but want to grow / need more leads than referrals give us",
-    bridge: "Most owners lead with Meta to scale demand — we pair that with site and follow-up so the money doesn't leak.",
+    bridge:
+      "Makes sense — a lot of owners hit that wall. We usually put real budget behind ads first, then make sure the site and follow-up aren't leaking it. I can get you with someone who maps that out.",
   },
   {
-    pain: "Hard to find on Google / Maps",
+    label: "Hard to find on Google / Maps",
     listenFor: "I don't know if we show up… competitors are everywhere online",
-    bridge: "Local visibility is part of the stack — the specialist ties it to what you're doing on paid and on the site.",
+    bridge:
+      "Yeah, showing up locally matters — we usually connect that to what you're already doing with ads and your site. The specialist ties it together; I'm just trying to get you the right conversation.",
   },
   {
-    pain: "Website is old, slow, or missing",
+    label: "Site is embarrassing or missing",
     listenFor: "We need a new site / embarrassed by our site / built it on Wix and it doesn't work",
-    bridge: "Bad pages waste ad traffic — we fix the site as part of the growth picture, not as a generic redesign pitch.",
+    bridge:
+      "Fair — if people land on a rough page after an ad, that's wasted spend. We fix the site as part of the growth stuff, not a random redesign pitch.",
   },
   {
-    pain: "Leads go cold / no follow-up",
+    label: "Leads go cold",
     listenFor: "People inquire and disappear / we're bad at following up",
-    bridge: "We automate follow-up so nothing slips — it stacks behind the campaigns that drive the leads.",
+    bridge:
+      "That's super common — we automate follow-up so stuff doesn't slip through, especially behind whatever's already bringing you leads.",
   },
 ];
 
@@ -71,12 +92,12 @@ const CALL_PLAN_STEPS: { n: number; title: string; body: string }[] = [
   {
     n: 3,
     title: "Hook",
-    body: "One question that creates a gap — usually Meta/spend, scaling, or a specific thing you saw. Let them talk. Avoid quiz-mode ('do you know where you rank?').",
+    body: "One question that creates a gap — usually paid ads/spend, scaling, or a specific thing you saw. Let them talk. Avoid quiz-mode ('do you know where you rank?').",
   },
   {
     n: 4,
     title: "Qualify (light BANT)",
-    body: "Need, who decides, signals of budget (spend, headcount, growth goals), and timing. Map what they say to a pain row in the table above — you are confirming fit, not selling features.",
+    body: "Need, who decides, signals of budget (spend, headcount, growth goals), and timing. You're checking fit — not pitching every product. If you freeze, the quick bridges in the next section are just ideas, not lines to read.",
   },
   {
     n: 5,
@@ -103,7 +124,7 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
         backLabel="Back to Outreach"
         eyebrow="Phone"
         title="Phone Scripts"
-        description="≈80% Meta when it fits; ~20% site, SEO, remarketing, app — website-only is still a real path. Read the Q&A and call plan first — then use the scripts as anchors. Sound human; lead with evidence or growth — not generic Google trivia."
+        description="≈80% paid social (Meta) when it fits; ~20% site, SEO, remarketing, app — website-only is still a real path. Read the Q&A and call plan first — then use the scripts as anchors. Sound human; lead with ads before jargon; anchor on evidence or growth — not generic Google trivia."
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">
@@ -125,12 +146,30 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent/15">
               <BookOpen className="h-5 w-5 text-accent" aria-hidden />
             </div>
-            <div className="space-y-2 flex-1">
+            <div className="space-y-3 flex-1">
               <p className="text-sm text-foreground leading-relaxed">
-                <span className="font-semibold">Product Knowledge (Lite)</span> frames Meta as the usual
-                lead (~80%) with the rest of the stack behind it — including website-only when that&apos;s
-                the pain. Skim it before your first dialing block so you are not inventing Obsidion on the fly.
+                <span className="font-semibold">Product Knowledge (Lite)</span> uses{" "}
+                <span className="font-semibold">Meta (Facebook/Instagram)</span> by name — that is the
+                training layer. On cold calls, you will often say{" "}
+                <span className="font-semibold">paid ads</span> or{" "}
+                <span className="font-semibold">advertising</span> first. Skim it before your first
+                dialing block so you are not inventing Obsidion on the fly.
               </p>
+              <div className="rounded-xl border border-accent/30 bg-background/80 px-4 py-3">
+                <p className="text-xs font-bold uppercase tracking-wider text-accent mb-1">TL;DR</p>
+                <p className="text-sm text-foreground leading-relaxed mb-3">{READ_FIRST_TLDR.tldr}</p>
+                <p className="text-xs font-bold uppercase tracking-wider text-foreground mb-1.5">
+                  What this means for you
+                </p>
+                <ul className="space-y-1.5">
+                  {READ_FIRST_TLDR.meansForYou.map((line) => (
+                    <li key={line} className="flex items-start gap-2 text-xs text-muted-foreground leading-relaxed">
+                      <span className="mt-1 h-1 w-1 rounded-full bg-accent shrink-0" />
+                      {line}
+                    </li>
+                  ))}
+                </ul>
+              </div>
               <Link
                 href={productsHref}
                 className="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:underline"
@@ -152,21 +191,40 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
             Before You Dial — Q&amp;A
           </SectionLabel>
 
-          <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed max-w-3xl mb-6">
+          <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed max-w-3xl mb-4">
             Answers below are what you need to hold in your head on a live call. If someone asks
             &ldquo;what do you guys actually do?&rdquo; you answer in plain English — then you return to
             questions and booking.
           </motion.p>
 
+          <motion.div
+            variants={fadeUp}
+            className="rounded-xl border border-emerald-accent/25 bg-emerald-accent/[0.06] px-4 py-3 mb-6"
+          >
+            <p className="text-xs font-bold uppercase tracking-wider text-emerald-accent mb-1">TL;DR</p>
+            <p className="text-sm text-foreground leading-relaxed mb-3">{QA_SECTION_TLDR.tldr}</p>
+            <p className="text-xs font-bold uppercase tracking-wider text-foreground mb-1.5">
+              What this means for you
+            </p>
+            <ul className="space-y-1.5">
+              {QA_SECTION_TLDR.meansForYou.map((line) => (
+                <li key={line} className="flex items-start gap-2 text-xs text-muted-foreground leading-relaxed">
+                  <span className="mt-1 h-1 w-1 rounded-full bg-emerald-accent shrink-0" />
+                  {line}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
           <div className="space-y-4">
             {[
               {
                 q: "What does Obsidion sell?",
-                a: "Usually Meta first (~80% of how we talk): Facebook and Instagram ad management — creatives and campaigns in the client's own ad account so spend is visible. The other ~20% is custom website, local SEO, remarketing, optional app — compound or stand-alone (e.g. they only need a site). One team, fast execution. You book a specialist; you do not quote the full stack.",
+                a: "Usually paid social first (~80% of how we talk) — we run Facebook and Instagram (Meta) campaigns in the client's own ad account so spend is visible. The other ~20% is custom website, local SEO, remarketing, optional app — compound or stand-alone (e.g. they only need a site). One team, fast execution. You book a specialist; you do not quote the full stack.",
               },
               {
                 q: "What problems are we usually solving?",
-                a: "Often: Meta spend without clarity, locked ad accounts, or boosting with nothing to show. Or they want to scale beyond word-of-mouth. Sometimes the loudest pain is just a bad or missing website — still our deal. Your job is to hear what's loudest — not to lecture on five products.",
+                a: "Often: ad spend without clarity, locked ad accounts, or boosting with nothing to show. Or they want to scale beyond word-of-mouth. Sometimes the loudest pain is just a bad or missing website — still our deal. Your job is to hear what's loudest — not to lecture on five products.",
               },
               {
                 q: "What is my job on the phone?",
@@ -192,48 +250,6 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
               </motion.div>
             ))}
           </div>
-        </motion.section>
-
-        {/* ── Pain → bridge (product context) ── */}
-        <motion.section
-          variants={stagger}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
-        >
-          <SectionLabel barClass="bg-purple-accent" textClass="text-purple-accent">
-            Pain You Hear → How to Bridge (Without Lecturing)
-          </SectionLabel>
-
-          <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed max-w-3xl mb-4">
-            Meta and scaling show up first in most strong conversations. Use this table to bridge
-            without dumping features — the meeting does the real unpack.
-          </motion.p>
-
-          <motion.div variants={fadeUp} className="overflow-x-auto rounded-xl border border-border">
-            <table className="w-full text-left text-sm">
-              <thead>
-                <tr className="border-b border-border bg-muted/40">
-                  <th className="px-4 py-3 font-semibold text-foreground">Pain</th>
-                  <th className="px-4 py-3 font-semibold text-foreground hidden md:table-cell">
-                    They might say…
-                  </th>
-                  <th className="px-4 py-3 font-semibold text-foreground">Your bridge (one sentence)</th>
-                </tr>
-              </thead>
-              <tbody>
-                {PAIN_TO_HOOK.map((row) => (
-                  <tr key={row.pain} className="border-b border-border last:border-0">
-                    <td className="px-4 py-3 text-foreground font-medium align-top">{row.pain}</td>
-                    <td className="px-4 py-3 text-muted-foreground align-top hidden md:table-cell">
-                      {row.listenFor}
-                    </td>
-                    <td className="px-4 py-3 text-muted-foreground align-top">{row.bridge}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </motion.div>
         </motion.section>
 
         {/* ── The call plan ── */}
@@ -272,6 +288,48 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
               </motion.li>
             ))}
           </ol>
+        </motion.section>
+
+        {/* ── Quick bridges (after you know the flow) ── */}
+        <motion.section
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
+          <SectionLabel barClass="bg-purple-accent" textClass="text-purple-accent">
+            Quick bridges
+          </SectionLabel>
+
+          <motion.div variants={fadeUp} className="rounded-2xl border border-purple-accent/20 bg-purple-accent/[0.04] px-5 py-4 mb-6">
+            <p className="text-sm text-foreground leading-relaxed">
+              You already have the six steps above. This bit is just a{" "}
+              <span className="font-semibold">cheat sheet</span> — rough ways to move the call forward
+              when you recognize what they&apos;re stuck on. Use your own words; the meeting is where the
+              real detail happens.
+            </p>
+          </motion.div>
+
+          <div className="space-y-4">
+            {PAIN_TO_HOOK.map((row) => (
+              <motion.div
+                key={row.label}
+                variants={fadeUp}
+                className="rounded-2xl border border-border bg-card p-5 shadow-sm"
+              >
+                <p className="text-xs font-semibold uppercase tracking-wider text-purple-accent mb-2">
+                  {row.label}
+                </p>
+                <p className="text-sm text-muted-foreground italic mb-3 border-l-2 border-border pl-3">
+                  They might say: &ldquo;{row.listenFor}&rdquo;
+                </p>
+                <p className="text-sm text-foreground leading-relaxed">
+                  <span className="font-semibold text-muted-foreground">You could try: </span>
+                  {row.bridge}
+                </p>
+              </motion.div>
+            ))}
+          </div>
         </motion.section>
 
         {/* ── How to use scripts ── */}
@@ -316,12 +374,13 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
 
           <div className="space-y-5">
             <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-              <h4 className="text-sm font-bold mb-2">Version A — Meta first (default)</h4>
+              <h4 className="text-sm font-bold mb-2">Version A — Paid ads first (default)</h4>
               <PitchQuote label="Say this">
                 Hey [Name], it&apos;s [Your name] with Obsidion. I was looking at [their business] on
                 Facebook/Instagram before I dialed — are you running paid ads in-house, or is someone
-                managing that for you? I ask because we focus heavily on Meta: creatives and campaigns
-                inside your ad account so you actually see the spend.
+                managing that for you? I ask because we help businesses run advertising with creatives
+                and campaigns in your own ad account so you actually see the spend — that&apos;s on Meta,
+                Facebook and Instagram.
               </PitchQuote>
               <p className="text-xs text-muted-foreground mt-3">
                 <span className="font-semibold text-foreground">Use when:</span> You see content,
@@ -335,7 +394,7 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
                 Hey [Name], it&apos;s [Your name] with Obsidion. [Their business] looks like it has real
                 traction — I&apos;m curious if you&apos;re trying to scale what&apos;s working or if growth has
                 mostly been referral-driven. We spend a lot of our time helping owners put real budget
-                behind demand on Meta when they&apos;re ready.
+                behind paid advertising — usually on Meta, Facebook and Instagram — when they&apos;re ready.
               </PitchQuote>
             </motion.div>
 
@@ -345,7 +404,7 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
                 Hey [Name], it&apos;s [Your name] with Obsidion. Before this call I noticed [specific
                 thing — mobile site, reviews, a post, booking flow]. Wanted to run that by you in
                 two minutes — it ties into how we think about growth, usually starting with what
-                you&apos;re doing on Meta and what happens after someone clicks.
+                you&apos;re doing on ads and what happens after someone clicks.
               </PitchQuote>
               <p className="text-xs text-muted-foreground mt-3">
                 <span className="font-semibold text-foreground">Rule:</span> Only if you actually
@@ -373,7 +432,7 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
               </h4>
               <p className="text-sm text-foreground italic leading-relaxed">
                 &ldquo;Totally fair — two minutes. Is there a better slot today or tomorrow? I&apos;m asking
-                about how you&apos;re running Facebook/Instagram ads and whether that&apos;s something you
+                about how you&apos;re handling paid advertising online and whether that&apos;s something you
                 want help scaling.&rdquo;
               </p>
             </motion.div>
@@ -401,7 +460,7 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
               <h4 className="text-sm font-bold text-emerald-accent mb-3">Need &amp; channel</h4>
               <ul className="space-y-2">
                 {[
-                  "Are you running Facebook or Instagram ads right now — in-house, agency, or not yet?",
+                  "Are you running any paid ads online right now — in-house, agency, or not yet? (If yes, Facebook/Instagram is usually where we start.)",
                   "If you are spending, are you happy with how visible performance and spend are in your ad account?",
                   "How are most new customers finding you — and where do you want the next chunk of growth to come from?",
                   "When's the last time you looked at your site on your phone after clicking an ad or a post?",
@@ -522,8 +581,8 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
           <motion.div variants={fadeUp}>
             <PitchQuote label="Voicemail">
               Hey [Name], it&apos;s [Your name] with Obsidion — [phone number]. Wanted to ask how you&apos;re
-              handling Facebook and Instagram ads — we help businesses run Meta with full visibility in
-              their own account. Call me back: [phone number]. Again, [Your name], [phone number].
+              handling paid advertising online — we help businesses run ads with full visibility in
+              their own account, including on Meta, Facebook and Instagram. Call me back: [phone number]. Again, [Your name], [phone number].
             </PitchQuote>
           </motion.div>
         </motion.section>
@@ -541,7 +600,7 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
 
           <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
             <PitchQuote label="Say this">
-              Hey [Name], thanks for getting back. Same topic — are you running Meta ads yourself or
+              Hey [Name], thanks for getting back. Same topic — are you running paid ads yourself or
               with someone, and are you happy with what you&apos;re seeing in your ad account for spend
               and results? If that&apos;s fuzzy, that&apos;s usually why people talk to us.
             </PitchQuote>
@@ -570,7 +629,7 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
                 &ldquo;Hey, is [Owner] available? It&apos;s [Your name] from Obsidion.&rdquo;
               </p>
               <p className="text-xs text-muted-foreground">
-                If asked what it&apos;s about: &ldquo;It&apos;s about their Facebook and Instagram ads — I need
+                If asked what it&apos;s about: &ldquo;It&apos;s about their advertising and paid social — I need
                 two minutes with [Owner]. Not a pitch to you.&rdquo;
               </p>
             </motion.div>
@@ -604,7 +663,7 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
               <p>
                 If there is no pain, no interest, and no next step: exit clean.{" "}
                 <span className="italic text-foreground">
-                  &ldquo;Appreciate the time. If anything shifts on Meta or growth, feel free to reach out.
+                  &ldquo;Appreciate the time. If anything shifts on advertising or growth, feel free to reach out.
                   I&apos;ll leave it there for now.&rdquo;
                 </span>
               </p>

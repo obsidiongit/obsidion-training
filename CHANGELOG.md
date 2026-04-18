@@ -6,6 +6,19 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-18] — SDR: ads vs Meta voice, TL;DR callouts
+
+### Changed
+
+- **Phone Scripts:** Moved **Quick bridges** to immediately after **The Call Plan** (was before the plan); replaced the three-column table with card-style examples; rewrote bridge lines in a more conversational tone; Call Plan step 4 now points to the cheat sheet below instead of “the table above”
+- **Product Knowledge (Lite):** Page-level TL;DR + per-product **TL;DR** / **What this means for you**; Meta naming kept for training accuracy
+- **Phone, Email, Social, Objections:** Outreach copy leads with **ads** / **paid advertising** where cold; **Meta (Facebook/Instagram)** when explaining execution; added TL;DR boxes on Phone (Read first + Q&A), Email (How to use), Social (Why social), Objections (top of page)
+- **Your Role:** Hero softened to paid advertising; **TL;DR — how you sound to owners** after the 80/20 section
+- **Outreach hub:** Topic card copy and hero updated for ads-first language
+- **Markdown** under `content/roles/sdr/` updated to mirror
+
+---
+
 ## [2026-04-18] — SDR: 80/20 Meta vs full stack; Your Role + hub alignment
 
 ### Changed
