@@ -102,7 +102,7 @@ export default function SDRCertificationContent({ roleSlug }: { roleSlug: string
         backHref={`/role/${roleSlug}`}
         backLabel="Back to hub"
         eyebrow="Certification"
-        title="Certification & Readiness Gate"
+        title="Readiness Check"
         description="You don't touch a live prospect until you've passed this gate. Four gates. Complete them all to go live."
       />
 

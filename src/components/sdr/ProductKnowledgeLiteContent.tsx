@@ -375,6 +375,3 @@ export default function ProductKnowledgeLiteContent({ roleSlug }: { roleSlug: st
     </div>
   );
 }
-
-;
-}

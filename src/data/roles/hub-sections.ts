@@ -71,7 +71,7 @@ const AE_CONFIG: HubConfig = {
     },
     {
       slug: "certification",
-      title: "Certification & Readiness Gate",
+      title: "Readiness Check",
       description:
         "Nobody touches a live prospect until they've passed all seven gates. Complete every section, pass the assessments, and get manager sign-off before going live.",
       icon: BadgeCheck,
@@ -165,7 +165,7 @@ const SDR_CONFIG: HubConfig = {
     },
     {
       slug: "certification",
-      title: "Certification & Readiness Gate",
+      title: "Readiness Check",
       description:
         "You don't touch a live lead list until you pass. Complete every section, nail the role-play, and get your manager's sign-off before going live.",
       icon: BadgeCheck,

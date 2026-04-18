@@ -168,7 +168,7 @@ Use when you don't see paid activity but the brand looks strong — open on grow
 >
 > We talked a while back about [what you discussed]. Wanted to check in — any change on the advertising side, or on the site/leads side?
 >
-> If timing's better, I can get you 20 minutes with someone who can map what would actually move the needle.
+> If timing's better, I can get you 20 minutes with someone who can take a real look and tell you where the gap is.
 >
 > [Your name]
 > [Your phone number]

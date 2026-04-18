@@ -24,6 +24,6 @@ The SDR role covers everything a new Sales Development Rep needs to ramp: what t
 8. Tech We Use (shared)
 9. Downloadable Assets (shared)
 10. Accountability (role-specific)
-11. Certification & Readiness Gate (role-specific)
+11. Readiness Check (role-specific)
 12. Meeting Cadence (role-specific)
 13. Daily Structure (role-specific)

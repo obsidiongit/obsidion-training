@@ -160,11 +160,11 @@ Ask one at a time. You are uncovering BANT without sounding like a checklist.
 
 ### The ask
 
-> *"Based on what you're saying, I think it's worth a short call with one of our specialists — they can look at your setup and tell you what would actually move the needle. I'm not the person who does that deep dive; I set those up. Can I put you down for [day] at [time] this week?"*
+> *"Honestly, this sounds like a good fit — let me get you on a call with one of our guys who can look at your actual situation. You free [day] at [time]?"*
 
 ### If they hesitate
 
-> *"No commitment — it's [15–20] minutes. If it's not a fit, they'll say so. I just don't want you to miss it if it is."*
+> *"No pressure — it's [15–20] minutes. If it's not a fit, they'll say so."*
 
 **Lock a specific time.** "Tuesday at 2:00" beats "sometime this week."
 
@@ -199,7 +199,7 @@ Don't pitch the gatekeeper. Get a name, transfer, or callback time.
 
 ## When the call goes nowhere
 
-> *"Appreciate the time. If anything shifts on advertising or growth, feel free to reach out. I'll leave it there for now."*
+> *"Appreciate the time. I'll let you go — if anything changes, you know where to find us."*
 
 Log it. Follow up in 60–90 days if your process allows. Move on.
 

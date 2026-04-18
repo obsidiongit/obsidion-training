@@ -50,7 +50,7 @@ This usually means "I want to get off the phone without saying no." Don't just s
 
 **Why this works:** You're qualifying what they actually care about, which gives you a reason to follow up with a targeted message — and then book the call.
 
-> **Follow-up:** "I'll shoot that over today. And honestly, a 20-minute call with one of our specialists would give you way more than a PDF. Can I grab a quick time on the calendar for later this week?"
+> **Follow-up:** "I'll shoot that over today. Want to just grab 20 minutes this week instead — way more useful than a PDF."
 
 ---
 
@@ -66,7 +66,7 @@ They're not saying they're happy. They're saying they have something. Find out i
 
 **If they hint it's not working:** That's your opening.
 
-> **You:** "Yeah, we hear that a lot. The best next step would be a quick call with someone on our team who can actually look at your setup and tell you where the gaps are — no cost, no obligation. Would 20 minutes this week work?"
+> **You:** "Yeah, we hear that a lot. Honestly, just get on a 20-minute call with one of our guys — they can look at your actual setup, no cost. You free this week?"
 
 ---
 
@@ -74,7 +74,7 @@ They're not saying they're happy. They're saying they have something. Find out i
 
 For an SDR, this objection is tricky because you don't know exact pricing. Keep it simple and redirect to the meeting.
 
-> **You:** "Makes sense — and I don't know what your budget looks like, so I wouldn't want to guess. The good news is the call is free and there's no commitment. The specialist can walk you through what we'd do and what it costs — and if it doesn't make sense, they'll tell you straight. Worth 20 minutes to find out?"
+> **You:** "Makes sense — I don't even know what we'd quote you without knowing your setup. The call's free, no commitment — the specialist will just tell you straight what it costs, and if it doesn't make sense, they'll say so. Worth 20 minutes?"
 
 **If they still say no:** Don't push.
 
@@ -88,7 +88,7 @@ Log the timeline and set a follow-up.
 
 They're interested but not ready to commit to the appointment. Reduce the friction.
 
-> **You:** "For sure — what part are you wanting to think through? Because the call itself is just 20 minutes, no cost, no pressure. It's more of a 'let us show you what we'd do' situation than a hard pitch."
+> **You:** "For sure — what's the sticking point? The call's just 20 minutes, free, no pressure — they literally just walk you through what they'd do for your setup."
 
 **If they still hesitate:**
 
@@ -110,7 +110,7 @@ This is not a door closing — it's an opening. Most businesses running ads on t
 
 **If they're uncertain or frustrated:**
 
-> **You:** "Yeah, that's actually pretty common. The difference with what we do is we build the creatives, run the campaigns, and you keep full access to your own ad account the whole time — so you're not flying blind on where your money's going. Would it be worth 20 minutes with one of our specialists to compare?"
+> **You:** "Yeah, that's actually pretty common. The difference with what we do is we build the creatives, run the campaigns, and you keep full access to your own ad account the whole time — so you're not flying blind on where your money's going. Want to grab 20 minutes with one of our guys and compare notes?"
 
 **If they mention their agency handles it:**
 
@@ -122,7 +122,7 @@ This is not a door closing — it's an opening. Most businesses running ads on t
 
 You don't quote pricing. That's the AE's job. But you can't dodge the question entirely or you'll lose credibility.
 
-> **You:** "Good question — it depends on what your business actually needs, which is why the 20-minute call exists. Our specialist will look at your setup and give you a straight answer on what it costs and what you get. I wouldn't want to throw out a number that doesn't match your situation."
+> **You:** "Good question — it depends on what you actually need, which is why the call exists. The specialist will just tell you straight what it costs for your setup."
 
 **If they press for a range:**
 

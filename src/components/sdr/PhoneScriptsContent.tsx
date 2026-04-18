@@ -539,18 +539,15 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
           <div className="space-y-4">
             <motion.div variants={fadeUp}>
               <PitchQuote label="The ask" variant="purple">
-                Based on what you&apos;re saying, I think it&apos;s worth a short call with one of our
-                specialists — they can actually look at your setup and tell you what would move the
-                needle. I&apos;m not the person who does that deep dive; I set those conversations up.
-                Can I put you down for [day] at [time] this week?
+                Honestly, this sounds like a good fit — let me get you on a call with one of our
+                guys who can look at your actual situation. You free [day] at [time]?
               </PitchQuote>
             </motion.div>
 
             <motion.div variants={fadeUp} className="rounded-xl border border-border bg-card px-5 py-4 shadow-sm">
               <h4 className="text-sm font-bold mb-2">If they hesitate</h4>
               <p className="text-sm text-muted-foreground italic leading-relaxed">
-                &ldquo;No commitment — it&apos;s [15–20] minutes. If it&apos;s not a fit, they&apos;ll say so. I just
-                don&apos;t want you to miss it if it is.&rdquo;
+                &ldquo;No pressure — it&apos;s [15–20] minutes. If it&apos;s not a fit, they&apos;ll say so.&rdquo;
               </p>
             </motion.div>
 
@@ -663,8 +660,7 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
               <p>
                 If there is no pain, no interest, and no next step: exit clean.{" "}
                 <span className="italic text-foreground">
-                  &ldquo;Appreciate the time. If anything shifts on advertising or growth, feel free to reach out.
-                  I&apos;ll leave it there for now.&rdquo;
+                  &ldquo;Appreciate the time. I&apos;ll let you go — if anything changes, you know where to find us.&rdquo;
                 </span>
               </p>
               <p>Log it. Set a follow-up for 60–90 days if your process allows. Move on.</p>

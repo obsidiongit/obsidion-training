@@ -1,4 +1,4 @@
-# Certification & Readiness Gate
+# Readiness Check
 
 ---
 

@@ -418,6 +418,3 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
     </div>
   );
 }
-
-  );
-}
