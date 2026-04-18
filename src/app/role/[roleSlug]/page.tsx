@@ -512,7 +512,7 @@ export default function RoleHubPage() {
               </h2>
             </motion.div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               {filteredQuickAccess.map((section) => {
                 const Icon = section.icon;
                 const done = isComplete(section.slug);

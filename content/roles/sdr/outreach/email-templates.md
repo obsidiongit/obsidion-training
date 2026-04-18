@@ -87,6 +87,29 @@ Shorter. New angle.
 
 ---
 
+## First Touch — Prospect Running Ads (Meta / Facebook)
+
+Use this when you know or suspect the prospect is already running Facebook or Instagram ads — either from their page (they're boosting posts), from a prior call, or from their lead record.
+
+> **Subject:** Quick question about your Facebook ads
+>
+> Hey [Name],
+>
+> Noticed [their business name] is active on Facebook — do you have someone managing your paid ads, or is that mostly organic at this point?
+>
+> I ask because we help [their industry] businesses run Facebook and Instagram ads end-to-end — strategy, creatives, and campaign management — all inside your ad account, so you always have full visibility on where the money's going.
+>
+> Not a pitch — just curious if it's something you've been thinking about. Worth a quick call?
+>
+> [Your name]
+> [Your phone number]
+
+**When to use it:** You've seen they're boosting posts or running ads on their page, a prior call revealed they're spending on ads, or their business type (salon, restaurant, contractor) is a natural fit for paid social.
+
+**The key line:** "all inside your ad account" — this is the differentiator from agencies who lock clients out of their own data. Don't drop it.
+
+---
+
 ## Breakup Email — Day 7
 
 This is your last email in the sequence. It signals that you're going to stop reaching out — which often triggers a response.

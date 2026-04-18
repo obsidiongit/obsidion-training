@@ -84,6 +84,36 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
           </motion.div>
         </motion.section>
 
+        {/* ── First Touch — Prospect Running Ads ── */}
+        <motion.section
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
+          <SectionLabel barClass="bg-purple-accent" textClass="text-purple-accent">
+            First Touch — Prospect Running Ads
+          </SectionLabel>
+
+          <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
+            <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Subject: Quick question about your Facebook ads</div>
+            <div className="rounded-xl bg-muted/20 border border-border/60 px-5 py-4 text-sm text-foreground leading-relaxed space-y-3">
+              <p>Hey [Name],</p>
+              <p>Noticed [their business name] is active on Facebook — do you have someone managing your paid ads, or is that mostly organic at this point?</p>
+              <p>I ask because we help [their industry] businesses run Facebook and Instagram ads end-to-end — strategy, creatives, and campaign management — all inside your ad account, so you always have full visibility on where the money&apos;s going.</p>
+              <p>Not a pitch — just curious if it&apos;s something you&apos;ve been thinking about. Worth a quick call?</p>
+              <p className="text-muted-foreground">[Your name]<br />[Your phone number]</p>
+            </div>
+          </motion.div>
+
+          <motion.div variants={fadeUp} className="mt-4 rounded-xl border border-accent/20 bg-accent/[0.04] px-5 py-4 flex items-start gap-3">
+            <CheckCircle2 size={16} className="text-accent mt-0.5 shrink-0" />
+            <p className="text-sm leading-relaxed text-foreground">
+              <span className="font-semibold">When to use:</span> You&apos;ve seen they&apos;re boosting posts, a prior call revealed they spend on ads, or their business type is a natural fit for paid social. Don&apos;t drop the &ldquo;inside your ad account&rdquo; line — that is the differentiator.
+            </p>
+          </motion.div>
+        </motion.section>
+
         {/* ── Follow-Ups ── */}
         <motion.section
           variants={stagger}

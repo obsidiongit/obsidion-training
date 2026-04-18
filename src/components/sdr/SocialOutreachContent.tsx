@@ -186,6 +186,53 @@ export default function SocialOutreachContent({ roleSlug }: { roleSlug: string }
           </div>
         </motion.section>
 
+        {/* ── Instagram Outreach ── */}
+        <motion.section
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
+          <SectionLabel barClass="bg-purple-accent" textClass="text-purple-accent">
+            Instagram Outreach
+          </SectionLabel>
+
+          <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed max-w-3xl mb-6">
+            Instagram is worth adding to your prospecting rotation, especially for verticals like food, salons, med spas, and lifestyle businesses. The approach here mirrors Facebook: engage first, then reach out.
+          </motion.p>
+
+          <div className="space-y-5">
+            <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
+              <h4 className="text-sm font-bold mb-3">Finding Prospects</h4>
+              <ul className="space-y-1.5">
+                {[
+                  "Search hashtags for their industry + city (e.g., #austinrestaurant)",
+                  "Check local business discovery pages and Explore results in their category",
+                  "Look at who's tagged in location posts for their area",
+                  "Browse the followers of a well-known local business in their vertical",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
+                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-purple-accent shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
+            <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
+              <h4 className="text-sm font-bold mb-4">Instagram DM Templates</h4>
+              <div className="space-y-3">
+                <PitchQuote label="After Engaging Their Posts" variant="purple">
+                  Hey [Name], love what you&apos;re doing with [their content]. Quick question — are you running any paid ads to promote this, or mostly organic? I work with [their industry] businesses at Obsidion on their Facebook and Instagram ads and wanted to see if it&apos;s on your radar.
+                </PitchQuote>
+                <PitchQuote label="Direct" variant="purple">
+                  Hey [Name], came across [their business] on here — your content looks great. I work with businesses like yours on their online growth (websites, ads, Google). Not a pitch — just curious if any of that is something you&apos;ve been thinking about.
+                </PitchQuote>
+              </div>
+            </motion.div>
+          </div>
+        </motion.section>
+
         {/* ── Engagement Habits ── */}
         <motion.section
           variants={stagger}

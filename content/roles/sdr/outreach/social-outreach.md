@@ -100,6 +100,35 @@ This puts your name on their radar so the DM doesn't come out of nowhere.
 
 ---
 
+## Instagram Outreach
+
+Instagram is worth adding to your prospecting rotation, especially for verticals like food, salons, med spas, and lifestyle businesses. These owners are often more active on Instagram than anywhere else — they post daily, reply to DMs, and make decisions based on social proof.
+
+The approach here mirrors Facebook: engage first, then reach out.
+
+### Finding Prospects on Instagram
+
+- Search hashtags for their industry + city (e.g., `#austinrestaurant`, `#dallassalon`)
+- Check local business discovery pages and Explore results in their category
+- Look at who's tagged in location posts for their area
+- Browse the followers of a well-known local business in their vertical
+
+### DM Templates
+
+**Template — After Engaging With Their Posts:**
+
+> "Hey [Name], love what you're doing with [their content — specific dish, service, aesthetic]. Quick question — are you running any paid ads to promote this, or mostly organic? I work with [their industry] businesses at Obsidion on their Facebook and Instagram ads and wanted to see if it's something on your radar."
+
+**Template — Direct:**
+
+> "Hey [Name], came across [their business name] on here — your content looks great. I work with businesses like yours on their online growth (websites, ads, getting found on Google). Not a pitch — just curious if any of that is something you've been thinking about. Happy to chat if so."
+
+**Keep it short.** Instagram DMs are even more casual than Facebook. Two or three sentences, a genuine compliment, and one question. Done.
+
+**Note:** Because Obsidion now manages Meta ad campaigns, Instagram is also a research tool — check if a prospect is running ads by looking for the "Sponsored" label on their posts. If they are, that's a hook. If they're not but their content is strong, that's also a hook.
+
+---
+
 ## Social Engagement Tips
 
 These are small habits that compound over time:

@@ -8,10 +8,10 @@ This page is your quick reference. The sub-sections go deep on each channel.
 
 ## What's in This Section
 
-- **[Phone Scripts](phone-scripts.md)** — Cold call openers, voicemail scripts, gatekeeper navigation, and callback handling
-- **[Email Templates](email-templates.md)** — Copy-paste outreach emails for every stage: first touch, follow-up, breakup
-- **[Social Outreach](social-outreach.md)** — LinkedIn and Facebook DM scripts, engagement tips, and profile-based prospecting
-- **[Objection Handling](objection-handling.md)** — What to say when they push back: "not interested," "send me info," "we already have someone"
+- **Phone Scripts** — Cold call openers, voicemail scripts, gatekeeper navigation, and callback handling
+- **Email Templates** — Copy-paste outreach emails for every stage: first touch, follow-up, breakup, and a paid ads-specific opener
+- **Social Outreach** — LinkedIn, Facebook, and Instagram DM scripts, engagement tips, and profile-based prospecting
+- **Objection Handling** — What to say when they push back: "not interested," "send me info," "we already have someone," or "we already run ads"
 
 ---
 

@@ -12,7 +12,7 @@ This section gives you the elevator pitch for each product and the one-liner you
 
 ---
 
-## The Four Products
+## The Five Products
 
 ### 1. Custom Websites
 
@@ -79,11 +79,46 @@ This section gives you the elevator pitch for each product and the one-liner you
 
 ---
 
+### 5. Paid Ads (Meta Ad Management)
+
+**What it is:** Obsidion runs paid advertising campaigns on Facebook and Instagram (Meta). That includes building the ads, designing the creatives — graphics, video content, photography components — and managing the campaigns on an ongoing basis. The client gives us delegate access to their Meta ad account, so we're running inside their account, not a third-party account they can't see. They keep ownership; we do the work.
+
+**The one-liner:**
+> *"We run Facebook and Instagram ads for you — we build the creatives, manage the campaigns, and you keep full access to your own ad account."*
+
+**When to mention it:** The prospect is already running ads and they're not working, they're paying an agency who gives them no visibility, or they want to grow faster than SEO alone can deliver.
+
+**Pain signals to listen for:**
+- "We've tried Facebook ads but they didn't do anything"
+- "Our agency runs our ads but we don't really know what's happening"
+- "We're spending money on ads and have nothing to show for it"
+- "We want to run ads but don't know where to start"
+- "We're just relying on organic / word of mouth and want to grow faster"
+
+**One thing to know:** Because we run inside the client's own ad account (not ours), they always have full visibility. That's a meaningful difference from most agencies who keep you locked out of your own data.
+
+---
+
+## 🏢 Franchise Prospects — Flag Immediately
+
+If you're talking to someone who is part of a **franchise or multi-location brand**, flag this to your manager before or immediately after the call. Don't just book the appointment like a normal lead.
+
+Why it matters: landing one location in a franchise network means, if we perform, we can roll into every other location in that system. These prospects have outsized upside and leadership wants to know about them so the AE can approach the conversation strategically.
+
+How to identify them:
+- They mention a brand name with multiple locations
+- They say things like "our other locations" or "corporate handles some of it"
+- The business name includes words like "Group," "Partners," or is clearly a named chain
+
+Your move: book the meeting like normal, but add a **"FRANCHISE — FLAG"** note at the top of your handoff notes.
+
+---
+
 ## How They Work Together
 
 You don't need to pitch the full stack. But if it comes up naturally, here's the simple version:
 
-> *"The website is the foundation — it's where everything lives. SEO makes sure people can find it on Google. Remarketing follows up with the ones who don't buy right away. And the app keeps your best customers coming back. They all connect."*
+> *"The website is the foundation — it's where everything lives. SEO makes sure people can find it organically on Google. Paid ads on Facebook and Instagram drive traffic fast. Remarketing follows up with the leads who don't buy right away. And the app keeps your best customers coming back. They all connect."*
 
 That's it. You don't need to go deeper than that. If the prospect wants more detail, that's exactly what the AE appointment is for.
 
@@ -99,6 +134,7 @@ Keep this open during calls:
 | **SEO** | "We get you showing up on Google in your area." | "We don't show up online / competitors do" |
 | **Remarketing** | "We automate follow-up so leads don't go cold." | "Leads disappear / we forget to follow up" |
 | **Mobile App** | "A branded app for your business — loyalty, orders, notifications." | "Fees from third-party apps / want a loyalty program" |
+| **Paid Ads** | "We run your Facebook and Instagram ads — creatives, campaigns, full visibility." | "Ads aren't working / agency gives no visibility / want to grow faster" |
 
 ---
 

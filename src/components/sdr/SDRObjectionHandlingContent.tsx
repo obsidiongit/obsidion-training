@@ -65,6 +65,12 @@ const OBJECTIONS = [
     response: "No problem — who would be the best person to talk to about the website and marketing side? I just want to make sure I'm reaching the right person.",
     followUp: "Get the name. Get their number or email. Call and reference: \"Hey [Decision Maker], [Gatekeeper name] suggested I reach out to you...\"",
   },
+  {
+    objection: "\"We already run ads.\"",
+    mindset: "Don't sell against ads — validate them. Find out who owns the data and the creative.",
+    response: "That's great — if you're running ads, you already know the value of traffic. Quick question: are you running those in-house, or do you have an agency managing them?",
+    ifEngages: "If agency: \"Do they run them out of their own ad account, or yours?\" (Pivot to the transparency hook). If in-house: \"Are you building the creatives yourself?\""
+  },
 ] as const;
 
 const QUICK_REF = [
@@ -76,6 +82,7 @@ const QUICK_REF = [
   { objection: "\"How much?\"", move: "Depends on needs — the call gives the exact answer" },
   { objection: "\"Call me back\"", move: "Lock in a specific day and time" },
   { objection: "\"Wrong person\"", move: "Get the right name and call them" },
+  { objection: "\"We run ads\"", move: "Validate, then ask if in-house or agency to find the hook" },
 ] as const;
 
 /* ─── component ─── */

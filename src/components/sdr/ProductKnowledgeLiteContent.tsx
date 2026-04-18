@@ -68,6 +68,18 @@ const PRODUCTS = [
     ],
     color: "amber-accent",
   },
+  {
+    icon: Lightbulb,
+    title: "Meta Ad Management (Paid Ads)",
+    oneLiner: "We build the creatives and run your Meta ad campaigns directly inside your own ad account — so you always retain ownership.",
+    whenToMention: "The prospect is boosting posts, currently paying an agency, or wants to drive immediate traffic.",
+    painSignals: [
+      "\"We boost posts but it doesn't do anything\"",
+      "\"Our current agency won't give us access to our own ad account\"",
+      "\"We tried Facebook ads once and lost money\"",
+    ],
+    color: "accent",
+  },
 ] as const;
 
 const CHEAT_SHEET = [
@@ -75,6 +87,7 @@ const CHEAT_SHEET = [
   { product: "SEO", oneLiner: "We get you showing up on Google in your area.", trigger: "\"We don't show up online / competitors do\"" },
   { product: "Remarketing", oneLiner: "We automate follow-up so leads don't go cold.", trigger: "\"Leads disappear / we forget to follow up\"" },
   { product: "Mobile App", oneLiner: "A branded app — loyalty, orders, notifications.", trigger: "\"Fees from third-party apps / want loyalty\"" },
+  { product: "Paid Ads", oneLiner: "Meta ads with done-for-you creative and full account visibility.", trigger: "\"Agencies lock us out / boosting posts doesn't work\"" },
 ] as const;
 
 const colorMap: Record<string, { bg: string; text: string; border: string; badgeBg: string }> = {
@@ -118,7 +131,7 @@ export default function ProductKnowledgeLiteContent({ roleSlug }: { roleSlug: st
           </motion.div>
         </motion.section>
 
-        {/* ── The Four Products ── */}
+        {/* ── The Five Products ── */}
         <motion.section
           variants={stagger}
           initial="hidden"
@@ -126,7 +139,7 @@ export default function ProductKnowledgeLiteContent({ roleSlug }: { roleSlug: st
           viewport={{ once: true, margin: "-60px" }}
         >
           <SectionLabel barClass="bg-emerald-accent" textClass="text-emerald-accent">
-            The Four Products
+            The Five Products
           </SectionLabel>
 
           <div className="space-y-6">

@@ -143,6 +143,7 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
                   "\"Do you have a website? When's the last time it was updated?\"",
                   "\"If someone searches for [what they do] in [their city], where do you show up?\"",
                   "\"What happens when a lead calls after hours?\"",
+                  "\"Are you currently running any paid ads on Facebook or Google?\"",
                 ].map((q) => (
                   <li key={q} className="flex items-start gap-2 text-sm text-muted-foreground leading-relaxed">
                     <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-emerald-accent shrink-0" />

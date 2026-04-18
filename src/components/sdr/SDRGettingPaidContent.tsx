@@ -217,9 +217,9 @@ export default function SDRGettingPaidContent({ roleSlug }: { roleSlug: string }
                   </div>
                   <div className="h-px bg-border" />
                 </div>
-                <div className="flex justify-between items-baseline">
+                <div className="flex flex-col gap-0.5">
                   <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Total Comp</span>
-                  <span className={`text-xl font-black tracking-tight ${s.color}`}>{s.totalComp}</span>
+                  <span className={`text-base font-black tracking-tight ${s.color}`}>{s.totalComp}</span>
                 </div>
               </motion.div>
             ))}

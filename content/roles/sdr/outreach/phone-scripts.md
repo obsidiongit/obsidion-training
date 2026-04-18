@@ -65,6 +65,12 @@ You don't ask "what's your budget?" on a cold call. Listen for signals instead:
 - They're already spending on marketing (even if it's not working) = budget exists
 - They have employees, a storefront, or multiple locations = established business
 - They mention revenue, growth goals, or investments = money is in play
+- They mention running Facebook or Instagram ads = budget exists **and** a potential pain point
+
+**Useful question to surface ad spend:**
+> "Are you running any paid ads right now — Facebook, Instagram, Google — or is it mostly organic?"
+
+If they say yes: find out if it's working. If it's not, that's your hook for the Paid Ads service. If they say no: that's a growth conversation — they want more customers but haven't pulled the trigger on ads yet.
 
 ### Timeline Questions
 

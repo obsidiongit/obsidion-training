@@ -38,7 +38,7 @@ const TOPICS = [
     title: "Email Templates",
     stat: "Copy & Paste",
     description:
-      "First touch, follow-up sequences, breakup emails, post-call confirmations, and appointment reminders.",
+      "First touch, follow-up sequences, breakup emails, post-call confirmations, and a paid ads-specific opener.",
     iconBg: "bg-emerald-accent/10 text-emerald-accent group-hover:bg-emerald-accent group-hover:text-white",
     borderHover: "hover:border-emerald-accent/30",
   },
@@ -48,7 +48,7 @@ const TOPICS = [
     title: "Social Outreach",
     stat: "Trust Builder",
     description:
-      "LinkedIn and Facebook DM scripts, connection request templates, engagement tips, and profile-based prospecting.",
+      "LinkedIn, Facebook, and Instagram DM scripts, engagement tips, and profile-based prospecting.",
     iconBg: "bg-purple-accent/10 text-purple-accent group-hover:bg-purple-accent group-hover:text-white",
     borderHover: "hover:border-purple-accent/30",
   },
@@ -58,7 +58,7 @@ const TOPICS = [
     title: "Objection Handling",
     stat: "Rebuttals",
     description:
-      "Word-for-word responses for \"not interested,\" \"send me info,\" \"we already have someone,\" and more.",
+      "Word-for-word responses for \"not interested,\" \"send me info,\" \"we already run ads,\" and more.",
     iconBg: "bg-amber-accent/10 text-amber-accent group-hover:bg-amber-accent group-hover:text-white",
     borderHover: "hover:border-amber-accent/30",
   },

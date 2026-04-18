@@ -88,6 +88,26 @@ This keeps the door open without being pushy.
 
 ---
 
+## "We already run ads."
+
+This is not a door closing — it's an opening. Most businesses running ads on their own or through a generic agency aren't seeing the results they should be. Find out if theirs are working.
+
+> **You:** "That's great — are you happy with the results you're getting from them? A lot of the businesses we work with were already running ads when they came to us, but they weren't sure they were actually working."
+
+**If they say yes, it's working great:** Respect it.
+
+> **You:** "Sounds like you've got that dialed in. Is there anything else on the digital side — website, SEO, follow-up — where you feel like there's a gap?"
+
+**If they're uncertain or frustrated:**
+
+> **You:** "Yeah, that's actually pretty common. The difference with what we do is we build the creatives, run the campaigns, and you keep full access to your own ad account the whole time — so you're not flying blind on where your money's going. Would it be worth 20 minutes with one of our specialists to compare?"
+
+**If they mention their agency handles it:**
+
+> **You:** "Makes sense. Quick question — do you have visibility into the account, or do you mostly just get a report? We run inside the client's own account, so nothing is hidden. Might be worth seeing what that looks like."
+
+---
+
 ## "How much does it cost?"
 
 You don't quote pricing. That's the AE's job. But you can't dodge the question entirely or you'll lose credibility.
@@ -138,6 +158,7 @@ This is actually useful. Find out who is.
 | "How much?" | Depends on your needs — the call gives you the exact answer |
 | "Call me back" | Lock in a specific day and time |
 | "Wrong person" | Get the right name and call them |
+| "We already run ads" | Ask if they're seeing results; lead with the visibility/account-access angle |
 
 ---
 
