@@ -39,11 +39,11 @@ export default function Module15Assets() {
         <Card>
           <h3 className="text-lg font-bold mb-2">Email footer / signature</h3>
           <p className="text-muted-foreground text-sm mb-4">
-            HTML snippet you can paste into your mail client or hand to IT for a standardized
-            signature block.
+            Official reference PDF for your mail client signature or to hand to IT for a standardized
+            footer block.
           </p>
-          <a href="/assets/email-footer.html" download className={btnClass}>
-            Download HTML
+          <a href="/assets/emailfooter.pdf" download className={btnClass}>
+            Download PDF
           </a>
         </Card>
         <Card>

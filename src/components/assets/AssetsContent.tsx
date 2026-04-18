@@ -60,11 +60,11 @@ const BRAND_FILES: AssetFile[] = [
   },
   {
     label: "Email Footer / Signature",
-    description: "HTML snippet to paste into your mail client or send to IT for a standardized signature block.",
-    href: "/assets/email-footer.html",
+    description: "Official email footer reference — download and follow for a standardized signature block.",
+    href: "/assets/emailfooter.pdf",
     icon: Code,
-    size: "< 1 KB",
-    status: "placeholder",
+    size: "PDF",
+    status: "available",
   },
   {
     label: "Brand Guidelines",

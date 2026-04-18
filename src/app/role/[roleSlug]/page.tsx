@@ -26,7 +26,7 @@ import { getHubConfig } from "@/data/roles/hub-sections";
 const ASSET_ITEMS = [
   { href: "/assets/logo.png", label: "Logo", icon: Image },
   { href: "/assets/logotext.png", label: "Logo (Text Only)", icon: Image },
-  { href: "/assets/email-footer.html", label: "Email Footer", icon: Code },
+  { href: "/assets/emailfooter.pdf", label: "Email Footer", icon: Code },
   { href: "/assets/brand-guidelines.pdf", label: "Brand Guidelines", icon: FileDown },
 ] as const;
 
