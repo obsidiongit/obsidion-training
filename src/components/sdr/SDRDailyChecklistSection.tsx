@@ -28,7 +28,7 @@ const SECTIONS = [
     borderClass: "border-accent/20",
     iconBgClass: "bg-accent/10",
     tasks: [
-      { id: "sm1", text: "Check CRM for new leads and overnight inbounds — claim and prioritize" },
+      { id: "sm1", text: "Check Notion for new leads and overnight inbounds — claim and prioritize" },
       { id: "sm2", text: "Sort lead list by priority: callbacks → hot → warm → cold" },
       { id: "sm3", text: "Review scheduled callbacks for today" },
       { id: "sm4", text: "Send appointment reminders for tomorrow's booked meetings" },
@@ -50,7 +50,7 @@ const SECTIONS = [
       { id: "sd2", text: "Send follow-up emails for every call that didn't connect" },
       { id: "sd3", text: "Social touches: LinkedIn profile views, connection requests, DMs, comments" },
       { id: "sd4", text: "Outbound Block 2: cold calls (priority 3 volume block)" },
-      { id: "sd5", text: "Log every call and touch in CRM immediately after each interaction" },
+      { id: "sd5", text: "Log every call and touch in Notion immediately after each interaction" },
     ],
   },
   {
@@ -64,7 +64,7 @@ const SECTIONS = [
     borderClass: "border-emerald-accent/20",
     iconBgClass: "bg-emerald-accent/10",
     tasks: [
-      { id: "se1", text: "Update every lead status in CRM — no stale records overnight" },
+      { id: "se1", text: "Update every lead status in Notion — no stale records overnight" },
       { id: "se2", text: "Log all activity: calls made, emails sent, social touches, appointments booked" },
       { id: "se3", text: "Review appointments booked today — did you hit your target?" },
       { id: "se4", text: "Prep tomorrow's priority list: callbacks, hot leads, follow-ups" },

@@ -54,7 +54,7 @@ const RAMP = [
     items: [
       "Full outreach activity every day — calls, emails, social",
       "Booking 1-2 appointments per day consistently",
-      "CRM is clean — every touch logged",
+      "Notion is clean — every touch logged",
       "Start tracking which channels and talk tracks work best",
     ],
   },
@@ -90,7 +90,7 @@ export default function SDRPerformanceContent({ roleSlug }: { roleSlug: string }
         backLabel="Back to hub"
         eyebrow="Performance"
         title="Performance Expectations"
-        description="1-3 qualified appointments per day. That's the job. Everything else — calls, emails, social, CRM — is the engine that gets you there."
+        description="1-3 qualified appointments per day. That's the job. Everything else — calls, emails, social, Notion — is the engine that gets you there."
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">

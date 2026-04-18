@@ -72,7 +72,7 @@ const GATES = [
     items: [
       "Can explain what Obsidion does in plain language without a script (≈80% Meta / ~20% rest of stack; website-only is valid)",
       "Understands BANT and can apply it in conversation",
-      "Knows how to log activity in the CRM",
+      "Knows how to log activity in Notion",
     ],
     howToComplete: "A judgment call, not a test. If you're ready, you go live.",
     color: "amber-accent",

@@ -36,7 +36,7 @@ const SUCCESS_ITEMS = [
     category: "Process & Discipline",
     icon: Database,
     items: [
-      "CRM is always current. Every call logged. Every appointment documented with full handoff notes.",
+      "Notion is always current. Every call logged. Every appointment documented with full handoff notes.",
       "Handoff notes are detailed. The AE should know who, what, why, and which products before the call.",
       "Appointment reminders go out. Every time. No exceptions.",
     ],
@@ -66,7 +66,7 @@ const EXIT_ITEMS = [
     items: [
       "Booking fake or inflated appointments. Zero tolerance. No second chances.",
       "Misrepresenting Obsidion to prospects. No inventing features or exaggerating results.",
-      "Neglecting the CRM. Empty records make your work invisible.",
+      "Neglecting Notion. Empty records make your work invisible.",
     ],
   },
   {
@@ -83,14 +83,14 @@ const CHECKPOINTS = [
     day: "Day 30",
     title: "Foundation Check",
     looking: "Have you learned the system and started producing?",
-    items: ["All training completed", "Profiles set up", "CRM active", "Outreach started", "Booking a few per week"],
+    items: ["All training completed", "Profiles set up", "Notion active", "Outreach started", "Booking a few per week"],
     notYet: "Full production numbers. You're learning.",
   },
   {
     day: "Day 60",
     title: "Consistency Check",
     looking: "Are you in the game?",
-    items: ["1-2 appointments/day consistently", "Show rate above 70%", "CRM current", "All three channels active", "Feedback being implemented"],
+    items: ["1-2 appointments/day consistently", "Show rate above 70%", "Notion current", "All three channels active", "Feedback being implemented"],
     warning: "If activity is still inconsistent, the conversation changes.",
   },
   {
@@ -197,7 +197,7 @@ export default function SDRAccountabilityContent({ roleSlug }: { roleSlug: strin
                 label: "Green — Thriving",
                 color: "border-emerald-accent/30 bg-emerald-accent/[0.04]",
                 textColor: "text-emerald-accent",
-                detail: "Targets hit. Activity consistent. CRM clean. Show rate high. AEs closing your appointments.",
+                detail: "Targets hit. Activity consistent. Notion clean. Show rate high. AEs closing your appointments.",
               },
               {
                 label: "Yellow — At Risk",

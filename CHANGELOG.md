@@ -6,6 +6,16 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-18] — SDR: Notion as CRM (lead lists + hub alignment)
+
+### Changed
+
+- **Lead Lists (`LeadListsContent.tsx`, `lead-lists.md`):** Notion as the CRM — databases, properties, views; daily workflow and hygiene copy updated; hub card and **Tech We Use** descriptions mention Notion
+- **SDR surfaces:** Daily checklist, certification gate, outreach rules, email template rules, performance, accountability — generic CRM wording replaced with Notion where it refers to lead logging
+- **Markdown (`content/roles/sdr/`):** `daily-structure`, `accountability`, `performance`, `certification`, `outreach/overview` aligned
+
+---
+
 ## [2026-04-18] — SDR: ads vs Meta voice, TL;DR callouts
 
 ### Changed

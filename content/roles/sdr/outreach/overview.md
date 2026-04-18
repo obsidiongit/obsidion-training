@@ -79,7 +79,7 @@ If no response, move the lead to a long-term follow-up list. Circle back in 30�
 
 1. **Never rely on one channel.** A call + email + social touch is 3x more effective than three calls alone.
 2. **Always reference prior touches.** "I left you a voicemail earlier" or "I sent you a note on LinkedIn" creates continuity. The prospect starts to recognize your name.
-3. **Log every touch.** Call, email, DM — all of it goes in the CRM immediately. Not at end of day.
+3. **Log every touch.** Call, email, DM — all of it goes in Notion immediately. Not at end of day.
 4. **Respect the "no."** If someone clearly says they're not interested, mark it and move on. Don't burn bridges by being pushy — today's no can be next quarter's yes if you leave on good terms.
 5. **Speed wins.** When a lead comes in hot (inbound, referral, engagement signal), the first rep to respond wins. Aim for under 15 minutes on hot leads.
 

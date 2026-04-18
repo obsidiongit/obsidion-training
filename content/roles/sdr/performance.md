@@ -78,7 +78,7 @@ You're not expected to hit full production on day one. Here's what a realistic r
 - Full outreach activity every day — calls, emails, social
 - You should be booking 1–2 appointments per day consistently
 - Show rate is being tracked — send reminders, qualify properly
-- CRM is clean — every touch logged, every appointment documented
+- Notion is clean — every touch logged, every appointment documented
 - Start tracking which channels and talk tracks work best for you
 - **Goal: Consistent 1–2 appointments/day with 70%+ show rate**
 
@@ -105,7 +105,7 @@ Track these numbers daily. Review them weekly.
 | **Conversations (someone picked up and talked)** | ___ | [TBD] |
 | **Appointments booked today** | ___ | 1–3 |
 | **Appointment reminders sent** | ___ | All of them |
-| **CRM updated** | Yes / No | Yes, always |
+| **Notion updated** | Yes / No | Yes, always |
 
 If your appointments are low, check your activity first. It's almost always the answer.
 
@@ -125,7 +125,7 @@ If your appointments are low, check your activity first. It's almost always the 
 
 ## The Bottom Line
 
-1–3 qualified appointments per day. That's the job. Everything else — calls, emails, social, CRM — is the engine that gets you there. Track your inputs, hit your targets, and the bonuses follow.
+1–3 qualified appointments per day. That's the job. Everything else — calls, emails, social, Notion — is the engine that gets you there. Track your inputs, hit your targets, and the bonuses follow.
 
 If the numbers aren't there, don't wait for someone to tell you. Check your activity, check your approach, and bring it to your manager. The SDRs who fix problems early are the ones who make real money.
 

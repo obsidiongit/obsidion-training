@@ -21,7 +21,7 @@ This section exists so there's zero confusion about what "doing the job" looks l
 
 ### Process & Discipline
 
-- **CRM is always current.** Every call logged. Every email noted. Every appointment documented with full handoff notes. If it's not in the system, it didn't happen.
+- **Notion is always current.** Every call logged. Every email noted. Every appointment documented with full handoff notes. If it's not in the system, it didn't happen.
 - **Handoff notes are detailed.** The AE should be able to walk into the meeting knowing who the prospect is, what their business does, what pain they expressed, and which products map to that pain. "Seemed interested" is not a handoff — it's a guess.
 - **Appointment reminders go out.** Every time. No exceptions. A no-show that could have been prevented by a 30-second email is a failure of process, not luck.
 
@@ -45,7 +45,7 @@ This section exists so there's zero confusion about what "doing the job" looks l
 
 - **Booking fake or inflated appointments.** If you're putting meetings on the calendar that you know aren't qualified just to hit a number, the relationship ends. AEs will flag it. Leadership will notice. There's no version of this that gets a second chance.
 - **Misrepresenting Obsidion to prospects.** Making promises we can't keep, inventing features, or exaggerating results to get a booking. Your job is to open the door honestly — the AE handles the pitch.
-- **Neglecting the CRM.** Empty records, stale data, missing notes. The CRM is how leadership sees your work. If it's blank, your work is invisible — and invisible work doesn't get credit.
+- **Neglecting Notion.** Empty records, stale data, missing notes. Notion is how leadership sees your work. If it's blank, your work is invisible — and invisible work doesn't get credit.
 
 ### Engagement Failures
 
@@ -65,15 +65,15 @@ Use this to check yourself before leadership has to.
 
 ### Green — Thriving
 
-Appointment target hit daily. Activity is consistent. CRM is clean. Show rate is high. AEs are closing your appointments. You bring useful info to meetings and adjust based on feedback.
+Appointment target hit daily. Activity is consistent. Notion is clean. Show rate is high. AEs are closing your appointments. You bring useful info to meetings and adjust based on feedback.
 
 ### Yellow — At Risk
 
-Activity is dropping. Appointments are inconsistent. CRM is getting stale. Show rates are dipping. You're doing parts of the job well but the trend isn't right. Yellow is a signal — fix it before someone has to tell you.
+Activity is dropping. Appointments are inconsistent. Notion is getting stale. Show rates are dipping. You're doing parts of the job well but the trend isn't right. Yellow is a signal — fix it before someone has to tell you.
 
 ### Red — Exit Track
 
-Multiple areas are failing. Activity is low. Appointments are rare or unqualified. CRM is empty. Coaching hasn't produced change. Red means the trajectory is headed toward exit. You can pull out of it, but it requires a sharp, visible change in a short window.
+Multiple areas are failing. Activity is low. Appointments are rare or unqualified. Notion is empty. Coaching hasn't produced change. Red means the trajectory is headed toward exit. You can pull out of it, but it requires a sharp, visible change in a short window.
 
 ---
 
@@ -85,7 +85,7 @@ Multiple areas are failing. Activity is low. Appointments are rare or unqualifie
 
 - All training sections completed
 - Ambassador profiles set up
-- CRM set up and actively used
+- Notion set up and actively used
 - Outreach has started — calls, emails, social
 - Booking at least a few appointments per week
 - Attending team meetings and participating
@@ -98,7 +98,7 @@ Multiple areas are failing. Activity is low. Appointments are rare or unqualifie
 
 - Booking 1–2 appointments per day consistently
 - Show rate is above 70%
-- CRM is current and accurate
+- Notion is current and accurate
 - Outreach cadence is established — all three channels
 - Feedback is being implemented
 
@@ -112,7 +112,7 @@ Multiple areas are failing. Activity is low. Appointments are rare or unqualifie
 - Show rate above 75%
 - AE feedback on appointment quality is positive
 - Self-sourcing at least some of your own leads
-- No persistent issues with CRM, reminders, or handoff quality
+- No persistent issues with Notion, reminders, or handoff quality
 
 **What happens at day 90 if you're not here:** An honest conversation about fit. Not a surprise — you'll have had check-ins at 30 and 60.
 

@@ -105,7 +105,7 @@ const AE_CONFIG: HubConfig = {
     {
       slug: "tech",
       title: "Tech We Use",
-      description: "CRM, dialer, and internal systems.",
+      description: "Notion (CRM), dialer, and internal systems.",
       icon: Wrench,
       shared: true,
     },
@@ -178,7 +178,7 @@ const SDR_CONFIG: HubConfig = {
     {
       slug: "lead-lists",
       title: "Lead Lists & Accounts",
-      description: "How to read, work, and prioritize your list every day.",
+      description: "Notion pipeline — how to read records, work your list, and prioritize daily.",
       icon: ListChecks,
       shared: false,
     },
@@ -213,7 +213,7 @@ const SDR_CONFIG: HubConfig = {
     {
       slug: "tech",
       title: "Tech We Use",
-      description: "CRM, dialer, and internal systems.",
+      description: "Notion (CRM), dialer, and internal systems.",
       icon: Wrench,
       shared: true,
     },

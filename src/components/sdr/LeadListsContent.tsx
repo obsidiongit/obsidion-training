@@ -92,18 +92,18 @@ const PRIORITIES = [
 ] as const;
 
 const DAILY_WORKFLOW = [
-  { label: "Open CRM", sublabel: "Sort by priority" },
+  { label: "Open Notion", sublabel: "Pipeline sorted by priority" },
   { label: "Claim Inbounds", sublabel: "Within 15 min" },
   { label: "Work Hot/Warm", sublabel: "Priority 1 & 2" },
   { label: "Cold Volume", sublabel: "Priority 3" },
-  { label: "Close Out", sublabel: "Log & prep tomorrow" },
+  { label: "Close Out", sublabel: "Update Notion & prep tomorrow" },
 ];
 
 const HYGIENE_RULES = [
   "Never skip a lead without attempting contact at least 3 times across multiple channels.",
-  "Update the status after every touch. Called and left a voicemail? Log it.",
+  "Update the lead in Notion after every touch. Called and left a voicemail? Log it on the record.",
   "Don't hoard leads. 30+ days with no movement? Disposition it or escalate.",
-  "Flag bad data. Wrong number? Business closed? Flag it so the list stays clean.",
+  "Flag bad data in Notion. Wrong number? Business closed? Mark it so the database stays clean for everyone.",
 ] as const;
 
 /* ─── component ─── */
@@ -116,10 +116,37 @@ export default function LeadListsContent({ roleSlug }: { roleSlug: string }) {
         backLabel="Back to hub"
         eyebrow="Lead Management"
         title="Lead Lists & Accounts"
-        description="How to read your list, how to work it, and how to prioritize so you spend time on the prospects most likely to book."
+        description="Obsidion runs leads in Notion — your pipeline database, views, and properties. How to read a record, work your list, and prioritize who gets called first."
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">
+        {/* ── Notion = CRM ── */}
+        <motion.section
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
+          <SectionLabel barClass="bg-purple-accent" textClass="text-purple-accent">
+            Notion Is Your CRM
+          </SectionLabel>
+
+          <motion.div variants={fadeUp} className="rounded-2xl border border-purple-accent/20 bg-purple-accent/[0.04] px-6 py-5 space-y-3">
+            <p className="text-sm text-foreground leading-relaxed">
+              We use <span className="font-semibold">Notion</span> for lead tracking — not a separate legacy CRM.
+              Your list is a <span className="font-semibold">Notion database</span> (or linked databases) with
+              properties for each business, status, last touch, and notes. You&apos;ll filter and sort with{" "}
+              <span className="font-semibold">views</span> — e.g. callbacks today, hot, by owner — so the right
+              leads float to the top.
+            </p>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Rule of thumb: if it happened on a call, email, or DM, it belongs on the{" "}
+              <span className="font-semibold text-foreground">Notion page for that lead</span> before you move
+              on. Your manager and AEs rely on it for handoffs.
+            </p>
+          </motion.div>
+        </motion.section>
+
         {/* ── Two Types of Accounts ── */}
         <motion.section
           variants={stagger}
@@ -180,6 +207,12 @@ export default function LeadListsContent({ roleSlug }: { roleSlug: string }) {
           <SectionLabel barClass="bg-emerald-accent" textClass="text-emerald-accent">
             How to Read a Lead Record
           </SectionLabel>
+
+          <motion.p variants={fadeUp} className="text-muted-foreground text-sm leading-relaxed max-w-3xl mb-4">
+            In Notion, each lead is a row with <span className="font-semibold text-foreground">properties</span>{" "}
+            (columns). Exact names may match your workspace — use this as a checklist of what to look for before
+            you dial.
+          </motion.p>
 
           <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card overflow-hidden shadow-sm">
             <div className="overflow-x-auto">

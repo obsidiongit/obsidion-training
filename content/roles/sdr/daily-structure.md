@@ -18,7 +18,7 @@ This is not email and coffee. This sets up your entire day.
 
 | Task | What You're Doing | Why It Matters |
 |------|-------------------|---------------|
-| **Check for new leads** | Open CRM. Look for overnight inbounds, referrals, or new assigned leads. | Hot leads go cold fast. The first SDR to respond wins. |
+| **Check for new leads** | Open Notion. Look for overnight inbounds, referrals, or new assigned leads. | Hot leads go cold fast. The first SDR to respond wins. |
 | **Prioritize your list** | Sort leads by priority: callbacks first, then hot, warm, cold. | Working in priority order means your best opportunities get your best energy. |
 | **Review scheduled callbacks** | Check which prospects asked you to call back today. | A callback you forget is an appointment you lose. |
 | **Check appointment confirmations** | Verify appointments you booked are still on. Send reminders if needed. | No-shows kill your numbers. A 30-second reminder email prevents them. |
@@ -31,7 +31,7 @@ This is your primary phone block. Protect it. No email checking, no social scrol
 - Work your Priority 1 and 2 leads first (callbacks, hot leads, warm leads)
 - Make calls, leave voicemails, send immediate follow-up emails after missed calls
 - When you connect, qualify and book — don't chat for 20 minutes
-- Log every call in the CRM immediately after hanging up
+- Log every call in Notion immediately after hanging up
 - **Target: Get through your hottest leads in this block**
 
 ### Midday Execution (1–2 hours)
@@ -43,7 +43,7 @@ This is your multi-channel block. Mix phone, email, and social.
 | **Email follow-ups** | Send follow-up emails for every call you made this morning that didn't connect |
 | **Social touches** | View LinkedIn profiles, send connection requests, comment on posts, send DMs |
 | **Appointment reminders** | Send day-before reminders for tomorrow's appointments |
-| **CRM catch-up** | If any notes are behind, update them now. Not at end of day. |
+| **Notion catch-up** | If any notes are behind, update them now. Not at end of day. |
 
 ### Outbound Block 2 (1–2 hours)
 
@@ -58,7 +58,7 @@ Back on the phones. Work your Priority 3 (cold) leads.
 
 | Task | Non-Negotiable? |
 |------|-----------------|
-| **Update every lead in CRM** | Yes. No stale records overnight. |
+| **Update every lead in Notion** | Yes. No stale records overnight. |
 | **Log all activity** | Yes. Calls, emails, social touches, appointments booked. |
 | **Review appointments booked today** | Yes. Did you hit your target? If not, why? |
 | **Prep tomorrow's priority list** | Yes. Callbacks, hot leads, follow-ups — ready to go before you log off. |
@@ -78,7 +78,7 @@ Use this every day. Reset it every morning.
 - [ ] Sent follow-up emails for missed calls
 - [ ] Completed social touches (profiles, DMs, engagement)
 - [ ] Completed Outbound Block 2 (cold leads)
-- [ ] Logged all activity in CRM
+- [ ] Logged all activity in Notion
 - [ ] Updated all lead statuses
 - [ ] Prepped tomorrow's priority list
 - [ ] Sent calendar invites for all new appointments
@@ -91,10 +91,10 @@ Use this every day. Reset it every morning.
 |------|----------|---------|
 | 8:00 AM | Morning launch — check leads, prioritize, prep | Ready to dial by 8:30 |
 | 8:30–11:00 AM | Outbound Block 1 — hot and warm calls | Several conversations, 1–2 appointments booked |
-| 11:00–12:30 PM | Midday — emails, social, reminders, CRM | Follow-ups sent, social touches done |
+| 11:00–12:30 PM | Midday — emails, social, reminders, Notion updates | Follow-ups sent, social touches done |
 | 12:30–1:00 PM | Lunch | Recharge |
 | 1:00–3:00 PM | Outbound Block 2 — cold calls | More conversations, 1+ more appointment booked |
-| 3:00–3:30 PM | Close-out — log everything, prep tomorrow | CRM clean, tomorrow's list ready |
+| 3:00–3:30 PM | Close-out — log everything, prep tomorrow | Notion clean, tomorrow's list ready |
 
 Total: 2–3 appointments booked, all activity logged, tomorrow is prepped. That's the job done well.
 
@@ -105,7 +105,7 @@ Total: 2–3 appointments booked, all activity logged, tomorrow is prepped. That
 - Started the day checking email for 45 minutes instead of dialing
 - Made 10 calls, got discouraged, switched to "research"
 - Forgot to send appointment reminders — prospect no-showed
-- CRM hasn't been updated since yesterday
+- Notion hasn't been updated since yesterday
 - No clear plan for tomorrow
 
 The difference between a great day and a bad day isn't talent. It's structure.

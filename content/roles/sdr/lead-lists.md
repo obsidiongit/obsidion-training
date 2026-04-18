@@ -6,7 +6,15 @@
 
 Every day, you need people to call, email, and message. That's your lead list. Without a list, you're guessing. With a good list, you're executing. The difference between an SDR who books 1 appointment a day and one who books 4 is almost always list quality and list discipline — not talent.
 
-This section covers how to read your list, how to work it, and how to prioritize so you're spending time on the prospects most likely to book.
+Obsidion tracks leads in **Notion** (your CRM). This section covers how to read a record, work your list, and prioritize so you're spending time on the prospects most likely to book.
+
+---
+
+## Notion is your CRM
+
+We use **Notion** for lead tracking — not a separate legacy CRM. Your list is a **Notion database** (or linked databases) with **properties** for each business, status, last touch, and notes. You'll filter and sort with **views** — e.g. callbacks today, hot leads, by assignee — so the right rows float to the top.
+
+**Rule:** If it happened on a call, email, or DM, it belongs on the **Notion page for that lead** before you move on. Your manager and AEs rely on it for handoffs.
 
 ---
 
@@ -33,13 +41,15 @@ These are leads you find on your own through:
 - Referrals from existing contacts
 - Networking events or community groups
 
+Add self-sourced leads to Notion when your process allows — same hygiene as assigned leads.
+
 **Your job:** Build your own pipeline on top of what's assigned. The SDRs who self-source outperform the ones who only work assigned lists — every time.
 
 ---
 
 ## How to Read a Lead Record
 
-When you open a lead, here's what you're looking for:
+When you open a lead in Notion, here's what you're looking for. Property names might match your workspace exactly or closely — use this as a checklist before you dial.
 
 | Field | What It Tells You | Why It Matters |
 |-------|-------------------|---------------|
@@ -59,7 +69,7 @@ When you open a lead, here's what you're looking for:
 
 ## Prioritization: Who to Call First
 
-Not all leads are equal. Here's how to stack your list each morning:
+Not all leads are equal. Here's how to stack your list each morning in Notion:
 
 ### Priority 1 — Hot Leads (call these first)
 
@@ -83,31 +93,29 @@ Not all leads are equal. Here's how to stack your list each morning:
 ### Priority 4 — Long-Term Follow-Ups
 
 - Said "not now" but gave a future window
-- Locked in a contract with someone else (note the end date, follow up 60 days before)
+- Locked in a contract with someone else (note the end date in Notion, follow up 60 days before)
 - Expressed interest but timing was off
 
 ---
 
 ## Working the List — Daily Workflow
 
-Here's the step-by-step for how to run your list each day:
-
-1. **Open your CRM first thing.** Sort by priority (callbacks and hot leads at the top).
+1. **Open Notion first thing.** Open your pipeline view — sort or filter by priority (callbacks and hot leads at the top).
 2. **Check for overnight inbounds.** Anything new gets claimed and called within 15 minutes of your start time.
 3. **Work Priority 1 and 2 leads** during your first outbound block. These are your highest-conversion opportunities.
 4. **Switch to Priority 3 (cold)** once hot and warm leads are worked. This is your volume block.
-5. **Log every call immediately.** Outcome, notes, next step. Not at the end of the day — right after you hang up.
-6. **Set callbacks and follow-ups** with specific dates. "I'll follow up sometime" is not a plan.
-7. **Review your list at end of day.** Move leads to the right status. Flag callbacks for tomorrow. Remove dead leads.
+5. **Log every touch in Notion immediately.** Outcome, notes, next step. Not at the end of the day — right after you hang up.
+6. **Set callbacks and follow-ups** with specific dates on the record. "I'll follow up sometime" is not a plan.
+7. **Review your list at end of day.** Update status in Notion. Flag callbacks for tomorrow. Remove or disposition dead leads.
 
 ---
 
 ## List Hygiene Rules
 
 - **Never skip a lead** without attempting contact at least 3 times across multiple channels (call + email + social).
-- **Update the status after every touch.** If you called and left a voicemail, log it. If you emailed, log it. If they said no, mark it.
-- **Don't hoard leads.** If a lead has been sitting in your pipeline for 30+ days with no movement, it's not a lead — it's a wish. Disposition it or escalate.
-- **Flag bad data.** Wrong number? Business closed? Not a real contact? Flag it so the list stays clean for everyone.
+- **Update Notion after every touch.** If you called and left a voicemail, log it on the lead. If you emailed, log it. If they said no, mark it.
+- **Don't hoard leads.** If a lead has been sitting for 30+ days with no movement, it's not a lead — it's a wish. Disposition it or escalate.
+- **Flag bad data in Notion.** Wrong number? Business closed? Not a real contact? Mark it so the database stays clean for everyone.
 
 ---
 
