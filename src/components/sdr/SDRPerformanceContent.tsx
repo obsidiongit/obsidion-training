@@ -28,6 +28,15 @@ const CORE_METRIC = [
   { level: "High Performer", pace: "4-6", what: "You're outperforming. Leadership notices. AE conversations start happening." },
 ] as const;
 
+const DAILY_ACTIVITY = [
+  { activity: "Outbound calls (dials)", target: "80–100", note: "Ramped target. 120+ is stretch territory." },
+  { activity: "Conversations (live pickups)", target: "8–12", note: "Assumes ~10% connect rate on dials." },
+  { activity: "Emails sent", target: "30–50", note: "Mix of first-touch, follow-ups, and reminders." },
+  { activity: "Social touches", target: "15–25", note: "Profile views, connection requests, DMs, comments." },
+  { activity: "Speed-to-lead (inbound)", target: "<10 min", note: "Top performers hit under 5 min." },
+  { activity: "Appointments booked", target: "1–3", note: "The output that matters." },
+] as const;
+
 const WEEKLY_TARGETS = [
   { metric: "Appointments booked", min: "5", solid: "10", strong: "15" },
   { metric: "Appointments held (showed up)", min: "4", solid: "8", strong: "12+" },
@@ -118,6 +127,45 @@ export default function SDRPerformanceContent({ roleSlug }: { roleSlug: string }
               </motion.div>
             ))}
           </div>
+        </motion.section>
+
+        {/* ── Daily Activity Targets ── */}
+        <motion.section
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
+          <SectionLabel barClass="bg-accent" textClass="text-accent">
+            Daily Activity Targets
+          </SectionLabel>
+
+          <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card overflow-hidden shadow-sm">
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-border bg-muted/30">
+                    <th className="text-left px-5 py-3 font-semibold text-muted-foreground text-xs uppercase tracking-wider">Activity</th>
+                    <th className="text-center px-4 py-3 font-semibold text-accent text-xs uppercase tracking-wider">Target</th>
+                    <th className="text-left px-5 py-3 font-semibold text-muted-foreground text-xs uppercase tracking-wider">Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {DAILY_ACTIVITY.map((row) => (
+                    <tr key={row.activity} className="border-b border-border/50 last:border-0 hover:bg-muted/20 transition-colors">
+                      <td className="px-5 py-3 font-medium text-foreground">{row.activity}</td>
+                      <td className="px-4 py-3 text-center font-bold text-accent whitespace-nowrap">{row.target}</td>
+                      <td className="px-5 py-3 text-muted-foreground">{row.note}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </motion.div>
+
+          <motion.p variants={fadeUp} className="mt-4 text-sm text-muted-foreground leading-relaxed">
+            These numbers are the ramped target — what you should be hitting by day 60. Early ramp will be lower. The appointment target (1–3/day) is the constant; how you get there depends on your style, list quality, and which channels work best for you.
+          </motion.p>
         </motion.section>
 
         {/* ── Weekly Targets ── */}

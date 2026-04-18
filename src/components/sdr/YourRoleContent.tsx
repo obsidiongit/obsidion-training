@@ -82,8 +82,8 @@ const CHANNELS = [
 ] as const;
 
 const SUCCESS_METRICS = [
-  { metric: "1-3 qualified appointments per day", detail: "This is your target. High performers hit 4-6." },
-  { metric: "Prospects show up", detail: "If your appointments no-show at a high rate, your qualifying needs work." },
+  { metric: "1–3 qualified appointments per day", detail: "This is your target. High performers hit 4–6." },
+  { metric: "Prospects show up", detail: "If your appointments no-show at a high rate, your qualification needs work." },
   { metric: "AEs are closing your appointments", detail: "If AEs can't close what you book, qualification or notes need more depth." },
   { metric: "Activity is consistent", detail: "Calls, emails, and social every single day. Not just on good days." },
 ] as const;
@@ -242,8 +242,9 @@ export default function YourRoleContent({ roleSlug }: { roleSlug: string }) {
           <motion.div variants={fadeUp} className="mt-6 rounded-xl border border-accent/20 bg-accent/[0.04] px-5 py-4 flex items-start gap-3">
             <ArrowRight size={16} className="text-accent mt-0.5 shrink-0" />
             <p className="text-sm leading-relaxed text-foreground">
-              <span className="font-semibold">Want to grow into an AE role?</span> You can sit in on
-              AE calls — it&apos;s optional but highly encouraged. Talk to your manager about joining live calls.
+              <span className="font-semibold">Want to grow into an AE role?</span>
+              {" "}
+              You can sit in on AE calls — it&apos;s optional but highly encouraged. Talk to your manager about joining live calls.
             </p>
           </motion.div>
         </motion.section>

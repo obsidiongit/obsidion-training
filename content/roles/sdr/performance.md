@@ -29,12 +29,14 @@ Appointments don't appear out of nowhere. They come from activity. Here's what d
 
 | Activity | Target Range | Notes |
 |----------|-------------|-------|
-| **Outbound calls** | [TBD — will be calibrated based on early SDR data] | This is your primary activity. More calls = more conversations = more appointments. |
-| **Emails sent** | [TBD] | Follow-up emails, first-touch emails, appointment reminders |
-| **Social touches** | [TBD] | LinkedIn/Facebook profile views, connection requests, DMs, comments |
-| **Appointments booked** | 1–3 / day | The output that matters |
+| **Outbound calls (dials)** | 80–100 / day | Ramped target. 120+ is stretch territory. More calls = more conversations = more appointments. |
+| **Conversations (live pickups)** | 8–12 / day | Assumes ~10% connect rate on dials. If you're below this, check your call times and list freshness. |
+| **Emails sent** | 30–50 / day | Mix of first-touch emails, follow-ups, and appointment reminders. |
+| **Social touches** | 15–25 / day | LinkedIn/Facebook profile views, connection requests, DMs, comments. |
+| **Speed-to-lead (inbound)** | Under 10 min | Top performers hit under 5 min. Hot leads go cold fast. |
+| **Appointments booked** | 1–3 / day | The output that matters. |
 
-These activity targets will be refined as we see how SDRs perform out of the gate. The appointment target (1–3/day) is the constant — how you get there will depend on your style, your list quality, and which channels work best for you.
+These numbers are the ramped target — what you should be hitting by day 60. Early ramp will be lower. The appointment target (1–3/day) is the constant — how you get there will depend on your style, your list quality, and which channels work best for you.
 
 ---
 
@@ -99,10 +101,10 @@ Track these numbers daily. Review them weekly.
 
 | Metric | Your Number | Target |
 |--------|-------------|--------|
-| **Calls made today** | ___ | [TBD] |
-| **Emails sent today** | ___ | [TBD] |
-| **Social touches today** | ___ | [TBD] |
-| **Conversations (someone picked up and talked)** | ___ | [TBD] |
+| **Calls made today** | ___ | 80–100 |
+| **Conversations (someone picked up and talked)** | ___ | 8–12 |
+| **Emails sent today** | ___ | 30–50 |
+| **Social touches today** | ___ | 15–25 |
 | **Appointments booked today** | ___ | 1–3 |
 | **Appointment reminders sent** | ___ | All of them |
 | **Notion updated** | Yes / No | Yes, always |
