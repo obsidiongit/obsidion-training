@@ -27,16 +27,22 @@ The numbers below are your targets. They're built around one core metric: **qual
 
 Appointments don't appear out of nowhere. They come from activity. Here's what drives the numbers:
 
-| Activity | Target Range | Notes |
-|----------|-------------|-------|
-| **Outbound calls (dials)** | 80–100 / day | Ramped target. 120+ is stretch territory. More calls = more conversations = more appointments. |
-| **Conversations (live pickups)** | 8–12 / day | Assumes ~10% connect rate on dials. If you're below this, check your call times and list freshness. |
-| **Emails sent** | 30–50 / day | Mix of first-touch emails, follow-ups, and appointment reminders. |
-| **Social touches** | 15–25 / day | LinkedIn/Facebook profile views, connection requests, DMs, comments. |
-| **Speed-to-lead (inbound)** | Under 10 min | Top performers hit under 5 min. Hot leads go cold fast. |
-| **Appointments booked** | 1–3 / day | The output that matters. |
+| Activity | Daily Target |
+|----------|-------------|
+| **Facebook post** | 1 |
+| **LinkedIn post** | 1 |
+| **Instagram post** | 1 |
+| **Facebook group posts** | 3 |
+| **Facebook group comments / interactions** | 10 |
+| **Ask for referrals** | 1 |
+| **Cold emails** | 10 |
+| **Facebook DMs** | 10 |
+| **Instagram DMs** | 10 |
+| **Call businesses** | 10 |
+| **Upwork bids** | 5 |
+| **Appointments booked** | 1–3 |
 
-These numbers are the ramped target — what you should be hitting by day 60. Early ramp will be lower. The appointment target (1–3/day) is the constant — how you get there will depend on your style, your list quality, and which channels work best for you.
+These are ramped targets — what you should be hitting by day 60. Early ramp will be lower. The appointment target (1–3/day) is the constant.
 
 ---
 
@@ -80,7 +86,7 @@ You're not expected to hit full production on day one. Here's what a realistic r
 - Full outreach activity every day — calls, emails, social
 - You should be booking 1–2 appointments per day consistently
 - Show rate is being tracked — send reminders, qualify properly
-- Notion is clean — every touch logged, every appointment documented
+- Outreach Dashboard is current — daily activity logged, every appointment documented
 - Start tracking which channels and talk tracks work best for you
 - **Goal: Consistent 1–2 appointments/day with 70%+ show rate**
 
@@ -101,13 +107,18 @@ Track these numbers daily. Review them weekly.
 
 | Metric | Your Number | Target |
 |--------|-------------|--------|
-| **Calls made today** | ___ | 80–100 |
-| **Conversations (someone picked up and talked)** | ___ | 8–12 |
-| **Emails sent today** | ___ | 30–50 |
-| **Social touches today** | ___ | 15–25 |
+| **Facebook / LinkedIn / Instagram posts** | ___ | 3 (1 each) |
+| **Facebook group posts** | ___ | 3 |
+| **Facebook group comments / interactions** | ___ | 10 |
+| **Facebook DMs** | ___ | 10 |
+| **Instagram DMs** | ___ | 10 |
+| **Cold emails** | ___ | 10 |
+| **Calls to businesses** | ___ | 10 |
+| **Upwork bids** | ___ | 5 |
+| **Referral asks** | ___ | 1 |
 | **Appointments booked today** | ___ | 1–3 |
 | **Appointment reminders sent** | ___ | All of them |
-| **Notion updated** | Yes / No | Yes, always |
+| **Outreach Dashboard updated** | Yes / No | Yes, always |
 
 If your appointments are low, check your activity first. It's almost always the answer.
 
@@ -117,17 +128,17 @@ If your appointments are low, check your activity first. It's almost always the 
 
 | Situation | What It Means | What to Do |
 |-----------|---------------|------------|
-| High calls, low conversations | Your call times or list quality need work | Try different times, check list freshness |
+| High activity, low conversations | Your targeting or messaging needs work | Tighten your lead list, personalize your outreach |
 | High conversations, low bookings | Your qualifying or booking ask needs work | Review your scripts and objection handling |
 | High bookings, high no-shows | Your qualifying is loose or reminders aren't going out | Tighten BANT, send day-before reminders |
 | High bookings, low AE close rate | Appointments aren't qualified well enough | Review BANT criteria, get feedback from AEs |
-| Low everything | Volume is the problem | More calls. Period. |
+| Low everything | Volume is the problem | More activity across all channels. Period. |
 
 ---
 
 ## The Bottom Line
 
-1–3 qualified appointments per day. That's the job. Everything else — calls, emails, social, Notion — is the engine that gets you there. Track your inputs, hit your targets, and the bonuses follow.
+1–3 qualified appointments per day. That's the job. Everything else — calls, emails, social, the Outreach Dashboard — is the engine that gets you there. Track your inputs, hit your targets, and the bonuses follow.
 
 If the numbers aren't there, don't wait for someone to tell you. Check your activity, check your approach, and bring it to your manager. The SDRs who fix problems early are the ones who make real money.
 

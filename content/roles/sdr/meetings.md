@@ -4,7 +4,7 @@
 
 ## Same Team, Same Meetings
 
-SDRs attend the same team meetings as Account Executives. Twice a week, 30 minutes, on Discord. If you're an active SDR, you're on the call.
+SDRs attend the same daily sales meeting as Account Executives. Every day at 10:00 AM Eastern, on Discord. If you're an active SDR, you're on the call.
 
 These meetings are where the team aligns. You'll hear what AEs are seeing on their calls, what's closing, and what's not. That information makes you better at your job — because when you know what a good appointment looks like from the AE's perspective, you start qualifying differently.
 
@@ -14,7 +14,7 @@ These meetings are where the team aligns. You'll hear what AEs are seeing on the
 
 ### Schedule
 
-Twice weekly — specific days and times set by leadership, communicated on Discord. Put it in your calendar. Protect it. It's 30 minutes of your week.
+Daily at 10:00 AM Eastern. Put it in your calendar. Protect it.
 
 ### Platform
 
@@ -22,7 +22,7 @@ Twice weekly — specific days and times set by leadership, communicated on Disc
 
 ### Duration
 
-**30 minutes.** Tight and structured.
+Tight and structured. Time-boxed by leadership.
 
 ---
 
@@ -46,7 +46,7 @@ Your update is different from an AE's. You're not reporting on deals and revenue
 
 Before the meeting starts, have these ready:
 
-- **Your numbers.** Appointments booked since last meeting. Show rate. No-shows. How many were qualified.
+- **Your numbers.** Appointments booked since yesterday. Show rate. No-shows. How many were qualified.
 - **AE feedback.** Did any AEs flag a quality issue with an appointment you booked? Own it and explain what you'll adjust.
 - **Your top prospect.** One lead you're working that looks promising. What's the situation, what channel are you using, what's the next step.
 - **One ask.** Need help with a talk track? Stuck on an objection? Want feedback on your cold call opener? Bring it. These meetings are the fastest path to getting better.
@@ -91,7 +91,7 @@ No formal punishment system. But leadership notices. Your teammates notice. Don'
 
 ## The Point
 
-30 minutes, twice a week. Show up. Bring your numbers. Participate. It's the easiest way to stay sharp, stay aligned, and stay connected to the team.
+Every day, 10:00 AM Eastern. Show up. Bring your numbers. Participate. It's the easiest way to stay sharp, stay aligned, and stay connected to the team.
 
 ---
 

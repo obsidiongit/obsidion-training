@@ -29,11 +29,17 @@ const CORE_METRIC = [
 ] as const;
 
 const DAILY_ACTIVITY = [
-  { activity: "Outbound calls (dials)", target: "80–100", note: "Ramped target. 120+ is stretch territory." },
-  { activity: "Conversations (live pickups)", target: "8–12", note: "Assumes ~10% connect rate on dials." },
-  { activity: "Emails sent", target: "30–50", note: "Mix of first-touch, follow-ups, and reminders." },
-  { activity: "Social touches", target: "15–25", note: "Profile views, connection requests, DMs, comments." },
-  { activity: "Speed-to-lead (inbound)", target: "<10 min", note: "Top performers hit under 5 min." },
+  { activity: "Facebook posts", target: "1", note: "Your personal profile. Stay visible and professional." },
+  { activity: "LinkedIn posts", target: "1", note: "Position yourself as someone in the growth space." },
+  { activity: "Instagram posts", target: "1", note: "Visual presence in your target verticals." },
+  { activity: "Facebook group posts", target: "3", note: "Relevant groups where business owners spend time." },
+  { activity: "Facebook group comments / interactions", target: "10", note: "Engage genuinely — no pitching in comments." },
+  { activity: "Referrals asked", target: "1", note: "Ask a happy contact or recent conversation for a warm intro." },
+  { activity: "Cold emails", target: "10", note: "Personalized first touches and follow-ups." },
+  { activity: "Facebook DMs", target: "10", note: "After engaging with their content — not cold blasts." },
+  { activity: "Instagram DMs", target: "10", note: "After engaging with Reels or Stories." },
+  { activity: "Calls to businesses", target: "10", note: "Direct phone outreach. Still the fastest path to a conversation." },
+  { activity: "Upwork bids", target: "5", note: "Bid on relevant project postings." },
   { activity: "Appointments booked", target: "1–3", note: "The output that matters." },
 ] as const;
 
@@ -63,7 +69,7 @@ const RAMP = [
     items: [
       "Full outreach activity every day — calls, emails, social",
       "Booking 1-2 appointments per day consistently",
-      "Notion is clean — every touch logged",
+      "Outreach Dashboard is current — daily activity logged",
       "Start tracking which channels and talk tracks work best",
     ],
   },
@@ -82,11 +88,11 @@ const RAMP = [
 ] as const;
 
 const DIAGNOSTIC = [
-  { situation: "High calls, low conversations", meaning: "Call times or list quality need work", fix: "Try different times, check list freshness" },
+  { situation: "High activity, low conversations", meaning: "Targeting or messaging needs work", fix: "Tighten your prospecting, personalize your outreach" },
   { situation: "High conversations, low bookings", meaning: "Qualifying or booking ask needs work", fix: "Review scripts and objection handling" },
   { situation: "High bookings, high no-shows", meaning: "Qualifying is loose or reminders aren't going out", fix: "Tighten BANT, send day-before reminders" },
   { situation: "High bookings, low AE close rate", meaning: "Appointments aren't qualified well enough", fix: "Review BANT, get feedback from AEs" },
-  { situation: "Low everything", meaning: "Volume is the problem", fix: "More calls. Period." },
+  { situation: "Low everything", meaning: "Volume is the problem", fix: "More activity across all channels. Period." },
 ] as const;
 
 /* ─── component ─── */
@@ -99,7 +105,7 @@ export default function SDRPerformanceContent({ roleSlug }: { roleSlug: string }
         backLabel="Back to hub"
         eyebrow="Performance"
         title="Performance Expectations"
-        description="1-3 qualified appointments per day. That's the job. Everything else — calls, emails, social, Notion — is the engine that gets you there."
+        description="1-3 qualified appointments per day. That's the job. Everything else — calls, emails, social, the Outreach Dashboard — is the engine that gets you there."
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">

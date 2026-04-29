@@ -28,8 +28,8 @@ const SECTIONS = [
     borderClass: "border-accent/20",
     iconBgClass: "bg-accent/10",
     tasks: [
-      { id: "sm1", text: "Check Notion for new leads and overnight inbounds — claim and prioritize" },
-      { id: "sm2", text: "Sort lead list by priority: callbacks → hot → warm → cold" },
+      { id: "sm1", text: "Check for new leads and overnight inbounds — claim and prioritize" },
+      { id: "sm2", text: "Sort prospects by priority: callbacks → hot → warm → cold" },
       { id: "sm3", text: "Review scheduled callbacks for today" },
       { id: "sm4", text: "Send appointment reminders for tomorrow's booked meetings" },
       { id: "sm5", text: "Set daily target: \"I'm booking ___ appointments today\"" },
@@ -38,7 +38,7 @@ const SECTIONS = [
   {
     id: "midday",
     label: "Outreach & Execution",
-    sublabel: "Phone, email, social — all channels active",
+    sublabel: "Calls, emails, DMs, social posts, Upwork — all channels active",
     icon: Sun,
     accentColor: "text-amber-accent",
     barClass: "bg-amber-accent",
@@ -46,11 +46,11 @@ const SECTIONS = [
     borderClass: "border-amber-accent/20",
     iconBgClass: "bg-amber-accent/10",
     tasks: [
-      { id: "sd1", text: "Outbound Block 1: calls to hot and warm leads (priority 1 & 2)" },
-      { id: "sd2", text: "Send follow-up emails for every call that didn't connect" },
-      { id: "sd3", text: "Social touches: LinkedIn profile views, connection requests, DMs, comments" },
-      { id: "sd4", text: "Outbound Block 2: cold calls (priority 3 volume block)" },
-      { id: "sd5", text: "Log every call and touch in Notion immediately after each interaction" },
+      { id: "sd1", text: "Call 10 businesses — prioritize callbacks and hot leads first" },
+      { id: "sd2", text: "Send 10 cold emails + ask for 1 referral + bid on 5 Upwork postings" },
+      { id: "sd3", text: "Send 10 Facebook DMs + 10 Instagram DMs (after engaging with their content)" },
+      { id: "sd4", text: "Social posts: 1 Facebook, 1 LinkedIn, 1 Instagram + 3 group posts + 10 group comments" },
+      { id: "sd5", text: "Log your activity in the Outreach Dashboard after each block" },
     ],
   },
   {
@@ -64,8 +64,8 @@ const SECTIONS = [
     borderClass: "border-emerald-accent/20",
     iconBgClass: "bg-emerald-accent/10",
     tasks: [
-      { id: "se1", text: "Update every lead status in Notion — no stale records overnight" },
-      { id: "se2", text: "Log all activity: calls made, emails sent, social touches, appointments booked" },
+      { id: "se1", text: "Update the Outreach Dashboard with your final daily numbers" },
+      { id: "se2", text: "Verify all activity is logged: calls, emails, DMs, posts, Upwork bids, appointments" },
       { id: "se3", text: "Review appointments booked today — did you hit your target?" },
       { id: "se4", text: "Prep tomorrow's priority list: callbacks, hot leads, follow-ups" },
       { id: "se5", text: "Send calendar invites for all new appointments booked today" },

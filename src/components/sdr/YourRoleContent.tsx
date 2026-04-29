@@ -420,7 +420,7 @@ export default function YourRoleContent({ roleSlug }: { roleSlug: string }) {
             sectionSlug="your-role"
             upNext={[
               { slug: "on-the-call", title: "Outreach Playbook" },
-              { slug: "lead-lists", title: "Lead Lists & Accounts" },
+              { slug: "lead-lists", title: "Lead Generation & Prospecting" },
             ]}
           />
         </div>

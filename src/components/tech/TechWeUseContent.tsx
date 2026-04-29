@@ -60,12 +60,12 @@ const TOOLS: ToolCard[] = [
   },
   {
     icon: Search,
-    name: "Notion",
-    tagline: "CRM, pipeline, activity tracking — source of truth",
+    name: "Facebook Ad Library",
+    tagline: "See what ads prospects are running — research before you reach out",
     color: "text-emerald-accent",
     bgColor: "bg-emerald-accent/10",
     borderColor: "border-emerald-accent/20",
-    url: "https://notion.so",
+    url: "https://www.facebook.com/ads/library",
   },
   {
     icon: Video,
@@ -95,14 +95,6 @@ const TOOLS: ToolCard[] = [
     url: "https://miro.com",
   },
   {
-    icon: Mic,
-    name: "Call Recording",
-    tagline: "Every call recorded, logged, and reviewable",
-    color: "text-rose-500",
-    bgColor: "bg-rose-500/10",
-    borderColor: "border-rose-500/20",
-  },
-  {
     icon: Palette,
     name: "Canva for Teams",
     tagline: "Brand assets, proposals, and approved graphics",
@@ -121,8 +113,8 @@ const TOOLS: ToolCard[] = [
   },
   {
     icon: Smartphone,
-    name: "Mobile Dialer",
-    tagline: "Outbound and inbound calling from your device",
+    name: "Your Phone",
+    tagline: "Use your personal phone for outbound calls — startup mode",
     color: "text-muted-foreground",
     bgColor: "bg-muted",
     borderColor: "border-border",
@@ -209,48 +201,32 @@ const LOOM_PLAYS = [
   },
 ];
 
-const NOTION_LIVES = [
-  "Lead & contact database — every prospect, every account, every interaction",
-  "Deal pipeline — stages from first contact through close and handoff to delivery",
-  "Activity logging — calls, emails, demos, proposals. If it's not in Notion, it didn't happen",
-  "Client milestones — post-sale project tracking (website builds, SEO onboarding, etc.)",
-  "Notes & handoff docs — delivery picks up from your notes when you close a deal",
-];
-
-const NOTION_SKILLS = [
-  "Find and claim inbound leads",
-  "Log calls and notes against a contact",
-  "Move deals through pipeline stages",
-  "Update deal values and close dates accurately",
-  "Pull your own pipeline report for team meetings",
-];
-
-const CALL_RECORDING_REASONS = [
+const CALL_RECORDING_TIPS = [
   {
     icon: Lightbulb,
-    title: "Coaching",
-    text: "Leadership reviews calls to give specific, actionable feedback. This is how you get better fast.",
+    title: "Team Review",
+    text: "Recorded calls get reviewed in team meetings so everyone can learn from real conversations — what worked, what didn't.",
   },
   {
     icon: BarChart3,
-    title: "KPI Verification",
-    text: "Recordings confirm activity metrics. If the numbers say 20 calls but the recordings show 8, that's a problem.",
+    title: "Self-Coaching",
+    text: "Listen back to your own calls to catch patterns you miss in the moment — filler words, missed objections, pacing.",
   },
   {
     icon: Shield,
-    title: "Quality Assurance",
-    text: "We verify prospects are being represented to honestly and that the product is positioned correctly.",
+    title: "Quality & Consistency",
+    text: "Recordings help leadership verify that the product is being positioned correctly and prospects are being treated well.",
   },
   {
     icon: Sparkles,
     title: "Training Library",
-    text: "Great calls become training material. Your best calls can be the example the rest of the team learns from.",
+    text: "Great calls become training material for the team. Your best calls can be the example others learn from.",
   },
 ];
 
 const ONBOARDING_PRIORITY = [
-  { day: "Day 1–2", tools: ["Notion (CRM access)", "Claude (account + prompting walkthrough)", "Loom (account + first test recording)", "Slack / Discord (channels + introductions)", "Apollo.io (account + first list build)"] },
-  { day: "Day 3–5", tools: ["Miro (account + first board)", "Canva (workspace + brand asset review)", "Call recording tool (setup + test)", "Mobile dialer configuration"] },
+  { day: "Day 1–2", tools: ["Claude (account + prompting walkthrough)", "Loom (account + first test recording)", "Slack / Discord (channels + introductions)", "Apollo.io (account + first list build)"] },
+  { day: "Day 3–5", tools: ["Miro (account + first board)", "Canva (workspace + brand asset review)", "Facebook Ad Library walkthrough", "Call recording setup (OBS or phone app)"] },
 ];
 
 /* ─── component ─── */
@@ -286,7 +262,7 @@ export default function TechWeUseContent({
             variants={fadeUp}
             className="text-muted-foreground leading-relaxed max-w-3xl mb-8"
           >
-            Nine tools. That&apos;s it. You don&apos;t need to master all of them on day
+            Eight tools. That&apos;s it. You don&apos;t need to master all of them on day
             one, but you need to know what each one does and where it fits into
             your daily workflow.
           </motion.p>
@@ -439,7 +415,7 @@ export default function TechWeUseContent({
           </motion.div>
         </motion.section>
 
-        {/* ── Notion Deep Dive ── */}
+        {/* ── Facebook Ad Library Deep Dive ── */}
         <motion.section
           variants={stagger}
           initial="hidden"
@@ -447,66 +423,75 @@ export default function TechWeUseContent({
           viewport={{ once: true, margin: "-60px" }}
         >
           <SectionLabel barClass="bg-emerald-accent" textClass="text-emerald-accent">
-            Notion — CRM &amp; Command Center
+            Facebook Ad Library — Prospect Research
           </SectionLabel>
 
           <motion.p
             variants={fadeUp}
-            className="text-muted-foreground leading-relaxed max-w-3xl mb-8"
+            className="text-muted-foreground leading-relaxed max-w-3xl mb-4"
           >
-            Notion is the source of truth at Obsidion. Our custom dashboard
-            houses the CRM and most of the operational data you&apos;ll interact with
-            daily. Your commission-eligible revenue is tracked here.
+            Before you reach out to a prospect, check if they&apos;re already
+            running ads. The{" "}
+            <a
+              href="https://www.facebook.com/ads/library"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-emerald-accent hover:underline font-medium"
+            >
+              Meta Ad Library
+            </a>{" "}
+            is free, public, and shows every active ad a business is running
+            on Facebook and Instagram.
           </motion.p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <motion.div
-              variants={fadeUp}
-              className="rounded-2xl border border-border bg-card p-6 shadow-sm"
-            >
-              <h3 className="text-base font-bold tracking-tight mb-4 flex items-center gap-2">
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-accent/10 text-emerald-accent">
-                  <Search size={16} strokeWidth={1.8} />
-                </div>
-                What Lives in Notion
-              </h3>
-              <ul className="space-y-3">
-                {NOTION_LIVES.map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-start gap-2 text-sm text-muted-foreground leading-relaxed"
-                  >
-                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-emerald-accent shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
+          <motion.div
+            variants={fadeUp}
+            className="rounded-xl border border-emerald-accent/20 bg-emerald-accent/[0.04] px-5 py-4 mb-8 flex items-start gap-3"
+          >
+            <Search size={18} className="text-emerald-accent mt-0.5 shrink-0" />
+            <p className="text-sm leading-relaxed text-foreground">
+              <span className="font-semibold">
+                If a prospect is already spending money on ads, they&apos;re a
+                warmer lead.
+              </span>{" "}
+              You can reference their current creatives in your outreach —
+              &quot;I saw the ad you&apos;re running for X, here&apos;s what I&apos;d
+              tweak&quot; is a much stronger opener than a generic cold email.
+            </p>
+          </motion.div>
 
-            <motion.div
-              variants={fadeUp}
-              className="rounded-2xl border border-border bg-card p-6 shadow-sm"
-            >
-              <h3 className="text-base font-bold tracking-tight mb-4 flex items-center gap-2">
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-accent/10 text-emerald-accent">
-                  <CheckCircle2 size={16} strokeWidth={1.8} />
-                </div>
-                What You Need to Know Day 1
-              </h3>
-              <ol className="space-y-3">
-                {NOTION_SKILLS.map((skill, i) => (
-                  <li
-                    key={skill}
-                    className="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed"
-                  >
-                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-emerald-accent/10 text-emerald-accent text-xs font-bold">
-                      {i + 1}
-                    </span>
-                    {skill}
-                  </li>
-                ))}
-              </ol>
-            </motion.div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              {
+                title: "Pre-Call Research",
+                text: "Search the prospect's business name to see if they have active ads. Note what they're promoting and what their creative looks like.",
+              },
+              {
+                title: "Outreach Personalization",
+                text: "Reference their ads in your cold email or Loom. Showing you've done homework sets you apart from every other rep.",
+              },
+              {
+                title: "Competitive Intelligence",
+                text: "Search competitors in the prospect's market to understand what's running in their space and where the gaps are.",
+              },
+              {
+                title: "Upsell Opportunities",
+                text: "For existing clients, check their ad library to see if there are services they're paying someone else for that Obsidion could handle.",
+              },
+            ].map((item) => (
+              <motion.div
+                key={item.title}
+                variants={fadeUp}
+                className="rounded-xl border border-border bg-card p-5 shadow-sm transition-all duration-300 hover:border-emerald-accent/30 hover:shadow-md"
+              >
+                <h4 className="text-sm font-bold tracking-tight mb-2">
+                  {item.title}
+                </h4>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  {item.text}
+                </p>
+              </motion.div>
+            ))}
           </div>
         </motion.section>
 
@@ -751,7 +736,7 @@ export default function TechWeUseContent({
           </div>
         </motion.section>
 
-        {/* ── Call Recording ── */}
+        {/* ── Recording Your Calls ── */}
         <motion.section
           variants={stagger}
           initial="hidden"
@@ -759,16 +744,17 @@ export default function TechWeUseContent({
           viewport={{ once: true, margin: "-60px" }}
         >
           <SectionLabel barClass="bg-rose-500" textClass="text-rose-500">
-            Sales Call Recording
+            Recording Your Calls
           </SectionLabel>
 
           <motion.p
             variants={fadeUp}
             className="text-muted-foreground leading-relaxed max-w-3xl mb-4"
           >
-            Every sales call at Obsidion is recorded, logged, and reviewable.
-            This isn&apos;t optional. It&apos;s how we maintain quality, verify activity,
-            and coach reps to close better.
+            We&apos;re a startup, so there&apos;s no fancy call recording platform —
+            but we still expect you to record your sales calls. Recordings
+            get pulled up in team meetings so we can all listen back and
+            sharpen how we handle conversations.
           </motion.p>
 
           <motion.div
@@ -777,21 +763,28 @@ export default function TechWeUseContent({
           >
             <Mic size={18} className="text-rose-500 mt-0.5 shrink-0" />
             <p className="text-sm leading-relaxed text-foreground">
-              The specific recording tool is being finalized. Your team lead
-              will confirm setup during onboarding. The expectation that{" "}
-              <span className="font-semibold">
-                all calls are recorded and logged is non-negotiable
-              </span>{" "}
-              regardless of which tool is used.
+              <span className="font-semibold">How to record:</span>{" "}
+              For desktop/Zoom calls,{" "}
+              <a
+                href="https://obsproject.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-rose-500 hover:underline font-medium"
+              >
+                OBS Studio
+              </a>{" "}
+              (free) works great — just hit record before the call. For phone
+              calls, use a call-recording app on your device. The tool
+              doesn&apos;t matter as long as you have the recording.
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-            {CALL_RECORDING_REASONS.map((reason) => {
-              const Icon = reason.icon;
+            {CALL_RECORDING_TIPS.map((tip) => {
+              const Icon = tip.icon;
               return (
                 <motion.div
-                  key={reason.title}
+                  key={tip.title}
                   variants={fadeUp}
                   className="flex gap-4 rounded-xl border border-border bg-card p-5 shadow-sm"
                 >
@@ -799,9 +792,9 @@ export default function TechWeUseContent({
                     <Icon size={20} strokeWidth={1.8} />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold mb-1">{reason.title}</h4>
+                    <h4 className="text-sm font-bold mb-1">{tip.title}</h4>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      {reason.text}
+                      {tip.text}
                     </p>
                   </div>
                 </motion.div>
@@ -818,10 +811,10 @@ export default function TechWeUseContent({
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                "Ensure recording is enabled before every call",
-                "Log call outcomes and notes in Notion immediately after",
+                "Record every sales call — OBS for desktop, a recording app for phone",
+                "Save recordings where they can be pulled for team meetings",
                 "Flag any calls where you need coaching or review",
-                "Review your own calls weekly to self-assess",
+                "Listen back to your own calls weekly to self-assess",
               ].map((item) => (
                 <div
                   key={item}
@@ -869,17 +862,17 @@ export default function TechWeUseContent({
                 bg: "bg-purple-accent/10",
                 points: [
                   "Day-to-day coordination with managers and delivery",
-                  "Sensitive details belong in Notion and email, not chat",
+                  "Sensitive details belong in CRM and email, not chat",
                   "Check channels at minimum start and end of each day",
                 ],
               },
               {
                 icon: Smartphone,
-                title: "Mobile Dialer",
+                title: "Your Phone",
                 color: "text-muted-foreground",
                 bg: "bg-muted",
                 points: [
-                  "Outbound and inbound calling from your device",
+                  "Use your personal phone for outbound and inbound calls",
                   "Always have your phone ready during business hours",
                   "Every call should have a purpose and a plan",
                 ],

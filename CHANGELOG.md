@@ -6,6 +6,106 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-29] — Tech We Use: remove Notion & call recording platform, add Facebook Ad Library
+
+### Removed
+
+- Removed Notion as a named tool from Tech We Use (tool card, deep-dive section, onboarding checklist, all copy)
+- Removed dedicated "Call Recording" tool card from the stack grid
+- Removed "Mobile Dialer" branding — replaced with "Your Phone" to reflect startup reality
+
+### Added
+
+- Facebook Ad Library tool card and full deep-dive section for prospect research
+- Lightweight "Recording Your Calls" section recommending OBS (desktop) and phone recording apps for team review
+
+### Changed
+
+- Tool count updated from nine to eight
+- Onboarding checklist now references Facebook Ad Library walkthrough and call recording setup instead of Notion, call recording tool, and mobile dialer
+- Hub-section description and page metadata updated to remove Notion and call recording references
+- Supporting-tools section updated (Slack/Discord no longer references Notion; phone card reworded)
+- Shared and AE content markdown files cleaned of all Notion mentions
+
+---
+
+## [2026-04-29] — Change meeting cadence to daily at 10:00 AM Eastern
+
+### Changed
+
+- Updated meeting cadence across all roles from twice-weekly to a daily sales meeting at 10:00 AM Eastern on Discord
+- Updated SDR and AE meeting markdown content, both role-specific UI components, hub-section descriptions, and accountability references
+
+---
+
+## [2026-04-29] — SDR: Add personalized onboarding notice to Ambassador Profile Setup
+
+### Changed
+
+- Added prominent notice banner at the top of the Ambassador Profile Setup page explaining that each SDR receives a personalized onboarding checklist
+- Existing platform-by-platform walkthrough retained as a general reference below the notice
+- Updated markdown source (`content/roles/sdr/ambassador-setup.md`) with matching callout
+
+---
+
+## [2026-04-29] — SDR: Restructure Lead Lists into Lead Generation & Prospecting
+
+### Changed
+
+- **Renamed section** from "Lead Lists & Accounts" to "Lead Generation & Prospecting" — reflects shift from CRM-managed lists to self-sourced pipeline building
+- **Assigned leads** simplified to weekly email batches instead of the old detailed CRM breakdown
+- **Self-sourcing** is now the primary focus with dedicated channel cards (LinkedIn, Facebook, Instagram, Google Maps, networking events, referrals, Upwork)
+- **"How to Read a Lead Record"** replaced with **"How to Submit a Lead"** via the Obsidion Sales Dashboard
+- **Prioritization** reworked from CRM-pipeline-dependent language to general outreach prioritization
+- **Cross-references updated** across hub-sections, certification, daily checklist, performance diagnostics, YourRoleContent, and page metadata
+
+---
+
+## [2026-04-29] — Remove brand guidelines PDF from assets
+
+### Removed
+
+- **Brand guidelines:** Dropped `/assets/brand-guidelines.pdf` and all hub, playbook Module 15, and content-registry references; file deleted from `public/assets/`
+
+---
+
+## [2026-04-29] — SDR: Replace Notion with Outreach Dashboard + new activity targets
+
+### Changed
+
+- **All SDR components:** Replaced every "Notion" reference with "Outreach Dashboard" language — the company now uses a lightweight proprietary activity tracker instead of Notion for daily volume tracking
+- **Lead Lists (`LeadListsContent.tsx`):** "Notion Is Your CRM" section rewritten to describe the Outreach Dashboard as a volume tracker (not a CRM); hero, daily workflow, hygiene rules, and lead record intro updated to remove Notion database/views/properties framing
+- **Performance (`SDRPerformanceContent.tsx`):** Daily activity targets replaced — old call/email/social targets swapped for 12-row table (Facebook/LinkedIn/Instagram posts, group posts, group interactions, referrals, cold emails, Facebook DMs, Instagram DMs, calls, Upwork bids, appointments); ramp and diagnostic copy updated
+- **Daily Checklist (`SDRDailyChecklistSection.tsx`):** Morning, midday, and evening task text updated to reference the Outreach Dashboard instead of Notion
+- **Accountability (`SDRAccountabilityContent.tsx`):** Success items, exit items, checkpoints, and bright line framework updated
+- **Outreach Overview, Email Templates, Certification:** Notion logging references replaced with Outreach Dashboard
+
+---
+
+## [2026-04-29] — SDR: Outreach Dashboard + new daily activity targets
+
+### Changed
+
+- **Notion → Outreach Dashboard:** Replaced all Notion/CRM references across SDR content and components with the new proprietary Outreach Dashboard — a lightweight activity tracker where SDRs log daily volume and the team sees everyone's progress
+- **Lead management:** SDRs now manage their own leads and contact lists independently; Dashboard only tracks activity counts, not lead records
+- **Daily activity targets:** Replaced the old call-heavy model (80-100 dials, 30-50 emails, 15-25 social touches) with diversified outreach: 1 Facebook post, 1 LinkedIn post, 1 Instagram post, 3 Facebook group posts, 10 group comments, 1 referral ask, 10 cold emails, 10 Facebook DMs, 10 Instagram DMs, 10 calls, 5 Upwork bids
+- **Daily structure:** Restructured time blocks from phone-centric (Outbound Block 1 / Block 2) to social-first + calls/email + Upwork/overflow
+- **Files updated:** `your-role.md`, `lead-lists.md`, `daily-structure.md`, `performance.md`, `accountability.md`, `certification.md`, `outreach/overview.md`, `outreach/email-templates.md`, `LeadListsContent.tsx`, `OutreachOverviewContent.tsx`, `EmailTemplatesContent.tsx`, `SDRDailyChecklistSection.tsx`, `SDRPerformanceContent.tsx`, `SDRAccountabilityContent.tsx`, `SDRCertificationContent.tsx`, `hub-sections.ts`, `registry.ts`
+
+---
+
+## [2026-04-29] — SDR: Notion → Outreach Dashboard, new daily activity targets
+
+### Changed
+
+- **All SDR markdown files:** Replaced Notion CRM references with the lightweight **Outreach Dashboard** (activity tracker). SDRs now manage their own leads; Dashboard tracks daily volume only.
+- **Lead Lists (`lead-lists.md`):** Rewrote CRM section as Outreach Dashboard overview; replaced TBD call metrics table with new 11-activity daily targets (social posts, DMs, emails, calls, Upwork bids, referrals).
+- **Daily Structure (`daily-structure.md`):** Restructured outbound blocks from phone-heavy to diversified — Block 1 is social/content, Midday is calls/email, Block 2 is Upwork/overflow. Updated checklist and example day.
+- **Performance (`performance.md`):** Replaced call-centric Daily Activity Targets and Activity Scorecard tables with new diversified targets.
+- **Accountability (`accountability.md`):** All Notion references → Outreach Dashboard across bright-line framework and 30/60/90 checkpoints.
+
+---
+
 ## [2026-04-18] — SDR: Notion as CRM (lead lists + hub alignment)
 
 ### Changed

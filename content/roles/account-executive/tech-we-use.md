@@ -31,28 +31,20 @@ Reps who learn to prompt Claude well will consistently outperform reps who don't
 
 ---
 
-## Notion — CRM & Command Center
+## Facebook Ad Library — Prospect Research
 
-Notion is the source of truth at Obsidion. Our custom dashboard houses the CRM and most of the operational data you'll interact with daily.
+Before you reach out to a prospect, check if they're already running ads. The [Meta Ad Library](https://www.facebook.com/ads/library) is free, public, and shows every active ad a business is running on Facebook and Instagram.
 
-### What lives in Notion
+### Why it matters
 
-- **Lead & contact database** — every prospect, every account, every interaction. This is where leads live and where pipeline is tracked.
-- **Deal pipeline** — stages from first contact through close and handoff to delivery. Your commission-eligible revenue is tracked here.
-- **Activity logging** — calls, emails, demos, proposals. If it's not in Notion, it didn't happen.
-- **Client milestones** — post-sale project tracking (website builds, SEO onboarding, etc.) lives in the same workspace, different views.
-- **Notes & handoff docs** — when you close a deal, the delivery team picks up from your notes in Notion.
+If a prospect is already spending money on ads, they're a warmer lead. You can reference their current creatives in your outreach — "I saw the ad you're running for X, here's what I'd tweak" is a much stronger opener than a generic cold email.
 
-### What you need to know
+### How AEs use it
 
-You don't need to be a Notion power user on day one. You need to know how to:
-1. Find and claim inbound leads
-2. Log calls and notes against a contact
-3. Move deals through pipeline stages
-4. Update deal values and close dates accurately
-5. Pull your own pipeline report for team meetings
-
-Your workspace and databases will be assigned during onboarding. If something is missing or broken, open a thread with your manager — don't work around the system.
+- **Pre-call research** — search the prospect's business name to see if they have active ads. Note what they're promoting and what their creative looks like.
+- **Outreach personalization** — reference their ads in your cold email or Loom. Showing you've done homework sets you apart.
+- **Competitive intelligence** — search competitors in the prospect's market to understand what's running in their space and where the gaps are.
+- **Upsell opportunities** — for existing clients, check their ad library to see if there are services they're paying someone else for that Obsidion could handle.
 
 ---
 
@@ -127,33 +119,29 @@ Sometimes a prospect needs to *see* the plan, not just hear it. Miro lets you th
 
 ---
 
-## Sales Call Recording — Accountability & Coaching
+## Recording Your Calls
 
-Every sales call at Obsidion is recorded, logged, and reviewable. This isn't optional.
+We're a startup, so there's no fancy call recording platform — but we still expect you to record your sales calls. Recordings get pulled up in team meetings so we can all listen back and sharpen how we handle conversations.
 
-### Why we record calls
+### How to record
 
-- **Coaching** — leadership reviews calls to give specific, actionable feedback. This is how you get better fast.
-- **KPI verification** — call recordings confirm activity metrics. If the numbers say 20 calls but the recordings show 8, that's a problem.
-- **Quality assurance** — we can verify that prospects are being represented to honestly and that the product is being positioned correctly.
-- **Training library** — great calls become training material for the team. Your best calls can be the example others learn from.
+- **Desktop / Zoom calls** — use [OBS Studio](https://obsproject.com) (free). Just hit record before the call starts.
+- **Phone calls** — use a call-recording app on your device. There are plenty of free or low-cost options.
+- The specific tool doesn't matter as long as you have the recording saved and accessible.
 
-### What's tracked
+### Why we record
 
-- Call recordings (audio/video)
-- Call duration and timestamps
-- Participant details
-- Call notes and outcomes
-- Follow-up actions logged
+- **Team review** — recorded calls get reviewed in team meetings so everyone can learn from real conversations.
+- **Self-coaching** — listen back to your own calls to catch patterns you miss in the moment — filler words, missed objections, pacing.
+- **Quality & consistency** — recordings help leadership verify that the product is being positioned correctly.
+- **Training library** — great calls become training material. Your best calls can be the example the team learns from.
 
 ### Your responsibility
 
-- Ensure recording is enabled before every call
-- Log call outcomes and notes in Notion immediately after
+- Record every sales call — OBS for desktop, a recording app for phone
+- Save recordings where they can be pulled for team meetings
 - Flag any calls where you need coaching or review
-- Review your own calls weekly to self-assess
-
-> The recording system is currently being finalized. Your team lead will confirm the specific tool and setup during onboarding. The expectation that all calls are recorded and logged is non-negotiable regardless of which tool is used.
+- Listen back to your own calls weekly to self-assess
 
 ---
 
@@ -180,15 +168,15 @@ Day-to-day coordination with managers, marketing, and delivery happens here.
 
 - Use channels for team-wide updates and questions
 - Use DMs for quick, non-sensitive coordination
-- Sensitive client details and anything contractual belong in Notion (CRM) and email — not chat
+- Sensitive client details and anything contractual belong in CRM and email — not chat
 - Respond to messages from leadership and cross-functional teammates promptly
 - Check channels at minimum at the start and end of each day
 
 ---
 
-## Mobile — Phone & Calling
+## Your Phone — Outbound Calling
 
-Outbound and inbound calling runs through your mobile device.
+We're a startup. For now, you use your personal phone to place outbound calls. No fancy dialer — just you, your phone, and a prepared list.
 
 ### Usage
 
@@ -205,15 +193,14 @@ Your team lead will walk you through account creation, permissions, and setup fo
 
 ### Day 1–2 priority access
 
-1. Notion (CRM access and workspace)
-2. Claude (account setup and basic prompting walkthrough)
-3. Loom (account creation and first test recording)
-4. Slack / Discord (channels and team introductions)
-5. Apollo.io (account and first list build)
+1. Claude (account setup and basic prompting walkthrough)
+2. Loom (account creation and first test recording)
+3. Slack / Discord (channels and team introductions)
+4. Apollo.io (account and first list build)
 
 ### Day 3–5
 
-6. Miro (account and first board)
-7. Canva (workspace access and brand asset review)
-8. Call recording tool (setup and test)
-9. Mobile dialer configuration
+5. Miro (account and first board)
+6. Canva (workspace access and brand asset review)
+7. Facebook Ad Library walkthrough
+8. Call recording setup (OBS or phone app)

@@ -8,6 +8,5 @@ Files in this folder are linked from **Module 15 — Downloadable Assets** in ea
 | `logo.svg` | Vector logo (web, proposals) |
 | `email-banner.png` | Wide banner for email campaigns |
 | `email-footer.html` | HTML snippet for email signatures |
-| `brand-guidelines.pdf` | Official brand guidelines |
 
 Placeholders are included for local development. Swap in production-ready assets before go-live.

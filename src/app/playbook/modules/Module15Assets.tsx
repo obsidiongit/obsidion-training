@@ -46,16 +46,6 @@ export default function Module15Assets() {
             Download PDF
           </a>
         </Card>
-        <Card>
-          <h3 className="text-lg font-bold mb-2">Brand guidelines</h3>
-          <p className="text-muted-foreground text-sm mb-4">
-            Colors, typography, clear space, and do / don&apos;t examples for client-facing
-            materials.
-          </p>
-          <a href="/assets/brand-guidelines.pdf" download className={btnClass}>
-            Download PDF
-          </a>
-        </Card>
       </CardGrid>
 
       <HighlightBox variant="info" title="Version control">

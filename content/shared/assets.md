@@ -19,7 +19,6 @@ Approved brand files for proposals, decks, email, and social profiles. Always us
 | `logo.svg` | ⚠ Placeholder | Vector logo — awaiting finalized production SVG |
 | `email-banner.png` | ✅ Available | Wide banner for email newsletters and campaigns |
 | `email-footer.html` | ⚠ Placeholder | Email signature template — personalize before using |
-| `brand-guidelines.pdf` | ⚠ Placeholder | Brand guidelines — finalized version being prepared |
 
 > **⚠ Placeholder** files are functional but will be replaced with production-ready versions. Do not send placeholder files to clients.
 

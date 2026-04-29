@@ -1,140 +1,139 @@
-# Lead Lists & Accounts
+# Lead Generation & Prospecting
 
 ---
 
-## Your List Is Your Lifeline
+## You Are Your Own Pipeline
 
-Every day, you need people to call, email, and message. That's your lead list. Without a list, you're guessing. With a good list, you're executing. The difference between an SDR who books 1 appointment a day and one who books 4 is almost always list quality and list discipline — not talent.
+Assigned leads will be sent to you via email once per week — but that's a supplement, not a strategy. The majority of your pipeline comes from **self-sourcing**. Think of this as business-to-business networking on a personal and digital scale.
 
-Obsidion tracks leads in **Notion** (your CRM). This section covers how to read a record, work your list, and prioritize so you're spending time on the prospects most likely to book.
-
----
-
-## Notion is your CRM
-
-We use **Notion** for lead tracking — not a separate legacy CRM. Your list is a **Notion database** (or linked databases) with **properties** for each business, status, last touch, and notes. You'll filter and sort with **views** — e.g. callbacks today, hot leads, by assignee — so the right rows float to the top.
-
-**Rule:** If it happened on a call, email, or DM, it belongs on the **Notion page for that lead** before you move on. Your manager and AEs rely on it for handoffs.
+Networking at events, engaging across social media platforms, and running consistent outreach is how leads are generated. The SDRs who build their own pipeline always outperform the ones who wait for leads to be handed to them.
 
 ---
 
-## Two Types of Accounts
+## Where Leads Come From
 
-### Assigned Accounts
+### Weekly Assigned Leads
 
-These are leads given to you by the company. They come from:
+Once per week you'll receive a batch of leads via email from leadership. These may come from:
 
-- Purchased lead lists (business databases, directories)
+- Purchased business databases or directories
 - Inbound inquiries that need follow-up
 - Marketing campaigns that generated interest
 - Re-engagement lists (old leads that went cold)
 
-**Your job:** Work every assigned lead. Don't cherry-pick. Don't skip the ones that look hard. The best SDRs work the full list because volume wins.
+**Your job:** Work every assigned lead. Don't cherry-pick. Don't skip the ones that look hard. Volume wins.
 
-### Personal / Self-Sourced Accounts
+### Self-Sourced Leads (This Is the Bulk of It)
 
-These are leads you find on your own through:
+This is where the real pipeline lives. You generate leads through:
 
-- LinkedIn prospecting
-- Facebook business page research
-- Google Maps searches for local businesses
-- Referrals from existing contacts
-- Networking events or community groups
+- **LinkedIn prospecting** — connecting with business owners, engaging with posts, sending personalized DMs
+- **Facebook** — business page research, joining local business groups, commenting, and direct messaging
+- **Instagram** — engaging with local businesses, commenting on posts, DMs
+- **Google Maps / local search** — finding businesses with weak or missing online presence
+- **Networking events** — chamber of commerce meetups, industry events, local business mixers
+- **Referrals** — asking happy contacts to introduce you to other business owners
+- **Upwork and freelance platforms** — bidding on relevant projects
 
-Add self-sourced leads to Notion when your process allows — same hygiene as assigned leads.
-
-**Your job:** Build your own pipeline on top of what's assigned. The SDRs who self-source outperform the ones who only work assigned lists — every time.
+**Your job:** Build your own pipeline on top of what's assigned. Self-sourcing is the majority of the work and the majority of the results.
 
 ---
 
-## How to Read a Lead Record
+## How to Submit a Lead
 
-When you open a lead in Notion, here's what you're looking for. Property names might match your workspace exactly or closely — use this as a checklist before you dial.
+When you identify a prospect worth pursuing, submit them through the **Obsidion Sales Dashboard**. Here's what to include:
 
-| Field | What It Tells You | Why It Matters |
-|-------|-------------------|---------------|
-| **Business name** | Who they are | Context for your opening line |
-| **Owner / contact name** | Who you're calling | Always use their name |
-| **Phone number** | How to reach them | Verify it's a direct line, not a generic reception |
-| **Email** | Secondary channel | For follow-up after calls |
-| **Industry / vertical** | What they do | Determines your pitch angle |
-| **Location** | Where they operate | Relevant for local SEO conversations |
-| **Website URL** | Their current online presence | Check it before you call — is it good, bad, or missing? |
-| **Last contact date** | When someone last reached out | Don't call someone who was contacted yesterday |
-| **Status / disposition** | Where they are in the pipeline | New, contacted, interested, not interested, callback scheduled |
+| Field | What to Enter | Why It Matters |
+|-------|--------------|---------------|
+| **Business name** | Full legal or DBA name | Accurate records and dedup |
+| **Owner / contact name** | Decision-maker's name | You need the person who can say yes |
+| **Phone number** | Direct line preferred | Generic reception numbers waste time |
+| **Email** | Business or personal email | For follow-up sequences |
+| **Industry / vertical** | What they do | Determines pitch angle and which AE gets the handoff |
+| **Location** | City / state | Relevant for local SEO conversations |
+| **Website URL** | Their current site (or "none") | Check before you call — outdated, broken, or missing is your opening |
+| **Source** | How you found them | Helps track which channels produce results |
+| **Notes** | Any context from your conversation | Gives the team a head start |
 
 **Before every call, check the website.** If their site is outdated, broken, or missing — that's your opening. If their site looks great, shift the conversation to SEO, follow-up automation, or the mobile app.
 
 ---
 
-## Prioritization: Who to Call First
+## Prioritizing Your Outreach
 
-Not all leads are equal. Here's how to stack your list each morning in Notion:
+Not all prospects are equal. Here's how to stack your outreach each morning:
 
-### Priority 1 — Hot Leads (call these first)
+### Priority 1 — Hot (reach out first)
 
 - Scheduled callbacks (someone told you to call back today)
 - Inbound inquiries (they reached out to us)
 - Referrals (someone vouched for us)
-- Leads who engaged with an email or social post recently
+- Prospects who engaged with your content or responded to a DM recently
 
-### Priority 2 — Warm Leads (call these second)
+### Priority 2 — Warm (reach out second)
 
 - Previously contacted, showed some interest, no appointment yet
-- Leads in industries where Obsidion has strong case studies
+- Businesses in industries where Obsidion has strong case studies
 - Businesses with obviously bad or missing websites (easy pain to surface)
 
-### Priority 3 — Cold Leads (fill your remaining time)
+### Priority 3 — Cold (fill your remaining time)
 
-- Fresh list, never contacted
+- Fresh prospects you've identified but never contacted
 - No prior engagement or signal
-- These are volume plays — you're looking for the ones who pick up and engage
+- These are volume plays — you're looking for the ones who respond and engage
 
 ### Priority 4 — Long-Term Follow-Ups
 
 - Said "not now" but gave a future window
-- Locked in a contract with someone else (note the end date in Notion, follow up 60 days before)
+- Locked in a contract with someone else (note the end date, follow up 60 days before)
 - Expressed interest but timing was off
 
 ---
 
-## Working the List — Daily Workflow
+## Daily Prospecting Workflow
 
-1. **Open Notion first thing.** Open your pipeline view — sort or filter by priority (callbacks and hot leads at the top).
-2. **Check for overnight inbounds.** Anything new gets claimed and called within 15 minutes of your start time.
-3. **Work Priority 1 and 2 leads** during your first outbound block. These are your highest-conversion opportunities.
-4. **Switch to Priority 3 (cold)** once hot and warm leads are worked. This is your volume block.
-5. **Log every touch in Notion immediately.** Outcome, notes, next step. Not at the end of the day — right after you hang up.
-6. **Set callbacks and follow-ups** with specific dates on the record. "I'll follow up sometime" is not a plan.
-7. **Review your list at end of day.** Update status in Notion. Flag callbacks for tomorrow. Remove or disposition dead leads.
+1. **Check your email for new assigned leads.** Add them to your tracking and prioritize.
+2. **Review your pipeline.** Sort by priority — callbacks and hot prospects at the top.
+3. **Work Priority 1 and 2 prospects** during your first outbound block. These are your highest-conversion opportunities.
+4. **Switch to Priority 3 (cold prospecting)** once hot and warm are worked. This is your volume block.
+5. **Log every touch immediately.** Outcome, notes, next step. Not at the end of the day — right after you finish the interaction.
+6. **Set callbacks and follow-ups** with specific dates. "I'll follow up sometime" is not a plan.
+7. **End-of-day review.** Update your records, log activity in the Outreach Dashboard, flag callbacks for tomorrow, and submit any new leads via the Sales Dashboard.
 
 ---
 
-## List Hygiene Rules
+## Lead Hygiene Rules
 
-- **Never skip a lead** without attempting contact at least 3 times across multiple channels (call + email + social).
-- **Update Notion after every touch.** If you called and left a voicemail, log it on the lead. If you emailed, log it. If they said no, mark it.
-- **Don't hoard leads.** If a lead has been sitting for 30+ days with no movement, it's not a lead — it's a wish. Disposition it or escalate.
-- **Flag bad data in Notion.** Wrong number? Business closed? Not a real contact? Mark it so the database stays clean for everyone.
+- **Never skip a prospect** without attempting contact at least 3 times across multiple channels (call + email + social).
+- **Track each touch.** Called and left a voicemail? Note it. Sent a DM? Note it. If they said no, mark it.
+- **Don't hoard leads.** If a prospect has been sitting for 30+ days with no movement, it's not a lead — it's a wish. Disposition it or escalate.
+- **Flag bad data.** Wrong number? Business closed? Not a real contact? Remove or mark it so your pipeline stays clean.
 
 ---
 
 ## The Math
 
-Your list is a numbers game. Here's how it typically breaks down:
+Your pipeline is a numbers game. Here are the daily activity targets:
 
-| Metric | Typical Range |
-|--------|---------------|
-| Calls made per day | [TBD — will be calibrated based on early SDR performance] |
-| Connect rate (someone picks up) | 15–20% |
-| Conversations that lead to interest | 20–30% of connects |
-| Interested conversations that book | 40–60% |
-| **Appointments booked per day** | **1–3 (target), 4–6 (high performer)** |
+| Activity | Daily Target |
+|----------|-------------|
+| Facebook post | 1 |
+| LinkedIn post | 1 |
+| Instagram post | 1 |
+| Facebook group posts | 3 |
+| Facebook group comments / interactions | 10 |
+| Ask for referrals | 1 |
+| Cold emails | 10 |
+| Facebook DMs | 10 |
+| Instagram DMs | 10 |
+| Call businesses | 10 |
+| Upwork bids | 5 |
+| **Appointments booked** | **1–3 (target), 4–6 (high performer)** |
 
-The numbers don't lie. More calls = more connects = more conversations = more appointments. If your appointment count is low, check your call volume first. It's almost always the answer.
+The numbers don't lie. More activity = more conversations = more appointments. If your appointment count is low, check your daily volume first. It's almost always the answer.
 
 ---
 
 ## Content Sources
 
-- Written for the Obsidion Training Hub SDR lead lists section
+- Written for the Obsidion Training Hub SDR lead generation section

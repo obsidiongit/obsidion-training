@@ -105,14 +105,14 @@ const AE_CONFIG: HubConfig = {
     {
       slug: "tech",
       title: "Tech We Use",
-      description: "Notion (CRM), dialer, and internal systems.",
+      description: "Claude, Apollo, Loom, Ad Library, and internal systems.",
       icon: Wrench,
       shared: true,
     },
     {
       slug: "meetings",
       title: "Meeting Cadence",
-      description: "Twice-weekly format, prep, and expectations.",
+      description: "Daily sales meeting — format, prep, and expectations.",
       icon: Users,
       shared: false,
     },
@@ -167,7 +167,7 @@ const SDR_CONFIG: HubConfig = {
       slug: "certification",
       title: "Readiness Check",
       description:
-        "You don't touch a live lead list until you pass. Complete every section, nail the role-play, and get your manager's sign-off before going live.",
+        "You don't go live until you pass. Complete every section, nail the role-play, and get your manager's sign-off before doing real outreach.",
       icon: BadgeCheck,
       badges: ["4 Gates", "Mock Cold Call", "Manager Sign-Off"],
       shared: false,
@@ -177,8 +177,8 @@ const SDR_CONFIG: HubConfig = {
   quickAccess: [
     {
       slug: "lead-lists",
-      title: "Lead Lists & Accounts",
-      description: "Notion pipeline — how to read records, work your list, and prioritize daily.",
+      title: "Lead Generation & Prospecting",
+      description: "Self-source your pipeline — networking, social media, outreach channels, and how to submit leads.",
       icon: ListChecks,
       shared: false,
     },
@@ -213,7 +213,7 @@ const SDR_CONFIG: HubConfig = {
     {
       slug: "tech",
       title: "Tech We Use",
-      description: "Notion (CRM), dialer, and internal systems.",
+      description: "Outreach Dashboard, dialer, and internal systems.",
       icon: Wrench,
       shared: true,
     },
@@ -227,7 +227,7 @@ const SDR_CONFIG: HubConfig = {
     {
       slug: "meetings",
       title: "Meeting Cadence",
-      description: "Twice-weekly team meetings on Discord — format and expectations.",
+      description: "Daily sales meeting on Discord — format and expectations.",
       icon: Users,
       shared: false,
     },

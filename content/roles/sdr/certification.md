@@ -70,7 +70,7 @@ Your manager confirms that you're ready to go live based on:
 - Mock call passed
 - You can explain what Obsidion does in plain language without a script
 - You understand the BANT framework and can apply it in conversation
-- You know how to log activity in Notion
+- You know how to log activity in the Outreach Dashboard
 
 This is a judgment call, not a test. If your manager has concerns, they'll tell you what to work on. If you're ready, you go live.
 

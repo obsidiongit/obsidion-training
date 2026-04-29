@@ -103,16 +103,25 @@ The AE will disposition each meeting. If it was truly qualified and the prospect
 
 ---
 
-## Performance Expectations
+## Daily Outreach Targets
 
-| Metric | Target | Why It Matters |
-|--------|--------|----------------|
-| Dials | 60-100+ per day | Volume creates opportunity |
-| Conversations | 10-20 meaningful connects | You can't book what you don't talk to |
-| Appointments | 1-3 qualified bookings | This is the number that pays you |
+| Activity | Target | Why It Matters |
+|----------|--------|----------------|
+| Facebook posts | 1 / day | Stay visible and professional |
+| LinkedIn posts | 1 / day | Position yourself in the growth space |
+| Instagram posts | 1 / day | Visual presence in target verticals |
+| Facebook group posts | 3 / day | Show up where owners spend time |
+| Facebook group comments | 10 / day | Genuine engagement builds trust before the DM |
+| Referrals asked | 1 / day | Warm intros convert faster than cold outreach |
+| Cold emails | 10 / day | Personalized first touches and follow-ups |
+| Facebook DMs | 10 / day | After engaging with their content |
+| Instagram DMs | 10 / day | After engaging with Reels or Stories |
+| Calls to businesses | 10 / day | Still the fastest path to a live conversation |
+| Upwork bids | 5 / day | Bid on relevant project postings |
+| **Appointments** | **1-3 qualified bookings** | **This is the number that pays you** |
 | Show rate | 70%+ of bookings | No-shows waste AE time |
 
-These are not arbitrary numbers. They're what separates an SDR who earns from one who struggles.
+Log everything in the **Outreach Dashboard** daily. These are not arbitrary numbers. They're what separates an SDR who earns from one who struggles.
 
 ---
 
@@ -122,7 +131,7 @@ These are not arbitrary numbers. They're what separates an SDR who earns from on
 
 **Rejection is not personal.** Most people won't be interested. That's fine. You only need a few yeses per day.
 
-**Consistency beats intensity.** 80 dials every day beats 200 dials once a week.
+**Consistency beats intensity.** Hitting your daily targets every day beats a big push once a week.
 
 **Your time is valuable too.** Don't chase dead leads forever. Qualify fast, move on fast.
 

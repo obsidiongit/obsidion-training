@@ -74,7 +74,7 @@ const CADENCE = [
 const RULES = [
   "Never rely on one channel. Call + email + social is 3x more effective than three calls alone.",
   "Always reference prior touches. \"I left you a voicemail earlier\" creates continuity.",
-  "Log every touch. Call, email, DM — all of it goes in Notion immediately.",
+  "Log every touch. Call, email, DM — log your activity in the Outreach Dashboard at end of each block.",
   "Respect the \"no.\" If someone clearly says no, mark it and move on. Today's no can be next quarter's yes.",
   "Speed wins. Hot leads get called within 15 minutes. The first rep to respond wins.",
 ] as const;

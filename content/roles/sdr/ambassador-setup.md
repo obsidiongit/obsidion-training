@@ -2,6 +2,13 @@
 
 ---
 
+> **You'll receive a personalized onboarding checklist.**
+> Every new SDR gets their own onboarding document with profile-setup instructions, credentials, and assets tailored specifically to you. Follow that document as your primary setup guide — it will walk you through everything step by step.
+>
+> The sections below are kept as a general reference in case you need a refresher on best practices for any platform.
+
+---
+
 ## Why This Matters
 
 Before you make a single call or send a single DM, your online profiles need to look professional. Prospects will Google you. They'll check your LinkedIn. They'll look at your Facebook. If your profile picture is a selfie from 2019 and your headline says "Open to Work," you've already lost credibility before the conversation starts.

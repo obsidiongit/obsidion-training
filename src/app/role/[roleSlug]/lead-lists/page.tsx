@@ -1,9 +1,9 @@
 import LeadListsContent from "@/components/sdr/LeadListsContent";
 
 export const metadata = {
-  title: "Lead Lists & Accounts — Obsidion Training Hub",
+  title: "Lead Generation & Prospecting — Obsidion Training Hub",
   description:
-    "How to read, work, and prioritize your lead list every day.",
+    "Self-source your pipeline — networking, social media, outreach channels, and how to submit leads.",
 };
 
 export default async function LeadListsPage({

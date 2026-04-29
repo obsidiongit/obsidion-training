@@ -59,7 +59,7 @@ export default function SDRMeetingCadenceContent({ roleSlug }: { roleSlug: strin
         backLabel="Back to hub"
         eyebrow="Meetings"
         title="Meeting Cadence"
-        description="Twice a week, 30 minutes, on Discord. SDRs attend the same team meetings as Account Executives."
+        description="Daily at 10:00 AM Eastern on Discord. SDRs attend the same daily sales meeting as Account Executives."
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">
@@ -76,8 +76,8 @@ export default function SDRMeetingCadenceContent({ roleSlug }: { roleSlug: strin
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-6">
             {[
-              { label: "Frequency", value: "Twice weekly", icon: Clock },
-              { label: "Duration", value: "30 minutes", icon: Clock },
+              { label: "Frequency", value: "Daily", icon: Clock },
+              { label: "Time", value: "10:00 AM ET", icon: Clock },
               { label: "Platform", value: "Discord voice/video", icon: MessageSquare },
             ].map((item) => {
               const Icon = item.icon;

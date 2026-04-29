@@ -28,7 +28,7 @@ export const ROLES: RoleDefinition[] = [
     title: "Sales Development Rep",
     shortTitle: "SDR",
     description:
-      "Appointment-setting fundamentals — lead lists, outreach scripts, objection handling, and daily activity targets to book 1-3 qualified meetings per day.",
+      "Appointment-setting fundamentals — lead generation, multi-channel outreach, objection handling, and daily activity targets to book 1-3 qualified meetings per day.",
     iconName: "Headset",
     accentColor: "#0891B2",
     accentGlow: "rgba(8, 145, 178, 0.35)",

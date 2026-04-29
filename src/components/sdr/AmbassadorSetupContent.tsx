@@ -15,6 +15,7 @@ import {
   Phone,
   CheckCircle2,
   AlertTriangle,
+  FileDown,
 } from "lucide-react";
 import {
   stagger,
@@ -79,6 +80,38 @@ export default function AmbassadorSetupContent({ roleSlug }: { roleSlug: string 
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">
+        {/* ── Personalized Onboarding Notice ── */}
+        <motion.section
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="relative overflow-hidden rounded-2xl border-2 border-accent/40 bg-accent/[0.06] p-6 sm:p-8">
+            <div className="absolute -top-12 -right-12 h-40 w-40 rounded-full bg-accent/10 blur-2xl" />
+            <div className="relative flex flex-col sm:flex-row items-start gap-5">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent/15 text-accent">
+                <FileDown size={24} />
+              </div>
+              <div>
+                <h3 className="text-base font-bold mb-2">
+                  You&apos;ll receive a personalized onboarding checklist
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                  Every new SDR gets their own onboarding document with
+                  profile-setup instructions, credentials, and assets tailored
+                  specifically to you. Follow that document as your primary
+                  setup guide — it will walk you through everything step by
+                  step.
+                </p>
+                <p className="text-sm text-muted-foreground/80 leading-relaxed">
+                  The sections below are kept as a <span className="font-medium text-foreground">general reference</span> in
+                  case you need a refresher on best practices for any platform.
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.section>
+
         {/* ── Why This Matters ── */}
         <motion.section
           variants={stagger}

@@ -392,7 +392,7 @@ export default function EmailTemplatesContent({ roleSlug }: { roleSlug: string }
               "Keep it short — five sentences max.",
               "One ask per email.",
               "Same subject line for follow-ups in a thread when possible.",
-              "Log every send in Notion.",
+              "Log every send in the Outreach Dashboard.",
             ].map((rule, i) => (
               <motion.div
                 key={i}

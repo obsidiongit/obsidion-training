@@ -15,6 +15,14 @@ import {
   AlertTriangle,
   CheckCircle2,
   BarChart3,
+  Mail,
+  Globe,
+  Share2,
+  Send,
+  Linkedin,
+  MessageCircle,
+  MapPin,
+  UserPlus,
 } from "lucide-react";
 import {
   stagger,
@@ -25,14 +33,24 @@ import {
 
 /* ─── data ─── */
 
-const LEAD_FIELDS = [
-  { field: "Business name", tells: "Who they are", matters: "Context for your opening line" },
-  { field: "Owner / contact name", tells: "Who you're calling", matters: "Always use their name" },
-  { field: "Phone number", tells: "How to reach them", matters: "Verify it's a direct line" },
-  { field: "Industry / vertical", tells: "What they do", matters: "Determines your pitch angle" },
-  { field: "Website URL", tells: "Current online presence", matters: "Check it before you call" },
-  { field: "Last contact date", tells: "When last reached out", matters: "Don't call if contacted yesterday" },
-  { field: "Status / disposition", tells: "Pipeline position", matters: "New, contacted, interested, callback, etc." },
+const SELF_SOURCE_CHANNELS = [
+  { channel: "LinkedIn", description: "Connect with business owners, engage with posts, send personalized DMs", icon: Linkedin },
+  { channel: "Facebook", description: "Business page research, local business groups, commenting, and DMs", icon: MessageCircle },
+  { channel: "Instagram", description: "Engage with local businesses, comment on posts, direct messages", icon: Share2 },
+  { channel: "Google Maps / local search", description: "Find businesses with weak or missing online presence", icon: MapPin },
+  { channel: "Networking events", description: "Chamber of commerce, industry events, local business mixers", icon: Users },
+  { channel: "Referrals", description: "Ask happy contacts to introduce you to other business owners", icon: UserPlus },
+  { channel: "Upwork & freelance platforms", description: "Bid on relevant web/marketing projects", icon: Globe },
+] as const;
+
+const SUBMIT_FIELDS = [
+  { field: "Business name", enter: "Full legal or DBA name", matters: "Accurate records and dedup" },
+  { field: "Owner / contact name", enter: "Decision-maker's name", matters: "You need the person who can say yes" },
+  { field: "Phone number", enter: "Direct line preferred", matters: "Generic reception numbers waste time" },
+  { field: "Industry / vertical", enter: "What they do", matters: "Determines pitch angle and AE handoff" },
+  { field: "Website URL", enter: "Their current site (or \"none\")", matters: "Check it before you call" },
+  { field: "Source", enter: "How you found them", matters: "Tracks which channels produce results" },
+  { field: "Notes", enter: "Context from your conversation", matters: "Gives the team a head start" },
 ] as const;
 
 const PRIORITIES = [
@@ -42,12 +60,12 @@ const PRIORITIES = [
     color: "text-red-400",
     bgColor: "bg-red-400/10",
     borderColor: "border-red-400/20",
-    instruction: "Call these first",
+    instruction: "Reach out first",
     items: [
       "Scheduled callbacks (someone told you to call back today)",
       "Inbound inquiries (they reached out to us)",
       "Referrals (someone vouched for us)",
-      "Leads who engaged with an email or social post recently",
+      "Prospects who engaged with your content or responded to a DM recently",
     ],
   },
   {
@@ -56,10 +74,10 @@ const PRIORITIES = [
     color: "text-amber-accent",
     bgColor: "bg-amber-accent/10",
     borderColor: "border-amber-accent/20",
-    instruction: "Call these second",
+    instruction: "Reach out second",
     items: [
       "Previously contacted, showed some interest, no appointment yet",
-      "Leads in industries where Obsidion has strong case studies",
+      "Businesses in industries where Obsidion has strong case studies",
       "Businesses with obviously bad or missing websites",
     ],
   },
@@ -71,9 +89,9 @@ const PRIORITIES = [
     borderColor: "border-accent/20",
     instruction: "Fill your remaining time",
     items: [
-      "Fresh list, never contacted",
+      "Fresh prospects you've identified but never contacted",
       "No prior engagement or signal",
-      "Volume plays — looking for the ones who pick up and engage",
+      "Volume plays — looking for the ones who respond and engage",
     ],
   },
   {
@@ -92,18 +110,18 @@ const PRIORITIES = [
 ] as const;
 
 const DAILY_WORKFLOW = [
-  { label: "Open Notion", sublabel: "Pipeline sorted by priority" },
-  { label: "Claim Inbounds", sublabel: "Within 15 min" },
+  { label: "Check Email", sublabel: "New assigned leads" },
+  { label: "Review Pipeline", sublabel: "Sort by priority" },
   { label: "Work Hot/Warm", sublabel: "Priority 1 & 2" },
-  { label: "Cold Volume", sublabel: "Priority 3" },
-  { label: "Close Out", sublabel: "Update Notion & prep tomorrow" },
+  { label: "Cold Prospecting", sublabel: "Priority 3 volume" },
+  { label: "Close Out", sublabel: "Log activity & submit leads" },
 ];
 
 const HYGIENE_RULES = [
-  "Never skip a lead without attempting contact at least 3 times across multiple channels.",
-  "Update the lead in Notion after every touch. Called and left a voicemail? Log it on the record.",
+  "Never skip a prospect without attempting contact at least 3 times across multiple channels.",
+  "Track each touch. Called and left a voicemail? Note it. Sent a DM? Note it.",
   "Don't hoard leads. 30+ days with no movement? Disposition it or escalate.",
-  "Flag bad data in Notion. Wrong number? Business closed? Mark it so the database stays clean for everyone.",
+  "Flag bad data. Wrong number? Business closed? Remove or mark it so your pipeline stays clean.",
 ] as const;
 
 /* ─── component ─── */
@@ -114,13 +132,13 @@ export default function LeadListsContent({ roleSlug }: { roleSlug: string }) {
       <ProductPageHero
         backHref={`/role/${roleSlug}`}
         backLabel="Back to hub"
-        eyebrow="Lead Management"
-        title="Lead Lists & Accounts"
-        description="Obsidion runs leads in Notion — your pipeline database, views, and properties. How to read a record, work your list, and prioritize who gets called first."
+        eyebrow="Lead Generation"
+        title="Lead Generation & Prospecting"
+        description="Self-sourcing is the core of your pipeline. Assigned leads come weekly — everything else you build yourself through networking, social media, and outreach."
       />
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-20">
-        {/* ── Notion = CRM ── */}
+        {/* ── You Are Your Own Pipeline ── */}
         <motion.section
           variants={stagger}
           initial="hidden"
@@ -128,26 +146,25 @@ export default function LeadListsContent({ roleSlug }: { roleSlug: string }) {
           viewport={{ once: true, margin: "-60px" }}
         >
           <SectionLabel barClass="bg-purple-accent" textClass="text-purple-accent">
-            Notion Is Your CRM
+            You Are Your Own Pipeline
           </SectionLabel>
 
           <motion.div variants={fadeUp} className="rounded-2xl border border-purple-accent/20 bg-purple-accent/[0.04] px-6 py-5 space-y-3">
             <p className="text-sm text-foreground leading-relaxed">
-              We use <span className="font-semibold">Notion</span> for lead tracking — not a separate legacy CRM.
-              Your list is a <span className="font-semibold">Notion database</span> (or linked databases) with
-              properties for each business, status, last touch, and notes. You&apos;ll filter and sort with{" "}
-              <span className="font-semibold">views</span> — e.g. callbacks today, hot, by owner — so the right
-              leads float to the top.
+              Assigned leads will be sent to you via email <span className="font-semibold">once per week</span> — but
+              that&apos;s a supplement, not a strategy. The majority of your pipeline comes from{" "}
+              <span className="font-semibold">self-sourcing</span>.
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Rule of thumb: if it happened on a call, email, or DM, it belongs on the{" "}
-              <span className="font-semibold text-foreground">Notion page for that lead</span> before you move
-              on. Your manager and AEs rely on it for handoffs.
+              Think of this as business-to-business networking on a personal and digital scale.
+              Networking at events, engaging across social media, and running consistent outreach
+              is how leads are generated. The SDRs who build their own pipeline always outperform
+              the ones who wait for leads to show up.
             </p>
           </motion.div>
         </motion.section>
 
-        {/* ── Two Types of Accounts ── */}
+        {/* ── Where Leads Come From ── */}
         <motion.section
           variants={stagger}
           initial="hidden"
@@ -155,20 +172,20 @@ export default function LeadListsContent({ roleSlug }: { roleSlug: string }) {
           viewport={{ once: true, margin: "-60px" }}
         >
           <SectionLabel barClass="bg-accent" textClass="text-accent">
-            Two Types of Accounts
+            Where Leads Come From
           </SectionLabel>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
               <div className="flex items-center gap-3 mb-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent/10 text-accent">
-                  <Users size={20} strokeWidth={1.8} />
+                  <Mail size={20} strokeWidth={1.8} />
                 </div>
-                <h3 className="text-base font-bold">Assigned Accounts</h3>
+                <h3 className="text-base font-bold">Weekly Assigned Leads</h3>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed mb-3">
-                Leads given to you by the company — purchased lists, inbound inquiries,
-                marketing campaigns, and re-engagement lists.
+                Once per week you&apos;ll receive a batch of leads via email from leadership —
+                purchased lists, inbound inquiries, marketing campaigns, and re-engagement leads.
               </p>
               <div className="rounded-lg bg-accent/[0.04] border border-accent/15 px-4 py-3">
                 <p className="text-sm font-semibold text-foreground">
@@ -177,27 +194,27 @@ export default function LeadListsContent({ roleSlug }: { roleSlug: string }) {
               </div>
             </motion.div>
 
-            <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
+            <motion.div variants={fadeUp} className="rounded-2xl border border-emerald-accent/20 bg-card p-6 shadow-sm">
               <div className="flex items-center gap-3 mb-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-accent/10 text-emerald-accent">
                   <Search size={20} strokeWidth={1.8} />
                 </div>
-                <h3 className="text-base font-bold">Self-Sourced Accounts</h3>
+                <h3 className="text-base font-bold">Self-Sourced Leads</h3>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed mb-3">
-                Leads you find on your own — LinkedIn, Facebook, Google Maps, referrals,
-                networking events, community groups.
+                This is where the real pipeline lives. You generate leads through networking,
+                social media, local search, referrals, and outbound outreach.
               </p>
               <div className="rounded-lg bg-emerald-accent/[0.04] border border-emerald-accent/15 px-4 py-3">
                 <p className="text-sm font-semibold text-foreground">
-                  SDRs who self-source outperform assigned-only SDRs. Every time.
+                  Self-sourcing is the bulk of the work — and the bulk of the results.
                 </p>
               </div>
             </motion.div>
           </div>
         </motion.section>
 
-        {/* ── How to Read a Lead ── */}
+        {/* ── Self-Sourcing Channels ── */}
         <motion.section
           variants={stagger}
           initial="hidden"
@@ -205,13 +222,49 @@ export default function LeadListsContent({ roleSlug }: { roleSlug: string }) {
           viewport={{ once: true, margin: "-60px" }}
         >
           <SectionLabel barClass="bg-emerald-accent" textClass="text-emerald-accent">
-            How to Read a Lead Record
+            Self-Sourcing Channels
           </SectionLabel>
 
           <motion.p variants={fadeUp} className="text-muted-foreground text-sm leading-relaxed max-w-3xl mb-4">
-            In Notion, each lead is a row with <span className="font-semibold text-foreground">properties</span>{" "}
-            (columns). Exact names may match your workspace — use this as a checklist of what to look for before
-            you dial.
+            These are the platforms and methods you&apos;ll use daily to build your own pipeline.
+          </motion.p>
+
+          <div className="space-y-3">
+            {SELF_SOURCE_CHANNELS.map((ch) => {
+              const Icon = ch.icon;
+              return (
+                <motion.div
+                  key={ch.channel}
+                  variants={fadeUp}
+                  className="flex items-start gap-4 rounded-xl border border-border bg-card px-5 py-4 shadow-sm"
+                >
+                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-accent/10 text-emerald-accent shrink-0">
+                    <Icon size={18} strokeWidth={1.8} />
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">{ch.channel}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{ch.description}</p>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
+        </motion.section>
+
+        {/* ── How to Submit a Lead ── */}
+        <motion.section
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
+          <SectionLabel barClass="bg-amber-accent" textClass="text-amber-accent">
+            How to Submit a Lead
+          </SectionLabel>
+
+          <motion.p variants={fadeUp} className="text-muted-foreground text-sm leading-relaxed max-w-3xl mb-4">
+            When you identify a prospect worth pursuing, submit them through the{" "}
+            <span className="font-semibold text-foreground">Obsidion Sales Dashboard</span>. Here&apos;s what to include:
           </motion.p>
 
           <motion.div variants={fadeUp} className="rounded-2xl border border-border bg-card overflow-hidden shadow-sm">
@@ -220,15 +273,15 @@ export default function LeadListsContent({ roleSlug }: { roleSlug: string }) {
                 <thead>
                   <tr className="border-b border-border bg-muted/30">
                     <th className="text-left px-5 py-3 font-semibold text-muted-foreground text-xs uppercase tracking-wider">Field</th>
-                    <th className="text-left px-5 py-3 font-semibold text-muted-foreground text-xs uppercase tracking-wider">What It Tells You</th>
+                    <th className="text-left px-5 py-3 font-semibold text-muted-foreground text-xs uppercase tracking-wider">What to Enter</th>
                     <th className="text-left px-5 py-3 font-semibold text-muted-foreground text-xs uppercase tracking-wider hidden sm:table-cell">Why It Matters</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {LEAD_FIELDS.map((row) => (
+                  {SUBMIT_FIELDS.map((row) => (
                     <tr key={row.field} className="border-b border-border/50 last:border-0 hover:bg-muted/20 transition-colors">
                       <td className="px-5 py-3 font-semibold text-foreground">{row.field}</td>
-                      <td className="px-5 py-3 text-muted-foreground">{row.tells}</td>
+                      <td className="px-5 py-3 text-muted-foreground">{row.enter}</td>
                       <td className="px-5 py-3 text-muted-foreground hidden sm:table-cell">{row.matters}</td>
                     </tr>
                   ))}
@@ -255,7 +308,7 @@ export default function LeadListsContent({ roleSlug }: { roleSlug: string }) {
           viewport={{ once: true, margin: "-60px" }}
         >
           <SectionLabel barClass="bg-purple-accent" textClass="text-purple-accent">
-            Who to Call First
+            Prioritizing Your Outreach
           </SectionLabel>
 
           <div className="space-y-4">
@@ -297,28 +350,28 @@ export default function LeadListsContent({ roleSlug }: { roleSlug: string }) {
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
         >
-          <SectionLabel barClass="bg-amber-accent" textClass="text-amber-accent">
-            Daily List Workflow
+          <SectionLabel barClass="bg-accent" textClass="text-accent">
+            Daily Prospecting Workflow
           </SectionLabel>
 
           <motion.div variants={fadeUp}>
             <FlowChart
               steps={DAILY_WORKFLOW}
-              accentClass="bg-amber-accent text-white"
-              arrowClass="text-amber-accent"
+              accentClass="bg-accent text-white"
+              arrowClass="text-accent"
             />
           </motion.div>
         </motion.section>
 
-        {/* ── List Hygiene ── */}
+        {/* ── Lead Hygiene ── */}
         <motion.section
           variants={stagger}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
         >
-          <SectionLabel barClass="bg-accent" textClass="text-accent">
-            List Hygiene Rules
+          <SectionLabel barClass="bg-amber-accent" textClass="text-amber-accent">
+            Lead Hygiene Rules
           </SectionLabel>
 
           <div className="space-y-3">
@@ -328,7 +381,7 @@ export default function LeadListsContent({ roleSlug }: { roleSlug: string }) {
                 variants={fadeUp}
                 className="flex items-start gap-3 rounded-xl border border-border bg-card px-5 py-4 shadow-sm"
               >
-                <Database size={16} className="text-accent mt-0.5 shrink-0" />
+                <Database size={16} className="text-amber-accent mt-0.5 shrink-0" />
                 <p className="text-sm text-foreground leading-relaxed">{rule}</p>
               </motion.div>
             ))}
@@ -374,8 +427,8 @@ export default function LeadListsContent({ roleSlug }: { roleSlug: string }) {
 
           <motion.div variants={fadeUp} className="mt-4 rounded-xl border border-emerald-accent/20 bg-emerald-accent/[0.04] px-5 py-4">
             <p className="text-sm font-semibold text-foreground">
-              More calls = more connects = more conversations = more appointments. If your
-              appointment count is low, check your call volume first. It&apos;s almost always the answer.
+              More activity = more conversations = more appointments. If your
+              appointment count is low, check your daily volume first. It&apos;s almost always the answer.
             </p>
           </motion.div>
         </motion.section>
@@ -394,7 +447,7 @@ export default function LeadListsContent({ roleSlug }: { roleSlug: string }) {
 
       <footer className="border-t border-border-light">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-foreground-subtle">Obsidion Training Hub &middot; SDR Lead Lists</p>
+          <p className="text-xs text-foreground-subtle">Obsidion Training Hub &middot; SDR Lead Generation</p>
           <img src="/logos/logo.png" alt="Obsidion" className="h-6 w-auto opacity-30" />
         </div>
       </footer>

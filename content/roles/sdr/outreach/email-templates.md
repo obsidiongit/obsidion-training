@@ -182,7 +182,7 @@ Use when you don't see paid activity but the brand looks strong — open on grow
 3. **Keep it short** — five sentences max.
 4. **One ask per email.**
 5. **Same subject line** for follow-ups in the same thread when it makes sense.
-6. **Log everything** in Notion.
+6. **Log every send** in the Outreach Dashboard.
 
 ---
 

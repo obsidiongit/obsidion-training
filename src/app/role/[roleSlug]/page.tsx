@@ -11,7 +11,6 @@ import {
   ArrowRight,
   Image,
   Code,
-  FileDown,
   CheckCircle2,
   ChevronRight,
   Search,
@@ -27,7 +26,6 @@ const ASSET_ITEMS = [
   { href: "/assets/logo.png", label: "Logo", icon: Image },
   { href: "/assets/logotext.png", label: "Logo (Text Only)", icon: Image },
   { href: "/assets/emailfooter.pdf", label: "Email Footer", icon: Code },
-  { href: "/assets/brand-guidelines.pdf", label: "Brand Guidelines", icon: FileDown },
 ] as const;
 
 /* ─── Animation variants ─── */

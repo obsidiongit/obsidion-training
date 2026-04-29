@@ -14,9 +14,7 @@ You will live in a small set of systems every day. You do not need to be an admi
 
 ### CRM
 
-**Notion**
-
-Houses accounts, contacts, deal stages, notes, and handoff to delivery. This is the source of truth for pipeline and commission-eligible revenue. Your workspace and databases will be assigned during onboarding.
+Your CRM houses accounts, contacts, deal stages, notes, and handoff to delivery. This is the source of truth for pipeline and commission-eligible revenue. Your workspace and databases will be assigned during onboarding.
 
 ### Dialer / Phone
 
@@ -26,9 +24,7 @@ Outbound and inbound calling runs through your mobile device. Use it for schedul
 
 ### Project Management
 
-**Notion**
-
-Tracks website build tasks, SEO onboarding, and client milestones after the sale. This lives in the same Notion workspace as CRM — different databases and views keep the two concerns separated. You reference this when a prospect asks "what happens after we sign?"
+Tracks website build tasks, SEO onboarding, and client milestones after the sale. This lives in the same workspace as CRM — different databases and views keep the two concerns separated. You reference this when a prospect asks "what happens after we sign?"
 
 ### Design & Creative
 
@@ -40,7 +36,7 @@ Logos, banners, mockup requests, and brand guidelines live in our shared Canva w
 
 **Slack / Discord + company email**
 
-Day-to-day coordination with managers, marketing, and delivery. Sensitive client details and anything contractual belong in CRM and email, not chat DMs.
+Day-to-day coordination with managers, marketing, and delivery. Sensitive client details and anything contractual belong in the CRM and email, not chat DMs.
 
 ### Vertical Integrations
 
@@ -56,4 +52,4 @@ Your team lead will walk you through account creation, permissions, and where to
 
 ## Content Sources
 
-- Originally extracted from `Module02TechWeUse`; updated to reflect current tooling (Notion, Canva for Teams, Slack/Discord, mobile-first dialer)
+- Originally extracted from `Module02TechWeUse`; updated to reflect current tooling (CRM, Canva for Teams, Slack/Discord, personal phone for calling)

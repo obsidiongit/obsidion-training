@@ -182,7 +182,7 @@ export default function MeetingCadenceContent({
         backLabel="Back to hub"
         eyebrow="Meeting Cadence"
         title="Meeting Cadence & Preparation"
-        description="Twice a week, 30 minutes, Discord. Show up prepared or don't show up."
+        description="Daily at 10:00 AM Eastern on Discord. Show up prepared or don't show up."
       />
 
       <main className="max-w-3xl mx-auto px-4 sm:px-6 pt-10 pb-20 space-y-14">
@@ -197,18 +197,18 @@ export default function MeetingCadenceContent({
             variants={scaleIn}
             className="rounded-xl border border-border bg-card p-4 text-center"
           >
-            <div className="text-2xl font-black text-accent">2×</div>
+            <div className="text-2xl font-black text-accent">Daily</div>
             <div className="text-[11px] text-muted-foreground font-medium uppercase tracking-wider mt-1">
-              Per Week
+              Frequency
             </div>
           </motion.div>
           <motion.div
             variants={scaleIn}
             className="rounded-xl border border-border bg-card p-4 text-center"
           >
-            <div className="text-2xl font-black text-accent">30 min</div>
+            <div className="text-2xl font-black text-accent">10 AM ET</div>
             <div className="text-[11px] text-muted-foreground font-medium uppercase tracking-wider mt-1">
-              Duration
+              Start Time
             </div>
           </motion.div>
           <motion.div
@@ -525,8 +525,8 @@ export default function MeetingCadenceContent({
           className="rounded-xl border border-border bg-muted/20 px-5 py-4"
         >
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Show up. Be prepared. Participate. It&apos;s 30 minutes, twice a
-            week. The pre-meeting checklist above resets daily — use it before
+            Show up. Be prepared. Participate. Every day, 10:00 AM Eastern.
+            The pre-meeting checklist above resets daily — use it before
             every session.
           </p>
         </motion.div>

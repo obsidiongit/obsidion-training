@@ -66,14 +66,6 @@ const BRAND_FILES: AssetFile[] = [
     size: "PDF",
     status: "available",
   },
-  {
-    label: "Brand Guidelines",
-    description: "Official colors, typography, clear space rules, and do/don't examples for client-facing materials.",
-    href: "/assets/brand-guidelines.pdf",
-    icon: Palette,
-    size: "PDF",
-    status: "placeholder",
-  },
 ];
 
 const COMING_SOON: { label: string; description: string; icon: typeof Image }[] = [

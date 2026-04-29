@@ -4,7 +4,7 @@
 
 ## Meetings Are Not Optional
 
-Twice a week, the team gets on a call. It's 30 minutes. It's on Discord. Leadership runs it. If you're an active AE, you're on the call — no exceptions unless you've communicated in advance.
+Every day at 10:00 AM Eastern, the team gets on a call. It's on Discord. Leadership runs it. If you're an active AE, you're on the call — no exceptions unless you've communicated in advance.
 
 This is not a status update you can Slack in. This is where the team aligns on pipeline, shares what's working, surfaces blockers, and hears directly from leadership. The reps who treat these meetings as a priority are the ones who stay calibrated. The ones who skip them drift — and drifting in a commission-only role means starving quietly.
 
@@ -14,7 +14,7 @@ This is not a status update you can Slack in. This is where the team aligns on p
 
 ### Schedule
 
-Twice weekly — specific days and times will be set by leadership and communicated on Discord. When the schedule is set, put it in your calendar and protect it like a client demo. It's 30 minutes of your week.
+Daily at 10:00 AM Eastern. Put it in your calendar and protect it like a client demo.
 
 ### Platform
 
@@ -26,7 +26,7 @@ Founder / company leadership. This is top-down alignment, not a roundtable brain
 
 ### Duration
 
-**30 minutes.** Tight, structured, time-boxed. If it goes long, it's because something important surfaced — not because people are rambling.
+Tight, structured, time-boxed. If it goes long, it's because something important surfaced — not because people are rambling.
 
 ---
 
@@ -89,7 +89,7 @@ In a remote, commission-only environment, these meetings are one of the few plac
 
 The best AEs use these meetings to sharpen their approach. They listen to what other reps are running into, steal talk tracks that are working, and get coaching on deals they're stuck on. The worst AEs treat them as an interruption to their day. The difference shows up in the numbers within a month.
 
-Show up. Be prepared. Participate. It's 30 minutes, twice a week.
+Show up. Be prepared. Participate. Every day, 10:00 AM Eastern.
 
 ---
 
