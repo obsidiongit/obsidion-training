@@ -203,6 +203,20 @@ function GateStatusBadge({ gate }: { gate: Gate }) {
     );
   }
   if (gate.status === "schedule") {
+    const isDiscord = gate.statusLabel.toLowerCase().includes("discord");
+    if (isDiscord) {
+      return (
+        <a
+          href="https://discord.gg/X7fE7F2NvK"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 rounded-full bg-purple-accent/10 px-3 py-1 text-[11px] font-semibold text-purple-accent hover:bg-purple-accent/20 transition-colors"
+        >
+          <MessageCircle size={11} />
+          {gate.statusLabel}
+        </a>
+      );
+    }
     return (
       <span className="inline-flex items-center gap-1.5 rounded-full bg-purple-accent/10 px-3 py-1 text-[11px] font-semibold text-purple-accent">
         <MessageCircle size={11} />
@@ -496,18 +510,26 @@ export default function CertificationContent({
               </span>
             </div>
             <ul className="space-y-1.5">
-              {[
-                "Quizzes (Gates 2 & 3) — retake immediately after reviewing the relevant section.",
-                "Mock calls (Gates 4 & 5) — message your manager on Discord to schedule a new session. No waiting period.",
-                "CRM demo and proposal (Gates 6 & 7) — resubmit anytime after revisions.",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-2">
-                  <span className="text-amber-accent shrink-0 mt-1.5 h-1 w-1 rounded-full bg-amber-accent block" />
-                  <span className="text-xs text-muted-foreground leading-relaxed">
-                    {item}
-                  </span>
-                </li>
-              ))}
+              <li className="flex items-start gap-2">
+                <span className="text-amber-accent shrink-0 mt-1.5 h-1 w-1 rounded-full bg-amber-accent block" />
+                <span className="text-xs text-muted-foreground leading-relaxed">
+                  Quizzes (Gates 2 &amp; 3) — retake immediately after reviewing the relevant section.
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-accent shrink-0 mt-1.5 h-1 w-1 rounded-full bg-amber-accent block" />
+                <span className="text-xs text-muted-foreground leading-relaxed">
+                  Mock calls (Gates 4 &amp; 5) — message your manager on{" "}
+                  <a href="https://discord.gg/X7fE7F2NvK" target="_blank" rel="noopener noreferrer" className="text-purple-accent hover:underline font-medium">Discord</a>{" "}
+                  to schedule a new session. No waiting period.
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-amber-accent shrink-0 mt-1.5 h-1 w-1 rounded-full bg-amber-accent block" />
+                <span className="text-xs text-muted-foreground leading-relaxed">
+                  CRM demo and proposal (Gates 6 &amp; 7) — resubmit anytime after revisions.
+                </span>
+              </li>
             </ul>
             <p className="text-xs text-muted-foreground leading-relaxed pt-1 border-t border-amber-accent/15">
               The point isn&apos;t to fail people. The point is to make sure the

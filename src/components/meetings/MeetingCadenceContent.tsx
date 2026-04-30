@@ -213,14 +213,20 @@ export default function MeetingCadenceContent({
           </motion.div>
           <motion.div
             variants={scaleIn}
-            className="rounded-xl border border-border bg-card p-4 text-center"
           >
-            <div className="text-2xl font-black text-purple-accent">
-              Discord
-            </div>
-            <div className="text-[11px] text-muted-foreground font-medium uppercase tracking-wider mt-1">
-              Platform
-            </div>
+            <a
+              href="https://discord.gg/X7fE7F2NvK"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block rounded-xl border border-border bg-card p-4 text-center transition-all hover:border-purple-accent/30 hover:shadow-sm hover:-translate-y-0.5"
+            >
+              <div className="text-2xl font-black text-purple-accent">
+                Discord
+              </div>
+              <div className="text-[11px] text-muted-foreground font-medium uppercase tracking-wider mt-1">
+                Platform ↗
+              </div>
+            </a>
           </motion.div>
           <motion.div
             variants={scaleIn}

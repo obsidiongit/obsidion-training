@@ -6,6 +6,18 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-29] — Discord server link added across the hub
+
+### Added
+
+- **Discord invite link** (`https://discord.gg/X7fE7F2NvK`) added to the role hub footer alongside Brand Assets & Templates with a styled "Join Our Discord" card
+- Discord platform stat cards on Meeting Cadence pages (AE and SDR) now link directly to the server
+- "Schedule via Discord" certification badges now open the Discord invite instead of being static labels
+- "Message your manager on Discord" re-attempt text in certification is now a clickable link
+- Slack / Discord entries on the Tech We Use page now include the invite link via the external-link icon
+
+---
+
 ## [2026-04-29] — Product Knowledge: full expansion and rebrand from "Lite"
 
 ### Changed

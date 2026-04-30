@@ -76,18 +76,25 @@ export default function SDRMeetingCadenceContent({ roleSlug }: { roleSlug: strin
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-6">
             {[
-              { label: "Frequency", value: "Daily", icon: Clock },
-              { label: "Time", value: "10:00 AM ET", icon: Clock },
-              { label: "Platform", value: "Discord voice/video", icon: MessageSquare },
+              { label: "Frequency", value: "Daily", icon: Clock, href: undefined as string | undefined },
+              { label: "Time", value: "10:00 AM ET", icon: Clock, href: undefined as string | undefined },
+              { label: "Platform", value: "Discord voice/video", icon: MessageSquare, href: "https://discord.gg/X7fE7F2NvK" },
             ].map((item) => {
               const Icon = item.icon;
-              return (
-                <motion.div key={item.label} variants={fadeUp} className="rounded-2xl border border-border bg-card p-5 shadow-sm text-center">
+              const card = (
+                <div className={`rounded-2xl border border-border bg-card p-5 shadow-sm text-center${item.href ? " transition-all hover:border-purple-accent/30 hover:shadow-md hover:-translate-y-0.5" : ""}`}>
                   <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-accent/10 text-accent mb-3">
                     <Icon size={20} strokeWidth={1.8} />
                   </div>
                   <div className="text-lg font-bold">{item.value}</div>
-                  <div className="text-xs text-muted-foreground">{item.label}</div>
+                  <div className="text-xs text-muted-foreground">{item.label}{item.href ? " ↗" : ""}</div>
+                </div>
+              );
+              return (
+                <motion.div key={item.label} variants={fadeUp}>
+                  {item.href ? (
+                    <a href={item.href} target="_blank" rel="noopener noreferrer">{card}</a>
+                  ) : card}
                 </motion.div>
               );
             })}

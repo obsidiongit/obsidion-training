@@ -110,6 +110,7 @@ const TOOLS: ToolCard[] = [
     color: "text-purple-accent",
     bgColor: "bg-purple-accent/10",
     borderColor: "border-purple-accent/20",
+    url: "https://discord.gg/X7fE7F2NvK",
   },
   {
     icon: Smartphone,
@@ -860,6 +861,7 @@ export default function TechWeUseContent({
                 title: "Slack / Discord",
                 color: "text-purple-accent",
                 bg: "bg-purple-accent/10",
+                url: "https://discord.gg/X7fE7F2NvK",
                 points: [
                   "Day-to-day coordination with managers and delivery",
                   "Sensitive details belong in CRM and email, not chat",
@@ -891,8 +893,13 @@ export default function TechWeUseContent({
                     >
                       <Icon size={20} strokeWidth={1.8} />
                     </div>
-                    <h3 className="text-base font-bold tracking-tight">
+                    <h3 className="text-base font-bold tracking-tight flex items-center gap-2">
                       {tool.title}
+                      {"url" in tool && tool.url && (
+                        <a href={tool.url as string} target="_blank" rel="noopener noreferrer" className="text-muted-foreground/40 hover:text-purple-accent transition-colors">
+                          <ExternalLink size={12} />
+                        </a>
+                      )}
                     </h3>
                   </div>
                   <ul className="space-y-2.5">
