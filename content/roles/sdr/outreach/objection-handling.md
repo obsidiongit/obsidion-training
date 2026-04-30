@@ -8,7 +8,7 @@
 
 **What this means for you:**
 - You are booking a meeting, not winning a debate — one solid question often revives the thread.
-- Product Knowledge (Lite) has the exact Meta language; the sections below are for live tone.
+- Product Knowledge has the full service stack and language; the sections below are for live tone.
 
 ---
 

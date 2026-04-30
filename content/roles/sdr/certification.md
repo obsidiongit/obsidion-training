@@ -21,7 +21,7 @@ Work through every section in the SDR hub. Read them. Don't just click through.
 - Your Role as an SDR
 - Lead Lists & Accounts
 - Ambassador Profile Setup
-- Product Knowledge (Lite)
+- Product Knowledge
 - Outreach Playbook (all sub-sections: phone, email, social, objections)
 - Getting Paid
 - Performance Expectations

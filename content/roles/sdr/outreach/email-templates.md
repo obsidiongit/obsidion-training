@@ -10,7 +10,7 @@ Copy, paste, personalize every bracket. **≈80% of strong first touches lean on
 
 **What this means for you:**
 - If they may not run ads yet, do not assume they know the word Meta.
-- Product Knowledge (Lite) is where the exact Meta wording lives; emails can stay plain.
+- Product Knowledge is where the full service stack and wording lives; emails can stay plain.
 
 **Avoid:** Quiz-style hooks ("do you know where you rank on Google?"). **Prefer:** Something you actually saw — ad activity, a post, site issue — or a growth angle ("scaling what's working").
 

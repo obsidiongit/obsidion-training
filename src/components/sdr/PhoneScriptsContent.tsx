@@ -148,12 +148,9 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
             </div>
             <div className="space-y-3 flex-1">
               <p className="text-sm text-foreground leading-relaxed">
-                <span className="font-semibold">Product Knowledge (Lite)</span> uses{" "}
-                <span className="font-semibold">Meta (Facebook/Instagram)</span> by name — that is the
-                training layer. On cold calls, you will often say{" "}
-                <span className="font-semibold">paid ads</span> or{" "}
-                <span className="font-semibold">advertising</span> first. Skim it before your first
-                dialing block so you are not inventing Obsidion on the fly.
+                <span className="font-semibold">Product Knowledge</span> covers the full Obsidion
+                service stack — ads, AI automation, email marketing, web design, branding, and content
+                production. Skim it before your first dialing block so you are not inventing Obsidion on the fly.
               </p>
               <div className="rounded-xl border border-accent/30 bg-background/80 px-4 py-3">
                 <p className="text-xs font-bold uppercase tracking-wider text-accent mb-1">TL;DR</p>
@@ -174,7 +171,7 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
                 href={productsHref}
                 className="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:underline"
               >
-                Open Product Knowledge (Lite)
+                Open Product Knowledge
               </Link>
             </div>
           </motion.div>

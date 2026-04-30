@@ -439,7 +439,7 @@ export default function LeadListsContent({ roleSlug }: { roleSlug: string }) {
             sectionSlug="lead-lists"
             upNext={[
               { slug: "ambassador-setup", title: "Ambassador Profile Setup" },
-              { slug: "products", title: "Product Knowledge (Lite)" },
+              { slug: "products", title: "Product Knowledge" },
             ]}
           />
         </div>

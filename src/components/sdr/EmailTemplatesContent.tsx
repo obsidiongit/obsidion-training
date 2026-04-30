@@ -17,7 +17,7 @@ const HOW_TO_USE_TLDR = {
   tldr: "Write like a human: lead with paid ads or advertising when it fits; name Meta (Facebook/Instagram) when you are explaining how we execute — not in the first line every time.",
   meansForYou: [
     "If they may not run ads yet, do not assume they know the word Meta.",
-    "Product Knowledge (Lite) is where the exact Meta wording lives; emails can stay plain.",
+    "Product Knowledge is where the full service stack and wording lives; emails can stay plain.",
   ],
 } as const;
 

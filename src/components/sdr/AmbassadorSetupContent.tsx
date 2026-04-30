@@ -326,7 +326,7 @@ export default function AmbassadorSetupContent({ roleSlug }: { roleSlug: string 
             roleSlug={roleSlug}
             sectionSlug="ambassador-setup"
             upNext={[
-              { slug: "products", title: "Product Knowledge (Lite)" },
+              { slug: "products", title: "Product Knowledge" },
               { slug: "on-the-call", title: "Outreach Playbook" },
             ]}
           />

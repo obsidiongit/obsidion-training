@@ -6,6 +6,28 @@ Format: each entry includes a date, a summary, and a list of what changed.
 
 ---
 
+## [2026-04-29] — Product Knowledge: full expansion and rebrand from "Lite"
+
+### Changed
+
+- Renamed "Product Knowledge (Lite)" to "Product Knowledge" across the entire SDR section — removed the "Lite" tag from hub navigation, all component titles, markdown references, certification checklist, and cross-links in Phone Scripts, Email Templates, Objection Handling, Social Outreach, Your Role, and Lead Lists
+- Completely rewrote the Product Knowledge page to reflect Obsidion as a full-scale digital marketing agency
+
+### Added
+
+- **By the Numbers** section: $350K+ monthly ad spend, 4.5x avg ROAS, $1.5M+ monthly client revenue, $1M+ cash collected in 8 months
+- **Who We Serve** section: home services, e-commerce (beauty, health, fitness), med spas, franchises/multi-location
+- **Platforms We Advertise On**: Meta, TikTok, YouTube, Snapchat, Reddit, Google Ads
+- New service cards: AI Automation & Follow-Up, Automated Email Marketing, Full Branding & Product Launches, Content Production (Video & Photo) — in addition to existing Paid Ads, Web Design, SEO, and Mobile App
+- Expanded cheat sheet with all eight services
+- Franchise flag section retained and improved
+
+### Removed
+
+- Old `ProductKnowledgeLiteContent.tsx` and `product-knowledge-lite.md` files (replaced by `ProductKnowledgeContent.tsx` and `product-knowledge.md`)
+
+---
+
 ## [2026-04-29] — Tech We Use: remove Notion & call recording platform, add Facebook Ad Library
 
 ### Removed

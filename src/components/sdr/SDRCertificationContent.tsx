@@ -31,7 +31,7 @@ const GATES = [
       "Your Role as an SDR",
       "Lead Generation & Prospecting",
       "Ambassador Profile Setup",
-      "Product Knowledge (Lite)",
+      "Product Knowledge",
       "Outreach Playbook (all sub-sections)",
       "Getting Paid",
       "Performance Expectations",

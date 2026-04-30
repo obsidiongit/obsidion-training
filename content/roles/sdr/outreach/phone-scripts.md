@@ -4,7 +4,7 @@
 
 ## Read this first
 
-If you are new to Obsidion or to sales, **skim [Product Knowledge (Lite)](../product-knowledge-lite.md) first** — it uses **Meta (Facebook/Instagram)** by name; on cold calls you will often say **paid ads** or **advertising** first. Usually **≈80%** paid ads, **~20%** rest of stack; website-only is still valid. This page is the call plan and scripts.
+If you are new to Obsidion or to sales, **skim [Product Knowledge](../product-knowledge.md) first** — it covers the full Obsidion service stack (ads, AI automation, email marketing, web design, branding, content production). On cold calls you will often say **paid ads** or **advertising** first. This page is the call plan and scripts.
 
 **TL;DR:** Skim Product Knowledge Lite for exact product names; on the phone, open with "ads" or "paid advertising" before you assume they know Meta.
 

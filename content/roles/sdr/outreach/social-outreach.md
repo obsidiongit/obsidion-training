@@ -12,7 +12,7 @@ Phone opens doors. Email follows up. Social builds trust before either one happe
 
 **What this means for you:**
 - Many owners do not know the word Meta — do not open with it in a connection note.
-- Product Knowledge (Lite) has the exact Meta wording; social is for short, credible hooks.
+- Product Knowledge has the full service stack and wording; social is for short, credible hooks.
 
 When you view someone's profile, comment on their post, or send a connection request, your name starts to register. Then when you call, you're not a total stranger — you're "that person from LinkedIn" or "the one who commented on my post." That small edge makes a real difference in connect rates.
 

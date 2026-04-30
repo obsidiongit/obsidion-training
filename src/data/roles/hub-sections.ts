@@ -191,8 +191,8 @@ const SDR_CONFIG: HubConfig = {
     },
     {
       slug: "products",
-      title: "Product Knowledge (Lite)",
-      description: "≈80% Meta / 20% rest of stack — website-only or non-Meta pains are still valid. Enough to book the meeting.",
+      title: "Product Knowledge",
+      description: "Full-scale agency overview — ads, AI automation, email marketing, web design, branding, content production, and more.",
       icon: Lightbulb,
       shared: false,
     },

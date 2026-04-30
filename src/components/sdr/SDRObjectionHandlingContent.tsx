@@ -77,7 +77,7 @@ const OBJECTIONS_TLDR = {
   tldr: "Keep them talking: lead with paid ads or advertising in your first question when you can — add Meta (Facebook/Instagram) once they are engaged or when you explain how we work.",
   meansForYou: [
     "You are booking a meeting, not winning a debate — one solid question often revives the thread.",
-    "Product Knowledge (Lite) has the exact Meta language; scripts below are for live tone.",
+    "Product Knowledge has the full service stack and language; scripts below are for live tone.",
   ],
 } as const;
 
