@@ -1,6 +1,18 @@
 import type { NextConfig } from "next";
 
+const basePath = "/training";
+
 const nextConfig: NextConfig = {
+  // Static HTML export for embedding under the outreach app at /training/*
+  // (so links and /_next assets resolve correctly inside the iframe).
+  output: "export",
+  basePath,
+  assetPrefix: basePath,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
+  images: { unoptimized: true },
+  trailingSlash: true,
   async redirects() {
     return [
       // Legacy single-segment /playbook route → new role-scoped cannabis playbook

@@ -56,7 +56,13 @@ const TOPIC_META: Record<TopicSlug, { title: string; description: string }> = {
 };
 
 export function generateStaticParams() {
-  return ALL_SLUGS.map((topicSlug) => ({ topicSlug }));
+  return [
+    ...AE_SLUGS.map((topicSlug) => ({
+      roleSlug: "account-executive",
+      topicSlug,
+    })),
+    ...SDR_SLUGS.map((topicSlug) => ({ roleSlug: "sdr", topicSlug })),
+  ];
 }
 
 export async function generateMetadata({

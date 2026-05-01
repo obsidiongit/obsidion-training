@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { publicFile } from "@/lib/basePath";
 import { motion } from "framer-motion";
 import {
   ArrowLeft,
@@ -435,7 +436,7 @@ export default function AboutPageContent() {
             Obsidion Training Hub &middot; Shared section — visible to all roles
           </p>
           <img
-            src="/logos/logo.png"
+            src={publicFile("/logos/logo.png")}
             alt="Obsidion"
             className="h-6 w-auto opacity-30"
           />

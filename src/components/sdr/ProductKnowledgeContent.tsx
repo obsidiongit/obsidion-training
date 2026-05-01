@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import MarkCompleteButton from "@/components/ui/MarkCompleteButton";
+import { publicFile } from "@/lib/basePath";
 import {
   Globe,
   Search,
@@ -508,7 +509,7 @@ export default function ProductKnowledgeContent({ roleSlug }: { roleSlug: string
       <footer className="border-t border-border-light">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-foreground-subtle">Obsidion Training Hub &middot; SDR Product Knowledge</p>
-          <img src="/logos/logo.png" alt="Obsidion" className="h-6 w-auto opacity-30" />
+          <img src={publicFile("/logos/logo.png")} alt="Obsidion" className="h-6 w-auto opacity-30" />
         </div>
       </footer>
     </div>

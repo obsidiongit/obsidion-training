@@ -7,6 +7,7 @@ import HeroSection from "./HeroSection";
 import RoleCard from "./RoleCard";
 import AboutCompanyPanel from "@/components/AboutCompanyPanel";
 import type { RoleDefinition } from "@/data/roles/registry";
+import { publicFile } from "@/lib/basePath";
 
 interface LandingPageProps {
   roles: RoleDefinition[];
@@ -82,7 +83,7 @@ export default function LandingPage({ roles }: LandingPageProps) {
               browser
             </p>
             <img
-              src="/logos/logo.png"
+              src={publicFile("/logos/logo.png")}
               alt="Obsidion"
               className="h-6 w-auto opacity-30"
             />

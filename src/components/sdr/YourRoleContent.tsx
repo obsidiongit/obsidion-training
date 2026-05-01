@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import MarkCompleteButton from "@/components/ui/MarkCompleteButton";
+import { publicFile } from "@/lib/basePath";
 import FlowChart from "@/components/ui/FlowChart";
 import {
   MapPin,
@@ -431,7 +432,7 @@ export default function YourRoleContent({ roleSlug }: { roleSlug: string }) {
           <p className="text-xs text-foreground-subtle">
             Obsidion Training Hub &middot; SDR Role Overview
           </p>
-          <img src="/logos/logo.png" alt="Obsidion" className="h-6 w-auto opacity-30" />
+          <img src={publicFile("/logos/logo.png")} alt="Obsidion" className="h-6 w-auto opacity-30" />
         </div>
       </footer>
     </div>

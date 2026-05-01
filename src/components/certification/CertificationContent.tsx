@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import MarkCompleteButton from "@/components/ui/MarkCompleteButton";
+import { publicFile } from "@/lib/basePath";
 import {
   CheckSquare,
   Brain,
@@ -634,7 +635,7 @@ export default function CertificationContent({
             Obsidion Training Hub &middot; Certification & Readiness Gate
           </p>
           <img
-            src="/logos/logo.png"
+            src={publicFile("/logos/logo.png")}
             alt="Obsidion"
             className="h-6 w-auto opacity-30"
           />

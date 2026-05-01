@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { publicFile } from "@/lib/basePath";
 import { motion } from "framer-motion";
 import FlowChart from "@/components/ui/FlowChart";
 import {
@@ -698,7 +699,7 @@ export default function PhoneScriptsContent({ roleSlug }: { roleSlug: string }) 
       <footer className="border-t border-border-light">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-foreground-subtle">Obsidion Training Hub &middot; SDR Phone Scripts</p>
-          <img src="/logos/logo.png" alt="Obsidion" className="h-6 w-auto opacity-30" />
+          <img src={publicFile("/logos/logo.png")} alt="Obsidion" className="h-6 w-auto opacity-30" />
         </div>
       </footer>
     </div>

@@ -2,6 +2,7 @@
 
 import { useRef, useState, useEffect, useCallback } from "react";
 import { Play, Pause, Volume2 } from "lucide-react";
+import { publicFile } from "@/lib/basePath";
 
 function formatTime(seconds: number): string {
   const m = Math.floor(seconds / 60);
@@ -65,7 +66,7 @@ export default function FounderMessage() {
 
   return (
     <div className="rounded-xl border border-border bg-background/60 backdrop-blur-sm p-4">
-      <audio ref={audioRef} src="/audio/founder-message.mp3" preload="metadata" />
+      <audio ref={audioRef} src={publicFile("/audio/founder-message.mp3")} preload="metadata" />
 
       <div className="flex items-center gap-3 mb-3">
         <Volume2 size={14} className="text-accent shrink-0" />

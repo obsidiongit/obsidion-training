@@ -8,6 +8,7 @@ import { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePlaybook } from "@/components/PlaybookContext";
 import { readProgress, clearProgress } from "@/lib/progressStorage";
+import { publicFile } from "@/lib/basePath";
 
 export default function Sidebar() {
   const pathname = usePathname();
@@ -86,7 +87,7 @@ export default function Sidebar() {
           style={{ height: "80px", width: "175px" }}
         >
           <img
-            src="/logos/logo.png"
+            src={publicFile("/logos/logo.png")}
             alt="Obsidion"
             className="block w-full h-full object-contain object-center"
           />
@@ -118,7 +119,7 @@ export default function Sidebar() {
           <Link href={backHref} className="block">
             <div className="overflow-hidden -mt-2 -mx-1" style={{ height: "163px" }}>
               <img
-                src="/logos/logo.png"
+                src={publicFile("/logos/logo.png")}
                 alt="Obsidion"
                 className="block w-full h-full object-contain object-center"
               />

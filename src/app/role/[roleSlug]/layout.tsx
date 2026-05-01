@@ -4,6 +4,11 @@ import PageTransition from "@/components/ui/PageTransition";
 import SectionMobileHeader from "@/components/ui/SectionMobileHeader";
 import { ROLES } from "@/data/roles/registry";
 
+/** Pre-render all role hubs for static export (embedded in outreach dashboard). */
+export function generateStaticParams() {
+  return ROLES.map((r) => ({ roleSlug: r.slug }));
+}
+
 export const metadata: Metadata = {
   title: "Obsidion Training Hub",
   description: "Employee training hub for Obsidion.",

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { publicFile } from "@/lib/basePath";
 import {
   Sunrise,
   Sun,
@@ -574,7 +575,7 @@ export default function DailyChecklist({ roleSlug }: { roleSlug: string }) {
             Obsidion Training Hub &middot; Daily Operating Rhythm
           </p>
           <img
-            src="/logos/logo.png"
+            src={publicFile("/logos/logo.png")}
             alt="Obsidion"
             className="h-6 w-auto opacity-30"
           />

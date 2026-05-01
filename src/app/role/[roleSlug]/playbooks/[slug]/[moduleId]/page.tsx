@@ -1,14 +1,18 @@
 import { notFound } from "next/navigation";
 import { Clock } from "lucide-react";
+import { ROLES } from "@/data/roles/registry";
 import { getAllPlaybooks, getPlaybook } from "@/data/playbooks/registry";
 import { renderPlaybookModule } from "@/data/playbooks/renderModule";
 
 export function generateStaticParams() {
-  return getAllPlaybooks().flatMap((pb) =>
-    pb.modules.map((m) => ({
-      slug: pb.slug,
-      moduleId: String(m.id),
-    })),
+  return ROLES.flatMap((role) =>
+    getAllPlaybooks().flatMap((pb) =>
+      pb.modules.map((m) => ({
+        roleSlug: role.slug,
+        slug: pb.slug,
+        moduleId: String(m.id),
+      })),
+    ),
   );
 }
 

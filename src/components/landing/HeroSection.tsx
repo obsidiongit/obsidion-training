@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { publicFile } from "@/lib/basePath";
 
 const LINE_1 = "Welcome to";
 const LINE_2 = "Obsidion";
@@ -56,7 +57,7 @@ export default function HeroSection() {
         className="mb-6"
       >
         <img
-          src="/logos/logo.png"
+          src={publicFile("/logos/logo.png")}
           alt="Obsidion"
           className="mx-auto h-32 sm:h-40 w-auto object-contain"
         />

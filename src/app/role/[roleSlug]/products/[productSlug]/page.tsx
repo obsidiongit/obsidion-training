@@ -3,6 +3,7 @@ import WebsitesProduct from "@/components/products/WebsitesProduct";
 import SEOProduct from "@/components/products/SEOProduct";
 import RemarketingProduct from "@/components/products/RemarketingProduct";
 import MobileAppProduct from "@/components/products/MobileAppProduct";
+import { ROLES } from "@/data/roles/registry";
 
 const VALID_SLUGS = ["websites", "seo", "remarketing", "mobile-app"] as const;
 type ProductSlug = (typeof VALID_SLUGS)[number];
@@ -31,7 +32,12 @@ const PRODUCT_META: Record<ProductSlug, { title: string; description: string }> 
 };
 
 export function generateStaticParams() {
-  return VALID_SLUGS.map((productSlug) => ({ productSlug }));
+  return ROLES.flatMap((role) =>
+    VALID_SLUGS.map((productSlug) => ({
+      roleSlug: role.slug,
+      productSlug,
+    })),
+  );
 }
 
 export async function generateMetadata({
